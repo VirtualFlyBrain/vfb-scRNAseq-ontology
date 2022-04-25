@@ -1,71 +1,34 @@
-contact: null
-contributors: null
-creators: null
+id: VFB_scRNAseq
+title: VFB scRNAseq Ontology
+github_org: VirtualFlyBrain
+repo: vfb-scRNAseq-ontology
 description: Ontology containing scRNAseq data from FlyBase to be loaded into VFB.
 use_dosdps: FALSE
 edit_format: owl
 export_formats:
 - owl
-github_org: VirtualFlyBrain
 gzip_main: false
-id: VFB_scRNAseq
 import_group:
   directory: imports/
   disabled: false
   ids: null
   products:
-  - description: null
-    id: FBcv
-    mirror_from: null
-    rebuild_if_source_changes: true
-    robot_settings: null
-  - description: null
-    id: FBbt
-    mirror_from: null
-    rebuild_if_source_changes: true
-    robot_settings: null
-  - description: null
-    id: FBdv
-    mirror_from: null
-    rebuild_if_source_changes: true
-    robot_settings: null
-  - description: null
-    id: ro
-    mirror_from: null
-    rebuild_if_source_changes: true
-    robot_settings: null
-  - description: null
-    id: obi
-    mirror_from: null
-    rebuild_if_source_changes: true
-    robot_settings: null
-  - description: null
-    id: bfo
-    mirror_from: null
-    rebuild_if_source_changes: true
-    robot_settings: null
-  rebuild_if_source_changes: true
-import_pattern_ontology: false
-license: unspecified
+  - id: FBcv
+  - id: FBbt
+  - id: FBdv
+  - id: ro
+  - id: obi
+    module_type: minimal
+  - id: bfo
+    module_type: minimal
 namespaces:
 - http://flybase.org/reports/
-obo_format_options: ''
-pattern_group: null
-pattern_pipelines_group: null
-primary_release: full
 reasoner: ELK
+primary_release: full
 release_artefacts:
 - base
 - simple
 - non-classified
 - full
-repo: vfb-scRNAseq-ontology
 report_fail_on: none
 robot_java_args: ''
-robot_settings: null
-robot_version: null
-robotemplate_group: null
-subset_group: null
-title: VFB scRNAseq Ontology
-travis_emails: null
-uribase: http://purl.obolibrary.org/obo

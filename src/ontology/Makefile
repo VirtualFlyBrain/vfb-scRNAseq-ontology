@@ -262,6 +262,24 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: obi
+
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract  -i $< -T $(IMPORTDIR)/obi_terms_combined.txt --force true --method BOT \
+		remove --base-iri $(URIBASE)/OBI --axioms external --preserve-structure false --trim false \
+		query --update ../sparql/inject-subset-declaration.ru \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/obi_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+## Module for ontology: bfo
+
+$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract  -i $< -T $(IMPORTDIR)/bfo_terms_combined.txt --force true --method BOT \
+		remove --base-iri $(URIBASE)/BFO --axioms external --preserve-structure false --trim false \
+		query --update ../sparql/inject-subset-declaration.ru \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/bfo_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 .PHONY: refresh-imports
 refresh-imports:
 	make IMP=true MIR=true PAT=false IMP_LARGE=true all_imports -B
