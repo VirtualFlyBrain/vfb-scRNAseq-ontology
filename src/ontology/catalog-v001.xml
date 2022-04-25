@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+
+  
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl" uri="imports/FBcv_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.obo" uri="imports/FBcv_import.obo"/>
+  
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBbt_import.owl" uri="imports/FBbt_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBbt_import.obo" uri="imports/FBbt_import.obo"/>
+  
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.owl" uri="imports/FBdv_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.obo" uri="imports/FBdv_import.obo"/>
+  
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+  
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+  
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
+  
+
+
+  
+
+</group>
+</catalog>
