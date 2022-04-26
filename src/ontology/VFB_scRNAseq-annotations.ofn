@@ -1,0 +1,24 @@
+Prefix(:=<http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl>
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBbt_import.owl>)
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl>)
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.owl>)
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl>)
+Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster scRNAseq data pulled from FlyBase."^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/title> "VFB scRNAseq Ontology"^^xsd:string)
+Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
+
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+
+AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0002811> "has_cell_count")
+)

@@ -1,0 +1,154 @@
+id: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+name: VFB_scRNAseq
+imports:
+  - linkml:types
+prefixes:
+  FBcv: http://purl.obolibrary.org/obo/FBcv_
+  FBbt: http://purl.obolibrary.org/obo/FBbt_
+  FBdv: http://purl.obolibrary.org/obo/FBdv_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  BAO: http://www.bioassayontology.org/bao#BAO_
+  RO: http://purl.obolibrary.org/obo/RO_
+  BFO: http://purl.obolibrary.org/obo/BFO_
+  linkml: https://w3id.org/linkml/
+  FlyBase: http://flybase.org/reports/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+  owl: http://www.w3.org/2002/07/owl#
+  dcterms: http://purl.org/dc/terms/
+  neo: http://n2o.neo/custom/
+default_curi_maps:
+    - semweb_context
+default_range: string
+
+
+classes:
+
+  Dataset:
+    class_uri: FBcv:0003023
+    annotations:
+      owl: NamedIndividual
+      owl.fstring: ClassAssertion( FBcv:0003023 {id} )
+    attributes:
+      reference:
+        slot_uri: dc:references
+        description: Publication associated with the Dataset.
+        range: uriorcurie
+        annotations:
+          owl: AnnotationProperty
+      is_specified_output_of:
+        slot_uri: OBI:0000312
+        description: Assay type for the Dataset, this will probably be 'FBcv:0003068' - 'RNA-seq' or one of its subclasses.
+        range: uriorcurie
+        annotations:
+          owl: ClassAssertion, ObjectSomeValuesFrom
+    slots:
+      - id
+      - label
+      - definition
+
+  Sample:
+    class_uri: FBcv:0003024
+    annotations:
+      owl: NamedIndividual
+      owl.fstring: ClassAssertion( FBcv:0003024 {id} )
+    attributes:
+      overlaps:
+        slot_uri: RO:0002131
+        description: Use this field for the tissue(s) of the sample (overlaps relationship rather than part_of due to imprecision of dissection).
+        range: uriorcurie
+        annotations:
+          owl: ClassAssertion, ObjectSomeValuesFrom
+        multivalued: true
+    slots:
+      - id
+      - label
+      - definition
+      - stage
+      - source
+      - part_of_type
+
+  Cluster:
+    class_uri: FBcv:0009003
+    annotations:
+      owl: NamedIndividual
+      owl.fstring: ClassAssertion( FBcv:0009003 {id} )
+    attributes:
+      part_of_individual:
+        slot_uri: BFO:0000050
+        description: Sample that the Cluster is part_of.
+        range: uriorcurie
+        annotations:
+          owl: ObjectPropertyAssertion
+      cell_number:
+        slot_uri: BAO:0002811
+        description: The number of cells in the Cluster.
+        range: integer
+        annotations:
+          owl: AnnotationProperty
+      composed_primarily_of:
+        slot_uri: RO:0002473
+        range: uriorcurie
+        multivalued: true
+        annotations:
+          owl: ClassAssertion, ObjectSomeValuesFrom
+      gene:
+        slot_uri: RO:0002292
+        description: A gene expressed by the Cluster.
+        annotations:
+          owl.fstring: ClassAssertion ( Annotation ( neo:expression_level {expression_level} ) Annotation ( neo:expression_extent {expression_extent} ) ObjectSomeValuesFrom ( RO:0002292 {V}) {id})
+        range: uriorcurie
+      expression_extent:
+        slot_uri: neo:expression_extent
+        description: Extent of expression of the given gene.
+        range: float
+      expression_level:
+        slot_uri: neo:expression_level
+        description: Level of expression of the given gene.
+        range: float
+    slots:
+      - id
+      - label
+      - definition
+      - stage
+      - source
+      - part_of_type
+
+
+# slots can be used as attributes that can be shared by multiple classes
+slots:
+  id:
+    description: Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase:'.
+    identifier: true
+    range: uriorcurie
+    required: true
+  label:
+    slot_uri: rdfs:label
+    description: Short label to describe the entity.
+    annotations:
+      owl: AnnotationAssertion
+  definition:
+    slot_uri: IAO:0000115
+    description: Description of the entity.
+    annotations:
+      owl: AnnotationAssertion
+  source:
+    slot_uri: dcterms:source
+    description: Dataset of the Sample or Cluster.
+    range: uriorcurie
+    annotations:
+      owl: AnnotationProperty
+  part_of_type:
+    slot_uri: BFO:0000050
+    description: Class(es) that an entity is part_of. This can be used to represent sex with 'FBbt:00007011' - 'female organism' or 'FBbt:00007004' - 'male organism'.
+    range: uriorcurie
+    annotations:
+      owl: ClassAssertion, ObjectSomeValuesFrom
+    multivalued: true
+  stage:
+    slot_uri: RO:0002490
+    description: Developmental stage of the Sample or Cluster.
+    range: uriorcurie
+    annotations:
+      owl: ClassAssertion, ObjectSomeValuesFrom
