@@ -39,7 +39,7 @@ classes:
           owl: AnnotationProperty
       assay_type:
         slot_uri: OBI:0000312
-        description: Assay type for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq').
+        description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq').
         range: uriorcurie
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
@@ -144,8 +144,8 @@ slots:
       owl: AnnotationProperty
   sex:
     slot_uri: BFO:0000050
-    description: Sex for the entity. Should be 'FBbt:00007011' - 'female organism' or 'FBbt:00007004' - 'male organism'.
-    range: uriorcurie
+    description: Sex for the entity. Should be 'male' or 'female'.
+    range: sex_options
     annotations:
       owl: ClassAssertion, ObjectSomeValuesFrom
   stage:
@@ -154,3 +154,11 @@ slots:
     range: uriorcurie
     annotations:
       owl: ClassAssertion, ObjectSomeValuesFrom
+
+enums:
+  sex_options:
+    permissible_values:
+      male:
+        meaning: FBbt:00007004
+      female:
+        meaning: FBbt:00007011
