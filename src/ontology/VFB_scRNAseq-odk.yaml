@@ -10,16 +10,12 @@ export_formats:
 gzip_main: false
 import_group:
   directory: imports/
-  disabled: false
-  ids: null
   products:
   - id: FBcv
   - id: FBbt
   - id: FBdv
   - id: ro
   - id: obi
-    module_type: minimal
-  - id: bfo
     module_type: minimal
 namespaces:
 - http://flybase.org/reports/
