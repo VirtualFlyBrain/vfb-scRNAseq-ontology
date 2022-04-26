@@ -2,19 +2,22 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/VFB_scRNAseq/VFB_scRNAseq-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/VFB_scRNAseq/VFB_scRNAseq-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:custom="http://n2o.neo/custom/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/VFB_scRNAseq-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-04-25/VFB_scRNAseq-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-04-26/VFB_scRNAseq-base.owl"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology of Drosophila melanogaster scRNAseq data pulled from FlyBase.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VFB scRNAseq Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description>Ontology containing scRNAseq data from FlyBase to be loaded into VFB.</terms:description>
-        <terms:license rdf:resource="unspecified"/>
-        <terms:title>VFB scRNAseq Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-25</owl:versionInfo>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -30,27 +33,106 @@
     
 
 
-    <!-- http://purl.org/dc/terms/description -->
+    <!-- http://n2o.neo/custom/expression_extent -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:label>description</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/expression_extent"/>
+    
+
+
+    <!-- http://n2o.neo/custom/expression_level -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/expression_level"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:label>license</rdfs:label>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002811 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002811">
+        <rdfs:label>has_cell_count</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.org/dc/terms/title -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002292 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002292"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
     
 
 
@@ -65,11 +147,306 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VFB_SCRNASEQ_0000000 -->
+    <!-- http://flybase.org/reports/FBgn0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VFB_SCRNASEQ_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000001"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0000002 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000002"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0000017 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000017"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0000020 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001669"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001683"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005339"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003728 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003728">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Single-cell RNA-seq study of larval hemocytes upon wasp infestation</obo:IAO_0000115>
+        <terms:references>FlyBase:FBrf0245988</terms:references>
+        <rdfs:label>scRNAseq_2020_Cattenoz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003729 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003729">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001683"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Hemocytes from non-infested third-instar larvae</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <rdfs:label>scRNAseq_2020_Cattenoz_NI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003734 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003734">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000017"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000020"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003729"/>
+        <obo:IAO_0000115>Clustering analysis of hemocytes from non-infested third instar larvae, crystal cell cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cattenoz_NI_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003734"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000017"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.5</custom:expression_extent>
+        <custom:expression_level>14.0</custom:expression_level>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003734"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000020"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.9</custom:expression_extent>
+        <custom:expression_level>10.0</custom:expression_level>
+    </owl:Axiom>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003741 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003741">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Single-cell RNA-seq study of larval lymph gland hemocytes over time and upon wasp infestation</obo:IAO_0000115>
+        <terms:references>FlyBase:FBrf0246655</terms:references>
+        <rdfs:label>scRNAseq_2020_Cho</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003766 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003766">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001669"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005339"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Lymph gland cells from wasp-infested larvae at 96 h after egg-laying</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <rdfs:label>scRNAseq_2020_Cho_WI96LG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003770 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003770">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000001"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000002"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003766"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from wasp-infested larvae at 96 h after egg-laying, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4520</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_WI96LG_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003770"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000001"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.8</custom:expression_extent>
+        <custom:expression_level>5.0</custom:expression_level>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003770"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000002"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.9</custom:expression_extent>
+        <custom:expression_level>8.0</custom:expression_level>
+    </owl:Axiom>
 </rdf:RDF>
 
 

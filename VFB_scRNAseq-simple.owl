@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/VFB_scRNAseq/VFB_scRNAseq-simple.owl#"
      xml:base="http://purl.obolibrary.org/obo/VFB_scRNAseq/VFB_scRNAseq-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,12 +10,15 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:custom="http://n2o.neo/custom/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/VFB_scRNAseq-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-04-25/VFB_scRNAseq-simple.owl"/>
-        <terms:description>Ontology containing scRNAseq data from FlyBase to be loaded into VFB.</terms:description>
-        <terms:title>VFB scRNAseq Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-25</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-04-26/VFB_scRNAseq-simple.owl"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology of Drosophila melanogaster scRNAseq data pulled from FlyBase.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VFB scRNAseq Ontology</dc:title>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -30,22 +34,176 @@
     
 
 
+    <!-- http://n2o.neo/custom/expression_extent -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/expression_extent"/>
+    
+
+
+    <!-- http://n2o.neo/custom/expression_level -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/expression_level"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/date -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     
 
 
-    <!-- http://purl.org/dc/terms/description -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/description</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-description</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-description</oboInOwl:shorthand>
         <rdfs:label>description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/title</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-title</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-title</oboInOwl:shorthand>
+        <rdfs:label>title</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -53,8 +211,6 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <obo:IAO_0000117>Mark Miller</obo:IAO_0000117>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-11T13:47:29Z</dc:date>
         <oboInOwl:hasDbXref>http://purl.org/dc/terms/license</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>dcterms-license</oboInOwl:id>
@@ -65,10 +221,22 @@
     
 
 
-    <!-- http://purl.org/dc/terms/title -->
+    <!-- http://purl.org/dc/terms/references -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002811 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002811">
+        <rdfs:label>has_cell_count</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -85,6 +253,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -94,6 +268,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     
 
 
@@ -112,6 +292,150 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBO_REL:part_of</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>part_of</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <rdfs:label>part of</rdfs:label>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label>part_of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>x overlaps y if and only if there exists some z such that x has part z and z part of y</obo:IAO_0000115>
+        <obo:IAO_0000424>http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)</obo:IAO_0000424>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>RO:0002131</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>overlaps</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <oboInOwl:shorthand>overlaps</oboInOwl:shorthand>
+        <rdfs:label>overlaps</rdfs:label>
+        <rdfs:label xml:lang="en">overlaps</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002292 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002292">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>Inverse of &apos;expressed in&apos;</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>RO:0002292</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>expresses</oboInOwl:id>
+        <oboInOwl:shorthand>expresses</oboInOwl:shorthand>
+        <rdfs:label>expresses</rdfs:label>
+        <rdfs:label xml:lang="en">expresses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+        <obo:IAO_0000112>&apos;otolith organ&apos; SubClassOf &apos;composed primarily of&apos; some &apos;calcium carbonate&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115>x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>RO:0002473</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>composed_primarily_of</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <oboInOwl:shorthand>composed_primarily_of</oboInOwl:shorthand>
+        <rdfs:label>composed primarily of</rdfs:label>
+        <rdfs:label>composed_primarily_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490">
+        <obo:IAO_0000115>x existence overlaps y if and only if either (a) the start of x is part of y or (b) the end of x is part of y. Formally: x existence starts and ends during y iff (α(x) &gt;= α(y) &amp; α(x) &lt;= ω(y)) OR (ω(x) &lt;= ω(y) &amp; ω(x) &gt;= α(y))</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <rdfs:comment>The relations here were created based on work originally by Fabian Neuhaus and David Osumi-Sutherland. The work has not yet been vetted and errors in definitions may have occurred during transcription.</rdfs:comment>
+        <rdfs:label>existence overlaps</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -120,11 +444,305 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VFB_SCRNASEQ_0000000 -->
+    <!-- http://flybase.org/reports/FBgn0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VFB_SCRNASEQ_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000001"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0000002 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000002"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0000017 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000017"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0000020 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000020"/>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0002576 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0002576">
+        <oboInOwl:hasExactSynonym>CG1689</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LZ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lozenge</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lz</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>amx</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fs(1)A1569</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fs(1)M69</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lozenge</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spe</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spectacled</oboInOwl:hasExactSynonym>
+        <rdfs:label>lz</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0028430 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0028430">
+        <oboInOwl:hasExactSynonym>CG31770</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Gustav</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>H2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Hemes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Hemese</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>he</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hem</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hemes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hemese</oboInOwl:hasExactSynonym>
+        <rdfs:label>He</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0033367 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0033367">
+        <oboInOwl:hasExactSynonym>CG8193</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DmePPO2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PO45</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PPO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phenoloxidase A3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ProPO45</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Prophenoloxidase 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>phenoloxidase subunit A3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ppo2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proPO45</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proPOA(3)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proPo-A3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prophenoloxidase 45</oboInOwl:hasExactSynonym>
+        <rdfs:label>PPO2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0259896 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0259896">
+        <oboInOwl:hasExactSynonym>BG:DS00180.10</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CG8942</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CT25688</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nim</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NimC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nimrod C1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NimrodC1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>P1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nimC1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nimrod</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nimrod C1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nimrodC1</oboInOwl:hasExactSynonym>
+        <rdfs:label>NimC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0283437 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0283437">
+        <oboInOwl:hasExactSynonym>A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>A[[1]]</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Black Cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Black cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Black cells</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CG42639</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CG5779</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Diphenol oxidase A1 subunit</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DmePPOA1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Dox-A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DoxA1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Monophenol oxidase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Monophenoloxidase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Mox</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PO A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PO54</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PPO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PPO-1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PPO-A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PROPO-A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phox</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pro-phenol oxidase A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ProPO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ProPO A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ProPO54</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ProPo</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Prophenoloxidase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Prophenoloxidase 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Prophenoloxidase A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Propo</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>bc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>black cells</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>i12</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>phenoloxidase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pro-A</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pro-PO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pro-POA[[1]]</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pro-phenol oxidase A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proPO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proPO A[[1]]</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proPO-A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proPO54</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prophenol oxidase A1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prophenoloxidase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prophenoloxidase A[[1]]</oboInOwl:hasExactSynonym>
+        <rdfs:label>PPO1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003728 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003728">
+        <obo:IAO_0000115>Single-cell RNA-seq study of larval hemocytes upon wasp infestation</obo:IAO_0000115>
+        <terms:references>FlyBase:FBrf0245988</terms:references>
+        <rdfs:label>scRNAseq_2020_Cattenoz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003729 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003729">
+        <obo:IAO_0000115>Hemocytes from non-infested third-instar larvae</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <rdfs:label>scRNAseq_2020_Cattenoz_NI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003734 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003734">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000017"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000020"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003729"/>
+        <obo:IAO_0000115>Clustering analysis of hemocytes from non-infested third instar larvae, crystal cell cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cattenoz_NI_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003734"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000017"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.5</custom:expression_extent>
+        <custom:expression_level>14.0</custom:expression_level>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003734"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000020"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.9</custom:expression_extent>
+        <custom:expression_level>10.0</custom:expression_level>
+    </owl:Axiom>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003741 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003741">
+        <obo:IAO_0000115>Single-cell RNA-seq study of larval lymph gland hemocytes over time and upon wasp infestation</obo:IAO_0000115>
+        <terms:references>FlyBase:FBrf0246655</terms:references>
+        <rdfs:label>scRNAseq_2020_Cho</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003766 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003766">
+        <obo:IAO_0000115>Lymph gland cells from wasp-infested larvae at 96 h after egg-laying</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <rdfs:label>scRNAseq_2020_Cho_WI96LG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003770 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003770">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000001"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000002"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003766"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from wasp-infested larvae at 96 h after egg-laying, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4520</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_WI96LG_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003770"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000001"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.8</custom:expression_extent>
+        <custom:expression_level>5.0</custom:expression_level>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003770"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000002"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <custom:expression_extent>0.9</custom:expression_extent>
+        <custom:expression_level>8.0</custom:expression_level>
+    </owl:Axiom>
 </rdf:RDF>
 
 

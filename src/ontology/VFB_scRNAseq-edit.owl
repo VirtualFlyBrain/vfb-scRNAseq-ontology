@@ -1,55 +1,116 @@
-
-Prefix(:=<http://purl.obolibrary.org/obo/VFB_scRNAseq.owl#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(:=<http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq.owl>
-
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl>)
-
+Ontology(<http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl>
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBbt_import.owl>)
-
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.owl>)
+Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster scRNAseq data pulled from FlyBase."^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/title> "VFB scRNAseq Ontology"^^xsd:string)
+Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
 
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bfo_import.owl>)
-
-
-Annotation(dcterms:description "Ontology containing scRNAseq data from FlyBase to be loaded into VFB.")
-Annotation(dcterms:license <unspecified>)
-Annotation(dcterms:title "VFB scRNAseq Ontology")
-
-
-Declaration(Class(<http://purl.obolibrary.org/obo/VFB_SCRNASEQ_0000000>))
-Declaration(AnnotationProperty(dcterms:description))
-Declaration(AnnotationProperty(dcterms:license))
-Declaration(AnnotationProperty(dcterms:title))
-
+Declaration(Class(<http://flybase.org/reports/FBgn0000001>))
+Declaration(Class(<http://flybase.org/reports/FBgn0000002>))
+Declaration(Class(<http://flybase.org/reports/FBgn0000017>))
+Declaration(Class(<http://flybase.org/reports/FBgn0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00001669>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00001685>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009000>))
+Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003728>))
+Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003729>))
+Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003734>))
+Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003741>))
+Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003766>))
+Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003770>))
+Declaration(AnnotationProperty(<http://n2o.neo/custom/expression_extent>))
+Declaration(AnnotationProperty(<http://n2o.neo/custom/expression_level>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/references>))
+Declaration(AnnotationProperty(<http://www.bioassayontology.org/bao#BAO_0002811>))
 ############################
 #   Annotation Properties
 ############################
 
-AnnotationAssertion(rdfs:label dcterms:description "description")
-AnnotationAssertion(rdfs:label dcterms:license "license")
-AnnotationAssertion(rdfs:label dcterms:title "title")
+# Annotation Property: <http://www.bioassayontology.org/bao#BAO_0002811> (has_cell_count)
+
+AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0002811> "has_cell_count")
+
+
+
+
 
 ############################
-#   Classes
+#   Named Individuals
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/VFB_SCRNASEQ_0000000> (root node)
+# Individual: <http://flybase.org/reports/FBlc0003728> (scRNAseq_2020_Cattenoz)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VFB_SCRNASEQ_0000000> "root node"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://flybase.org/reports/FBlc0003728> "Single-cell RNA-seq study of larval hemocytes upon wasp infestation")
+AnnotationAssertion(<http://purl.org/dc/terms/references> <http://flybase.org/reports/FBlc0003728> "FlyBase:FBrf0245988")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBlc0003728> "scRNAseq_2020_Cattenoz")
+ClassAssertion(<http://purl.obolibrary.org/obo/FBcv_0003023> <http://flybase.org/reports/FBlc0003728>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/FBcv_0009000>) <http://flybase.org/reports/FBlc0003728>)
+
+# Individual: <http://flybase.org/reports/FBlc0003729> (scRNAseq_2020_Cattenoz_NI)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://flybase.org/reports/FBlc0003729> "Hemocytes from non-infested third-instar larvae")
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://flybase.org/reports/FBlc0003729> "FlyBase:FBlc0003728")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBlc0003729> "scRNAseq_2020_Cattenoz_NI")
+ClassAssertion(<http://purl.obolibrary.org/obo/FBcv_0003024> <http://flybase.org/reports/FBlc0003729>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00001683>) <http://flybase.org/reports/FBlc0003729>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002490> <http://purl.obolibrary.org/obo/FBdv_00005341>) <http://flybase.org/reports/FBlc0003729>)
+
+# Individual: <http://flybase.org/reports/FBlc0003734> (scRNAseq_2020_Cattenoz_NI_seq_clustering_crystal_cells)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://flybase.org/reports/FBlc0003734> "Clustering analysis of hemocytes from non-infested third instar larvae, crystal cell cluster")
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://flybase.org/reports/FBlc0003734> "FlyBase:FBlc0003728")
+AnnotationAssertion(<http://www.bioassayontology.org/bao#BAO_0002811> <http://flybase.org/reports/FBlc0003734> "41"^^xsd:integer)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBlc0003734> "scRNAseq_2020_Cattenoz_NI_seq_clustering_crystal_cells")
+ClassAssertion(<http://purl.obolibrary.org/obo/FBcv_0009003> <http://flybase.org/reports/FBlc0003734>)
+ClassAssertion(Annotation(<http://n2o.neo/custom/expression_extent> "0.5") Annotation(<http://n2o.neo/custom/expression_level> "14.0") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0000017>) <http://flybase.org/reports/FBlc0003734>)
+ClassAssertion(Annotation(<http://n2o.neo/custom/expression_extent> "0.9") Annotation(<http://n2o.neo/custom/expression_level> "10.0") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0000020>) <http://flybase.org/reports/FBlc0003734>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002473> <http://purl.obolibrary.org/obo/FBbt_00001690>) <http://flybase.org/reports/FBlc0003734>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002490> <http://purl.obolibrary.org/obo/FBdv_00005336>) <http://flybase.org/reports/FBlc0003734>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://flybase.org/reports/FBlc0003734> <http://flybase.org/reports/FBlc0003729>)
+
+# Individual: <http://flybase.org/reports/FBlc0003741> (scRNAseq_2020_Cho)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://flybase.org/reports/FBlc0003741> "Single-cell RNA-seq study of larval lymph gland hemocytes over time and upon wasp infestation")
+AnnotationAssertion(<http://purl.org/dc/terms/references> <http://flybase.org/reports/FBlc0003741> "FlyBase:FBrf0246655")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBlc0003741> "scRNAseq_2020_Cho")
+ClassAssertion(<http://purl.obolibrary.org/obo/FBcv_0003023> <http://flybase.org/reports/FBlc0003741>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/FBcv_0009000>) <http://flybase.org/reports/FBlc0003741>)
+
+# Individual: <http://flybase.org/reports/FBlc0003766> (scRNAseq_2020_Cho_WI96LG)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://flybase.org/reports/FBlc0003766> "Lymph gland cells from wasp-infested larvae at 96 h after egg-laying")
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://flybase.org/reports/FBlc0003766> "FlyBase:FBlc0003741")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBlc0003766> "scRNAseq_2020_Cho_WI96LG")
+ClassAssertion(<http://purl.obolibrary.org/obo/FBcv_0003024> <http://flybase.org/reports/FBlc0003766>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00001669>) <http://flybase.org/reports/FBlc0003766>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002490> <http://purl.obolibrary.org/obo/FBdv_00005339>) <http://flybase.org/reports/FBlc0003766>)
+
+# Individual: <http://flybase.org/reports/FBlc0003770> (scRNAseq_2020_Cho_WI96LG_seq_clustering_plasmatocytes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://flybase.org/reports/FBlc0003770> "Clustering analysis of lymph gland cells from wasp-infested larvae at 96 h after egg-laying, plasmatocytes cluster")
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://flybase.org/reports/FBlc0003770> "FlyBase:FBlc0003741")
+AnnotationAssertion(<http://www.bioassayontology.org/bao#BAO_0002811> <http://flybase.org/reports/FBlc0003770> "4520"^^xsd:integer)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBlc0003770> "scRNAseq_2020_Cho_WI96LG_seq_clustering_plasmatocytes")
+ClassAssertion(<http://purl.obolibrary.org/obo/FBcv_0009003> <http://flybase.org/reports/FBlc0003770>)
+ClassAssertion(Annotation(<http://n2o.neo/custom/expression_extent> "0.8") Annotation(<http://n2o.neo/custom/expression_level> "5.0") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0000001>) <http://flybase.org/reports/FBlc0003770>)
+ClassAssertion(Annotation(<http://n2o.neo/custom/expression_extent> "0.9") Annotation(<http://n2o.neo/custom/expression_level> "8.0") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0000002>) <http://flybase.org/reports/FBlc0003770>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002473> <http://purl.obolibrary.org/obo/FBbt_00001685>) <http://flybase.org/reports/FBlc0003770>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002490> <http://purl.obolibrary.org/obo/FBdv_00005336>) <http://flybase.org/reports/FBlc0003770>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://flybase.org/reports/FBlc0003770> <http://flybase.org/reports/FBlc0003766>)
 
 
 )
-
