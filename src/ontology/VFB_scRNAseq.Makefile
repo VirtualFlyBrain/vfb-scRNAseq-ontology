@@ -11,6 +11,14 @@ prepare_release: all
 	rm -f imports/*_terms_combined.txt &&\
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
+.PHONY: get_FB_data
+get_FB_data:
+	apt-get -y install postgresql-client
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql > tmp/dataset_data.tsv
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/sample_query.sql > tmp/sample_data.tsv
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/cluster_query.sql > tmp/cluster_data.tsv
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql > tmp/expression_data.tsv
+
 .PHONY: update_ontology
 update_ontology:
 	python3 -m pip install linkml-owl &&\
