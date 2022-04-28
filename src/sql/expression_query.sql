@@ -1,7 +1,8 @@
 --Query for scRNA-seq expression values.
 --Max value of "spread" (aka extent) is 1.0 (i.e., all cells express the gene).
 COPY (SELECT DISTINCT
-    'FlyBase:'||l.uniquename as library_id,
+    'Cluster' as type,
+    'FlyBase:'||l.uniquename as id,
     'FlyBase:'||f.uniquename as gene,
     expression_level.value as expression_level,
     expression_extent.value as expression_extent

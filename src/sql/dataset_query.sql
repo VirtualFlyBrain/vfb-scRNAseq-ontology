@@ -2,9 +2,9 @@
 --Pulls projects derived associations with scRNA-seq assay terms.
 COPY (SELECT DISTINCT
     'Dataset' as type,
-    'FlyBase:'||l.uniquename as library_id,
-    l.name as library_name,
-    s.name as library_title,
+    'FlyBase:'||l.uniquename as id,
+    l.name as name,
+    s.name as title,
     'FlyBase:'||p.uniquename as publication,
     db.name||':'||dbx.accession as assay_type
 FROM library l

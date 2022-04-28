@@ -3,9 +3,9 @@
 --Note - Should still return a sample if tissue, sex or stage are missing (with NULL value for that field).
 COPY (SELECT DISTINCT
     'Cluster' as type,
-    'FlyBase:'||l.uniquename as library_id,
-    l.name as library_name,
-    s.name as library_title,
+    'FlyBase:'||l.uniquename as id,
+    l.name as name,
+    s.name as title,
     db_stage.name||':'||dbx_stage.accession as stage,
     'FlyBase:'||p.uniquename as associated_dataset,
     'FlyBase:'||bs.uniquename as associated_sample,

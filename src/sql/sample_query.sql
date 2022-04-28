@@ -3,14 +3,12 @@
 --Note - Should still return a sample if tissue, sex or stage are missing (with NULL value for that field).
 COPY (SELECT DISTINCT
     'Sample' as type,
-    'FlyBase:'||l.uniquename as library_id,
-    l.name as library_name,
-    s.name as library_title,
-    tissue.name as tissue,
-    db_tissue.name||':'||dbx_tissue.accession as sample_tissue_id,
+    'FlyBase:'||l.uniquename as id,
+    l.name as name,
+    s.name as title,
+    db_tissue.name||':'||dbx_tissue.accession as sample_tissue,
     sex.name as sex,
-    stage.name as stage,
-    db_stage.name||':'||dbx_stage.accession as sample_stage_id,
+    db_stage.name||':'||dbx_stage.accession as stage,
     'FlyBase:'||p.uniquename as associated_dataset
 FROM library l
 JOIN cvterm t ON (t.cvterm_id = l.type_id AND t.name = 'biosample')
