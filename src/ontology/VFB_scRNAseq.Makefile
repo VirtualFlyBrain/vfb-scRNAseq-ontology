@@ -32,7 +32,11 @@ update_ontology:
 	$(ROBOT) merge --input VFB_scRNAseq-annotations.ofn --input tmp/scRNAseq_data.ofn \
 	--include-annotations true --collapse-import-closure false \
 	convert --format ofn \
-	-o VFB_scRNAseq-edit.owl &&\
+	-o VFB_scRNAseq-edit.owl \
+	# Make expression import
+	$(ROBOT) merge --inputs "$(EXPDIR)/*.ofn" \
+	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
+	convert --format ofn -o $(COMPONENTSDIR)/expression_data.owl &&\
 	echo "\nOntology source file updated!\n"
 
 # add VFB iri
