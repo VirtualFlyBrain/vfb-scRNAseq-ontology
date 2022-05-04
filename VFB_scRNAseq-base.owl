@@ -9,15 +9,14 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:custom="http://n2o.neo/custom/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/VFB_scRNAseq-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-04-26/VFB_scRNAseq-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-05-04/VFB_scRNAseq-base.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology of Drosophila melanogaster scRNAseq data pulled from FlyBase.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VFB scRNAseq Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-26</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -30,18 +29,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://n2o.neo/custom/expression_extent -->
-
-    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/expression_extent"/>
-    
-
-
-    <!-- http://n2o.neo/custom/expression_level -->
-
-    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/expression_level"/>
     
 
 
@@ -118,12 +105,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002292 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002292"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
@@ -147,30 +128,6 @@
     
 
 
-    <!-- http://flybase.org/reports/FBgn0000001 -->
-
-    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000001"/>
-    
-
-
-    <!-- http://flybase.org/reports/FBgn0000002 -->
-
-    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000002"/>
-    
-
-
-    <!-- http://flybase.org/reports/FBgn0000017 -->
-
-    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000017"/>
-    
-
-
-    <!-- http://flybase.org/reports/FBgn0000020 -->
-
-    <owl:Class rdf:about="http://flybase.org/reports/FBgn0000020"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FBbt_00001669 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001669"/>
@@ -189,9 +146,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00001690 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058152"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110194"/>
     
 
 
@@ -234,6 +215,12 @@
     <!-- http://purl.obolibrary.org/obo/FBdv_00005341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005341"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005349"/>
     
 
 
@@ -288,22 +275,60 @@
     
 
 
+    <!-- http://flybase.org/reports/FBlc0003732 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003732">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003729"/>
+        <obo:IAO_0000115>Clustering analysis of hemocytes from non-infested third instar larvae, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5918</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cattenoz_NI_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003733 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003733">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003729"/>
+        <obo:IAO_0000115>Clustering analysis of hemocytes from non-infested third instar larvae, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cattenoz_NI_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://flybase.org/reports/FBlc0003734 -->
 
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003734">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000017"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000020"/>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
@@ -322,30 +347,104 @@
         <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</bao:BAO_0002811>
         <rdfs:label>scRNAseq_2020_Cattenoz_NI_seq_clustering_crystal_cells</rdfs:label>
     </owl:NamedIndividual>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003734"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-        <owl:annotatedTarget>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003735 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003735">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000017"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001683"/>
             </owl:Restriction>
-        </owl:annotatedTarget>
-        <custom:expression_extent>0.5</custom:expression_extent>
-        <custom:expression_level>14.0</custom:expression_level>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003734"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-        <owl:annotatedTarget>
+        </rdf:type>
+        <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000020"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005341"/>
             </owl:Restriction>
-        </owl:annotatedTarget>
-        <custom:expression_extent>0.9</custom:expression_extent>
-        <custom:expression_level>10.0</custom:expression_level>
-    </owl:Axiom>
+        </rdf:type>
+        <obo:IAO_0000115>Hemocytes from wasp-infested third-instar larvae</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <rdfs:label>scRNAseq_2020_Cattenoz_WI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003738 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003738">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003735"/>
+        <obo:IAO_0000115>Clustering analysis of hemocytes from wasp-infested third instar larvae, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6481</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cattenoz_WI_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003739 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003739">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003735"/>
+        <obo:IAO_0000115>Clustering analysis of hemocytes from wasp-infested third instar larvae, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1322</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cattenoz_WI_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003740 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003740">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003735"/>
+        <obo:IAO_0000115>Clustering analysis of hemocytes from wasp-infested third instar larvae, crystal cells cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003728</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cattenoz_WI_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -362,6 +461,450 @@
         <obo:IAO_0000115>Single-cell RNA-seq study of larval lymph gland hemocytes over time and upon wasp infestation</obo:IAO_0000115>
         <terms:references>FlyBase:FBrf0246655</terms:references>
         <rdfs:label>scRNAseq_2020_Cho</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003742 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003742">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001669"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005339"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Lymph gland cells from non-infested larvae at 72 h after egg-laying</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <rdfs:label>scRNAseq_2020_Cho_NI72LG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003745 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003745">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003742"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 72 h after egg-laying, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">975</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI72LG_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003746 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003746">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003742"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 72 h after egg-laying, prohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1005</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI72LG_seq_clustering_prohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003747 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003747">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003742"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 72 h after egg-laying, crystal cells cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI72LG_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003748 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003748">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058152"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003742"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 72 h after egg-laying, adipohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI72LG_seq_clustering_adipohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003749 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003749">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003742"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 72 h after egg-laying, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI72LG_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003750 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003750">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001669"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005339"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Lymph gland cells from non-infested larvae at 96 h after egg-laying</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <rdfs:label>scRNAseq_2020_Cho_NI96LG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003753 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003753">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003750"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 96 h after egg-laying, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4649</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96LG_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003754 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003754">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003750"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 96 h after egg-laying, prohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3326</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96LG_seq_clustering_prohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003755 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003755">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003750"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 96 h after egg-laying, crystal cells cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96LG_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003756 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003756">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058152"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003750"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 96 h after egg-laying, adipohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96LG_seq_clustering_adipohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003757 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003757">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003750"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 96 h after egg-laying, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96LG_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003758 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003758">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001669"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005339"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Lymph gland cells from non-infested larvae at 120 h after egg-laying</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <rdfs:label>scRNAseq_2020_Cho_NI120LG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003761 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003761">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003758"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 120 h after egg-laying, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2721</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120LG_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003762 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003762">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003758"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 120 h after egg-laying, prohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120LG_seq_clustering_prohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003763 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003763">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003758"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 120 h after egg-laying, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">211</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120LG_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003764 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003764">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003758"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 120 h after egg-laying, crystal cells cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120LG_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003765 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003765">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058152"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003758"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from non-infested larvae at 120 h after egg-laying, adipohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120LG_seq_clustering_adipohemocytes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -389,22 +932,35 @@
     
 
 
+    <!-- http://flybase.org/reports/FBlc0003769 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003769">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003766"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from wasp-infested larvae at 96 h after egg-laying, prohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4621</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_WI96LG_seq_clustering_prohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://flybase.org/reports/FBlc0003770 -->
 
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003770">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000001"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000002"/>
-            </owl:Restriction>
-        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
@@ -423,30 +979,459 @@
         <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4520</bao:BAO_0002811>
         <rdfs:label>scRNAseq_2020_Cho_WI96LG_seq_clustering_plasmatocytes</rdfs:label>
     </owl:NamedIndividual>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003770"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-        <owl:annotatedTarget>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003771 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003771">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
             </owl:Restriction>
-        </owl:annotatedTarget>
-        <custom:expression_extent>0.8</custom:expression_extent>
-        <custom:expression_level>5.0</custom:expression_level>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0003770"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-        <owl:annotatedTarget>
+        </rdf:type>
+        <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0000002"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
             </owl:Restriction>
-        </owl:annotatedTarget>
-        <custom:expression_extent>0.9</custom:expression_extent>
-        <custom:expression_level>8.0</custom:expression_level>
-    </owl:Axiom>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003766"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from wasp-infested larvae at 96 h after egg-laying, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">359</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_WI96LG_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003772 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003772">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003766"/>
+        <obo:IAO_0000115>Clustering analysis of lymph gland cells from wasp-infested larvae at 96 h after egg-laying, crystal cells cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_WI96LG_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003773 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003773">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001683"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005339"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Circulating hemocytes from non-infested larvae at 96 h after egg-laying</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <rdfs:label>scRNAseq_2020_Cho_NI96HL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003776 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003776">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003773"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 96 h after egg-laying, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">870</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96HL_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003777 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003777">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003773"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 96 h after egg-laying, prohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96HL_seq_clustering_prohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003778 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003778">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003773"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 96 h after egg-laying, crystal cells cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96HL_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003779 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003779">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003773"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 96 h after egg-laying, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI96HL_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003780 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003780">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001683"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005339"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Circulating hemocytes from non-infested larvae at 120 h after egg-laying</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <rdfs:label>scRNAseq_2020_Cho_NI120HL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003783 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003783">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003780"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 120 h after egg-laying, plasmatocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1466</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120HL_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003784 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003784">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003780"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 120 h after egg-laying, prohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120HL_seq_clustering_prohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003785 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003785">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058152"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003780"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 120 h after egg-laying, adipohemocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120HL_seq_clustering_adipohemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003786 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003786">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003780"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 120 h after egg-laying, lamellocytes cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120HL_seq_clustering_lamellocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003787 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003787">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001690"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0003780"/>
+        <obo:IAO_0000115>Clustering analysis of circulating hemocytes from non-infested larvae at 120 h after egg-laying, crystal cells cluster</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003741</terms:source>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</bao:BAO_0002811>
+        <rdfs:label>scRNAseq_2020_Cho_NI120HL_seq_clustering_crystal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003791 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003791">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Single-cell RNA-seq study of pupal olfactory projection neurons</obo:IAO_0000115>
+        <terms:references>FlyBase:FBrf0237214</terms:references>
+        <rdfs:label>scRNAseq_2017_Li</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003792 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003792">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110194"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005349"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>GH146-labeled olfactory projection neurons from pupal brain</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003791</terms:source>
+        <rdfs:label>scRNAseq_2017_Li_GH146</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003795 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003795">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110194"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005349"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Alrm-labeled astrocytes from pupal brain</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003791</terms:source>
+        <rdfs:label>scRNAseq_2017_Li_ALRM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003798 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003798">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110194"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005349"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>91G04-labeled olfactory projection neurons of the DC2 glomerulus from pupal brain</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003791</terms:source>
+        <rdfs:label>scRNAseq_2017_Li_91G04</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003801 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003801">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110194"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005349"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Mz19-labeled olfactory projection neurons of the DA1, VA1d, and DC3 glomeruli from pupal brain</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003791</terms:source>
+        <rdfs:label>scRNAseq_2017_Li_MZ19</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0003804 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0003804">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110194"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005349"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:IAO_0000115>Trol-labeled olfactory projection neurons of the VM2 glomerulus from pupal brain</obo:IAO_0000115>
+        <terms:source>FlyBase:FBlc0003791</terms:source>
+        <rdfs:label>scRNAseq_2017_Li_TROL</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

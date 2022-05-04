@@ -18,9 +18,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBbt_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-04-26/imports/FBbt_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-05-04/imports/FBbt_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbbt/releases/2022-04-13/fbbt.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-26</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -426,12 +426,6 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
-    
-
-
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     
 
 
@@ -2564,6 +2558,53 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://flybase.org/reports/FBgn0030608 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0030608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <oboInOwl:hasExactSynonym>145098_at</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CG9057</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DmPLIN2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LSD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LSD-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LSD2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LSP-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lipid Storage Droplet 2 Gene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lipid Storage Droplet protein 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lipid storage droplet 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lipid storage droplet-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lipid-storage Droplet-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lsd2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PLIN2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Perilipin2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Plin2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dPlin2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dmPLIN2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lipid storage droplet 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lipid storage droplet-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lsd-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lsd2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>perilipin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>perilipin-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plin2</oboInOwl:hasExactSynonym>
+        <rdfs:label>Lsd-2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBgn0032422 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBgn0032422">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <oboInOwl:hasExactSynonym>Atilla</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CG6579</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>L1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>atilla</oboInOwl:hasExactSynonym>
+        <rdfs:label>atilla</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBgn0033367 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBgn0033367">
@@ -2894,6 +2935,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004856"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007003"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007010"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
         <obo:IAO_0000115>An individual member of the species Drosophila melanogaster.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CARO:0000012</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCBITaxon:7227</oboInOwl:hasDbXref>
@@ -3437,7 +3479,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Hemocyte of the embryo and larva. Relatively large, irregularly shaped hemocyte (Brehelin, 1982). At the end of the third instar larval stage, plasmatocytes contains numerous inclusions, digitations and pinocytotic vesicles, well developed rough endoplasmic reticulum, Golgi apparatus and small lysosome-like bodies. By the end of the third instar period they also contain numerous phagosomes. Plasmatocytes represent 90-95% of all mature larval hemocytes. They function in the removal of dead cells and microbial pathogens.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0037631</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0066479</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
@@ -3488,6 +3530,45 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005248"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0032422"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Hemocyte of the larva. Large, flat and regularly shaped hemocyte involved in the immune response of encapsulation. They contain short and narrow vesicles of rough endoplasmic reticulum, a well developed Golgi apparatus and some free ribosomes. Lamellocytes are not found in embryos and adults, and are rare in healthy larvae, although their differentiation can be induced by parasitoid wasp infection. Lamellocytes are involved in encapsulating and killing parasites. They differentiate both from the lymph gland and from the sessile hemocyte population. They express atilla (Cattenoz et al., 2020).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CL:0000396</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00001687</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:comment>Lamellocytes have been suggested to differentiate from plasmatocytes (Stofanko et al., 2010).</rdfs:comment>
+        <rdfs:label>lamellocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001687"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Hemocyte of the larva. Large, flat and regularly shaped hemocyte involved in the immune response of encapsulation. They contain short and narrow vesicles of rough endoplasmic reticulum, a well developed Golgi apparatus and some free ribosomes. Lamellocytes are not found in embryos and adults, and are rare in healthy larvae, although their differentiation can be induced by parasitoid wasp infection. Lamellocytes are involved in encapsulating and killing parasites. They differentiate both from the lymph gland and from the sessile hemocyte population. They express atilla (Cattenoz et al., 2020).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0031012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0037631</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0144807</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0207538</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0212461</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0245988</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00001689 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001689">
@@ -3516,7 +3597,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An immature crystal cell. These cells measure 8 to 9 micrometers in diameter and can be distinguished from prohemocytes by the lack of cytoplasmic processes and fewer ribosomes, rough endoplasmic reticulum, mitochondria and Golgi bodies (Shrestha and Gateff, 1982). They express lozenge, an early crystal cell marker (Honti et al., 2014).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0074444</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223115</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0228946</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -3563,7 +3644,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasDbXref>FlyBase:FBrf0037631</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0074444</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0085863</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0228946</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -3599,6 +3680,106 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <rdfs:label>larva</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001911 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001911">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005093"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005093"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Nervous system of the embryo/larva.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>FBbt:00005719</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>UBERON:6001911</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VFB:FBbt_00001911</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>larval nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00001911</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>embryonic/larval nervous system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001911"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Nervous system of the embryo/larva.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0045359</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0075072</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0105282</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00002952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00002952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The prepupa is the name given to the organism at the period of the life cycle that begins at puparium formation and ends when larval/pupal apolysis is complete, as indicated by the completion of imaginal head sac eversion and the expulsion of the oral armature of the larva. Duration at 25 degrees C is approximately 12 hours. It occurs 120-132.2 hours after egg laying, and is the period of 0-12.2 hours after puparium formation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON:0003142</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>PP</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbt:00002952</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>prepupa</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002952"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The prepupa is the name given to the organism at the period of the life cycle that begins at puparium formation and ends when larval/pupal apolysis is complete, as indicated by the completion of imaginal head sac eversion and the expulsion of the oral armature of the larva. Duration at 25 degrees C is approximately 12 hours. It occurs 120-132.2 hours after egg laying, and is the period of 0-12.2 hours after puparium formation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00002953 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00002953">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002952"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The pupa is the name given to the organism at the period of the life cycle that begins once larval/pupal apolysis is complete, as indicated by the expulsion of the larval armature. Early in this stage the legs and wings reach full extension along the abdomen. The stage ends when the pupal cuticle separates from the underlying epidermis (pupal/adult apolysis), and the eye cup becomes yellow at its periphery. The duration of this stage is approximately 32 hours at 25 degrees C, and spans from 132.2-164.3 hours after egg laying, or is the period of 12.2-44.3 hours after puparium formation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON:0003143</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>P</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbt:00002953</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>pupa</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002953"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The pupa is the name given to the organism at the period of the life cycle that begins once larval/pupal apolysis is complete, as indicated by the expulsion of the larval armature. Early in this stage the legs and wings reach full extension along the abdomen. The stage ends when the pupal cuticle separates from the underlying epidermis (pupal/adult apolysis), and the eye cup becomes yellow at its periphery. The duration of this stage is approximately 32 hours at 25 degrees C, and spans from 132.2-164.3 hours after egg laying, or is the period of 12.2-44.3 hours after puparium formation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3676,6 +3857,7 @@ For example, A and B may be gene products and binding of B by A positively regul
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007003"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
         <obo:IAO_0000115>A division of the whole organism into specialized systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000467</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -3728,7 +3910,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005060"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>General body cavity that surrounds all of the internal organs and is filled with hemolymph.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0075527</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0075527</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3756,7 +3938,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005061"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The plasma, or liquid part of the circulatory system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0075527</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0075527</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3784,7 +3966,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An immature hemocyte. It is highly basophilic, with a round to polygonal morphology and measures approximately 4 to 6 micrometers in diameter (Shrestha and Gateff, 1982). The nucleus is rich in nucleoli and is surrounded by a thin band of ribosome-rich cytoplasm (Shrestha and Gateff, 1982). In the larva, these cells can be found in the lymph gland primary lobe, or in circulation (Lanot et al., 2001).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0074444</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
@@ -3802,7 +3984,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>blast cell</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
@@ -3860,6 +4042,91 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004856"/>
+        <obo:IAO_0000115>All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON:0001016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VFB:FBbt_00005093</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00005093</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#expressionslim_flybase_ribbon"/>
+        <rdfs:label>nervous system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005093"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0166419</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Collective name for all the nerve centers and their connective in the insect&apos;s body. In the context of Drosophila refers to the part of the nervous system consisting of the brain and ventral ganglia.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON:0001017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VFB:FBbt_00005094</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>CNS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbt:00005094</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>central nervous system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005094"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Collective name for all the nerve centers and their connective in the insect&apos;s body. In the context of Drosophila refers to the part of the nervous system consisting of the brain and ventral ganglia.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0166419</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Anterodorsal portion of the central nervous system. The neuromeres considered to be part of the brain vary by stage. In the larva, the cerebral (supraesophageal) neuromeres, which form a bilateral pair of lobes, constitute the brain (Urbach and Technau, 2003; Li et al., 2014; Crews, 2019). During metamorphosis, the gnathal ganglion separates from the prothoracic neuromere and fuses with the supraesophageal ganglion, to become the ventral part of the adult brain (Ito et al., 2014; Hartenstein et al., 2018; Kendroud et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON:0000955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VFB:FBbt_00005095</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00005095</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>brain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005095"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anterodorsal portion of the central nervous system. The neuromeres considered to be part of the brain vary by stage. In the larva, the cerebral (supraesophageal) neuromeres, which form a bilateral pair of lobes, constitute the brain (Urbach and Technau, 2003; Li et al., 2014; Crews, 2019). During metamorphosis, the gnathal ganglion separates from the prothoracic neuromere and fuses with the supraesophageal ganglion, to become the ventral part of the adult brain (Ito et al., 2014; Hartenstein et al., 2018; Kendroud et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0161020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0224194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0225812</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237251</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0244240</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00005247 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005247">
@@ -3890,6 +4157,27 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0089570</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0167476</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005062"/>
+        <obo:IAO_0000115>An immature lamellocyte.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00005248</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:comment>Existence uncertain, may not differ from prohemocytes in general. This cell type is not mentioned in Lanot et al., 2001. These cells have been suggested to be part of the sessile hemocyte population (Markus et al., 2009).</rdfs:comment>
+        <rdfs:label>prolamellocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005248"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An immature lamellocyte.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0167476</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0207538</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4317,6 +4605,41 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005496">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00058148"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001664"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058148"/>
+        <obo:IAO_0000115>A hemocyte that is not freely circulating, but is attached to the inner surface of the integument or attached to the imaginal discs. Sessile hemocyte islets are segmentally distributed and often located near crystal cells or along the posterior region of the dorsal vessel, concentrated in 2 denser organ-like clusters. These islets contain plasmatocytes, crystal cells and lamellocyte precursors.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>sessile haemocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00005496</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:comment>The 2 denser areas of sessile hemocytes at abdominal segments A and A9 have been referred to as posterior hematopoietic tissue (PHT) (Kurucz et al., 2007).</rdfs:comment>
+        <rdfs:label>larval sessile hemocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005496"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A hemocyte that is not freely circulating, but is attached to the inner surface of the integument or attached to the imaginal discs. Sessile hemocyte islets are segmentally distributed and often located near crystal cells or along the posterior region of the dorsal vessel, concentrated in 2 denser organ-like clusters. These islets contain plasmatocytes, crystal cells and lamellocyte precursors.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0202807</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0207538</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00005541 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005541">
@@ -4366,6 +4689,33 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Asn/A TrMes</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005917 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005917">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001684"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001668"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Hemocyte that is produced in the lymph glands. These hemocytes are released into circulation at the end of third larval instar and at the onset of metamorphosis, and contribute to the pupal and adult hemocyte population.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CL:0000735</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>lymph gland derived haemocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00005917</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>lymph gland derived hemocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005917"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Hemocyte that is produced in the lymph glands. These hemocytes are released into circulation at the end of third larval instar and at the onset of metamorphosis, and contribute to the pupal and adult hemocyte population.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0162082</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4578,6 +4928,20 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedTarget>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CARO:MAH</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007330 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007330">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
+        <oboInOwl:created_by>david</oboInOwl:created_by>
+        <oboInOwl:creation_date>2008-12-12T07:22:29Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>UBERON:0011216</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00007330</oboInOwl:id>
+        <rdfs:label>organ system subdivision</rdfs:label>
+    </owl:Class>
     
 
 
@@ -4827,7 +5191,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058142"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Hemocyte that is freely circulating in the larval hemolymph, instead of being sequestered in the lymph gland or bound to the body wall. There are around 3000 to 5000 of such circulating hemocytes in the wandering L3 larva (Lanot et al., 2001; Honti et al., 2014).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223115</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -4855,7 +5219,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058145"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Phagocytic hemocyte. These cells represent about 90% of all hemocytes (Lanot et al., 2001). They are responsible for the engulfment of small particles, microbes and apoptotic tissues debris (Honti et al., 2014) and for the secretion of antimicrobial peptides and opsonins (Cattenoz et al., 2021). They also contribute to the production and secretion of proteins of the hemolymph, along with fat body cells (Cattenoz et al., 2021). They express Nimrod C1 (Kurucz et al., 2007).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0134542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0134542</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0195027</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223115</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0248467</oboInOwl:hasDbXref>
@@ -4898,6 +5262,34 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005063"/>
+        <obo:IAO_0000115>Hemocyte that is bound to a tissue of the larva or adult, instead of circulating in the hemolymph (Honti et al., 2014).</obo:IAO_0000115>
+        <oboInOwl:created_by>http://orcid.org/0000-0002-6095-8718</oboInOwl:created_by>
+        <oboInOwl:creation_date>2021-05-26T17:41:13Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>resident hemocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00058148</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>sessile hemocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058148"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Hemocyte that is bound to a tissue of the larva or adult, instead of circulating in the hemolymph (Honti et al., 2014).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0223115</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058148"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>resident hemocyte</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0244363</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00058149 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058149">
@@ -4936,6 +5328,76 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001685"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005496"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005917"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100311"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0030608"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Plasmatocyte of the larval lymph gland characterized by large lipid-containing droplets. It arises in the cortical zone of the primary lobe of the lymph gland in the late third instar larval stage. It expresses Lsd-2 (Cho et al., 2020.</obo:IAO_0000115>
+        <oboInOwl:created_by>http://orcid.org/0000-0002-6095-8718</oboInOwl:created_by>
+        <oboInOwl:creation_date>2021-05-27T11:11:09Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00058152</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>larval adipohemocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058152"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Plasmatocyte of the larval lymph gland characterized by large lipid-containing droplets. It arises in the cortical zone of the primary lobe of the lymph gland in the late third instar larval stage. It expresses Lsd-2 (Cho et al., 2020.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0246655</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001669"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Peripheral region of the primary lobes of the lymph gland, consisting of differentiated hemocytes that proliferate extensively (plasmatocytes) and procrystal and crystal cells.</obo:IAO_0000115>
+        <oboInOwl:created_by>djs93</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-10-29T03:36:37Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>CZ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cortical zone of anterior lymph gland pair</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00100311</oboInOwl:id>
+        <rdfs:label>cortical zone of lymph gland primary lobe</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100311"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Peripheral region of the primary lobes of the lymph gland, consisting of differentiated hemocytes that proliferate extensively (plasmatocytes) and procrystal and crystal cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0208762</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0228946</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100311"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CZ</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0194088</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00100313 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
@@ -4967,6 +5429,101 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:id>FBbt:00100318</oboInOwl:id>
         <rdfs:label>somatic cell</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110192">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005093"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002953"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005093"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002953"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Nervous system of the pupa.</obo:IAO_0000115>
+        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-01-04T10:01:28Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00110192</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00110192</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>pupal nervous system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110192"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Nervous system of the pupa.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:MMC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005094"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110192"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Central nervous system of the pupa.</obo:IAO_0000115>
+        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-01-04T10:01:28Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00110193</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00110193</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>pupal central nervous system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110193"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Central nervous system of the pupa.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:MMC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005095"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110193"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Brain of the pupa.</obo:IAO_0000115>
+        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-01-04T10:01:28Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00110194</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00110194</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>pupal brain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110194"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Brain of the pupa.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:MMC</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
