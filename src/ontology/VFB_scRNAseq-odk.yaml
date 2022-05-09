@@ -26,5 +26,6 @@ release_artefacts:
 - simple
 - non-classified
 - full
-report_fail_on: none
+robot_report:
+  fail_on: ERROR
 robot_java_args: ''
