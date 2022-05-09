@@ -3748,7 +3748,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002952"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The prepupa is the name given to the organism at the period of the life cycle that begins at puparium formation and ends when larval/pupal apolysis is complete, as indicated by the completion of imaginal head sac eversion and the expulsion of the oral armature of the larva. Duration at 25 degrees C is approximately 12 hours. It occurs 120-132.2 hours after egg laying, and is the period of 0-12.2 hours after puparium formation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3777,7 +3777,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002953"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The pupa is the name given to the organism at the period of the life cycle that begins once larval/pupal apolysis is complete, as indicated by the expulsion of the larval armature. Early in this stage the legs and wings reach full extension along the abdomen. The stage ends when the pupal cuticle separates from the underlying epidermis (pupal/adult apolysis), and the eye cup becomes yellow at its periphery. The duration of this stage is approximately 32 hours at 25 degrees C, and spans from 132.2-164.3 hours after egg laying, or is the period of 12.2-44.3 hours after puparium formation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0036849</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0048355</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3910,7 +3910,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005060"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>General body cavity that surrounds all of the internal organs and is filled with hemolymph.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0075527</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0075527</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3938,7 +3938,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005061"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The plasma, or liquid part of the circulatory system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0075527</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0075527</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4120,7 +4120,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasDbXref>FlyBase:FBrf0161020</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0224194</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0225812</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0237251</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0237251</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0237252</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244240</oboInOwl:hasDbXref>
     </owl:Axiom>
