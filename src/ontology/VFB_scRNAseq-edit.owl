@@ -17,10 +17,6 @@ Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosoph
 Annotation(<http://purl.org/dc/elements/1.1/title> "VFB scRNAseq Ontology"^^xsd:string)
 Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)
 
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00001687>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058152>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110194>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBdv_00005349>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003728>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003729>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003732>))
