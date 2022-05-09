@@ -1,6 +1,6 @@
 import pandas as pd
 
-expression_cutoff = 0.9
+expression_cutoff = 0.5
 
 full_expresssion_data = pd.read_csv("tmp/expression_data.tsv", sep='\t')
 clusters = set(full_expresssion_data['id'])
