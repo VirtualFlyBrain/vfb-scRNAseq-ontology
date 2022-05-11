@@ -50,7 +50,7 @@ $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
 	$(LINKML) $< -o $@
 
 .PHONY: update_ontology
-update_ontology: get_FB_data $(EXPRESSION_OFNS) install_linkml $(COMPONENTSDIR)
+update_ontology: get_FB_data install_linkml $(EXPRESSION_OFNS) $(COMPONENTSDIR)
 	$(LINKML) $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
 	$(LINKML) $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
 	$(LINKML) $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\
