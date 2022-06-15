@@ -3,7 +3,6 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-# additionally remove _terms_combined files
 .PHONY: prepare_release
 prepare_release: all
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
@@ -13,30 +12,29 @@ prepare_release: all
 
 EXPDIR = expression_data
 LINKML = linkml-data2owl -s VFB_scRNAseq_schema.yaml
-EXPRESSION_TSVS = $(wildcard $(EXPDIR)/*.tsv)
-EXPRESSION_OFNS = $(EXPRESSION_TSVS:.tsv=.ofn)
+NEW_EXPRESSION_TSVS = $(wildcard $(EXPDIR)/*.tsv)
+NEW_EXPRESSION_OFNS = $(NEW_EXPRESSION_TSVS:.tsv=.ofn)
 
 
 .PHONY: get_FB_data
-get_FB_data: $(EXPDIR)
-	# clear any existing cluster expression files
-	rm -f $(EXPDIR)/*.tsv $(EXPDIR)/*.ofn
+get_FB_data: $(EXPDIR) $(TMPDIR)/existing_clusters.txt
 	# get scRNAseq data from public chado
+	apt-get update
 	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/dataset_data.tsv
+	| sed '1 s/type/@type/' > $(TMPDIR)/raw_dataset_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/sample_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/sample_data.tsv
+	| sed '1 s/type/@type/' > $(TMPDIR)/raw_sample_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/cluster_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/cluster_data.tsv
+	| sed '1 s/type/@type/' > $(TMPDIR)/raw_cluster_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/expression_data.tsv
-	# split expression data into tsvs for each cluster and filter by extent
-	python3 $(SCRIPTSDIR)/expression_by_cluster.py
+	| sed '1 s/type/@type/' > $(TMPDIR)/raw_expression_data.tsv
+	# split expression data into tsvs for new clusters and filter by extent
+	python3 $(SCRIPTSDIR)/process_expression_data.py
 
 .DEFAULT:
 	echo $@
-	# Empty recipe for anything that doesn't have a recipe
+	# Default recipe for anything that doesn't have a recipe
 	# Stops make complaining that no recipe exists for tsvs
 
 .PHONY: install_linkml
@@ -46,11 +44,14 @@ install_linkml:
 $(EXPDIR):
 	mkdir -p $@
 
+$(TMPDIR)/existing_clusters.txt: $(EXPDIR)
+	find $(EXPDIR) -iname '*.ofn' | xargs basename -s .ofn > $@
+
 $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
-	$(LINKML) $< -o $@
+	$(LINKML) $< -o $@ && rm $<
 
 .PHONY: update_ontology
-update_ontology: get_FB_data install_linkml $(EXPRESSION_OFNS) $(COMPONENTSDIR)
+update_ontology: install_linkml $(NEW_EXPRESSION_OFNS) $(COMPONENTSDIR)
 	$(LINKML) $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
 	$(LINKML) $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
 	$(LINKML) $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\
@@ -61,7 +62,7 @@ update_ontology: get_FB_data install_linkml $(EXPRESSION_OFNS) $(COMPONENTSDIR)
 	--input $(TMPDIR)/cluster_data.ofn \
 	--include-annotations true --collapse-import-closure false \
 	convert --format ofn \
-	-o VFB_scRNAseq-edit.owl \
+	-o VFB_scRNAseq-edit.owl
 	# Make expression import
 	$(ROBOT) merge --inputs "$(EXPDIR)/*.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
