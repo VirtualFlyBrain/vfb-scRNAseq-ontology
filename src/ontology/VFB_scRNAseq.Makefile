@@ -47,8 +47,11 @@ install_linkml:
 $(EXPDIR):
 	mkdir -p $@
 
-$(TMPDIR)/existing_clusters.txt: $(EXPDIR)
-	find $(EXPDIR) -iname '*.ofn' | xargs basename -s .ofn > $@
+$(TMPDIR)/existing_clusters.txt:
+	$(ROBOT) query --input VFB_scRNAseq-edit.owl \
+  --query ../sparql/existing_clusters.sparql $(TMPDIR)/existing_clusters.csv &&\
+	grep -oE 'FBlc[0-9]+' $(TMPDIR)/existing_clusters.csv > $@ &&\
+	rm $(TMPDIR)/existing_clusters.csv
 
 $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
 	$(LINKML) $< -o $@ && rm $<
@@ -67,7 +70,7 @@ update_ontology: install_linkml process_FB_data $(NEW_EXPRESSION_OFNS) $(COMPONE
 	convert --format ofn \
 	-o VFB_scRNAseq-edit.owl
 	# Make expression import
-	$(ROBOT) merge --inputs "$(EXPDIR)/*.ofn" \
+	$(ROBOT) merge --input $(COMPONENTSDIR)/expression_data.owl --inputs "$(EXPDIR)/*.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
 	convert --format ofn -o $(COMPONENTSDIR)/expression_data.owl &&\
 	echo "\nOntology source file updated!\n"
