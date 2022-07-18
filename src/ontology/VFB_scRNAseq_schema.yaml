@@ -18,6 +18,7 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   dcterms: http://purl.org/dc/terms/
   neo: http://n2o.neo/custom/
+  vfb: http://virtualflybrain.org/reports/
 default_curi_maps:
     - semweb_context
 default_range: string
@@ -51,6 +52,15 @@ classes:
         range: uriorcurie
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
+      site:
+        slot_uri: oboInOwl:hasDbXref
+        description: VFB site node curie. The site must be created in VFB and added to the dictionary in ../scripts/process_site_data.py to successfully map from FB data.
+        range: uriorcurie
+        annotations:
+          owl.fstring: AnnotationAssertion( Annotation ( neo:accession {accession} ) oboInOwl:hasDbXref {id} {V})
+      accession:
+        slot_uri: neo:accession
+        description: Accession of the Dataset at the given Site.
 
   Sample:
     is_a: Class
