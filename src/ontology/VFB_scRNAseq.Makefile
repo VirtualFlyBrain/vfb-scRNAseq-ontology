@@ -18,7 +18,6 @@ NEW_EXPRESSION_OFNS = $(NEW_EXPRESSION_TSVS:.tsv=.ofn)
 
 .PHONY: get_FB_data
 get_FB_data: $(EXPDIR) $(TMPDIR)/existing_clusters.txt
-	# get scRNAseq data from public chado
 	apt-get update
 	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
@@ -29,8 +28,12 @@ get_FB_data: $(EXPDIR) $(TMPDIR)/existing_clusters.txt
 	| sed '1 s/type/@type/' > $(TMPDIR)/raw_cluster_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql \
 	| sed '1 s/type/@type/' > $(TMPDIR)/raw_expression_data.tsv
+
+.PHONY: process_FB_data
+process_FB_data: get_FB_data
 	# split expression data into tsvs for new clusters and filter by extent
 	python3 $(SCRIPTSDIR)/process_expression_data.py
+	python3 $(SCRIPTSDIR)/process_site_data.py
 
 .DEFAULT:
 	echo $@
@@ -51,7 +54,7 @@ $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
 	$(LINKML) $< -o $@ && rm $<
 
 .PHONY: update_ontology
-update_ontology: install_linkml $(NEW_EXPRESSION_OFNS) $(COMPONENTSDIR)
+update_ontology: install_linkml process_FB_data $(NEW_EXPRESSION_OFNS) $(COMPONENTSDIR)
 	$(LINKML) $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
 	$(LINKML) $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
 	$(LINKML) $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\

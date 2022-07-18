@@ -36,6 +36,7 @@ for chunk in expression_reader:
 
 # make a a tsv for each new cluster
 clusters = expression_data['id'].unique()
+print(str(len(clusters)) + ' new clusters')
 for c in clusters:
     cluster_data = expression_data[expression_data['id']==c]
     cluster_id = c.replace("FlyBase:", "")
