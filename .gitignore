@@ -39,3 +39,10 @@ src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
+
+VFB_scRNAseq-base.owl
+VFB_scRNAseq-full.owl
+VFB_scRNAseq-non-classified.owl
+VFB_scRNAseq-simple.owl
+VFB_scRNAseq.owl
+src/ontology/components/expression_data.owl
