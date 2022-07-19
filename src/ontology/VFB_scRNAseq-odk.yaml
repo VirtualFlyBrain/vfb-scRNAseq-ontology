@@ -28,3 +28,4 @@ release_artefacts:
   - full
 allow_equivalents: none
 release_date: TRUE
+gzip_main: TRUE

@@ -73,6 +73,7 @@ update_ontology: install_linkml process_FB_data $(NEW_EXPRESSION_OFNS) $(COMPONE
 	$(ROBOT) merge --input $(COMPONENTSDIR)/expression_data.owl --inputs "$(EXPDIR)/*.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
 	convert --format ofn -o $(COMPONENTSDIR)/expression_data.owl &&\
+	gzip -c $(COMPONENTSDIR)/expression_data.owl > $(COMPONENTSDIR)/expression_data.owl.gz &&\
 	echo "\nOntology source file updated!\n"
 
 # add VFB iri

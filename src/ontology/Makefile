@@ -86,7 +86,7 @@ $(TMPDIR) $(REPORTDIR) $(MIRRORDIR) $(IMPORTDIR) $(COMPONENTSDIR) $(SUBSETDIR):
 # ----------------------------------------
 
 MAIN_PRODUCTS = $(sort $(foreach r,$(RELEASE_ARTEFACTS), $(r)) $(ONT))
-MAIN_GZIPPED  = 
+MAIN_GZIPPED  = $(foreach f,$(FORMATS), $(ONT).$(f).gz)
 MAIN_FILES    = $(foreach n,$(MAIN_PRODUCTS), $(foreach f,$(FORMATS), $(n).$(f))) $(MAIN_GZIPPED)
 SRCMERGED     = $(TMPDIR)/merged-$(SRC)
 
@@ -415,6 +415,8 @@ $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	touch $(ONTOLOGYTERMS) && \
 	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/VFB_scRNAseq_terms.sparql $@
 
+$(ONT).owl.gz: $(ONT).owl
+	gzip -c $< > $@.tmp && mv $@.tmp $@
 # base: OTHER sources of interest, such as definitions owl
 $(ONT)-base.owl: $(SRC) $(OTHER_SRC)
 	$(ROBOT) remove --input $< --select imports --trim false \
