@@ -1,31 +1,31 @@
 id: VFB_scRNAseq
-title: VFB scRNAseq Ontology
+title: "VFB scRNAseq Ontology"
 github_org: VirtualFlyBrain
 repo: vfb-scRNAseq-ontology
-description: Ontology containing scRNAseq data from FlyBase to be loaded into VFB.
+robot_report:
+  custom_profile: TRUE
+  fail_on: ERROR
+robot_java_args: '-Xmx14G'
 use_dosdps: FALSE
 edit_format: owl
 export_formats:
-- owl
-gzip_main: false
+  - owl
 import_group:
-  directory: imports/
   products:
-  - id: FBcv
-  - id: FBbt
-  - id: FBdv
-  - id: ro
-  - id: obi
-    module_type: minimal
-namespaces:
-- http://flybase.org/reports/
-reasoner: ELK
+    - id: FBcv
+    - id: FBbt
+    - id: FBdv
+    - id: ro
+    - id: obi
+      module_type: minimal
+namespaces: 
+  - http://flybase.org/reports/
 primary_release: full
 release_artefacts:
-- base
-- simple
-- non-classified
-- full
-robot_report:
-  fail_on: ERROR
-robot_java_args: ''
+  - base
+  - simple
+  - non-classified
+  - full
+allow_equivalents: none
+release_date: TRUE
+gzip_main: TRUE
