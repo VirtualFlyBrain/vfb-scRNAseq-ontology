@@ -4,7 +4,7 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: prepare_release
-prepare_release: all
+prepare_release: all $(REPORTDIR)/FBgn_list.txt
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
 	rm -f $(IMPORTDIR)/*_terms_combined.txt &&\
@@ -81,3 +81,6 @@ $(ONT).owl: $(ONT)-full.owl
 	grep -v owl:versionIRI $< > $@.tmp.owl
 	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfb_scRNAseq.owl \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+
+$(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt
+	grep -oE "FBgn[0-9]+" $< > $@
