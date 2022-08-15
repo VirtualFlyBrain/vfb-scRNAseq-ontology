@@ -1,7 +1,4 @@
-# get data from FlyBase
-sh run.sh make get_FB_data -B
-
-# update edit file
+# update edit file (includes getting new FB data)
 sh run.sh make update_ontology -B
 
 # run release
