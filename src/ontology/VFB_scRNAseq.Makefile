@@ -48,7 +48,7 @@ $(EXPDIR):
 	mkdir -p $@
 
 $(TMPDIR)/existing_clusters.txt:
-	$(ROBOT) query --input VFB_scRNAseq-edit.owl \
+	$(ROBOT) query --input $(SRC) \
   --query ../sparql/existing_clusters.sparql $(TMPDIR)/existing_clusters.csv &&\
 	grep -oE 'FBlc[0-9]+' $(TMPDIR)/existing_clusters.csv > $@ &&\
 	rm $(TMPDIR)/existing_clusters.csv
@@ -60,15 +60,20 @@ $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
 update_ontology: install_linkml process_FB_data $(NEW_EXPRESSION_OFNS) $(COMPONENTSDIR)
 	$(LINKML) $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
 	$(LINKML) $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
-	$(LINKML) $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\
+	$(LINKML) $(TMPDIR)/new_cluster_data.tsv -o $(TMPDIR)/new_cluster_data.ofn &&\
+	$(ROBOT) merge \
+	--input cluster_data.ofn \
+	--input $(TMPDIR)/new_cluster_data.ofn \
+	convert --format ofn \
+	-o cluster_data.ofn &&\
 	$(ROBOT) merge \
 	--input VFB_scRNAseq-annotations.ofn \
 	--input $(TMPDIR)/dataset_data.ofn \
 	--input $(TMPDIR)/sample_data.ofn \
-	--input $(TMPDIR)/cluster_data.ofn \
+	--input cluster_data.ofn \
 	--include-annotations true --collapse-import-closure false \
 	convert --format ofn \
-	-o VFB_scRNAseq-edit.owl
+	-o $(SRC)
 	# Make expression import
 	$(ROBOT) merge --input $(COMPONENTSDIR)/expression_data.owl --inputs "$(EXPDIR)/*.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
@@ -83,4 +88,4 @@ $(ONT).owl: $(ONT)-full.owl
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
 $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt
-	grep -oE "FBgn[0-9]+" $< > $@
+	grep -oE "FBgn[0-9]+" $< | sort | uniq > $@
