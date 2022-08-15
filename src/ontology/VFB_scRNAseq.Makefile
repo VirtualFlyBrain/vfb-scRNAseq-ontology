@@ -48,7 +48,7 @@ $(EXPDIR):
 	mkdir -p $@
 
 $(TMPDIR)/existing_clusters.txt:
-	$(ROBOT) query --input VFB_scRNAseq-edit.owl \
+	$(ROBOT) query --input $(SRC) \
   --query ../sparql/existing_clusters.sparql $(TMPDIR)/existing_clusters.csv &&\
 	grep -oE 'FBlc[0-9]+' $(TMPDIR)/existing_clusters.csv > $@ &&\
 	rm $(TMPDIR)/existing_clusters.csv
@@ -83,4 +83,4 @@ $(ONT).owl: $(ONT)-full.owl
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
 $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt
-	grep -oE "FBgn[0-9]+" $< > $@
+	grep -oE "FBgn[0-9]+" $< | sort | uniq > $@
