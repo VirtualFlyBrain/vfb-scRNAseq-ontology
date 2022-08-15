@@ -17,9 +17,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-07-19/imports/FBcv_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-06-09/fbcv.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-19</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-08-15/imports/FBcv_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-08-11/fbcv.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -282,6 +282,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -2422,8 +2428,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000013"/>
         <obo:IAO_0000115>Term that describes a dataset.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>FlyBase miscellaneous CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003021</oboInOwl:id>
         <rdfs:label>dataset descriptor</rdfs:label>
@@ -2442,8 +2448,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003021"/>
         <obo:IAO_0000115>Term that specifies the dataset component type.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>dataset_entity_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003022</oboInOwl:id>
         <rdfs:label>dataset entity type</rdfs:label>
@@ -2462,8 +2468,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003022"/>
         <obo:IAO_0000115>A set of biological data from a single study. Corresponds to the NCBI bioproject, GEO series or SRA study.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>dataset_entity_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003023</oboInOwl:id>
         <rdfs:label>project</rdfs:label>
@@ -2482,8 +2488,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003022"/>
         <obo:IAO_0000115>Biological source material characterized by an experiment.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>dataset_entity_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003024</oboInOwl:id>
         <rdfs:label>biosample</rdfs:label>
@@ -2502,8 +2508,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003021"/>
         <obo:IAO_0000115>The data type content of a dataset.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>FlyBase miscellaneous CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003028</oboInOwl:id>
         <rdfs:label>dataset data type</rdfs:label>
@@ -2522,8 +2528,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003028"/>
         <obo:IAO_0000115>The type of assay as characterized by its data content.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>assay_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003050</oboInOwl:id>
         <rdfs:label>assay type</rdfs:label>
@@ -2542,8 +2548,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003050"/>
         <obo:IAO_0000115>A quantitative method for mapping transcribed regions, in which complementary DNA fragments are subjected to high-throughput sequencing.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>assay_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003068</oboInOwl:id>
         <rdfs:label>RNA-Seq</rdfs:label>
@@ -2562,8 +2568,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003028"/>
         <obo:IAO_0000115>The type of result as characterized by its data content.</obo:IAO_0000115>
-        <oboInOwl:created_by>mmc46</oboInOwl:created_by>
-        <oboInOwl:creation_date>2016-02-24T19:19:21Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
         <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003082</oboInOwl:id>
         <rdfs:label>result type</rdfs:label>
@@ -2582,8 +2588,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003068"/>
         <obo:IAO_0000115>A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single cells are subjected to high-throughput sequencing and mapping to a reference genome.</obo:IAO_0000115>
-        <oboInOwl:created_by>http://orcid.org/0000-0002-6095-8718</oboInOwl:created_by>
-        <oboInOwl:creation_date>2021-07-26T12:18:07Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:18:07Z</terms:date>
         <oboInOwl:hasDbXref>OBI:0002631</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>scRNA-Seq</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>single-cell RNA sequencing assay</oboInOwl:hasExactSynonym>
@@ -2611,8 +2617,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
         <obo:IAO_0000115>A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single nuclei are subjected to high-throughput sequencing and mapping to a reference genome.</obo:IAO_0000115>
-        <oboInOwl:created_by>http://orcid.org/0000-0002-6095-8718</oboInOwl:created_by>
-        <oboInOwl:creation_date>2021-07-26T12:19:45Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:19:45Z</terms:date>
         <oboInOwl:hasExactSynonym>single-nucleus RNA sequencing assay</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>snRNA-Seq</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>assay_type</oboInOwl:hasOBONamespace>
@@ -2639,8 +2645,8 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003082"/>
         <obo:IAO_0000115>A result that represents a population of cells sharing a similar transcriptional profile.</obo:IAO_0000115>
-        <oboInOwl:created_by>http://orcid.org/0000-0002-6095-8718</oboInOwl:created_by>
-        <oboInOwl:creation_date>2021-07-26T12:22:16Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:22:16Z</terms:date>
         <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0009003</oboInOwl:id>
         <rdfs:label>transcriptional cell cluster</rdfs:label>
