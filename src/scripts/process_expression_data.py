@@ -9,19 +9,21 @@ dataset_data = pd.read_csv('tmp/raw_dataset_data.tsv', sep='\t')
 excluded_datasets = pd.read_csv('excluded_datasets.tsv', sep='\t')
 excluded_clusters = list(cluster_data[cluster_data['associated_dataset'].isin(excluded_datasets['id'])]['id'])
 
-cluster_data = cluster_data[~cluster_data['associated_dataset'].isin(excluded_datasets['id'])]
-cluster_data.to_csv('tmp/cluster_data.tsv', sep='\t', index=False)
 sample_data = sample_data[~sample_data['associated_dataset'].isin(excluded_datasets['id'])]
 sample_data.to_csv('tmp/sample_data.tsv', sep='\t', index=False)
 dataset_data = dataset_data[~dataset_data['id'].isin(excluded_datasets['id'])]
 dataset_data.to_csv('tmp/dataset_data.tsv', sep='\t', index=False)
 
-# add existing clusters (ofn already exists) to exclusion list
+# existing clusters to exclusion list
 existing_clusters = []
 with open('tmp/existing_clusters.txt', 'r') as file:
     for line in file:
         existing_clusters.append("FlyBase:" + line.rstrip())
 excluded_clusters.extend(existing_clusters)
+
+cluster_data = cluster_data[~cluster_data['associated_dataset'].isin(excluded_datasets['id'])]
+cluster_data = cluster_data[~cluster_data['id'].isin(excluded_clusters)]
+cluster_data.to_csv('tmp/new_cluster_data.tsv', sep='\t', index=False)
 
 # get headers from expression_data file
 expression_data = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', nrows=0)
