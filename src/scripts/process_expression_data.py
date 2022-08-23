@@ -10,6 +10,7 @@ excluded_datasets = pd.read_csv('excluded_datasets.tsv', sep='\t')
 excluded_clusters = list(cluster_data[cluster_data['associated_dataset'].isin(excluded_datasets['id'])]['id'])
 
 sample_data = sample_data[~sample_data['associated_dataset'].isin(excluded_datasets['id'])]
+sample_data['associated_dataset'] = sample_data['associated_dataset'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
 sample_data.to_csv('tmp/sample_data.tsv', sep='\t', index=False)
 dataset_data = dataset_data[~dataset_data['id'].isin(excluded_datasets['id'])]
 dataset_data.to_csv('tmp/dataset_data.tsv', sep='\t', index=False)
@@ -23,6 +24,7 @@ excluded_clusters.extend(existing_clusters)
 
 cluster_data = cluster_data[~cluster_data['associated_dataset'].isin(excluded_datasets['id'])]
 cluster_data = cluster_data[~cluster_data['id'].isin(excluded_clusters)]
+cluster_data['associated_dataset'] = cluster_data['associated_dataset'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
 cluster_data.to_csv('tmp/new_cluster_data.tsv', sep='\t', index=False)
 
 # get headers from expression_data file
