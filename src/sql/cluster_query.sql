@@ -1,6 +1,4 @@
---Query for "Sample" (aka "biosample")
---Note - If many tissues or stages are associated with a sample, this query returns one line for each distinct tissue/sex/stage term combination.
---Note - Should still return a sample if tissue, sex or stage are missing (with NULL value for that field).
+--Query for "Cluster" (aka "transcriptional cell cluster")
 COPY (SELECT DISTINCT
     'Cluster' as type,
     'FlyBase:'||l.uniquename as id,
@@ -8,7 +6,7 @@ COPY (SELECT DISTINCT
     s.name as title,
     db_stage.name||':'||dbx_stage.accession as stage,
     'FlyBase:'||p.uniquename as associated_dataset,
-    'FlyBase:'||bs.uniquename as associated_sample,
+    'FlyBase:'||r.uniquename as associated_clustering,
     db_cell_type.name||':'||dbx_cell_type.accession as cell_type,
     lp.value as cell_number
 FROM library l
@@ -21,8 +19,6 @@ JOIN library_relationship lr1 ON (lr1.subject_id = l.library_id AND lr1.type_id 
 JOIN library r ON (r.library_id = lr1.object_id AND r.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'result'))
 JOIN library_relationship lr2 ON (lr2.subject_id = r.library_id AND lr2.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'belongs_to'))
 JOIN library p ON (p.library_id = lr2.object_id AND p.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'project'))
-JOIN library_relationship lr3 ON (lr3.subject_id = r.library_id AND lr3.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'derived_analysis_of'))
-JOIN library bs ON (bs.library_id = lr3.object_id AND bs.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'biosample'))
 LEFT OUTER JOIN library_cvterm lcvt1 ON (lcvt1.library_id = l.library_id AND lcvt1.cvterm_id in (SELECT DISTINCT cvterm_id FROM cvterm WHERE cv_id = (SELECT cv_id FROM cv WHERE name = 'FlyBase development CV')))
 LEFT OUTER JOIN cvterm stage ON stage.cvterm_id = lcvt1.cvterm_id
 LEFT OUTER JOIN library_cvtermprop lcvtp1 ON (lcvtp1.library_cvterm_id = lcvt1.library_cvterm_id AND lcvtp1.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'derived_stage'))
