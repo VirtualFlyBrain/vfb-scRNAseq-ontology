@@ -10,6 +10,9 @@ use_dosdps: FALSE
 edit_format: owl
 export_formats:
   - owl
+components:
+  products:
+    - filename: expression_data.owl
 import_group:
   products:
     - id: FBcv
