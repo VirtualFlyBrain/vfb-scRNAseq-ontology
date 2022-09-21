@@ -81,6 +81,22 @@ classes:
       - associated_dataset
       - sex
 
+  Clustering:
+    is_a: Class
+    class_uri: FBcv:0009002
+    annotations:
+      owl: NamedIndividual
+      owl.fstring: ClassAssertion( FBcv:0009002 {id} )
+    attributes:
+      associated_sample:
+        slot_uri: BFO:0000051
+        description: Sample (FBlc ID) that the Clustering uses.
+        range: uriorcurie
+        annotations:
+          owl: ObjectPropertyAssertion
+    slots:
+      - associated_dataset
+
   Cluster:
     is_a: Class
     class_uri: FBcv:0009003
@@ -88,7 +104,7 @@ classes:
       owl: NamedIndividual
       owl.fstring: ClassAssertion( FBcv:0009003 {id} )
     attributes:
-      associated_sample:
+      associated_clustering:
         slot_uri: BFO:0000050
         description: Sample (FBlc ID) that the Cluster belongs to.
         range: uriorcurie
