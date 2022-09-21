@@ -20,7 +20,7 @@ if not args.refresh:
 
 def filter_and_format(data_type, data, exclusion_list, existing_list):
     """
-    Remove excluded and existing entities and reformat FB IDs.
+    Remove excluded and existing (if not 'refresh'-ing) entities and reformat FB IDs.
     Also returns list of entities with an 'associated_dataset' on the exclusion list
     data is a DataFrame with an 'id' column and optional 'associated_dataset' column.
     exclusion_list and existing_list are lists.
@@ -30,7 +30,7 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
     new_exclusions = []
     if 'associated_dataset' in data.columns:
         new_exclusions = list(data[data['associated_dataset'].isin(exclusion_list)]['id'])
-        data = data[~data['associated_dataset'].isin(ignore_list)]
+        data = data[~data['associated_dataset'].isin(exclusion_list)]
         data['associated_dataset'] = data['associated_dataset'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
     
     data.to_csv('tmp/%s_data.tsv' % data_type, sep='\t', index=False)
