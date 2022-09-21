@@ -17,9 +17,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-08-15/imports/FBcv_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-09-21/imports/FBcv_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-08-11/fbcv.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2583,6 +2583,26 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003082"/>
+        <obo:IAO_0000115>A result that is produced from the detailed examination of data to come to some conclusion.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</terms:date>
+        <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0003108</oboInOwl:id>
+        <rdfs:label>analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003108"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A result that is produced from the detailed examination of data to come to some conclusion.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:GD</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBcv_0009000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000">
@@ -2636,6 +2656,26 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>snRNA-Seq</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32405060</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003108"/>
+        <obo:IAO_0000115>A result that groups individual cells into populations sharing a similar transcriptional profile.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:21:05Z</terms:date>
+        <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBcv:0009002</oboInOwl:id>
+        <rdfs:label>cell clustering analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A result that groups individual cells into populations sharing a similar transcriptional profile.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:28821273</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

@@ -33,6 +33,8 @@ WARN	duplicate_definition	scRNAseq_2022_FCA_FEMALE_OVARY_seq_clustering_escort_c
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_OVARY_seq_clustering_escort_cells	IAO:0000115	Clustering analysis of cells from 5-days old ovaries, escort cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_FEMALE_OVARY_seq_clustering_dorsal_appendage_forming_follicle_cells	IAO:0000115	Clustering analysis of cells from 5-days old ovaries, dorsal appendage forming follicle cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_OVARY_seq_clustering_dorsal_appendage_forming_follicle_cells	IAO:0000115	Clustering analysis of cells from 5-days old ovaries, dorsal appendage forming follicle cells cluster
+WARN	duplicate_definition	scRNAseq_2022_FCA_FEMALE_OVARY_seq_clustering	IAO:0000115	Clustering analysis of cells from 5-days old ovaries
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_OVARY_seq_clustering	IAO:0000115	Clustering analysis of cells from 5-days old ovaries
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_GUT_seq_clustering_semen-secreting_cells	IAO:0000115	Clustering analysis of cells from 5-days old guts, semen-secreting cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_GUT_seq_clustering_semen-secreting_cells	IAO:0000115	Clustering analysis of cells from 5-days old guts, semen-secreting cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_GUT_seq_clustering_proventriculus_epithelial_cells	IAO:0000115	Clustering analysis of cells from 5-days old guts, proventriculus epithelial cells cluster
@@ -53,6 +55,8 @@ WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_GUT_seq_clustering_copper_cells
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_GUT_seq_clustering_copper_cells	IAO:0000115	Clustering analysis of cells from 5-days old guts, copper cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_GUT_seq_clustering_anterior_midgut_enterocytes	IAO:0000115	Clustering analysis of cells from 5-days old guts, anterior midgut enterocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_GUT_seq_clustering_anterior_midgut_enterocytes	IAO:0000115	Clustering analysis of cells from 5-days old guts, anterior midgut enterocytes cluster
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_GUT_seq_clustering	IAO:0000115	Clustering analysis of cells from 5-days old guts
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_GUT_seq_clustering	IAO:0000115	Clustering analysis of cells from 5-days old guts
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_HEART_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_HEART_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_HEART_seq_clustering_specialized_Malpighian_tubule_cells	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels, specialized Malpighian tubule cells cluster
@@ -79,6 +83,8 @@ WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_HEART_seq_clustering_cardial_ce
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_HEART_seq_clustering_cardial_cells	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels, cardial cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_HEART_seq_clustering_abdominal_pericardial_cells	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels, abdominal pericardial cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_HEART_seq_clustering_abdominal_pericardial_cells	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels, abdominal pericardial cells cluster
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_HEART_seq_clustering	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_HEART_seq_clustering	IAO:0000115	Clustering analysis of cells from 5-days old dorsal vessels
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_REPRO_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_REPRO_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_REPRO_seq_clustering_testis_sheath_muscle_cells	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands, testis sheath muscle cells cluster
@@ -103,6 +109,8 @@ WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_REPRO_seq_clustering_ejaculator
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_REPRO_seq_clustering_ejaculatory_duct_epithelial_cells	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands, ejaculatory duct epithelial cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_REPRO_seq_clustering_ejaculatory_bulb_epithelial_cells	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands, ejaculatory bulb epithelial cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_REPRO_seq_clustering_ejaculatory_bulb_epithelial_cells	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands, ejaculatory bulb epithelial cells cluster
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_REPRO_seq_clustering	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_REPRO_seq_clustering	IAO:0000115	Clustering analysis of cells from 2-days old male reproductive glands
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_TESTIS_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 1-day old testes, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_TESTIS_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 1-day old testes, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_TESTIS_seq_clustering_testis_sheath_epithelial_cells	IAO:0000115	Clustering analysis of cells from 1-day old testes, testis sheath epithelial cells cluster
@@ -147,6 +155,8 @@ WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_TESTIS_seq_clustering_early_elo
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_TESTIS_seq_clustering_early_elongation_stage_spermatids	IAO:0000115	Clustering analysis of cells from 1-day old testes, early elongation stage spermatids cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_TESTIS_seq_clustering_cyst_progenitor_cells	IAO:0000115	Clustering analysis of cells from 1-day old testes, cyst progenitor cells cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_TESTIS_seq_clustering_cyst_progenitor_cells	IAO:0000115	Clustering analysis of cells from 1-day old testes, cyst progenitor cells cluster
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_TESTIS_seq_clustering	IAO:0000115	Clustering analysis of cells from 1-day old testes
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_TESTIS_seq_clustering	IAO:0000115	Clustering analysis of cells from 1-day old testes
 WARN	duplicate_definition	scRNAseq_2022_FCA_FEMALE_OVARY	IAO:0000115	Cells from 5-days old ovaries
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_OVARY	IAO:0000115	Cells from 5-days old ovaries
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_GUT	IAO:0000115	Cells from 5-days old guts
