@@ -1,31 +1,28 @@
 import pandas as pd
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-r", "--refresh", help="refresh all experiment metadata",
+                    action="store_true")
+args = parser.parse_args()
 
 expression_cutoff = 0.5
 
-# remove excluded datasets
-cluster_data = pd.read_csv('tmp/raw_cluster_data.tsv', sep='\t')
-sample_data = pd.read_csv('tmp/raw_sample_data.tsv', sep='\t')
-dataset_data = pd.read_csv('tmp/raw_dataset_data.tsv', sep='\t')
-excluded_datasets = pd.read_csv('excluded_datasets.tsv', sep='\t')
-excluded_clusters = list(cluster_data[cluster_data['associated_dataset'].isin(excluded_datasets['id'])]['id'])
-
-sample_data = sample_data[~sample_data['associated_dataset'].isin(excluded_datasets['id'])]
-sample_data['associated_dataset'] = sample_data['associated_dataset'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
-sample_data.to_csv('tmp/sample_data.tsv', sep='\t', index=False)
-dataset_data = dataset_data[~dataset_data['id'].isin(excluded_datasets['id'])]
-dataset_data.to_csv('tmp/dataset_data.tsv', sep='\t', index=False)
-
-# existing clusters to exclusion list
-existing_clusters = []
-with open('tmp/existing_clusters.txt', 'r') as file:
+# excluded clusters and existing entities
+excluded_clusters = []
+with open('tmp/excluded_clusters.txt', 'r') as file:
     for line in file:
-        existing_clusters.append("FlyBase:" + line.rstrip())
-excluded_clusters.extend(existing_clusters)
+        excluded_clusters.append(line.rstrip())
 
-cluster_data = cluster_data[~cluster_data['associated_dataset'].isin(excluded_datasets['id'])]
-cluster_data = cluster_data[~cluster_data['id'].isin(excluded_clusters)]
-cluster_data['associated_dataset'] = cluster_data['associated_dataset'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
-cluster_data.to_csv('tmp/new_cluster_data.tsv', sep='\t', index=False)
+existing_entities = []
+if not args.refresh:
+    with open('tmp/existing_entities.txt', 'r') as file:
+        for line in file:
+            existing_entities.append("FlyBase:" + line.rstrip())
+
+ignored_entities = excluded_clusters + existing_entities
+
+# EXPRESSION DATA
 
 # get headers from expression_data file
 expression_data = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', nrows=0)
@@ -35,12 +32,12 @@ expression_reader = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', dtype={
 
 # filter each chunk and concatenate
 for chunk in expression_reader:
-    filtered = chunk[(chunk['expression_extent']>expression_cutoff) & (~chunk['id'].isin(excluded_clusters))]
+    filtered = chunk[(chunk['expression_extent']>expression_cutoff) & (~chunk['id'].isin(ignored_entities))]
     expression_data = pd.concat([expression_data, filtered])
 
 # make a a tsv for each new cluster
 clusters = expression_data['id'].unique()
-print(str(len(clusters)) + ' new clusters')
+print(str(len(clusters)) + ' clusters')
 for c in clusters:
     cluster_data = expression_data[expression_data['id']==c]
     cluster_id = c.replace("FlyBase:", "")
