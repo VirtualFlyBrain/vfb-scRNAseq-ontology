@@ -1,4 +1,0 @@
-prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_>
-
-SELECT DISTINCT ?cluster
-WHERE { ?cluster a FBcv:0009003 }
