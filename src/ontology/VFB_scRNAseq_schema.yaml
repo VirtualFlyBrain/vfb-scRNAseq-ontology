@@ -57,10 +57,16 @@ classes:
         description: VFB site node curie. The site must be created in VFB and added to the dictionary in ../scripts/process_site_data.py to successfully map from FB data.
         range: uriorcurie
         annotations:
-          owl.fstring: AnnotationAssertion( Annotation ( neo:accession {accession} ) oboInOwl:hasDbXref {id} {V})
+          owl.template: |-
+            AnnotationAssertion( 
+            {% for a in accession %}
+            Annotation ( neo:accession {{a}} ) 
+            {% endfor %}
+            oboInOwl:hasDbXref {{id}} {{site}})
       accession:
         slot_uri: neo:accession
         description: Accession of the Dataset at the given Site.
+        multivalued: true
 
   Sample:
     is_a: Class
@@ -71,7 +77,7 @@ classes:
     attributes:
       sample_tissue:
         slot_uri: RO:0002131
-        description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|'. Maps as an overlaps relationship rather than part_of due to imprecision of dissection.
+        description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|' or in different rows. Maps as an overlaps relationship rather than part_of due to imprecision of dissection.
         range: uriorcurie
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
