@@ -38,7 +38,7 @@ get_FB_data: $(EXPDIR)
 	| sed '1 s/type/@type/' > $(TMPDIR)/raw_expression_data.tsv
 
 .PHONY: process_FB_metadata
-process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data
+process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets.tsv
 	# filter FB data to remove metadata for excluded datasets and, if REFRESH_META is FALSE, remove existing metadata
 ifeq ($(REFRESH_META),TRUE)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
@@ -48,7 +48,7 @@ endif
 	python3 $(SCRIPTSDIR)/process_site_data.py
 	
 .PHONY: process_FB_expdata
-process_FB_expdata: $(TMPDIR)/existing_entities.txt get_FB_data process_FB_metadata | $(EXPDIR)
+process_FB_expdata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets.tsv process_FB_metadata | $(EXPDIR)
 	# filter FB data to remove clusters for excluded datasets and, if REFRESH_EXP is FALSE, remove existing clusters
 	# also split into tsvs for each cluster and filter by extent
 ifeq ($(REFRESH_EXP),TRUE)
@@ -74,6 +74,10 @@ $(TMPDIR)/existing_entities.txt:
   --query ../sparql/existing_entities.sparql $(TMPDIR)/existing_entities.csv &&\
 	grep -oE 'FBlc[0-9]+' $(TMPDIR)/existing_entities.csv > $@ &&\
 	rm $(TMPDIR)/existing_entities.csv
+
+$(TMPDIR)/excluded_datasets.tsv: get_FB_data
+	python3 -m pip install vfb-connect
+	python3 $(SCRIPTSDIR)/excluded_datasets.py
 
 $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
 	$(LINKML) $< -o $@ && rm $<
