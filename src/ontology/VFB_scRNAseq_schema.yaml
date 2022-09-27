@@ -41,8 +41,14 @@ classes:
       owl.fstring: ClassAssertion( FBcv:0003023 {id} )
     attributes:
       publication:
-        slot_uri: dc:references
+        slot_uri: dcterms:references
         description: Publication (FBrf ID) associated with the Dataset.
+        range: uriorcurie
+        annotations:
+          owl: AnnotationProperty
+      licence:
+        slot_uri: dcterms:licence
+        description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
         range: uriorcurie
         annotations:
           owl: AnnotationProperty

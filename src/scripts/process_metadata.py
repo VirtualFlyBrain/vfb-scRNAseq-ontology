@@ -9,7 +9,7 @@ args = parser.parse_args()
 # FILTER EXISTING entities
 
 # excluded datasets and existing entities
-excluded_datasets_df = pd.read_csv('excluded_datasets.tsv', sep='\t')
+excluded_datasets_df = pd.read_csv('tmp/excluded_datasets.tsv', sep='\t')
 excluded_datasets = list(excluded_datasets_df['id'])
 existing_entities = []
 if not args.refresh:
@@ -32,7 +32,9 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
         new_exclusions = list(data[data['associated_dataset'].isin(exclusion_list)]['id'])
         data = data[~data['associated_dataset'].isin(exclusion_list)]
         data['associated_dataset'] = data['associated_dataset'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
-    
+    if 'publication' in data.columns:
+        data['publication'] = data['publication'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
+        
     data.to_csv('tmp/%s_data.tsv' % data_type, sep='\t', index=False)
     
     new_exclusions = set(new_exclusions)
@@ -40,6 +42,7 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
 
 
 dataset_data = pd.read_csv('tmp/raw_dataset_data.tsv', sep='\t')
+dataset_data['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
 filter_and_format('dataset', dataset_data, excluded_datasets, existing_entities)
 sample_data = pd.read_csv('tmp/raw_sample_data.tsv', sep='\t')
 filter_and_format('sample', sample_data, excluded_datasets, existing_entities)
