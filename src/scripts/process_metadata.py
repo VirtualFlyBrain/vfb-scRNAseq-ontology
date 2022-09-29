@@ -35,6 +35,14 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
     if 'publication' in data.columns:
         data['publication'] = data['publication'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
         
+    if data_type == 'dataset':
+        data['neo_label'] = "DataSet"
+        data['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
+    elif data_type == 'cluster':
+        data['neo_label'] = "Cluster"
+    elif data_type == 'sample':
+        data['neo_label'] = "Sample"
+        
     data.to_csv('tmp/%s_data.tsv' % data_type, sep='\t', index=False)
     
     new_exclusions = set(new_exclusions)
@@ -42,7 +50,6 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
 
 
 dataset_data = pd.read_csv('tmp/raw_dataset_data.tsv', sep='\t')
-dataset_data['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
 filter_and_format('dataset', dataset_data, excluded_datasets, existing_entities)
 sample_data = pd.read_csv('tmp/raw_sample_data.tsv', sep='\t')
 filter_and_format('sample', sample_data, excluded_datasets, existing_entities)
