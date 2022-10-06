@@ -122,7 +122,7 @@ classes:
     attributes:
       associated_clustering:
         slot_uri: BFO:0000050
-        description: Sample (FBlc ID) that the Cluster belongs to.
+        description: Claustering (FBlc ID) that the Cluster belongs to.
         range: uriorcurie
         annotations:
           owl: ObjectPropertyAssertion
