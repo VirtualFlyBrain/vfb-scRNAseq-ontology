@@ -182,7 +182,7 @@ slots:
   associated_dataset:
     slot_uri: dcterms:source
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
-    range: uriorcurie
+    range: Dataset
     annotations:
       owl: AnnotationProperty
   sex:
