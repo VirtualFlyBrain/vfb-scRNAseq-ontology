@@ -11,6 +11,7 @@ prepare_release: $(SRC) all $(REPORTDIR)/FBgn_list.txt
 
 # flags to bypass recreation of existing gene expression and experiment metadata
 # NB setting either of these (especially for expression data) to TRUE will greatly increase processing time (many hours, possibly days)
+UPDATE_FROM_FB = TRUE
 REFRESH_EXP = FALSE
 REFRESH_META = FALSE
 
@@ -24,6 +25,7 @@ CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(I
 
 .PHONY: get_FB_data
 get_FB_data: $(EXPDIR)
+ifeq ($(UPDATE_FROM_FB),TRUE)
 	apt-get update
 	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
@@ -36,6 +38,9 @@ get_FB_data: $(EXPDIR)
 	| sed '1 s/type/@type/' > $(TMPDIR)/raw_cluster_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql \
 	| sed '1 s/type/@type/' > $(TMPDIR)/raw_expression_data.tsv
+else
+	echo "Not updating FlyBase data."
+endif
 
 .PHONY: process_FB_metadata
 process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets.tsv
