@@ -66,14 +66,11 @@ classes:
       site:
         slot_uri: oboInOwl:hasDbXref
         description: VFB site node curie. The site must be created in VFB and added to the dictionary in ../scripts/process_site_data.py to successfully map from FB data.
-        range: uriorcurie
+        range: Thing
         annotations:
-          owl.template: |-
-            AnnotationAssertion( 
-            {% for a in accession %}
-            Annotation ( neo_custom:accession {{a}} ) 
-            {% endfor %}
-            oboInOwl:hasDbXref {{id}} {{site}})
+          owl: AnnotationProperty
+          owl.axiom_annotation.slots:
+            value: accession
       accession:
         slot_uri: neo_custom:accession
         description: Accession of the Dataset at the given Site.
