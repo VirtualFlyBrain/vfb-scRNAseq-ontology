@@ -40,5 +40,6 @@ clusters = expression_data['id'].unique()
 print(str(len(clusters)) + ' clusters')
 for c in clusters:
     cluster_data = expression_data[expression_data['id']==c]
+    cluster_data = cluster_data.assign(hide_in_terminfo = 'true')
     cluster_id = c.replace("FlyBase:", "")
     cluster_data.to_csv("expression_data/%s.tsv" % cluster_id, sep='\t', index=False)

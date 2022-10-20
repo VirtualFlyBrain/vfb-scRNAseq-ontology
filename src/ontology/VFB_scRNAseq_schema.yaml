@@ -140,12 +140,10 @@ classes:
         multivalued: true
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
-      gene:
-        slot_uri: RO:0002292
-        description: A gene (FBgn ID) expressed by the Cluster. Max one gene per tsv row alongside its expression_extent and expression_level.
-        annotations:
-          owl.fstring: ClassAssertion ( Annotation ( neo_custom:expression_level {expression_level} ) Annotation ( neo_custom:expression_extent {expression_extent} ) ObjectSomeValuesFrom ( RO:0002292 {V}) {id})
-        range: uriorcurie
+      hide_in_terminfo:
+        slot_uri: neo_custom:hide_in_terminfo
+        description: Flag to hide expression edges in VFB Term Info pane.
+        range: boolean
       expression_extent:
         slot_uri: neo_custom:expression_extent
         description: Extent of expression of the given gene.
@@ -154,6 +152,13 @@ classes:
         slot_uri: neo_custom:expression_level
         description: Level of expression of the given gene.
         range: float
+      gene:
+        slot_uri: RO:0002292
+        description: A gene (FBgn ID) expressed by the Cluster. Max one gene per tsv row alongside its expression_extent and expression_level.
+        range: Thing
+        annotations:
+          owl: ClassAssertion, ObjectSomeValuesFrom
+          owl.fstring: ClassAssertion ( Annotation ( neo_custom:hide_in_terminfo {hide_in_terminfo} ) Annotation ( neo_custom:expression_level {expression_level} ) Annotation ( neo_custom:expression_extent {expression_extent} ) ObjectSomeValuesFrom ( RO:0002292 {V}) {id})
     slots:
       - stage
       - associated_dataset
