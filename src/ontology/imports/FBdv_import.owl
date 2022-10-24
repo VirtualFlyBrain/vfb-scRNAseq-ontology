@@ -17,9 +17,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-10-10/imports/FBdv_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2022-08-17/fbdv.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-10</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2022-10-24/imports/FBdv_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/fbdv/releases/2022-10-19/fbdv.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1120,8 +1120,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>ends_during</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). </rdfs:comment>
+        <rdfs:label>ends during</rdfs:label>
         <rdfs:label xml:lang="en">ends during</rdfs:label>
-        <rdfs:label>ends_during</rdfs:label>
     </owl:ObjectProperty>
     
 
