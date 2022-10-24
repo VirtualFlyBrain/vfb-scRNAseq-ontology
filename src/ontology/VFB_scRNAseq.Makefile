@@ -4,8 +4,8 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: prepare_release
-prepare_release: $(SRC) all $(REPORTDIR)/FBgn_list.txt
-	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
+prepare_release: $(SRC) $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt
+	rsync -R $(MAIN_FILES) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
@@ -124,9 +124,10 @@ else
 endif
 	$(ROBOT) annotate --input $(TMPDIR)/expression_data.owl \
 	--ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
-	convert --format ofn -o $@ &&\
+	convert --format ofn -o $@.tmp &&\
+	cat $@.tmp | sed -e 's/(custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(custom:hide_in_terminfo "\([a-z]\+\)")/(custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
 	gzip -c $@ > $@.gz &&\
-	rm -f $(EXPDIR)/*.ofn &&\
+	rm -f $(EXPDIR)/*.ofn $@.tmp &&\
 	echo "\nGene expression file updated!\n"
 
 # add VFB iri
