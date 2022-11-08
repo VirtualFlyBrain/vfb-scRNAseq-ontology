@@ -93,12 +93,14 @@ $(SRC): install_linkml process_FB_metadata
 	$(LINKML) $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
 	$(LINKML) $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\
 	$(LINKML) $(TMPDIR)/clustering_data.tsv -o $(TMPDIR)/clustering_data.ofn &&\
+	$(LINKML) $(TMPDIR)/publication_data.tsv -o $(TMPDIR)/publication_data.ofn &&\
 	$(ROBOT) merge \
 	--input VFB_scRNAseq-annotations.ofn \
 	--input $(TMPDIR)/dataset_data.ofn \
 	--input $(TMPDIR)/sample_data.ofn \
 	--input $(TMPDIR)/cluster_data.ofn \
 	--input $(TMPDIR)/clustering_data.ofn \
+	--input $(TMPDIR)/publication_data.ofn \
 	--include-annotations true --collapse-import-closure false \
 	-o $(TMPDIR)/merged-meta.owl
 ifeq ($(REFRESH_META),TRUE)

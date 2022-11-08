@@ -1474,11 +1474,10 @@ Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0005337>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0005338>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0005339>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0005340>))
+Declaration(NamedIndividual(<http://flybase.org/reports/FBrf0252876>))
 Declaration(AnnotationProperty(custom:accession))
 Declaration(AnnotationProperty(property:nodeLabel))
 Declaration(AnnotationProperty(protege:defaultLanguage))
-Declaration(AnnotationProperty(dc:creator))
-Declaration(AnnotationProperty(dc:date))
 Declaration(AnnotationProperty(dc:description))
 Declaration(AnnotationProperty(dc:format))
 Declaration(AnnotationProperty(dc:subject))
@@ -1486,7 +1485,6 @@ Declaration(AnnotationProperty(dc:title))
 Declaration(AnnotationProperty(terms:licence))
 Declaration(AnnotationProperty(terms:license))
 Declaration(AnnotationProperty(terms:references))
-Declaration(AnnotationProperty(terms:title))
 Declaration(AnnotationProperty(bao:BAO_0002811))
 ############################
 #   Annotation Properties
@@ -1506,7 +1504,7 @@ AnnotationAssertion(rdfs:label bao:BAO_0002811 "has_cell_count")
 
 # Individual: <http://flybase.org/reports/FBlc0003846> (scRNAseq_2022_FCA_FEMALE)
 
-AnnotationAssertion(property:nodeLabel <http://flybase.org/reports/FBlc0003846> "DataSet")
+AnnotationAssertion(property:nodeLabel <http://flybase.org/reports/FBlc0003846> "scRNAseq_DataSet")
 AnnotationAssertion(obo:IAO_0000115 <http://flybase.org/reports/FBlc0003846> "Single-nucleus RNA-seq on cells from 5-days old female flies")
 AnnotationAssertion(terms:licence <http://flybase.org/reports/FBlc0003846> <http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0>)
 AnnotationAssertion(terms:references <http://flybase.org/reports/FBlc0003846> <http://flybase.org/reports/FBrf0252876>)
@@ -6776,7 +6774,7 @@ ObjectPropertyAssertion(obo:BFO_0000050 <http://flybase.org/reports/FBlc0004306>
 
 # Individual: <http://flybase.org/reports/FBlc0004307> (scRNAseq_2022_FCA_MALE)
 
-AnnotationAssertion(property:nodeLabel <http://flybase.org/reports/FBlc0004307> "DataSet")
+AnnotationAssertion(property:nodeLabel <http://flybase.org/reports/FBlc0004307> "scRNAseq_DataSet")
 AnnotationAssertion(obo:IAO_0000115 <http://flybase.org/reports/FBlc0004307> "Single-nucleus RNA-seq on cells from 5-days old male flies")
 AnnotationAssertion(terms:licence <http://flybase.org/reports/FBlc0004307> <http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0>)
 AnnotationAssertion(terms:references <http://flybase.org/reports/FBlc0004307> <http://flybase.org/reports/FBrf0252876>)
@@ -12218,7 +12216,7 @@ ObjectPropertyAssertion(obo:BFO_0000050 <http://flybase.org/reports/FBlc0004784>
 
 # Individual: <http://flybase.org/reports/FBlc0004785> (scRNAseq_2022_FCA_MIXED)
 
-AnnotationAssertion(property:nodeLabel <http://flybase.org/reports/FBlc0004785> "DataSet")
+AnnotationAssertion(property:nodeLabel <http://flybase.org/reports/FBlc0004785> "scRNAseq_DataSet")
 AnnotationAssertion(obo:IAO_0000115 <http://flybase.org/reports/FBlc0004785> "Single-nucleus RNA-seq on cells from 5-days old female and male flies")
 AnnotationAssertion(terms:licence <http://flybase.org/reports/FBlc0004785> <http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0>)
 AnnotationAssertion(terms:references <http://flybase.org/reports/FBlc0004785> <http://flybase.org/reports/FBrf0252876>)
