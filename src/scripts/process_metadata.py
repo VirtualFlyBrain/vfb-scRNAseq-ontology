@@ -36,8 +36,10 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
         data['publication'] = data['publication'].map(lambda x: x.replace("FlyBase:", "http://flybase.org/reports/"))
         
     if data_type == 'dataset':
-        data['neo_label'] = "DataSet"
+        data['neo_label'] = "scRNAseq_DataSet"
         data['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
+        publication_data = pd.DataFrame({"@type":"Publication", "id":data["publication"].unique()})
+        publication_data.to_csv('tmp/publication_data.tsv', sep='\t', index=False)
     elif data_type == 'cluster':
         data['neo_label'] = "Cluster"
     elif data_type == 'sample':
@@ -57,7 +59,6 @@ clustering_data = pd.read_csv('tmp/raw_clustering_data.tsv', sep='\t')
 filter_and_format('clustering', clustering_data, excluded_datasets, existing_entities)
 cluster_data = pd.read_csv('tmp/raw_cluster_data.tsv', sep='\t')
 excluded_clusters = filter_and_format('cluster', cluster_data, excluded_datasets, existing_entities)
-
 
 with open('tmp/excluded_clusters.txt', 'w') as file:
     for c in excluded_clusters:

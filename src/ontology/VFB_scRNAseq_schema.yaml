@@ -47,8 +47,8 @@ classes:
     attributes:
       publication:
         slot_uri: dcterms:references
-        description: Publication (FBrf ID) associated with the Dataset.
-        range: Thing
+        description: Publication associated with the Dataset.
+        range: Publication
         annotations:
           owl: AnnotationProperty
       licence:
@@ -165,6 +165,11 @@ classes:
       - sex
       - neo_label
 
+  Publication:
+    is_a: Thing
+    class_uri: FBcv:0000212
+    annotations:
+      owl: NamedIndividual
 
 # slots can be used as attributes that can be shared by multiple classes
 slots:
