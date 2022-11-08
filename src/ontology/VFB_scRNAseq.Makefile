@@ -133,7 +133,7 @@ endif
 # add VFB iri
 $(ONT).owl: $(ONT)-full.owl
 	grep -v owl:versionIRI $< > $@.tmp.owl
-	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/vfb_scRNAseq.owl \
+	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
 $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt
