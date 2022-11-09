@@ -170,6 +170,8 @@ classes:
     class_uri: FBcv:0000212
     annotations:
       owl: NamedIndividual
+    slots:
+      - neo_label
 
 # slots can be used as attributes that can be shared by multiple classes
 slots:
