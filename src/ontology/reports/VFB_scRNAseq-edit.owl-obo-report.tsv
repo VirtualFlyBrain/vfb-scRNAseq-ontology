@@ -167,4 +167,5 @@ WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_REPRO	IAO:0000115	Cells from 2-
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_REPRO	IAO:0000115	Cells from 2-days old male reproductive glands
 WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_TESTIS	IAO:0000115	Cells from 1-day old testes
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_TESTIS	IAO:0000115	Cells from 1-day old testes
+WARN	missing_label	http://flybase.org/reports/FBrf0252876	rdfs:label	
 INFO	missing_definition	has_cell_count	IAO:0000115	
