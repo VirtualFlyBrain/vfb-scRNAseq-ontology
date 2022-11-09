@@ -38,7 +38,7 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
     if data_type == 'dataset':
         data['neo_label'] = "scRNAseq_DataSet"
         data['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
-        publication_data = pd.DataFrame({"@type":"Publication", "id":data["publication"].unique()})
+        publication_data = pd.DataFrame({"@type":"Publication", "id":data["publication"].unique(), "neo_label":"pub"})
         publication_data.to_csv('tmp/publication_data.tsv', sep='\t', index=False)
     elif data_type == 'cluster':
         data['neo_label'] = "Cluster"
