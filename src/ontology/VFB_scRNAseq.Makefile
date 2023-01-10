@@ -69,7 +69,7 @@ endif
 
 .PHONY: install_linkml
 install_linkml:
-	python3 -m pip install linkml-owl
+	python3 -m pip install linkml-owl==v0.2.2
 
 $(EXPDIR):
 	mkdir -p $@
