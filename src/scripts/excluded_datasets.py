@@ -2,7 +2,7 @@ import pandas as pd
 from vfb_connect.neo.neo4j_tools import Neo4jConnect, dict_cursor
 
 # Manual exclusions - add IDs of Datasets to exclude in format "FlyBase:FBlc0000000":
-manual_exclusions = []
+manual_exclusions = ["FlyBase:FBlc0005362"]
 
 # get :Nervous_system FBbt IDs from VFB
 nc = Neo4jConnect('http://pdb.virtualflybrain.org', 'vfb', 'neo4j')
