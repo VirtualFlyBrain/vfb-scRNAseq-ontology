@@ -9,7 +9,9 @@ COPY (SELECT DISTINCT
     db_tissue.name||':'||dbx_tissue.accession as sample_tissue,
     sex.name as sex,
     db_stage.name||':'||dbx_stage.accession as stage,
-    'FlyBase:'||p.uniquename as associated_dataset
+    'FlyBase:'||p.uniquename as associated_dataset,
+    'FlyBase:'||a.uniquename as associated_assay,
+    'FlyBase:'||ca.uniquename as control_assay
 FROM library l
 JOIN cvterm t ON (t.cvterm_id = l.type_id AND t.name = 'biosample')
 JOIN library_relationship lr ON lr.subject_id = l.library_id
@@ -31,6 +33,10 @@ LEFT OUTER JOIN dbxref dbx_stage ON dbx_stage.dbxref_id = stage.dbxref_id
 LEFT OUTER JOIN db db_stage ON db_stage.db_id = dbx_stage.db_id
 LEFT OUTER JOIN expression_cvterm ecvt_sex ON (ecvt_sex.expression_id = le.expression_id AND ecvt_sex.cvterm_type_id = (SELECT cvterm_id FROM cvterm WHERE cv_id = (SELECT cv_id FROM cv WHERE name = 'expression slots') AND name = 'stage') AND ecvt_sex.cvterm_id in (SELECT DISTINCT cvterm_id FROM cvterm WHERE cv_id = (SELECT cv_id FROM cv WHERE name = 'FlyBase miscellaneous CV') AND name LIKE '%male'))
 LEFT OUTER JOIN cvterm sex ON sex.cvterm_id = ecvt_sex.cvterm_id
+JOIN library_relationship lra ON lra.object_id = l.library_id
+JOIN library a ON (lra.subject_id=a.library_id AND a.type_id in (SELECT cvterm_id FROM cvterm WHERE name = 'assay'))
+LEFT OUTER JOIN library_relationship lra2 ON (lra2.subject_id = a.library_id AND lra2.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'biological_reference_is'))
+LEFT OUTER JOIN library ca ON lra2.object_id=ca.library_id
 WHERE l.is_obsolete is false
   AND p.is_obsolete is false
 ) TO STDOUT WITH DELIMITER E'\t' CSV HEADER;
