@@ -4,7 +4,7 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: prepare_release
-prepare_release: $(SRC) $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt
+prepare_release: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt
 	rsync -R $(MAIN_FILES) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
