@@ -47,15 +47,15 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
 
     # extra columns
     if data_type == 'dataset':
-        data.loc[:,'neo_label'] = "DataSet"
-        data.loc[:,'licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
+        data['neo_label'] = "DataSet"
+        data['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
         publication_data = pd.DataFrame({"@type":"Publication", "id":data.loc[:,"publication"].unique(), "neo_label":"pub"})
         publication_data.to_csv('tmp/publication_data.tsv', sep='\t', index=False)
     elif data_type == 'sample':
-        data.loc[:,'neo_label'] = "Sample"
+        data['neo_label'] = "Sample"
         data.drop(columns = ['associated_assay', 'control_assay'], inplace=True)
     elif data_type == 'cluster':
-        data.loc[:,'neo_label'] = "Cluster"
+        data['neo_label'] = "Cluster"
 
     data.to_csv('tmp/%s_data.tsv' % data_type, sep='\t', index=False)
 
