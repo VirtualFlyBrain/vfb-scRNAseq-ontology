@@ -1,250 +1,153 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-05-12/imports/obi_import.owl"/>
-        <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-        <obo:IAO_0000589 xml:lang="en">Ontology for Biomedical Investigations</obo:IAO_0000589>
-        <dc:contributor xml:lang="en">Advisors for this project come from the IFOMIS group, Saarbruecken and from the Co-ODE group in Manchester</dc:contributor>
-        <dc:creator xml:lang="en">Alan Ruttenberg</dc:creator>
-        <dc:creator xml:lang="en">Allyson Lister</dc:creator>
-        <dc:creator xml:lang="en">Barry Smith</dc:creator>
-        <dc:creator xml:lang="en">Bill Bug</dc:creator>
-        <dc:creator xml:lang="en">Bjoern Peters</dc:creator>
-        <dc:creator xml:lang="en">Carlo Torniai</dc:creator>
-        <dc:creator xml:lang="en">Chris Mungall</dc:creator>
-        <dc:creator xml:lang="en">Chris Stoeckert</dc:creator>
-        <dc:creator xml:lang="en">Chris Taylor</dc:creator>
-        <dc:creator xml:lang="en">Christian Bolling</dc:creator>
-        <dc:creator xml:lang="en">Cristian Cocos</dc:creator>
-        <dc:creator xml:lang="en">Daniel Rubin</dc:creator>
-        <dc:creator xml:lang="en">Daniel Schober</dc:creator>
-        <dc:creator xml:lang="en">Dawn Field</dc:creator>
-        <dc:creator xml:lang="en">Dirk Derom</dc:creator>
-        <dc:creator xml:lang="en">Elisabetta Manduchi</dc:creator>
-        <dc:creator xml:lang="en">Eric Deutsch</dc:creator>
-        <dc:creator xml:lang="en">Frank Gibson</dc:creator>
-        <dc:creator xml:lang="en">Gilberto Fragoso</dc:creator>
-        <dc:creator xml:lang="en">Helen C. Causton</dc:creator>
-        <dc:creator xml:lang="en">Helen Parkinson</dc:creator>
-        <dc:creator xml:lang="en">Holger Stenzhorn</dc:creator>
-        <dc:creator xml:lang="en">James A. Overton</dc:creator>
-        <dc:creator xml:lang="en">James Malone</dc:creator>
-        <dc:creator xml:lang="en">Jay Greenbaum</dc:creator>
-        <dc:creator xml:lang="en">Jeffrey Grethe</dc:creator>
-        <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
-        <dc:creator xml:lang="en">Jessica Turner</dc:creator>
-        <dc:creator xml:lang="en">Jie Zheng</dc:creator>
-        <dc:creator xml:lang="en">Joe White</dc:creator>
-        <dc:creator xml:lang="en">John Westbrook</dc:creator>
-        <dc:creator xml:lang="en">Kevin Clancy</dc:creator>
-        <dc:creator xml:lang="en">Larisa Soldatova</dc:creator>
-        <dc:creator xml:lang="en">Lawrence Hunter</dc:creator>
-        <dc:creator xml:lang="en">Liju Fan</dc:creator>
-        <dc:creator xml:lang="en">Luisa Montecchi</dc:creator>
-        <dc:creator xml:lang="en">Matthew Brush</dc:creator>
-        <dc:creator xml:lang="en">Matthew Pocock</dc:creator>
-        <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
-        <dc:creator xml:lang="en">Melissa Haendel</dc:creator>
-        <dc:creator xml:lang="en">Mervi Heiskanen</dc:creator>
-        <dc:creator xml:lang="en">Monnie McGee</dc:creator>
-        <dc:creator xml:lang="en">Norman Morrison</dc:creator>
-        <dc:creator xml:lang="en">Philippe Rocca-Serra</dc:creator>
-        <dc:creator xml:lang="en">Phillip Lord</dc:creator>
-        <dc:creator xml:lang="en">Pierre Grenon</dc:creator>
-        <dc:creator xml:lang="en">Richard Bruskiewich</dc:creator>
-        <dc:creator xml:lang="en">Richard Scheuermann</dc:creator>
-        <dc:creator xml:lang="en">Robert Stevens</dc:creator>
-        <dc:creator xml:lang="en">Ryan R. Brinkman</dc:creator>
-        <dc:creator xml:lang="en">Stefan Wiemann</dc:creator>
-        <dc:creator xml:lang="en">Susanna-Assunta Sansone</dc:creator>
-        <dc:creator xml:lang="en">Tanya Gray</dc:creator>
-        <dc:creator xml:lang="en">Tina Hernandez-Boussard</dc:creator>
-        <dc:creator xml:lang="en">Trish Whetzel</dc:creator>
-        <dc:creator xml:lang="en">Yongqun He</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-07-31</dc:date>
-        <dc:description xml:lang="en">An ontology for representing biomedical investigations, including study designs, the collection and preparation of the targets of investigation, assays, instrumentation and reagents used, as well as the data generated and the types of analysis performed on the data to reach conclusions, and their documentation.</dc:description>
-        <dc:format xml:lang="en">OWL-DL</dc:format>
-        <dc:subject xml:lang="en">An ontology for the annotation of biomedical and functional genomics experiments.</dc:subject>
-        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <terms:title>Ontology for Biomedical Investigations</terms:title>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-10</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-12</owl:versionInfo>
-    </owl:Ontology>
-    
+Prefix(:=<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-08-15/imports/obi_import.owl>
+Annotation(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> "en")
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000589> "Ontology for Biomedical Investigations"@en)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Advisors for this project come from the IFOMIS group, Saarbruecken and from the Co-ODE group in Manchester"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Alan Ruttenberg"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Allyson Lister"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Barry Smith"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Bill Bug"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Bjoern Peters"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Carlo Torniai"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Chris Mungall"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Chris Stoeckert"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Chris Taylor"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Christian Bolling"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Cristian Cocos"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Daniel Rubin"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Daniel Schober"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Dawn Field"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Dirk Derom"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Elisabetta Manduchi"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Eric Deutsch"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Frank Gibson"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Gilberto Fragoso"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Helen C. Causton"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Helen Parkinson"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Holger Stenzhorn"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "James A. Overton"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "James Malone"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Jay Greenbaum"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Jeffrey Grethe"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Jennifer Fostel"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Jessica Turner"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Jie Zheng"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Joe White"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "John Westbrook"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Kevin Clancy"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Larisa Soldatova"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Lawrence Hunter"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Liju Fan"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Luisa Montecchi"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Matthew Brush"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Matthew Pocock"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Melanie Courtot"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Melissa Haendel"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Mervi Heiskanen"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Monnie McGee"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Norman Morrison"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Philippe Rocca-Serra"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Phillip Lord"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Pierre Grenon"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Richard Bruskiewich"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Richard Scheuermann"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Robert Stevens"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Ryan R. Brinkman"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Stefan Wiemann"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Susanna-Assunta Sansone"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Tanya Gray"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Tina Hernandez-Boussard"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Trish Whetzel"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Yongqun He"@en)
+Annotation(<http://purl.org/dc/elements/1.1/date> "2009-07-31"^^xsd:date)
+Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology for representing biomedical investigations, including study designs, the collection and preparation of the targets of investigation, assays, instrumentation and reagents used, as well as the data generated and the types of analysis performed on the data to reach conclusions, and their documentation."@en)
+Annotation(<http://purl.org/dc/elements/1.1/format> "OWL-DL"@en)
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2023-07-25/obi.owl>)
+Annotation(<http://purl.org/dc/elements/1.1/subject> "An ontology for the annotation of biomedical and functional genomics experiments."@en)
+Annotation(<http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/")
+Annotation(<http://purl.org/dc/terms/title> "Ontology for Biomedical Investigations")
+Annotation(rdfs:comment "Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.")
+Annotation(owl:versionInfo "2023-07-25")
+Annotation(owl:versionInfo "2023-08-15")
 
-    
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000833>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000059>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000087>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
+Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/format>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/subject>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(Datatype(xsd:date))
 
+############################
+#   Object Properties
+############################
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has_specified_input)
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is_specified_input_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has_specified_input"@en)
+EquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000295>))
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/RO_0000057>)
 
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is_specified_input_of)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000295> "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is_specified_input_of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/RO_0000056>)
 
-    
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is_specified_output_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has_specified_output"@en)
+EquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000312>))
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RO_0000057>)
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is_specified_output_of)
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000312> "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is_specified_output_of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/RO_0000056>)
 
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000417> (achieves_planned_objective)
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000417> "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000417> "achieves_planned_objective")
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
-    
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000833> (objective_achieved_by)
 
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
-        <owl:equivalentProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-            </rdf:Description>
-        </owl:equivalentProperty>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is_specified_input_of</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
-        <owl:equivalentProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-            </rdf:Description>
-        </owl:equivalentProperty>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is_specified_output_of</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
-        <owl:equivalentProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            </rdf:Description>
-        </owl:equivalentProperty>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
-        <obo:IAO_0000115>This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
-        <rdfs:label>achieves_planned_objective</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000833 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
-        <obo:IAO_0000115>This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
-        <rdfs:label>objective_achieved_by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
-</rdf:RDF>
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000833> "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000833> "objective_achieved_by")
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
-
+)
