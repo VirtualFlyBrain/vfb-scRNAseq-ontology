@@ -44,7 +44,7 @@ endif
 
 .PHONY: process_FB_metadata
 process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_samples.tsv
-	# filter FB data to remove metadata for excluded datasets and, if REFRESH_META is FALSE, remove existing metadata
+	# filter FB data to remove metadata for excluded datasets and, if REFRESH_META is TRUE, remove existing metadata
 ifeq ($(REFRESH_META),TRUE)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
