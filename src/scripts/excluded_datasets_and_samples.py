@@ -5,6 +5,7 @@ from vfb_connect.neo.neo4j_tools import Neo4jConnect, dict_cursor
 cluster_data = pd.read_csv('tmp/raw_cluster_data.tsv', sep='\t')
 dataset_data = pd.read_csv('tmp/raw_dataset_data.tsv', sep='\t')
 sample_data = pd.read_csv('tmp/raw_sample_data.tsv', sep='\t')
+assay_data = pd.read_csv('tmp/raw_assay_data.tsv', sep='\t')
 
 # Manual exclusions - add IDs of datasets to exclude in format "FlyBase:FBlc0000000": "FlyBase:FBlc0005362"
 manual_exclusions = []
@@ -21,9 +22,9 @@ FBbt_IDs = list(FBbt_IDs['FBbt_ID'].apply(lambda x: x.replace('_', ':')))
 included_cluster_data = cluster_data[cluster_data['cell_type'].isin(FBbt_IDs)]
 excluded_datasets = dataset_data[~dataset_data['id'].isin(included_cluster_data['associated_dataset'])][['id', 'name']].drop_duplicates()
 
-# samples to exclude based on relationship of assay to a control assay by biological_reference_is
-excluded_samples = sample_data[sample_data['control_assay'].notnull()][['id', 'name']].drop_duplicates()
+# samples and assays to exclude based on relationship of assay to a control assay by biological_reference_is
+excluded_assays = assay_data[assay_data['control_assay'].notnull()][['id', 'name']].drop_duplicates()
 
-all_exclusions = pd.concat([manually_excluded_datasets, excluded_datasets, excluded_samples], axis=0).drop_duplicates()
+all_exclusions = pd.concat([manually_excluded_datasets, excluded_datasets, excluded_assays], axis=0).drop_duplicates()
 
-all_exclusions.to_csv("tmp/excluded_datasets_and_samples.tsv", sep='\t')
+all_exclusions.to_csv("tmp/excluded_datasets_and_assays.tsv", sep='\t')
