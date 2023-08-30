@@ -92,10 +92,42 @@ classes:
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
         multivalued: true
+      associated_assay:
+        slot_uri: RO:0002352
+        description: Assay(s) that use this sample. Multiple IDs should be separated with '|' or in different rows.
+        range: Assay
+        annotations:
+          owl: ClassAssertion, ObjectSomeValuesFrom
+        multivalued: true
     slots:
       - stage
       - associated_dataset
       - sex
+      - neo_label
+
+  Assay:
+    is_a: Class
+    class_uri: FBcv:0003025
+    annotations:
+      owl: NamedIndividual
+      owl.fstring: ClassAssertion( FBcv:0003025 {id} )
+    attributes:
+      method:
+        slot_uri: BAO:0000212
+        description: Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing'.
+        range: Thing
+        annotations:
+          owl: ClassAssertion, ObjectSomeValuesFrom
+        multivalued: false
+      associated_sample:
+        slot_uri: RO:0002233
+        description: Input sample(s) for the scRNAseq assay. Multiple IDs should be separated with '|' or in different rows.
+        range: Sample
+        annotations:
+          owl: ClassAssertion, ObjectSomeValuesFrom
+        multivalued: true
+    slots:
+      - associated_dataset
       - neo_label
 
   Clustering:
