@@ -53,9 +53,11 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
         publication_data.to_csv('tmp/publication_data.tsv', sep='\t', index=False)
     elif data_type == 'sample':
         data['neo_label'] = "Sample"
-        data.drop(columns = ['associated_assay', 'control_assay'], inplace=True)
+        data.drop(columns = ['control_assay'], inplace=True)
     elif data_type == 'cluster':
         data['neo_label'] = "Cluster"
+    elif data_type == 'assay':
+        data['neo_label'] = "Assay"
 
     data.to_csv('tmp/%s_data.tsv' % data_type, sep='\t', index=False)
 
@@ -65,6 +67,9 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
 dataset_data = pd.read_csv('tmp/raw_dataset_data.tsv', sep='\t')
 new_ds_exc = filter_and_format('dataset', dataset_data, exclusions, existing_entities)
 exclusions.extend(new_ds_exc)
+assay_data = pd.read_csv('tmp/raw_assay_data.tsv', sep='\t')
+new_assay_exc = filter_and_format('assay', assay_data, exclusions, existing_entities)
+exclusions.extend(new_assay_exc)
 sample_data = pd.read_csv('tmp/raw_sample_data.tsv', sep='\t')
 new_sample_exc = filter_and_format('sample', sample_data, exclusions, existing_entities)
 exclusions.extend(new_sample_exc)
