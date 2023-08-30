@@ -28,7 +28,7 @@ ignored_entities = excluded_clusters + existing_entities
 expression_data = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', nrows=0)
 
 # read expression_data in chunksize
-expression_reader = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', dtype={'@type': 'category', 'id': 'category', 'gene': 'category'}, chunksize=1000)
+expression_reader = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', dtype={'id': 'category', 'gene': 'category'}, chunksize=1000)
 
 # filter each chunk and concatenate
 for chunk in expression_reader:

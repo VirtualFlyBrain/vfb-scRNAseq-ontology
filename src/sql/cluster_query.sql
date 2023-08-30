@@ -1,6 +1,6 @@
 --Query for "Cluster" (aka "transcriptional cell cluster")
 COPY (SELECT DISTINCT
-    'Cluster' as type,
+--    'Cluster' as type,
     'FlyBase:'||l.uniquename as id,
     l.name as name,
     s.name as title,

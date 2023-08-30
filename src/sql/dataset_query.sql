@@ -2,7 +2,7 @@
 --Pulls projects derived associations with scRNA-seq assay terms.
 COPY (
 SELECT
-  project.type, 
+--  project.type, 
   project.id,
   project.name,
   project.title,
@@ -13,7 +13,7 @@ SELECT
   source.value AS source_linkout
 FROM (
   SELECT DISTINCT
-    'Dataset' as type,
+--    'Dataset' as type,
     'FlyBase:'||l.uniquename as id,
     l.name as name,
     s.name as title,

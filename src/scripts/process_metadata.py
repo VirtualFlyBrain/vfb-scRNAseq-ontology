@@ -49,7 +49,7 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
     if data_type == 'dataset':
         data['neo_label'] = "DataSet"
         data['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
-        publication_data = pd.DataFrame({"@type":"Publication", "id":data.loc[:,"publication"].unique(), "neo_label":"pub"})
+        publication_data = pd.DataFrame({"id":data.loc[:,"publication"].unique(), "neo_label":"pub"})
         publication_data.to_csv('tmp/publication_data.tsv', sep='\t', index=False)
     elif data_type == 'sample':
         data['neo_label'] = "Sample"

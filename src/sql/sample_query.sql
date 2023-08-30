@@ -2,7 +2,7 @@
 --Note - If many tissues or stages are associated with a sample, this query returns one line for each distinct tissue/sex/stage term combination.
 --Note - Should still return a sample if tissue, sex or stage are missing (with NULL value for that field).
 COPY (SELECT DISTINCT
-    'Sample' as type,
+--    'Sample' as type,
     'FlyBase:'||l.uniquename as id,
     l.name as name,
     s.name as title,

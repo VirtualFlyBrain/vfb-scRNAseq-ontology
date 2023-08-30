@@ -1,6 +1,6 @@
 --Query for "Assay"
 COPY (SELECT DISTINCT
-    'Assay' as type,
+--    'Assay' as type,
     'FlyBase:'||l.uniquename as id,
     l.name as name,
     s.name as title,
