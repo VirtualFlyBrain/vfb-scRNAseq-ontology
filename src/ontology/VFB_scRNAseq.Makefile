@@ -29,15 +29,15 @@ ifeq ($(UPDATE_FROM_FB),TRUE)
 	apt-get update
 	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/raw_dataset_data.tsv
+	 > $(TMPDIR)/raw_dataset_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/sample_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/raw_sample_data.tsv
+	 > $(TMPDIR)/raw_sample_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/clustering_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/raw_clustering_data.tsv
+	 > $(TMPDIR)/raw_clustering_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/cluster_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/raw_cluster_data.tsv
+	 > $(TMPDIR)/raw_cluster_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql \
-	| sed '1 s/type/@type/' > $(TMPDIR)/raw_expression_data.tsv
+	 > $(TMPDIR)/raw_expression_data.tsv
 else
 	echo "Not updating FlyBase data."
 endif

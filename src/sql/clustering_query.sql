@@ -1,6 +1,6 @@
 --Query for "Clustering" (aka "cell clustering analysis")
 COPY (SELECT DISTINCT
-    'Clustering' as type,
+--    'Clustering' as type,
     'FlyBase:'||l.uniquename as id,
     l.name as name,
     s.name as title,
