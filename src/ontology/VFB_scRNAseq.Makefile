@@ -32,6 +32,8 @@ ifeq ($(UPDATE_FROM_FB),TRUE)
 	 > $(TMPDIR)/raw_dataset_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/sample_query.sql \
 	 > $(TMPDIR)/raw_sample_data.tsv
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/assay_query.sql \
+	 > $(TMPDIR)/raw_assay_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/clustering_query.sql \
 	 > $(TMPDIR)/raw_clustering_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/cluster_query.sql \
@@ -89,15 +91,17 @@ $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
 
 $(SRC): install_linkml process_FB_metadata
 	mv $(SRC) $(TMPDIR)/old-$(SRC)
-	$(LINKML) $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
-	$(LINKML) $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
-	$(LINKML) $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\
-	$(LINKML) $(TMPDIR)/clustering_data.tsv -o $(TMPDIR)/clustering_data.ofn &&\
-	$(LINKML) $(TMPDIR)/publication_data.tsv -o $(TMPDIR)/publication_data.ofn &&\
+	$(LINKML) -C Dataset $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
+	$(LINKML) -C Sample $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
+	$(LINKML) -C Assay $(TMPDIR)/assay_data.tsv -o $(TMPDIR)/assay_data.ofn &&\
+	$(LINKML) -C Cluster $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\
+	$(LINKML) -C Clustering $(TMPDIR)/clustering_data.tsv -o $(TMPDIR)/clustering_data.ofn &&\
+	$(LINKML) -C Publication $(TMPDIR)/publication_data.tsv -o $(TMPDIR)/publication_data.ofn &&\
 	$(ROBOT) merge \
 	--input VFB_scRNAseq-annotations.ofn \
 	--input $(TMPDIR)/dataset_data.ofn \
 	--input $(TMPDIR)/sample_data.ofn \
+	--input $(TMPDIR)/assay_data.ofn \
 	--input $(TMPDIR)/cluster_data.ofn \
 	--input $(TMPDIR)/clustering_data.ofn \
 	--input $(TMPDIR)/publication_data.ofn \
