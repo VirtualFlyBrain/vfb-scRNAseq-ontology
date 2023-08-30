@@ -74,6 +74,7 @@ classes:
       accession:
         slot_uri: neo_custom:accession
         description: Accession of the Dataset at the given Site.
+        range: string
         multivalued: true
     slots:
       - neo_label
@@ -140,7 +141,7 @@ classes:
       associated_sample:
         slot_uri: BFO:0000051
         description: Sample (FBlc ID) that the Clustering uses.
-        range: uriorcurie
+        range: Sample
         annotations:
           owl: ObjectPropertyAssertion
     slots:
@@ -156,7 +157,7 @@ classes:
       associated_clustering:
         slot_uri: BFO:0000050
         description: Clustering (FBlc ID) that the Cluster belongs to.
-        range: uriorcurie
+        range: Clustering
         annotations:
           owl: ObjectPropertyAssertion
       cell_number:
@@ -168,7 +169,7 @@ classes:
       cell_type:
         slot_uri: RO:0002473
         description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'.
-        range: uriorcurie
+        range: Thing
         multivalued: true
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
@@ -239,7 +240,7 @@ slots:
   stage:
     slot_uri: RO:0002490
     description: Developmental stage (FBdv ID) of the Sample or Cluster.
-    range: uriorcurie
+    range: Thing
     annotations:
       owl: ClassAssertion, ObjectSomeValuesFrom
   neo_label:
