@@ -7,8 +7,8 @@ parser.add_argument("-r", "--refresh", help="refresh all experiment metadata",
 args = parser.parse_args()
 
 # excluded datasets and existing entities
-excluded_datasets_and_samples_df = pd.read_csv('tmp/excluded_datasets_and_samples.tsv', sep='\t')
-exclusions = excluded_datasets_and_samples_df.loc[:,'id'].tolist()
+excluded_datasets_and_assays_df = pd.read_csv('tmp/excluded_datasets_and_assays.tsv', sep='\t')
+exclusions = excluded_datasets_and_assays_df.loc[:,'id'].tolist()
 existing_entities = []
 if not args.refresh:
     with open('tmp/existing_entities.txt', 'r') as file:
