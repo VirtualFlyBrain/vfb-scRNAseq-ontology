@@ -60,7 +60,7 @@ classes:
       assay_type:
         slot_uri: OBI:0000312
         description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq').
-        range: uriorcurie
+        range: Thing
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
       site:
@@ -89,7 +89,7 @@ classes:
       sample_tissue:
         slot_uri: RO:0002131
         description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated with '|' or in different rows. Maps as an overlaps relationship rather than part_of due to imprecision of dissection.
-        range: uriorcurie
+        range: Thing
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
         multivalued: true
@@ -98,7 +98,7 @@ classes:
         description: Assay(s) that use this sample. Multiple IDs should be separated with '|' or in different rows.
         range: Assay
         annotations:
-          owl: ClassAssertion, ObjectSomeValuesFrom
+          owl: ObjectPropertyAssertion
         multivalued: true
     slots:
       - stage
@@ -125,7 +125,7 @@ classes:
         description: Input sample(s) for the scRNAseq assay. Multiple IDs should be separated with '|' or in different rows.
         range: Sample
         annotations:
-          owl: ClassAssertion, ObjectSomeValuesFrom
+          owl: ObjectPropertyAssertion
         multivalued: true
     slots:
       - associated_dataset
