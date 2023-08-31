@@ -20,11 +20,18 @@ FBbt_IDs = list(FBbt_IDs['FBbt_ID'].apply(lambda x: x.replace('_', ':')))
 
 # check which datasets not linked to :Nervous_system FBbt terms
 included_cluster_data = cluster_data[cluster_data['cell_type'].isin(FBbt_IDs)]
-excluded_datasets = dataset_data[~dataset_data['id'].isin(included_cluster_data['associated_dataset'])][['id', 'name']].drop_duplicates()
+non_neuronal_datasets = dataset_data[~dataset_data['id'].isin(included_cluster_data['associated_dataset'])][['id', 'name']].drop_duplicates()
 
-# samples and assays to exclude based on relationship of assay to a control assay by biological_reference_is
+# assays to exclude based on relationship to a control assay by biological_reference_is
 excluded_assays = assay_data[assay_data['control_assay'].notnull()][['id', 'name']].drop_duplicates()
 
-all_exclusions = pd.concat([manually_excluded_datasets, excluded_datasets, excluded_assays], axis=0).drop_duplicates()
+# exclude datasets that would have no other assays after removing excluded assays
+exp_dataset_list = []
+for d in dataset_data['id'].unique().tolist():
+    if len(assay_data[(assay_data['associated_dataset']==d) & (~assay_data['id'].isin(excluded_assays))]) == 0:
+        exp_dataset_list.append(d)
+experimental_condition_datasets = dataset_data[dataset_data['id'].isin(exp_dataset_list)][['id', 'name']]
 
-all_exclusions.to_csv("tmp/excluded_datasets_and_assays.tsv", sep='\t')
+all_exclusions = pd.concat([manually_excluded_datasets, non_neuronal_datasets, excluded_assays, experimental_condition_datasets], axis=0).drop_duplicates()
+
+all_exclusions.to_csv("tmp/excluded_datasets.tsv", sep='\t')
