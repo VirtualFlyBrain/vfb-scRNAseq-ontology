@@ -1,4 +1,14 @@
 Level	Rule Name	Subject	Property	Value
+WARN	duplicate_definition	scRNAseq_2022_FCA_FEMALE_OVARY_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 5-days old ovaries
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_OVARY_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 5-days old ovaries
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_GUT_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 5-days old guts
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_GUT_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 5-days old guts
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_HEART_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 5-days old dorsal vessels
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_HEART_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 5-days old dorsal vessels
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_REPRO_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 2-days old male reproductive glands
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_REPRO_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 2-days old male reproductive glands
+WARN	duplicate_definition	scRNAseq_2022_FCA_MALE_TESTIS_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 1-day old testes
+WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_TESTIS_seq	IAO:0000115	Single-nucleus RNA-seq of cells from 1-day old testes
 WARN	duplicate_definition	scRNAseq_2022_FCA_FEMALE_OVARY_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 5-days old ovaries, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_MIXED_OVARY_seq_clustering_tracheocytes	IAO:0000115	Clustering analysis of cells from 5-days old ovaries, tracheocytes cluster
 WARN	duplicate_definition	scRNAseq_2022_FCA_FEMALE_OVARY_seq_clustering_stretch_follicle_cells	IAO:0000115	Clustering analysis of cells from 5-days old ovaries, stretch follicle cells cluster
