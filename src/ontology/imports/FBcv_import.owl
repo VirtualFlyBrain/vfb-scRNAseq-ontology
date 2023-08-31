@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-08-15/imports/FBcv_import.owl>
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-08-31/imports/FBcv_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/fbcv/releases/2023-08-02/fbcv.owl>)
-Annotation(owl:versionInfo "2023-08-15")
+Annotation(owl:versionInfo "2023-08-31")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -28,15 +28,22 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003068>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003108>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003208>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0009008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
@@ -176,7 +183,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
@@ -1521,6 +1527,16 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0003024> "biosample")
 SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0003024> <http://purl.obolibrary.org/obo/FBcv_0003022>)
 
+# Class: <http://purl.obolibrary.org/obo/FBcv_0003025> (assay)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GD") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0003025> "Quantitative or qualitative assessment of biological source material to measure some attribute.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0003025> <http://orcid.org/0000-0001-5948-3092>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0003025> "2016-02-24T19:19:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0003025> "dataset_entity_type")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0003025> "FBcv:0003025")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0003025> "assay")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0003025> <http://purl.obolibrary.org/obo/FBcv_0003022>)
+
 # Class: <http://purl.obolibrary.org/obo/FBcv_0003028> (dataset data type)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GD") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0003028> "The data type content of a dataset.")
@@ -1572,6 +1588,36 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0003108> "analysis")
 SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0003108> <http://purl.obolibrary.org/obo/FBcv_0003082>)
 
+# Class: <http://purl.obolibrary.org/obo/FBcv_0003121> (dataset attribute)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GD") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0003121> "A descriptor that describes some aspect of a dataset.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0003121> <http://orcid.org/0000-0001-5948-3092>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0003121> "2016-02-24T19:19:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0003121> "FlyBase miscellaneous CV")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0003121> "FBcv:0003121")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0003121> "dataset attribute")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0003121> <http://purl.obolibrary.org/obo/FBcv_0003021>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0003175> (assay attribute)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GD") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0003175> "Some characteristic of an assay pertaining to the methods involved in processing the biological source material or generating the raw output data of the assay.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0003175> <http://orcid.org/0000-0001-5948-3092>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0003175> "2016-02-24T19:19:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0003175> "assay_attribute")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0003175> "FBcv:0003175")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0003175> "assay attribute")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0003175> <http://purl.obolibrary.org/obo/FBcv_0003121>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0003208> (assay method)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:GD") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0003208> "A method used to characterize the biological molecules isolated from a biosample.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0003208> <http://orcid.org/0000-0001-5948-3092>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0003208> "2016-02-24T19:19:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0003208> "assay_attribute")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0003208> "FBcv:0003208")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0003208> "assay method")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0003208> <http://purl.obolibrary.org/obo/FBcv_0003175>)
+
 # Class: <http://purl.obolibrary.org/obo/FBcv_0009000> (single-cell RNA-Seq)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:28821273") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0009000> "A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single cells are subjected to high-throughput sequencing and mapping to a reference genome.")
@@ -1618,6 +1664,36 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0009003> "FBcv:0009003")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0009003> "transcriptional cell cluster")
 SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0009003> <http://purl.obolibrary.org/obo/FBcv_0003082>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0009005> (single-cell library sequencing)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:DPG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0009005> "A method to prepare and sequence a library of cDNAs obtained from single cells.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0009005> <http://orcid.org/0000-0002-6095-8718>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0009005> "2021-07-26T13:40:26Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0009005> "assay_attribute")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0009005> "FBcv:0009005")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0009005> "single-cell library sequencing")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0009005> <http://purl.obolibrary.org/obo/FBcv_0003208>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0009007> (Smart-seq2)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24056875") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0009007> "A method that uses the Smart-seq2 platform (Picelli et al., 2013) to prepare and sequence a cDNA library.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0009007> <http://orcid.org/0000-0002-6095-8718>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0009007> "2021-07-26T13:44:02Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0009007> "assay_attribute")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0009007> "FBcv:0009007")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0009007> "Smart-seq2")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0009007> <http://purl.obolibrary.org/obo/FBcv_0009005>)
+
+# Class: <http://purl.obolibrary.org/obo/FBcv_0009008> (10x sequencing)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:29126257") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBcv_0009008> "A method that uses the Chromium platform from 10x Genomics to prepare and sequence a cDNA library.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBcv_0009008> <http://orcid.org/0000-0002-6095-8718>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBcv_0009008> "2021-07-26T13:45:06Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBcv_0009008> "assay_attribute")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBcv_0009008> "FBcv:0009008")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBcv_0009008> "10x sequencing")
+SubClassOf(<http://purl.obolibrary.org/obo/FBcv_0009008> <http://purl.obolibrary.org/obo/FBcv_0009005>)
 
 
 SubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/BFO_0000040>) ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>)))))
