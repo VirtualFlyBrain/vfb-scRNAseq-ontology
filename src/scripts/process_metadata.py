@@ -58,6 +58,7 @@ def filter_and_format(data_type, data, exclusion_list, existing_list):
         data['neo_label'] = "Cluster"
     elif data_type == 'assay':
         data['neo_label'] = "Assay"
+        data.drop(columns = ['control_assay'], inplace=True)
 
     data.to_csv('tmp/%s_data.tsv' % data_type, sep='\t', index=False)
 
