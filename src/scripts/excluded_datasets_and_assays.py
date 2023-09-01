@@ -24,14 +24,15 @@ non_neuronal_datasets = dataset_data[~dataset_data['id'].isin(included_cluster_d
 
 # assays to exclude based on relationship to a control assay by biological_reference_is
 excluded_assays = assay_data[assay_data['control_assay'].notnull()][['id', 'name']].drop_duplicates()
+print(excluded_assays)
 
 # exclude datasets that would have no other assays after removing excluded assays
 exp_dataset_list = []
 for d in dataset_data['id'].unique().tolist():
-    if len(assay_data[(assay_data['associated_dataset']==d) & (~assay_data['id'].isin(excluded_assays))]) == 0:
+    if len(assay_data[(assay_data['associated_dataset']==d) & (~assay_data['id'].isin(excluded_assays['id']))]) == 0:
         exp_dataset_list.append(d)
 experimental_condition_datasets = dataset_data[dataset_data['id'].isin(exp_dataset_list)][['id', 'name']]
 
 all_exclusions = pd.concat([manually_excluded_datasets, non_neuronal_datasets, excluded_assays, experimental_condition_datasets], axis=0).drop_duplicates()
 
-all_exclusions.to_csv("tmp/excluded_datasets.tsv", sep='\t')
+all_exclusions.to_csv("tmp/excluded_datasets_and_assays.tsv", sep='\t')
