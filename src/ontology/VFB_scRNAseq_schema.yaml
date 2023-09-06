@@ -120,7 +120,7 @@ classes:
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
         multivalued: false
-      associated_sample:
+      associated_sample_for_assay:
         slot_uri: RO:0002233
         description: Input sample(s) for the scRNAseq assay. Multiple IDs should be separated with '|' or in different rows.
         range: Sample
@@ -138,7 +138,7 @@ classes:
       owl: NamedIndividual
       owl.fstring: ClassAssertion( FBcv:0009002 {id} )
     attributes:
-      associated_sample:
+      associated_sample_for_clustering:
         slot_uri: BFO:0000051
         description: Sample (FBlc ID) that the Clustering uses.
         range: Sample

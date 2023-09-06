@@ -5,7 +5,7 @@ COPY (SELECT DISTINCT
     l.name as name,
     s.name as title,
     'FlyBase:'||p.uniquename as associated_dataset,
-    'FlyBase:'||bs.uniquename as associated_sample
+    'FlyBase:'||bs.uniquename as associated_sample_for_clustering
 FROM library l
 JOIN library_cvterm lcvt ON lcvt.library_id = l.library_id
 JOIN cvterm cvt ON (cvt.cvterm_id = lcvt.cvterm_id AND cvt.name = 'cell clustering analysis')

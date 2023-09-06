@@ -5,7 +5,7 @@ COPY (SELECT DISTINCT
     l.name as name,
     s.name as title,
     'FlyBase:'||p.uniquename as associated_dataset,
-    'FlyBase:'||a.uniquename as associated_sample,
+    'FlyBase:'||a.uniquename as associated_sample_for_assay,
     'FlyBase:'||ca.uniquename as control_assay,
     methods.name||':'||methods.accession as method
 FROM library l
