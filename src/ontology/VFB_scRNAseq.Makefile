@@ -4,7 +4,7 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: prepare_release
-prepare_release: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt
+prepare_release: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt gen_docs
 	rsync -R $(MAIN_FILES) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
@@ -144,3 +144,7 @@ $(ONT).owl: $(ONT)-full.owl
 
 $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt
 	grep -oE "FBgn[0-9]+" $< | sort | uniq > $@
+
+.PHONY: gen_docs
+gen_docs: install_linkml
+	gen-doc ./VFB_scRNAseq_schema.yaml --directory ../../docs
