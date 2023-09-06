@@ -24,7 +24,7 @@ CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(I
 
 
 .PHONY: get_FB_data
-get_FB_data: $(EXPDIR)
+get_FB_data: | $(EXPDIR) $(TMPDIR)
 ifeq ($(UPDATE_FROM_FB),TRUE)
 	apt-get update
 	apt-get -y install postgresql-client
@@ -76,20 +76,20 @@ install_linkml:
 $(EXPDIR):
 	mkdir -p $@
 
-$(TMPDIR)/existing_entities.txt:
+$(TMPDIR)/existing_entities.txt: | $(TMPDIR)
 	$(ROBOT) query --input $(SRC) \
   --query ../sparql/existing_entities.sparql $(TMPDIR)/existing_entities.csv &&\
 	grep -oE 'FBlc[0-9]+' $(TMPDIR)/existing_entities.csv > $@ &&\
 	rm $(TMPDIR)/existing_entities.csv
 
-$(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data
+$(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
 	python3 -m pip install vfb-connect
 	python3 $(SCRIPTSDIR)/excluded_datasets_and_assays.py
 
 $(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
 	$(LINKML) $< -o $@ && rm $<
 
-$(SRC): install_linkml process_FB_metadata
+$(SRC): install_linkml process_FB_metadata | $(TMPDIR)
 	mv $(SRC) $(TMPDIR)/old-$(SRC)
 	$(LINKML) -C Dataset $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
 	$(LINKML) -C Sample $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
@@ -142,7 +142,7 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
-$(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt
+$(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt | $(REPORTDIR)
 	grep -oE "FBgn[0-9]+" $< | sort | uniq > $@
 
 .PHONY: gen_docs
