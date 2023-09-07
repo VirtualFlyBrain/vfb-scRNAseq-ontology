@@ -34,13 +34,13 @@ Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.o
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBbt_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.owl>)
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.owl>)
 Annotation(dc:description "An ontology of Drosophila melanogaster scRNAseq data. This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.")
 Annotation(dc:title "VFB scRNAseq Ontology")
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/")
 
-Declaration(ObjectProperty(bao:BAO_0000212))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003846>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003847>))
 Declaration(NamedIndividual(<http://flybase.org/reports/FBlc0003848>))
@@ -1749,14 +1749,6 @@ Declaration(AnnotationProperty(terms:licence))
 Declaration(AnnotationProperty(terms:license))
 Declaration(AnnotationProperty(terms:references))
 Declaration(AnnotationProperty(bao:BAO_0002811))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: bao:BAO_0002811 (has_cell_count)
-
-AnnotationAssertion(rdfs:label bao:BAO_0002811 "has_cell_count")
-
 
 
 

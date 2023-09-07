@@ -6,6 +6,7 @@
         <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.owl" uri="imports/FBdv_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.owl" uri="imports/ro_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bao_import.owl" uri="imports/bao_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" uri="components/expression_data.owl"/>
     </group>
 </catalog>
