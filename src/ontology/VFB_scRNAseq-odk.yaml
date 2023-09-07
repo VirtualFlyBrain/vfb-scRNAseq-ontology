@@ -21,6 +21,11 @@ import_group:
     - id: ro
     - id: obi
       module_type: minimal
+    - id: bao
+      mirror_from: http://www.bioassayontology.org/bao/bao_complete.owl
+      module_type: minimal
+      base_iris: 
+        - http://www.bioassayontology.org/bao\#BAO
 namespaces: 
   - http://flybase.org/reports/
 primary_release: full
