@@ -1,0 +1,60 @@
+# Enum: SexOptions
+
+
+
+URI: [SexOptions](SexOptions)
+
+## Permissible Values
+
+| Value | Meaning | Description |
+| --- | --- | --- |
+| male | FBbt:00007004 |  |
+| female | FBbt:00007011 |  |
+
+
+
+
+## Slots
+
+| Name | Description |
+| ---  | --- |
+| [sex](sex.md) | Sex for the entity |
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: sex_options
+from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+rank: 1000
+permissible_values:
+  male:
+    text: male
+    meaning: FBbt:00007004
+  female:
+    text: female
+    meaning: FBbt:00007011
+
+```
+</details>
