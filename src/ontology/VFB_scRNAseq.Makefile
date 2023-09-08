@@ -14,6 +14,12 @@ prepare_release: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR
 UPDATE_FROM_FB = TRUE
 REFRESH_EXP = FALSE
 REFRESH_META = FALSE
+IMPORTS_ONLY = FALSE
+ifeq ($(IMPORTS_ONLY),TRUE)
+UPDATE_FROM_FB = FALSE
+REFRESH_EXP = FALSE
+REFRESH_META = FALSE
+endif
 
 # files and commands
 EXPDIR = expression_data
@@ -144,6 +150,13 @@ $(ONT).owl: $(ONT)-full.owl
 
 $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt | $(REPORTDIR)
 	grep -oE "FBgn[0-9]+" $< | sort | uniq > $@
+
+ifeq ($(IMPORTS_ONLY),TRUE)
+$(SRC):
+	echo "\nNot updating $(SRC)\n"
+$(COMPONENTSDIR)/expression_data.owl:
+	echo "\nNot updating 	$(COMPONENTSDIR)/expression_data.owl\n"
+endif
 
 .PHONY: gen_docs
 gen_docs: install_linkml
