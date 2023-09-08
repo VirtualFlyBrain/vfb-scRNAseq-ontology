@@ -1,0 +1,56 @@
+Prefix(:=<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bao_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bao_import.owl>
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-09-08/imports/bao_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/date> "August 22, 2023")
+Annotation(<http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by-sa/4.0/>)
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://www.bioassayontology.org/bao/bao_complete.owl>)
+Annotation(rdfs:comment "Contact:
+Stephan Schurer
+stephan dot schurer at med dot miami dot edu")
+Annotation(rdfs:comment "Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*")
+Annotation(rdfs:label "BAO")
+Annotation(rdfs:label "BioAssay Ontology")
+Annotation(owl:versionInfo "2.8.7")
+Annotation(owl:versionInfo "2023-09-08")
+
+Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000212>))
+Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000391>))
+Declaration(DataProperty(<http://www.bioassayontology.org/bao#BAO_0002811>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.bioassayontology.org/bao#BAO_0000212> (has assay method)
+
+AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0000212> "has assay method")
+SubObjectPropertyOf(<http://www.bioassayontology.org/bao#BAO_0000212> owl:topObjectProperty)
+
+# Object Property: <http://www.bioassayontology.org/bao#BAO_0000391> (is assay method of)
+
+AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0000391> "is assay method of")
+SubObjectPropertyOf(<http://www.bioassayontology.org/bao#BAO_0000391> owl:topObjectProperty)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.bioassayontology.org/bao#BAO_0002811> (has cell count)
+
+AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0002811> "has cell count"@en)
+
+
+
+)

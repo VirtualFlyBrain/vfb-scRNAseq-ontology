@@ -183,4 +183,3 @@ WARN	missing_label	http://flybase.org/reports/FBrf0247762	rdfs:label
 WARN	missing_label	http://flybase.org/reports/FBrf0249767	rdfs:label	
 WARN	missing_label	http://flybase.org/reports/FBrf0251482	rdfs:label	
 WARN	missing_label	http://flybase.org/reports/FBrf0252876	rdfs:label	
-INFO	missing_definition	has_cell_count	IAO:0000115	

@@ -1,0 +1,80 @@
+# Slot: assay_type
+
+
+_Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('single-cell RNA-seq')._
+
+
+
+URI: [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312)
+
+
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+[Dataset](Dataset.md) |  |  no  |
+
+
+
+
+
+
+
+## Properties
+
+* Range: [Thing](Thing.md)
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Annotations
+
+| property | value |
+| --- | --- |
+| owl | ClassAssertion, ObjectSomeValuesFrom |
+
+
+
+### Schema Source
+
+
+* from schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: assay_type
+annotations:
+  owl:
+    tag: owl
+    value: ClassAssertion, ObjectSomeValuesFrom
+description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000'
+  ('single-cell RNA-seq').
+from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+rank: 1000
+slot_uri: OBI:0000312
+alias: assay_type
+owner: Dataset
+domain_of:
+- Dataset
+range: Thing
+
+```
+</details>
