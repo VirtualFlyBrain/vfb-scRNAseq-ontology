@@ -6,7 +6,7 @@ parser.add_argument("-r", "--refresh", help="refresh all experiment metadata",
                     action="store_true")
 args = parser.parse_args()
 
-expression_cutoff = 0.5
+expression_cutoff = 0.05
 
 # excluded clusters and existing entities
 excluded_clusters = []
