@@ -24,8 +24,6 @@ endif
 # files and commands
 EXPDIR = expression_data
 LINKML = linkml-data2owl -s VFB_scRNAseq_schema.yaml
-NEW_EXPRESSION_TSVS = $(wildcard $(EXPDIR)/*.tsv)
-NEW_EXPRESSION_OFNS = $(NEW_EXPRESSION_TSVS:.tsv=.ofn)
 CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
 
 
@@ -52,7 +50,7 @@ endif
 
 .PHONY: process_FB_metadata
 process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv
-	# filter FB data to remove metadata for excluded datasets and, if REFRESH_META is TRUE, remove existing metadata
+	# filter FB data to remove metadata for excluded datasets and, if REFRESH_META is FALSE, remove existing metadata from input
 ifeq ($(REFRESH_META),TRUE)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
@@ -62,7 +60,7 @@ endif
 	
 .PHONY: process_FB_expdata
 process_FB_expdata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR)
-	# filter FB data to remove clusters for excluded datasets and, if REFRESH_EXP is FALSE, remove existing clusters
+	# filter FB data to remove clusters for excluded datasets and, if REFRESH_EXP is FALSE, remove existing clusters from input
 	# also split into tsvs for each cluster and filter by extent
 ifeq ($(REFRESH_EXP),TRUE)
 	python3 $(SCRIPTSDIR)/process_expression_data.py -r
@@ -92,8 +90,16 @@ $(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
 	python3 -m pip install vfb-connect
 	python3 $(SCRIPTSDIR)/excluded_datasets_and_assays.py
 
-$(EXPDIR)/%.ofn: $(EXPDIR)/%.tsv | $(EXPDIR) install_linkml
-	$(LINKML) $< -o $@ && rm $<
+.PHONY: make_exp_ofns
+# check whether ofn exists for each tsv, delete tsv if true, make ofn then delete tsv if false.
+make_exp_ofns: install_linkml #process_FB_expdata
+	for file in $(wildcard $(EXPDIR)/*.tsv); do \
+		if [ -e $${file%.tsv}.ofn ]; then \
+			rm $$file; \
+		else \
+			$(LINKML) $$file -o $${file%.tsv}.ofn && rm $$file; \
+		fi; \
+	done
 
 $(SRC): install_linkml process_FB_metadata | $(TMPDIR)
 	mv $(SRC) $(TMPDIR)/old-$(SRC)
@@ -126,7 +132,7 @@ else
 endif
 	echo "\nOntology source file updated!\n"
 
-$(COMPONENTSDIR)/expression_data.owl: process_FB_expdata $(NEW_EXPRESSION_OFNS) | $(COMPONENTSDIR)
+$(COMPONENTSDIR)/expression_data.owl: make_exp_ofns | $(COMPONENTSDIR)
 ifeq ($(REFRESH_EXP),TRUE)
 	$(ROBOT) merge --inputs "$(EXPDIR)/*.ofn" \
 	-o $(TMPDIR)/expression_data.owl
