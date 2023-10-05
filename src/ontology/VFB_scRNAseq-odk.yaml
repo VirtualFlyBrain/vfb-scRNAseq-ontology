@@ -5,7 +5,7 @@ repo: vfb-scRNAseq-ontology
 robot_report:
   custom_profile: TRUE
   fail_on: ERROR
-robot_java_args: '-Xmx16G'
+robot_java_args: '-Xmx20G'
 use_dosdps: FALSE
 edit_format: owl
 export_formats:
