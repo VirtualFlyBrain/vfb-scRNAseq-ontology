@@ -175,8 +175,7 @@ classes:
           owl: ClassAssertion, ObjectSomeValuesFrom
       hide_in_terminfo:
         slot_uri: neo_custom:hide_in_terminfo
-        description: Flag to hide expression edges in VFB Term Info pane.
-        range: boolean
+        description: Flag to hide expression edges in VFB Term Info pane. Range must be string - boolean changes capitalisation and does not add datatype anyway.
       expression_extent:
         slot_uri: neo_custom:expression_extent
         description: Extent of expression of the given gene.
