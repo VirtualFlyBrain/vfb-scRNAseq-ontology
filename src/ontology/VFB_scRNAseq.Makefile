@@ -143,7 +143,7 @@ endif
 	$(ROBOT) annotate --input $(TMPDIR)/expression_data.owl \
 	--ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
 	convert --format ofn -o $@.tmp &&\
-	cat $@.tmp | sed -e 's/(custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(custom:hide_in_terminfo "\([a-z]\+\)")/(custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
+	cat $@.tmp | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
 	gzip -c $@ > $@.gz &&\
 	rm -f $(EXPDIR)/*.ofn $@.tmp &&\
 	echo "\nGene expression file updated!\n"
