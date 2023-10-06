@@ -92,7 +92,7 @@ $(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
 
 .PHONY: make_exp_ofns
 # check whether ofn exists for each tsv, delete tsv if true, make ofn then delete tsv if false.
-make_exp_ofns: install_linkml #process_FB_expdata
+make_exp_ofns: install_linkml process_FB_expdata
 	for file in $(wildcard $(EXPDIR)/*.tsv); do \
 		if [ -e $${file%.tsv}.ofn ]; then \
 			rm $$file; \
@@ -133,20 +133,23 @@ endif
 	echo "\nOntology source file updated!\n"
 
 $(COMPONENTSDIR)/expression_data.owl: make_exp_ofns | $(COMPONENTSDIR)
-ifeq ($(REFRESH_EXP),TRUE)
-	$(ROBOT) merge --inputs "$(EXPDIR)/*.ofn" \
-	-o $(TMPDIR)/expression_data.owl
-else
-	$(ROBOT) merge --input $@ --inputs "$(EXPDIR)/*.ofn" \
-	-o $(TMPDIR)/expression_data.owl
-endif
-	$(ROBOT) annotate --input $(TMPDIR)/expression_data.owl \
-	--ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
-	convert --format ofn -o $@.tmp &&\
-	cat $@.tmp | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
-	gzip -c $@ > $@.gz &&\
-	rm -f $(EXPDIR)/*.ofn $@.tmp &&\
-	echo "\nGene expression file updated!\n"
+	@if [ -e $(EXPDIR)/*.ofn ]; then \
+		if [ "$(REFRESH_EXP)" = "TRUE" ]; then \
+			$(ROBOT) merge --inputs "$(EXPDIR)/*.ofn" \
+			annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
+			convert --format ofn -o $@.tmp; \
+		elif [ -n "$(wildcard $(EXPDIR)/*.ofn)" ]; then \
+			$(ROBOT) merge --input $@ --inputs "$(EXPDIR)/*.ofn" \
+			annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
+			convert --format ofn -o $@.tmp; \
+		fi; \
+		cat $@.tmp | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ && \
+		gzip -c $@ > $@.gz && \
+		rm -f $(EXPDIR)/*.ofn $@.tmp && \
+		echo "\nGene expression file updated!\n"; \
+	else \
+		echo "\nNo changes to gene expression file!\n"; \
+	fi
 
 # add VFB iri
 $(ONT).owl: $(ONT)-full.owl
