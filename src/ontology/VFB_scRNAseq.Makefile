@@ -35,7 +35,7 @@ $(IMPORTDIR)/merged_terms_combined.txt: get_FB_data
 # robot extract seems to remove object properties not connected to classes in module even if in seed
 $(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/merged_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		filter --include-terms $(IMPORTDIR)/merged_terms_combined.txt --term-file $(IMPORTDIR)/merged_terms_combined.txt --select "self parents" --select annotations --trim false \
+		filter --include-terms $(IMPORTDIR)/merged_terms_combined.txt --term-file $(IMPORTDIR)/merged_terms_combined.txt --select "self parents" --select annotations --trim true \
 		remove --select individuals \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
