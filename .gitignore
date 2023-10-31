@@ -33,6 +33,7 @@ src/ontology/tmp/*
 !src/ontology/tmp/README.md
 
 src/ontology/imports/*_terms_combined.txt
+src/ontology/imports/external_terms.txt
 
 src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt

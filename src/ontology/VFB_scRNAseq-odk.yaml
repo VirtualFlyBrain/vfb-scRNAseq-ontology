@@ -5,7 +5,7 @@ repo: vfb-scRNAseq-ontology
 robot_report:
   custom_profile: TRUE
   fail_on: ERROR
-robot_java_args: '-Xmx32G'
+robot_java_args: '-Xmx24G'
 use_dosdps: FALSE
 edit_format: owl
 export_formats:
@@ -14,16 +14,24 @@ components:
   products:
     - filename: expression_data.owl
 import_group:
+  use_base_merging: TRUE
+  slme_individuals: exclude
   products:
     - id: FBcv
+      use_base: TRUE
     - id: FBbt
+      use_base: TRUE
     - id: FBdv
+      use_base: TRUE
     - id: ro
+      use_base: TRUE
     - id: obi
-      module_type: minimal
+      make_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/OBI_
     - id: bao
+      make_base: TRUE
       mirror_from: http://www.bioassayontology.org/bao/bao_complete.owl
-      module_type: minimal
       base_iris: 
         - http://www.bioassayontology.org/bao\#BAO
 namespaces: 

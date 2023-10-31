@@ -31,12 +31,7 @@ Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
 
 Ontology(<http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl>
 Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl>)
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBbt_import.owl>)
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBcv_import.owl>)
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBdv_import.owl>)
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/bao_import.owl>)
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/obi_import.owl>)
-Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl>)
 Annotation(dc:description "An ontology of Drosophila melanogaster scRNAseq data. This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.")
 Annotation(dc:title "VFB scRNAseq Ontology")
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/")

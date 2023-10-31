@@ -10,7 +10,7 @@ prepare_release: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 # flags to bypass recreation of existing gene expression and experiment metadata
-# NB setting either of these (especially for expression data) to TRUE will greatly increase processing time (many hours, possibly days)
+# NB refreshing expression data will greatly increase processing time (may take several days)
 UPDATE_FROM_FB = TRUE
 REFRESH_EXP = FALSE
 REFRESH_META = FALSE
@@ -26,6 +26,19 @@ EXPDIR = expression_data
 LINKML = linkml-data2owl -s VFB_scRNAseq_schema.yaml
 CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
 
+# find external terms from raw data files and use manually specified terms to import
+# (too much processing power required to make seed in usual way) $(IMPORTDIR)/manual_required_terms.txt
+$(IMPORTDIR)/merged_terms_combined.txt: get_FB_data
+	python3 $(SCRIPTSDIR)/get_external_terms.py &&\
+	cat $(IMPORTDIR)/manual_required_terms.txt $(IMPORTDIR)/external_terms.txt | sort | uniq > $@
+
+# robot extract seems to remove object properties not connected to classes in module even if in seed
+$(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/merged_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		filter --include-terms $(IMPORTDIR)/merged_terms_combined.txt --term-file $(IMPORTDIR)/merged_terms_combined.txt --select "self parents" --select annotations --trim false \
+		remove --select individuals \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
 
 .PHONY: get_FB_data
 get_FB_data: | $(EXPDIR) $(TMPDIR)
