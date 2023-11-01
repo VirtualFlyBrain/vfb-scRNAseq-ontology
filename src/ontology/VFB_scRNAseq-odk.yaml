@@ -38,10 +38,8 @@ namespaces:
   - http://flybase.org/reports/
 primary_release: full
 release_artefacts:
-  - base
-  - simple
-  - non-classified
   - full
 allow_equivalents: none
 release_date: TRUE
 gzip_main: TRUE
+release_use_reasoner: FALSE
