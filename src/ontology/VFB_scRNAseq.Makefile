@@ -3,8 +3,8 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-.PHONY: prepare_release
-prepare_release: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt gen_docs
+.PHONY: prepare_release_notest
+prepare_release_notest: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt gen_docs
 	rsync -R $(MAIN_FILES) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
@@ -15,25 +15,20 @@ UPDATE_FROM_FB = TRUE
 REFRESH_EXP = FALSE
 REFRESH_META = FALSE
 IMPORTS_ONLY = FALSE
-ifeq ($(IMPORTS_ONLY),TRUE)
-UPDATE_FROM_FB = FALSE
-REFRESH_EXP = FALSE
-REFRESH_META = FALSE
-endif
 
 # files and commands
 EXPDIR = expression_data
 LINKML = linkml-data2owl -s VFB_scRNAseq_schema.yaml
-CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
 
 # find external terms from raw data files and use manually specified terms to import
 # (too much processing power required to make seed in usual way) $(IMPORTDIR)/manual_required_terms.txt
-$(IMPORTDIR)/merged_terms_combined.txt: get_FB_data
+ALL_TERMS_COMBINED = $(IMPORTDIR)/merged_terms_combined.txt
+$(ALL_TERMS_COMBINED): get_FB_data
 	python3 $(SCRIPTSDIR)/get_external_terms.py &&\
 	cat $(IMPORTDIR)/manual_required_terms.txt $(IMPORTDIR)/external_terms.txt | sort | uniq > $@
 
 # robot extract seems to remove object properties not connected to classes in module even if in seed
-$(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/merged_terms_combined.txt
+$(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(ALL_TERMS_COMBINED)
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
 		filter --include-terms $(IMPORTDIR)/merged_terms_combined.txt --term-file $(IMPORTDIR)/merged_terms_combined.txt --select "self parents" --select annotations --trim true \
 		remove --select individuals \
@@ -164,14 +159,22 @@ $(COMPONENTSDIR)/expression_data.owl: make_exp_ofns | $(COMPONENTSDIR)
 		echo "\nNo changes to gene expression file!\n"; \
 	fi
 
-# add VFB iri
-$(ONT).owl: $(ONT)-full.owl
-	grep -v owl:versionIRI $< > $@.tmp.owl
-	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl \
-		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+# default robot convert to make this takes a long time and doesn't modify ontology
+$(EDIT_PREPROCESSED): $(SRC)
+	cp $< $@
 
-$(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/ontologyterms.txt | $(REPORTDIR)
-	grep -oE "FBgn[0-9]+" $< | sort | uniq > $@
+# don't reason full version (setting release_use_reasoner=FALSE does not do this)
+$(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
+
+# add VFB iri (robot needs too much memory for this)
+$(ONT).owl: $(ONT)-full.owl
+	cat $< | grep -v owl:versionIRI | sed 's~http:\/\/purl\.obolibrary\.org\/obo\/VFB_scRNAseq\/VFB_scRNAseq-full\.owl~http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl~' > $@
+
+# generating seed file (to extract FBgns from there) needs too much memory
+$(REPORTDIR)/FBgn_list.txt: get_FB_data | $(REPORTDIR)
+	python3 $(SCRIPTSDIR)/get_gene_list.py
 
 ifeq ($(IMPORTS_ONLY),TRUE)
 $(SRC):
