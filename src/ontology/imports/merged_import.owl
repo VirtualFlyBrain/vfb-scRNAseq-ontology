@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-10-31/imports/merged_import.owl>
-Annotation(owl:versionInfo "2023-10-31")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-11-01/imports/merged_import.owl>
+Annotation(owl:versionInfo "2023-11-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00000052>))
