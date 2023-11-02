@@ -6,6 +6,7 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 
 
 
+
 ```mermaid
  classDiagram
     class Thing
@@ -95,7 +96,6 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 ```yaml
 name: Thing
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 slots:
 - id
 class_uri: owl:Class
@@ -109,7 +109,6 @@ class_uri: owl:Class
 ```yaml
 name: Thing
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 attributes:
   id:
     name: id

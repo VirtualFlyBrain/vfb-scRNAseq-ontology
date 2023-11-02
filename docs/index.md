@@ -1,8 +1,9 @@
 # VFB_scRNAseq
 
-None
+
 
 URI: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
 Name: VFB_scRNAseq
 
 
@@ -11,14 +12,15 @@ Name: VFB_scRNAseq
 
 | Class | Description |
 | --- | --- |
-| [Assay](Assay.md) |  |
-| [Class](Class.md) |  |
-| [Cluster](Cluster.md) |  |
-| [Clustering](Clustering.md) |  |
-| [Dataset](Dataset.md) |  |
-| [Publication](Publication.md) |  |
-| [Sample](Sample.md) |  |
-| [Thing](Thing.md) |  |
+| [Thing](Thing.md) | None |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Class](Class.md) | None |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Assay](Assay.md) | None |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Cluster](Cluster.md) | None |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Clustering](Clustering.md) | None |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Dataset](Dataset.md) | None |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Sample](Sample.md) | None |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Publication](Publication.md) | None |
+
 
 
 ## Slots

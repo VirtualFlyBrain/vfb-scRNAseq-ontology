@@ -6,6 +6,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 
 
 
+
 ```mermaid
  classDiagram
     class Dataset
@@ -134,7 +135,6 @@ annotations:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003023 {id} )
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Class
 slots:
 - neo_label
@@ -215,7 +215,6 @@ annotations:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003023 {id} )
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Class
 attributes:
   publication:

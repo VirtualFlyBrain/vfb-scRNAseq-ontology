@@ -6,6 +6,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 
 
 
+
 ```mermaid
  classDiagram
     class Sample
@@ -134,7 +135,6 @@ annotations:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003024 {id} )
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Class
 slots:
 - stage
@@ -187,7 +187,6 @@ annotations:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003024 {id} )
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Class
 attributes:
   sample_tissue:

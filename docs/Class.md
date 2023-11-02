@@ -6,6 +6,7 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 
 
 
+
 ```mermaid
  classDiagram
     class Class
@@ -97,7 +98,6 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 ```yaml
 name: Class
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Thing
 slots:
 - name
@@ -112,7 +112,6 @@ slots:
 ```yaml
 name: Class
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Thing
 attributes:
   name:

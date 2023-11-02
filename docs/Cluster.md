@@ -6,6 +6,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 
 
 
+
 ```mermaid
  classDiagram
     class Cluster
@@ -76,7 +77,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 | [associated_clustering](associated_clustering.md) | 0..1 <br/> [Clustering](Clustering.md) | Clustering (FBlc ID) that the Cluster belongs to | direct |
 | [cell_number](cell_number.md) | 0..1 <br/> [Integer](Integer.md) | The number of cells in the Cluster (as integer) | direct |
 | [cell_type](cell_type.md) | 0..* <br/> [Thing](Thing.md) | Anatomy (FBbt IDs) for the Cluster | direct |
-| [hide_in_terminfo](hide_in_terminfo.md) | 0..1 <br/> [Boolean](Boolean.md) | Flag to hide expression edges in VFB Term Info pane | direct |
+| [hide_in_terminfo](hide_in_terminfo.md) | 0..1 <br/> [String](String.md) | Flag to hide expression edges in VFB Term Info pane | direct |
 | [expression_extent](expression_extent.md) | 0..1 <br/> [Float](Float.md) | Extent of expression of the given gene | direct |
 | [expression_level](expression_level.md) | 0..1 <br/> [Float](Float.md) | Level of expression of the given gene | direct |
 | [gene](gene.md) | 0..1 <br/> [Thing](Thing.md) | A gene (FBgn ID) expressed by the Cluster | direct |
@@ -143,7 +144,6 @@ annotations:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0009003 {id} )
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Class
 slots:
 - stage
@@ -189,11 +189,11 @@ attributes:
     range: Thing
   hide_in_terminfo:
     name: hide_in_terminfo
-    description: Flag to hide expression edges in VFB Term Info pane.
+    description: Flag to hide expression edges in VFB Term Info pane. Range must be
+      string - boolean changes capitalisation and does not add datatype anyway.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: neo_custom:hide_in_terminfo
-    range: boolean
   expression_extent:
     name: expression_extent
     description: Extent of expression of the given gene.
@@ -244,7 +244,6 @@ annotations:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0009003 {id} )
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
-rank: 1000
 is_a: Class
 attributes:
   associated_clustering:
@@ -297,7 +296,8 @@ attributes:
     range: Thing
   hide_in_terminfo:
     name: hide_in_terminfo
-    description: Flag to hide expression edges in VFB Term Info pane.
+    description: Flag to hide expression edges in VFB Term Info pane. Range must be
+      string - boolean changes capitalisation and does not add datatype anyway.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: neo_custom:hide_in_terminfo
@@ -305,7 +305,7 @@ attributes:
     owner: Cluster
     domain_of:
     - Cluster
-    range: boolean
+    range: string
   expression_extent:
     name: expression_extent
     description: Extent of expression of the given gene.
