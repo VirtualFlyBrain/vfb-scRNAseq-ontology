@@ -46,3 +46,4 @@ VFB_scRNAseq-non-classified.owl
 VFB_scRNAseq-simple.owl
 VFB_scRNAseq.owl
 src/ontology/components/expression_data.owl
+*.pyc

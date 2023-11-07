@@ -29,4 +29,4 @@ for c in external_term_columns:
 all_external_terms = set(all_external_terms)
 
 with open(outfile, 'w') as file:
-    file.write('\n'.join(all_external_terms))
+    file.write('\n'.join(all_external_terms) + '\n')
