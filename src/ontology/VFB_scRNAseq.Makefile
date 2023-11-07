@@ -173,9 +173,11 @@ $(ONT).owl: $(ONT)-full.owl
 	cat $< | grep -v owl:versionIRI | sed 's~http:\/\/purl\.obolibrary\.org\/obo\/VFB_scRNAseq\/VFB_scRNAseq-full\.owl~http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl~' > $@
 
 # generating seed file (to extract FBgns from there) needs too much memory
+# this is needed for gene annotations in vfb-scRNAseq-gene-annotations repo
 $(REPORTDIR)/FBgn_list.txt: get_FB_data | $(REPORTDIR)
 	python3 $(SCRIPTSDIR)/get_gene_list.py
 
+# seed file of all terms - needed for VFB pipeline
 $(REPORTDIR)/all_terms_seed.txt: $(ALL_TERMS_COMBINED) $(REPORTDIR)/FBgn_list.txt get_FB_data
 	python3 $(SCRIPTSDIR)/get_all_FBlc_terms.py
 	cat $(REPORTDIR)/FBgn_list.txt $(ALL_TERMS_COMBINED) $(TMPDIR)/FBlc_terms.txt | sed 's~^FBgn~http://flybase.org.reports/FBgn~' | sort | uniq > $@
