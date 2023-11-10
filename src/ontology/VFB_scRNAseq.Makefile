@@ -32,8 +32,13 @@ $(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(ALL_TERMS_COMBINED)
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
 		filter --include-terms $(IMPORTDIR)/merged_terms_combined.txt --term-file $(IMPORTDIR)/merged_terms_combined.txt --select "self parents" --select annotations --trim true \
 		remove --select individuals \
+		remove --term owl:Nothing --axioms logical --preserve-structure false \
+		remove --axioms "${UNSAT_AXIOM_TYPES}" --preserve-structure false \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
+
+# these need to be removed for VFB
+UNSAT_AXIOM_TYPES = DisjointClasses DisjointUnion DifferentIndividuals DisjointObjectProperties DisjointDataProperties
 
 .PHONY: get_FB_data
 get_FB_data: | $(EXPDIR) $(TMPDIR)

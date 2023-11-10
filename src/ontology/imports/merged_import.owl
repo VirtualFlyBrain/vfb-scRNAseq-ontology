@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-11-01/imports/merged_import.owl>
-Annotation(owl:versionInfo "2023-11-01")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-11-10/imports/merged_import.owl>
+Annotation(owl:versionInfo "2023-11-10")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00000052>))
@@ -804,8 +804,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00000001> <http://purl.obolibrary.org/obo/fbbt#EmbDevSlim>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00000001> <http://purl.obolibrary.org/obo/fbbt#cur>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00000001> "organism")
-DisjointClasses(<http://purl.obolibrary.org/obo/FBbt_00000001> <http://purl.obolibrary.org/obo/FBbt_00007009>)
-DisjointClasses(<http://purl.obolibrary.org/obo/FBbt_00000001> <http://purl.obolibrary.org/obo/FBbt_00007010>)
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00000052> (embryo)
 
@@ -2255,7 +2253,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSyno
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00004860> "FBbt:00004860")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00004860> <http://purl.obolibrary.org/obo/fbbt#cur>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004860> "germline cell")
-DisjointClasses(<http://purl.obolibrary.org/obo/FBbt_00004860> <http://purl.obolibrary.org/obo/FBbt_00100318>)
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004861> (germline stem cell)
 
@@ -2691,8 +2688,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00005106> <http://purl.obolibrary.org/obo/fbbt#scrnaseq_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005106> "neuron")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://purl.obolibrary.org/obo/FBbt_00100318>)
-DisjointClasses(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://purl.obolibrary.org/obo/FBbt_00005144>)
-DisjointClasses(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://purl.obolibrary.org/obo/FBbt_00005146>)
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005129> (adult optic lobe columnar neuron)
 
@@ -5287,7 +5282,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FBbt_00110136> "This definition follows Fischbach and Dittrich (1989) in classifying based on the extension of the collaterals. A narrow field columnar neuron is classified as columnar by Morante and Desplan (2008).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00110136> "optic lobe narrow field columnar neuron")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00110136> <http://purl.obolibrary.org/obo/FBbt_00005129>)
-DisjointClasses(<http://purl.obolibrary.org/obo/FBbt_00110136> <http://purl.obolibrary.org/obo/FBbt_00110137>)
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00110137> (optic lobe wide-field columnar neuron)
 
