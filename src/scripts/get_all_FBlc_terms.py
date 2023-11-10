@@ -26,4 +26,4 @@ for c in ID_columns:
 all_ids = set([i.replace('FlyBase:','http://flybase.org/reports/') for i in all_ids])
 
 with open(outfile, 'w') as file:
-    file.write('\n'.join(all_ids) + 'n')
+    file.write('\n'.join(all_ids) + '\n')
