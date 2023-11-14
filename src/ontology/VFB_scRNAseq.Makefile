@@ -4,7 +4,7 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: prepare_release_notest
-prepare_release_notest: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt $(REPORTDIR)/VFB_scRNAseq.owl_terms.txt gen_docs
+prepare_release_notest: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt $(REPORTDIR)/VFB_scRNAseq.owl.gz.owl_terms.txt gen_docs
 	rsync -R $(MAIN_FILES) $(RELEASEDIR) &&\
   rm -f $(CLEANFILES) &&\
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
@@ -70,7 +70,7 @@ else
 	python3 $(SCRIPTSDIR)/process_metadata.py
 endif
 	python3 $(SCRIPTSDIR)/process_site_data.py
-	
+
 .PHONY: process_FB_expdata
 process_FB_expdata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR)
 	# filter FB data to remove clusters for excluded datasets and, if REFRESH_EXP is FALSE, remove existing clusters from input
@@ -183,7 +183,7 @@ $(REPORTDIR)/FBgn_list.txt: get_FB_data | $(REPORTDIR)
 	python3 $(SCRIPTSDIR)/get_gene_list.py
 
 # seed file of all terms - needed for VFB pipeline
-$(REPORTDIR)/VFB_scRNAseq.owl_terms.txt: $(ALL_TERMS_COMBINED) $(REPORTDIR)/FBgn_list.txt get_FB_data
+$(REPORTDIR)/VFB_scRNAseq.owl.gz.owl_terms.txt: $(ALL_TERMS_COMBINED) $(REPORTDIR)/FBgn_list.txt get_FB_data
 	python3 $(SCRIPTSDIR)/get_all_FBlc_terms.py
 	cat $(REPORTDIR)/FBgn_list.txt $(ALL_TERMS_COMBINED) $(TMPDIR)/FBlc_terms.txt | sed 's~^FBgn~http://flybase.org.reports/FBgn~' | sort | uniq > $@
 
