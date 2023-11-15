@@ -26,7 +26,7 @@ default_range: string
 
 
 classes:
-  
+
   Thing:
     class_uri: owl:Class
     slots:
@@ -115,7 +115,7 @@ classes:
     attributes:
       method:
         slot_uri: BAO:0000212
-        description: Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing'.
+        description: Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing' for scRNAseq data.
         range: Thing
         annotations:
           owl: ClassAssertion, ObjectSomeValuesFrom
