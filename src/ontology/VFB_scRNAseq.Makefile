@@ -18,6 +18,7 @@ IMPORTS_ONLY = FALSE
 
 # files and commands
 EXPDIR = expression_data
+METADATADIR = metadata_files
 LINKML = linkml-data2owl -s VFB_scRNAseq_schema.yaml
 
 # find external terms from raw data files and use manually specified terms to import
@@ -62,17 +63,16 @@ else
 endif
 
 .PHONY: process_FB_metadata
-process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv
+process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv | $(METADATADIR)
 	# filter FB data to remove metadata for excluded datasets and, if REFRESH_META is FALSE, remove existing metadata from input
 ifeq ($(REFRESH_META),TRUE)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
 	python3 $(SCRIPTSDIR)/process_metadata.py
 endif
-	python3 $(SCRIPTSDIR)/process_site_data.py
 
 .PHONY: process_FB_expdata
-process_FB_expdata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR)
+process_FB_expdata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
 	# filter FB data to remove clusters for excluded datasets and, if REFRESH_EXP is FALSE, remove existing clusters from input
 	# also split into tsvs for each cluster and filter by extent
 ifeq ($(REFRESH_EXP),TRUE)
@@ -90,7 +90,7 @@ endif
 install_linkml:
 	python3 -m pip install linkml-owl
 
-$(EXPDIR):
+$(EXPDIR) $(METADATADIR):
 	mkdir -p $@
 
 $(TMPDIR)/existing_entities.txt: | $(TMPDIR)
