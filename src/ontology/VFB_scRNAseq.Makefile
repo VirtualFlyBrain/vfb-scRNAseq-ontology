@@ -103,6 +103,29 @@ $(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
 	python3 -m pip install vfb-connect
 	python3 $(SCRIPTSDIR)/excluded_datasets_and_assays.py
 
+$(COMPONENTSDIR)/VFB_scRNAseq_%.ofn: install_linkml process_FB_metadata process_FB_expdata
+	$(LINKML) -C Dataset $(METADATADIR)/$*_dataset_data.tsv -o $(METADATADIR)/$*_dataset_data.ofn &&\
+	$(LINKML) -C Publication $(METADATADIR)/$*_publication_data.tsv -o $(METADATADIR)/$*_publication_data.ofn &&\
+	$(LINKML) -C Sample $(METADATADIR)/$*_sample_data.tsv -o $(METADATADIR)/$*_sample_data.ofn &&\
+	$(LINKML) -C Assay $(METADATADIR)/$*_assay_data.tsv -o $(METADATADIR)/$*_assay_data.ofn &&\
+	$(LINKML) -C Cluster $(METADATADIR)/$*_cluster_data.tsv -o $(METADATADIR)/$*_cluster_data.ofn &&\
+	$(LINKML) -C Clustering $(METADATADIR)/$*_clustering_data.tsv -o $(METADATADIR)/$*_clustering_data.ofn &&\
+	$(ROBOT) merge \
+	--input $(METADATADIR)/$*_dataset_data.ofn \
+	--input $(METADATADIR)/$*_publication_data.ofn \
+	--input $(METADATADIR)/$*_sample_data.ofn \
+	--input $(METADATADIR)/$*_assay_data.ofn \
+	--input $(METADATADIR)/$*_cluster_data.ofn \
+	--input $(METADATADIR)/$*_clustering_data.ofn \
+	--input $(EXPDIR)/dataset_$*.owl \
+	--include-annotations true --collapse-import-closure false \
+	annotate --ontology-iri "http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_$*.owl" \
+	--annotation dc:description "An ontology of Drosophila melanogaster scRNAseq data from a single dataset ($*). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources." \
+	--typed-annotation owl:imports "http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl" rdf:resource \
+	--annotation dc:title "VFB scRNAseq Ontology for dataset $*" \
+	-o $@
+#	rm $(METADATADIR)/$*_dataset_data.tsv $(METADATADIR)/$*_sample_data.tsv $(METADATADIR)/$*_assay_data.tsv $(METADATADIR)/$*_cluster_data.tsv $(METADATADIR)/$*_clustering_data.tsv
+
 .PHONY: make_exp_ofns
 # check whether ofn exists for each tsv, delete tsv if true, make ofn then delete tsv if false.
 make_exp_ofns: install_linkml process_FB_expdata
@@ -113,6 +136,11 @@ make_exp_ofns: install_linkml process_FB_expdata
 			$(LINKML) $$file -o $${file%.tsv}.ofn && rm $$file; \
 		fi; \
 	done
+
+.PHONY: ontologies_by_dataset
+ontologies_by_dataset: $(patsubst $(EXPDIR)/dataset_%.owl,$(COMPONENTSDIR)/VFB_scRNAseq_%.ofn,$(wildcard $(EXPDIR)/dataset_*.owl))
+	echo "\nOntology files updated!\n"
+
 
 $(SRC): install_linkml process_FB_metadata | $(TMPDIR)
 	mv $(SRC) $(TMPDIR)/old-$(SRC)
