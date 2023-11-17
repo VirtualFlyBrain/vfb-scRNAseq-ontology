@@ -11,6 +11,8 @@ src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/expression_data
 src/ontology/expression_data/*
+src/ontology/metadata_files
+src/ontology/metadata_files/*
 src/ontology/VFB_scRNAseq.owl
 src/ontology/VFB_scRNAseq.obo
 src/ontology/VFB_scRNAseq.json
