@@ -19,9 +19,12 @@ if not args.refresh:
             existing_entities.append("FlyBase:" + line.rstrip())
 
 with open ('tmp/included_dataset_list.txt', 'r') as file:
-    included_datasets = file.read().splitlines()
+    all_included_datasets = file.read().splitlines()
 
-included_datasets = [i for i in included_datasets if not (i in existing_entities)]
+included_datasets = [i for i in all_included_datasets if not (i in existing_entities)]
+
+with open ('tmp/included_dataset_list.txt', 'w') as file:
+    file.write('\n'.join(included_datasets))
 
 def filter_and_format(data_type, data, exclusion_list, existing_list, sites_dict=sites_dict, included_datasets=included_datasets):
     """
@@ -58,8 +61,7 @@ def filter_and_format(data_type, data, exclusion_list, existing_list, sites_dict
         data['site'] = data['site_label'].apply(lambda x: "vfb:" + sites_dict[x])
         data = data.drop(['source_linkout', 'site_label'], axis=1).drop_duplicates()
         data = (data.groupby(['id', 'name', 'title', 'publication', 'licence', 'assay_type', 'site', 'neo_label']).agg({'accession': lambda x: "|".join(x)}).reset_index())
-        publication_data = pd.DataFrame({"id":data.loc[:,"publication"].unique(), "neo_label":"pub"})
-        publication_data.to_csv('tmp/publication_data.tsv', sep='\t', index=False)
+
     elif data_type == 'sample':
         data['neo_label'] = "Sample"
         data.drop(columns = ['control_assay'], inplace=True)
@@ -71,6 +73,9 @@ def filter_and_format(data_type, data, exclusion_list, existing_list, sites_dict
 
     for i in included_datasets:
         data[data[split_by_col]==i].to_csv('metadata_files/%s_%s_data.tsv' % (i.replace('FlyBase:', ''), data_type), sep='\t', index=False)
+        if data_type == 'dataset':
+            publication_data = pd.DataFrame({"id":data[data['id']==i]["publication"], "neo_label":"pub"})
+            publication_data.to_csv('metadata_files/%s_publication_data.tsv' % i.replace('FlyBase:', ''), sep='\t', index=False)
 
     return new_exclusions
 
