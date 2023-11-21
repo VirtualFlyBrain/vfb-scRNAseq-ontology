@@ -1,0 +1,682 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005362.owl#"
+     xml:base="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005362.owl"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://virtualflybrain.org/reports/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
+     xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:linkml="https://w3id.org/linkml/"
+     xmlns:FlyBase="http://flybase.org/reports/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:neo_custom="http://n2o.neo/custom/"
+     xmlns:neo_property="http://n2o.neo/property/">
+    <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005362.owl">
+        <dcterms:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005362). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dcterms:description>
+        <dcterms:title>VFB scRNAseq Ontology for dataset FBlc0005362</dcterms:title>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_FBlc0005362.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://n2o.neo/custom/accession -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/property/nodeLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#imports -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#imports"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002811 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002811"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001446 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001446"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001920 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001920"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005146"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049826 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049826"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058211"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058212"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058217"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058218"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111738 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005337"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005362 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005362">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </owl:Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq study of first instar larval brains upon starvation</obo:IAO_0000115>
+        <dcterms:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
+        <dcterms:references rdf:resource="http://flybase.org/reports/FBrf0244302"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
+        <rdfs:label>scRNAseq_2019_Avalos</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
+        <neo_custom:accession>E-GEOD-134722</neo_custom:accession>
+    </owl:Axiom>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005363 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005363">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001920"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005337"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0005364"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Cells from first instar larval brain upon normal feeding condition</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005364 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005364">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0005363"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of cells from first instar larval brain upon normal feeding condition</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005365 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005365">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005363"/>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005366 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005366">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005367 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005367">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058212"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">290</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, peptidergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_peptidergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005368 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005368">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058215"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">383</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, cholinergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_cholinergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005369 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005369">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, glial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005370 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005370">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005146"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, neuroblasts cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_neuroblasts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005371 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005371">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049826"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, Kenyon cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_Kenyon_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005372 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005372">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111738"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, optic lobe neuroepithelial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_optic_lobe_neuroepithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005373 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005373">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, glutamatergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_glutamatergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005374 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005374">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058217"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, GABAergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_GABAergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0005375 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005375">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058211"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005336"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, aminergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_aminergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBrf0244302 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBrf0244302">
+        <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+
