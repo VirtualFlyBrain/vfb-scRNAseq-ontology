@@ -7,7 +7,7 @@ dataset_data = pd.read_csv('tmp/raw_dataset_data.tsv', sep='\t')
 sample_data = pd.read_csv('tmp/raw_sample_data.tsv', sep='\t')
 assay_data = pd.read_csv('tmp/raw_assay_data.tsv', sep='\t')
 
-# Manual exclusions - add IDs of datasets to exclude in format "FlyBase:FBlc0000000": "FlyBase:FBlc0005362"
+# Manual exclusions - add IDs of datasets to exclude in format "FlyBase:FBlc0000000"
 manual_exclusions = []
 manually_excluded_datasets = dataset_data[dataset_data['id'].isin(manual_exclusions)][['id', 'name']]
 

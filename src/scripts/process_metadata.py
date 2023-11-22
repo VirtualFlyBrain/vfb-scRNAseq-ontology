@@ -4,8 +4,9 @@ import argparse
 # new sites must be added to VFB KB, then add FB name and VFB short form here:
 sites_dict= {'EMBL-EBI Single Cell Expression Atlas Datasets': 'scExpressionAtlas'}
 
+# can specify whether to regenerate tsvs for all existing datasets. New datasets will always be generated.
 parser = argparse.ArgumentParser()
-parser.add_argument("-r", "--refresh", help="refresh all experiment metadata",
+parser.add_argument("-r", "--refresh", help="refresh all existing metadata",
                     action="store_true")
 args = parser.parse_args()
 
@@ -14,7 +15,7 @@ excluded_datasets_and_assays_df = pd.read_csv('tmp/excluded_datasets_and_assays.
 exclusions = excluded_datasets_and_assays_df.loc[:,'id'].tolist()
 existing_entities = []
 if not args.refresh:
-    with open('tmp/existing_entities.txt', 'r') as file:
+    with open('tmp/internal_terms.txt', 'r') as file:
         for line in file:
             existing_entities.append("FlyBase:" + line.rstrip())
 
@@ -22,9 +23,6 @@ with open ('tmp/included_dataset_list.txt', 'r') as file:
     all_included_datasets = file.read().splitlines()
 
 included_datasets = [i for i in all_included_datasets if not (i in existing_entities)]
-
-with open ('tmp/included_dataset_list.txt', 'w') as file:
-    file.write('\n'.join(included_datasets))
 
 def filter_and_format(data_type, data, exclusion_list, existing_list, sites_dict=sites_dict, included_datasets=included_datasets):
     """
