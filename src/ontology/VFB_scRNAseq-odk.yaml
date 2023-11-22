@@ -7,12 +7,9 @@ robot_report:
   fail_on: ERROR
 robot_java_args: '-Xmx24G'
 use_dosdps: FALSE
-edit_format: owl
+edit_format: ofn
 export_formats:
   - owl
-components:
-  products:
-    - filename: expression_data.owl
 import_group:
   use_base_merging: TRUE
   slme_individuals: exclude
@@ -32,9 +29,9 @@ import_group:
     - id: bao
       make_base: TRUE
       mirror_from: http://www.bioassayontology.org/bao/bao_complete.owl
-      base_iris: 
+      base_iris:
         - http://www.bioassayontology.org/bao\#BAO
-namespaces: 
+namespaces:
   - http://flybase.org/reports/
 primary_release: full
 release_artefacts:
