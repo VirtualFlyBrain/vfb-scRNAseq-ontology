@@ -27,7 +27,7 @@
         <dcterms:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005362). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dcterms:description>
         <dcterms:title>VFB scRNAseq Ontology for dataset FBlc0005362</dcterms:title>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_FBlc0005362.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005362_import.owl"/>
     </owl:Ontology>
     
 
