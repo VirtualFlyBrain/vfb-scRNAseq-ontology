@@ -1,7 +1,0 @@
-# find anything typed as a 'transcriptional cell cluster', 'cell clustering analysis', 'project' or 'biosample'
-
-prefix FBcv: <http://purl.obolibrary.org/obo/FBcv_>
-
-SELECT DISTINCT ?entity
-WHERE { ?entity a ?type
-FILTER (?type = FBcv:0009003 || ?type = FBcv:0009002 || ?type = FBcv:0003023 || ?type = FBcv:0003024) }
