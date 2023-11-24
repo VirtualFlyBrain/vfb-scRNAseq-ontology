@@ -9,8 +9,9 @@ bin/
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/expression_data
-src/ontology/expression_data/*
+src/ontology/expression_data/*.tsv
+src/ontology/expression_data/*.ofn
+src/ontology/expression_data/*.owl
 src/ontology/metadata_files
 src/ontology/metadata_files/*
 src/ontology/VFB_scRNAseq.owl
