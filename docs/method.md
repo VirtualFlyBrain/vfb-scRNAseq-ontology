@@ -1,7 +1,7 @@
 # Slot: method
 
 
-_Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing'._
+_Method used for the assay - currently getting any direct subclass of FBcv:0009005 'single-cell library sequencing' for scRNAseq data._
 
 
 
@@ -66,7 +66,7 @@ annotations:
     tag: owl
     value: ClassAssertion, ObjectSomeValuesFrom
 description: Method used for the assay - currently getting any direct subclass of
-  FBcv:0009005 'single-cell library sequencing'.
+  FBcv:0009005 'single-cell library sequencing' for scRNAseq data.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
 slot_uri: BAO:0000212
