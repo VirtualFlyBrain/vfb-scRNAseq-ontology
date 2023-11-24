@@ -28,7 +28,6 @@ ignored_entities = excluded_clusters + existing_entities
 # make dict of cluster:dataset
 cluster_metadata = pd.read_csv("tmp/raw_cluster_data.tsv", sep='\t').set_index('id')
 dataset_cluster_dict = {c: cluster_metadata['associated_dataset'][c] for c in cluster_metadata.index.values}
-print(dataset_cluster_dict)
 
 # get headers from expression_data file
 expression_data = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', nrows=0)
