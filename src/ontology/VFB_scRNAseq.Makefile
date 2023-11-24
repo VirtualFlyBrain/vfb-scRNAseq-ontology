@@ -4,10 +4,10 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: prepare_release_notest
-prepare_release_notest: $(SRC) all_components $(IMPORT_FILES) $(MAIN_FILES) $(REPORTDIR)/FBgn_list.txt $(REPORTDIR)/VFB_scRNAseq.owl.gz.owl_terms.txt gen_docs
-	rsync -R $(MAIN_FILES) $(RELEASEDIR) &&\
-  rm -f $(CLEANFILES) &&\
-  echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
+# this prepares a release without updating the source files or running any tests
+prepare_release_notest: $(SRC) all_imports $(RELEASE_ONTOLOGY_FILES) $(REPORTDIR)/FBgn_list.txt gen_docs
+	rm -f $(CLEANFILES) $(IMPORTDIR)/*.txt $(ALL_TERMS_COMBINED) &&\
+	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 # flags to bypass recreation of existing gene expression and experiment metadata
 # NB refreshing expression data will greatly increase processing time (may take several days)
@@ -16,30 +16,27 @@ REFRESH_EXP = FALSE
 REFRESH_META = FALSE
 IMPORTS_ONLY = FALSE
 
-# files and commands
+
+########## directories and commands
+
 EXPDIR = expression_data
 METADATADIR = metadata_files
+ONTOLOGYDIR = ontology_files
+RELEASEDIR = ../../release_files
+
+$(EXPDIR) $(METADATADIR) $(RELEASEDIR) $(ONTOLOGYDIR):
+	mkdir -p $@
+
 LINKML = linkml-data2owl -s VFB_scRNAseq_schema.yaml
+ROBOT_O = robot --catalog $(CATALOG_O)
+CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
-# find external terms from raw data files and use manually specified terms to import
-# (too much processing power required to make seed in usual way) $(IMPORTDIR)/manual_required_terms.txt
-ALL_TERMS_COMBINED = $(IMPORTDIR)/merged_terms_combined.txt
-$(ALL_TERMS_COMBINED): get_FB_data
-	python3 $(SCRIPTSDIR)/get_external_terms.py &&\
-	cat $(IMPORTDIR)/manual_required_terms.txt $(IMPORTDIR)/external_terms.txt | sort | uniq > $@
+.DEFAULT:
+	echo $@
+	# Default recipe for anything that doesn't have a recipe
+	# Stops make complaining that no recipe exists for tsvs
 
-# robot extract seems to remove object properties not connected to classes in module even if in seed
-$(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(ALL_TERMS_COMBINED)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		filter --include-terms $(IMPORTDIR)/merged_terms_combined.txt --term-file $(IMPORTDIR)/merged_terms_combined.txt --select "self parents" --select annotations --trim true \
-		remove --select individuals \
-		remove --term owl:Nothing --axioms logical --preserve-structure false \
-		remove --axioms "${UNSAT_AXIOM_TYPES}" --preserve-structure false \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		$(ANNOTATE_CONVERT_FILE); fi
-
-# these need to be removed for VFB
-UNSAT_AXIOM_TYPES = DisjointClasses DisjointUnion DifferentIndividuals DisjointObjectProperties DisjointDataProperties
+########## get data from FlyBase and generate input tsvs
 
 .PHONY: get_FB_data
 get_FB_data: | $(EXPDIR) $(TMPDIR)
@@ -62,9 +59,32 @@ else
 	echo "Not updating FlyBase data."
 endif
 
+.PHONY: unzip_exp_files
+# unzip expression files - overwrites any existing owl files, keeping .gz version too
+unzip_exp_files:
+	for FILE in $(EXPDIR)/*.owl.gz; \
+	do gzip -dkf $$FILE; done
+
+# get all FBlc terms
+$(TMPDIR)/internal_terms.txt: | $(TMPDIR)
+	touch $@
+	for FILE in $(ONTOLOGYDIR)/*.owl; \
+	do $(ROBOT_O) query --input $$FILE \
+	--query ../sparql/internal_terms.sparql $(TMPDIR)/internal_terms-raw.txt &&\
+	cat $(TMPDIR)/internal_terms-raw.txt $@ | grep -oE 'FBlc[0-9]+' | sort | uniq > $@-tmp.txt &&\
+	mv $@-tmp.txt $@; done &&\
+	rm -f $(TMPDIR)/internal_terms-raw.txt
+
+# exclusions - either no nervous system terms or excluded (non-WT or experimental condition) sample
+$(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
+	python3 -m pip install vfb-connect
+	python3 $(SCRIPTSDIR)/excluded_datasets_and_assays.py
+
 .PHONY: process_FB_metadata
-process_FB_metadata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv | $(METADATADIR)
-	# filter FB data to remove metadata for excluded datasets and, if REFRESH_META is FALSE, remove existing metadata from input
+# filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is FALSE, remove existing metadata (i.e. entities in a file in ontology_files) from input
+process_FB_metadata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv | $(METADATADIR)
+	python3 -m pip install beautifulsoup4
+	python3 -m pip install lxml
 ifeq ($(REFRESH_META),TRUE)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
@@ -72,38 +92,36 @@ else
 endif
 
 .PHONY: process_FB_expdata
-process_FB_expdata: $(TMPDIR)/existing_entities.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
-	# filter FB data to remove clusters for excluded datasets and, if REFRESH_EXP is FALSE, remove existing clusters from input
-	# also split into tsvs for each cluster and filter by extent
+# filter FB data to remove clusters for excluded datasets/assays and, if REFRESH_EXP is FALSE, remove existing clusters (i.e. those in a file in ontology_files) from input
+# also split into tsvs for each cluster and filter by extent
+process_FB_expdata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
 ifeq ($(REFRESH_EXP),TRUE)
 	python3 $(SCRIPTSDIR)/process_expression_data.py -r
 else
 	python3 $(SCRIPTSDIR)/process_expression_data.py
 endif
 
-.DEFAULT:
-	echo $@
-	# Default recipe for anything that doesn't have a recipe
-	# Stops make complaining that no recipe exists for tsvs
+.PHONY: all_tsvs
+all_tsvs: unzip_exp_files get_FB_data process_FB_metadata process_FB_expdata
+	echo  "Input tsvs generated"
+
+
+########## make ontology files from input tsvs
 
 .PHONY: install_linkml
 install_linkml:
 	python3 -m pip install linkml-owl
 
-$(EXPDIR) $(METADATADIR):
-	mkdir -p $@
+# metatdata owl files for datasets that have 'dataset' metadata files
+DATASET_META_FILES = $(patsubst $(METADATADIR)/%_dataset_data.tsv,$(ONTOLOGYDIR)/VFB_scRNAseq_%.owl,$(wildcard $(METADATADIR)/*_dataset_data.tsv))
 
-$(TMPDIR)/existing_entities.txt: | $(TMPDIR)
-	$(ROBOT) query --input $(SRC) \
-  --query ../sparql/existing_entities.sparql $(TMPDIR)/existing_entities.csv &&\
-	grep -oE 'FBlc[0-9]+' $(TMPDIR)/existing_entities.csv > $@ &&\
-	rm $(TMPDIR)/existing_entities.csv
+.PHONY: update_metadata_files
+# tsvs must already be in place before makefile is read to generate owl files
+update_metadata_files: $(DATASET_META_FILES)
+	echo  "Metadata ontologies updated"
 
-$(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
-	python3 -m pip install vfb-connect
-	python3 $(SCRIPTSDIR)/excluded_datasets_and_assays.py
-
-$(COMPONENTSDIR)/VFB_scRNAseq_%.ofn: install_linkml process_FB_metadata process_FB_expdata
+# make an ontology from existing linkml metadata templates
+$(ONTOLOGYDIR)/VFB_scRNAseq_%.owl: install_linkml
 	$(LINKML) -C Dataset $(METADATADIR)/$*_dataset_data.tsv -o $(METADATADIR)/$*_dataset_data.ofn &&\
 	$(LINKML) -C Publication $(METADATADIR)/$*_publication_data.tsv -o $(METADATADIR)/$*_publication_data.ofn &&\
 	$(LINKML) -C Sample $(METADATADIR)/$*_sample_data.tsv -o $(METADATADIR)/$*_sample_data.ofn &&\
@@ -117,18 +135,19 @@ $(COMPONENTSDIR)/VFB_scRNAseq_%.ofn: install_linkml process_FB_metadata process_
 	--input $(METADATADIR)/$*_assay_data.ofn \
 	--input $(METADATADIR)/$*_cluster_data.ofn \
 	--input $(METADATADIR)/$*_clustering_data.ofn \
-	--input $(EXPDIR)/dataset_$*.owl \
 	--include-annotations true --collapse-import-closure false \
 	annotate --ontology-iri "http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_$*.owl" \
 	--annotation dc:description "An ontology of Drosophila melanogaster scRNAseq data from a single dataset ($*). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources." \
-	--typed-annotation owl:imports "http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl" rdf:resource \
 	--annotation dc:title "VFB scRNAseq Ontology for dataset $*" \
-	-o $@
-#	rm $(METADATADIR)/$*_dataset_data.tsv $(METADATADIR)/$*_sample_data.tsv $(METADATADIR)/$*_assay_data.tsv $(METADATADIR)/$*_cluster_data.tsv $(METADATADIR)/$*_clustering_data.tsv
+	--link-annotation owl:imports "http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/$*_import.owl" \
+	--link-annotation owl:imports "http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_$*.owl" \
+	convert --format owl \
+	-o $@ &&\
+	rm -f $(METADATADIR)/$*_*.tsv $(METADATADIR)/$*_*.ofn
 
 .PHONY: make_exp_ofns
-# check whether ofn exists for each tsv, delete tsv if true, make ofn then delete tsv if false.
-make_exp_ofns: install_linkml process_FB_expdata
+# check whether ofn exists for each cluster tsv, delete tsv if true, make ofn then delete tsv if false.
+make_exp_ofns: install_linkml
 	for file in $(wildcard $(EXPDIR)/*.tsv); do \
 		if [ -e $${file%.tsv}.ofn ]; then \
 			rm $$file; \
@@ -137,91 +156,102 @@ make_exp_ofns: install_linkml process_FB_expdata
 		fi; \
 	done
 
-.PHONY: ontologies_by_dataset
-ontologies_by_dataset: $(patsubst $(EXPDIR)/dataset_%.owl,$(COMPONENTSDIR)/VFB_scRNAseq_%.ofn,$(wildcard $(EXPDIR)/dataset_*.owl))
-	echo "\nOntology files updated!\n"
+# gene expression owl files for datasets that have 'cluster' expression data tsvs or ofns (names are dataset_FBlcxxxxxxx-cluster_FBlcxxxxxxx)
+DATASET_EXP_FILES = $(sort $(filter-out cluster_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.tsv))) $(filter-out cluster_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.ofn))))
+
+# for troubleshooting (check that expected dataset files are in list)
+check_ds:
+	echo $(DATASET_EXP_FILES)
+
+.PHONY: update_expression_files
+# tsvs must already be in place before makefile is read to generate ofns
+update_expression_files: $(DATASET_EXP_FILES)
+	echo  "Expression ontologies updated"
+
+# merge and annotate cluster ofns for each dataset
+# need to reformat expression annotations as these don't get the right types from linkml
+$(EXPDIR)/dataset_%.owl: make_exp_ofns
+	$(ROBOT) merge --inputs "$(EXPDIR)/dataset_$*-cluster_*.ofn" \
+	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/$@" \
+	convert --format ofn -o $(TMPDIR)/$*-exp-tmp.ofn &&\
+	cat $(TMPDIR)/$*-exp-tmp.ofn | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
+	$(ROBOT) convert -i $@ --format owl -o $@ # convert from ofn to owl
+	$(ROBOT) convert -i $@ --format owl -o $@.gz # make a compressed version
+	rm -f $(wildcard $(EXPDIR)/dataset_$*-cluster_*.ofn) $(TMPDIR)/$*-exp-tmp.ofn
+
+.PHONY: update_ontology_files
+update_ontology_files: update_metadata_files update_expression_files
+	echo  "All ontology files updated"
 
 
-$(SRC): install_linkml process_FB_metadata | $(TMPDIR)
-	mv $(SRC) $(TMPDIR)/old-$(SRC)
-	$(LINKML) -C Dataset $(TMPDIR)/dataset_data.tsv -o $(TMPDIR)/dataset_data.ofn &&\
-	$(LINKML) -C Sample $(TMPDIR)/sample_data.tsv -o $(TMPDIR)/sample_data.ofn &&\
-	$(LINKML) -C Assay $(TMPDIR)/assay_data.tsv -o $(TMPDIR)/assay_data.ofn &&\
-	$(LINKML) -C Cluster $(TMPDIR)/cluster_data.tsv -o $(TMPDIR)/cluster_data.ofn &&\
-	$(LINKML) -C Clustering $(TMPDIR)/clustering_data.tsv -o $(TMPDIR)/clustering_data.ofn &&\
-	$(LINKML) -C Publication $(TMPDIR)/publication_data.tsv -o $(TMPDIR)/publication_data.ofn &&\
-	$(ROBOT) merge \
-	--input VFB_scRNAseq-annotations.ofn \
-	--input $(TMPDIR)/dataset_data.ofn \
-	--input $(TMPDIR)/sample_data.ofn \
-	--input $(TMPDIR)/assay_data.ofn \
-	--input $(TMPDIR)/cluster_data.ofn \
-	--input $(TMPDIR)/clustering_data.ofn \
-	--input $(TMPDIR)/publication_data.ofn \
-	--include-annotations true --collapse-import-closure false \
-	-o $(TMPDIR)/merged-meta.owl
-ifeq ($(REFRESH_META),TRUE)
-	$(ROBOT) convert -i $(TMPDIR)/merged-meta.owl --format ofn \
+########## release steps - imports, merged and compressed release files, reports
+
+# variables - need ontologies to be made already
+# dataset IDs from ontologies in ontology_files
+RELEASE_DATASETS = $(patsubst $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl,%,$(wildcard $(ONTOLOGYDIR)/*.owl))
+ONTOLOGY_IMPORT_FILES = $(patsubst %,$(IMPORTDIR)/%_import.owl,$(RELEASE_DATASETS))
+IMPORT_SEED_FILES = $(patsubst %,$(IMPORTDIR)/%_terms.txt,$(RELEASE_DATASETS))
+RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_scRNAseq_%.owl.gz,$(RELEASE_DATASETS))
+
+.PHONY: all_imports
+all_imports: create_import_stubs $(ONTOLOGY_IMPORT_FILES) # merged import is default prerequisite
+	rm -f $(IMPORTDIR)/*.txt
+
+.PHONY: create_import_stubs
+# make an empty ontology for imports to stop robot complaining
+create_import_stubs:
+	for FILE in $(ONTOLOGY_IMPORT_FILES); do \
+		if ! test -f $$FILE; then \
+			cp $(IMPORTDIR)/empty_import.txt $$FILE &&\
+			$(ROBOT) annotate -i $$FILE \
+			--ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/$$FILE" \
+			-o $$FILE; fi; \
+		done
+
+# import seeds for each ontology
+$(IMPORTDIR)/%_terms.txt: create_import_stubs | $(ONTOLOGYDIR) $(TMPDIR)
+	$(ROBOT_O) query --input $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl --query ../sparql/external_terms.sparql $@ &&\
+	echo "http://purl.obolibrary.org/obo/RO_0002292" >> $@
+
+$(IMPORTDIR)/merged_terms_combined.txt: $(IMPORT_SEED_FILES) | $(TMPDIR)
+	cat $(IMPORT_SEED_FILES) | sort | uniq > $@
+
+# create merged release files (no need to reason etc)
+$(RELEASEDIR)/VFB_scRNAseq_%.owl.gz:
+	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl \
+	convert --format owl \
 	-o $@
-else
-	$(ROBOT) remove --input $(TMPDIR)/old-$(SRC) \
-	--select "ontology" \
-	merge --input $(TMPDIR)/merged-meta.owl \
-	--include-annotations true --collapse-import-closure false \
-	convert --format ofn \
-	-o $@
-endif
-	echo "\nOntology source file updated!\n"
-
-$(COMPONENTSDIR)/expression_data.owl: make_exp_ofns | $(COMPONENTSDIR)
-	@if [ -e $(EXPDIR)/*.ofn ]; then \
-		if [ "$(REFRESH_EXP)" = "TRUE" ]; then \
-			$(ROBOT) merge --inputs "$(EXPDIR)/*.ofn" \
-			annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
-			convert --format ofn -o $@.tmp; \
-		elif [ -n "$(wildcard $(EXPDIR)/*.ofn)" ]; then \
-			$(ROBOT) merge --input $@ --inputs "$(EXPDIR)/*.ofn" \
-			annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/components/expression_data.owl" \
-			convert --format ofn -o $@.tmp; \
-		fi; \
-		cat $@.tmp | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ && \
-		gzip -c $@ > $@.gz && \
-		rm -f $(EXPDIR)/*.ofn $@.tmp && \
-		echo "\nGene expression file updated!\n"; \
-	else \
-		echo "\nNo changes to gene expression file!\n"; \
-	fi
-
-# default robot convert to make this takes a long time and doesn't modify ontology
-$(EDIT_PREPROCESSED): $(SRC)
-	cp $< $@
-
-# don't reason full version (setting release_use_reasoner=FALSE does not do this)
-$(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
-	$(ROBOT_RELEASE_IMPORT_MODE) \
-		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
-
-# add VFB iri (robot needs too much memory for this)
-$(ONT).owl: $(ONT)-full.owl
-	cat $< | grep -v owl:versionIRI | sed 's~http:\/\/purl\.obolibrary\.org\/obo\/VFB_scRNAseq\/VFB_scRNAseq-full\.owl~http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq.owl~' > $@
 
 # generating seed file (to extract FBgns from there) needs too much memory
 # this is needed for gene annotations in vfb-scRNAseq-gene-annotations repo
-$(REPORTDIR)/FBgn_list.txt: get_FB_data | $(REPORTDIR)
+$(REPORTDIR)/FBgn_list.txt: $(REPORTDIR)
 	python3 $(SCRIPTSDIR)/get_gene_list.py
 
-# seed file of all terms - needed for VFB pipeline
-$(REPORTDIR)/VFB_scRNAseq.owl.gz.owl_terms.txt: $(ALL_TERMS_COMBINED) $(REPORTDIR)/FBgn_list.txt get_FB_data
-	python3 $(SCRIPTSDIR)/get_all_FBlc_terms.py
-	cat $(REPORTDIR)/FBgn_list.txt $(ALL_TERMS_COMBINED) $(TMPDIR)/FBlc_terms.txt | sed 's~^FBgn~http://flybase.org.reports/FBgn~' | sort | uniq > $@
-
-ifeq ($(IMPORTS_ONLY),TRUE)
+# make a $(SRC) file that imports all the owl files in ontology_files
 $(SRC):
-	echo "\nNot updating $(SRC)\n"
-$(COMPONENTSDIR)/expression_data.owl:
-	echo "\nNot updating 	$(COMPONENTSDIR)/expression_data.owl\n"
-endif
+	python3 $(SCRIPTSDIR)/create_src.py
 
 .PHONY: gen_docs
 gen_docs: install_linkml
 	gen-doc ./VFB_scRNAseq_schema.yaml --directory ../../docs
+
+
+######## overwrite some ODK goals and variables to prevent unnecessary processing
+
+$(EDIT_PREPROCESSED): $(SRC)
+	cp $< $@
+
+$(SRCMERGED): $(EDIT_PREPROCESSED) $(OTHER_SRC)
+	cp $< $@
+
+$(PRESEED):
+	touch $@
+
+$(ALL_TERMS_COMBINED):
+	touch $@
+
+.PHONY: update_repo
+# don't keep adding extra imports
+update_repo:
+	sh $(SCRIPTSDIR)/update_repo.sh
+	rm -f $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_import.owl) $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_terms.txt)
