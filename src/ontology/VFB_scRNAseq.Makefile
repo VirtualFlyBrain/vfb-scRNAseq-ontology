@@ -5,17 +5,17 @@
 
 .PHONY: prepare_release_notest
 # this prepares a release without updating the source files or running any tests
-prepare_release_notest: $(SRC) all_imports $(RELEASE_ONTOLOGY_FILES) $(REPORTDIR)/FBgn_list.txt gen_docs
+prepare_release_notest: $(SRC) all_imports release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
 	rm -f $(CLEANFILES) $(IMPORTDIR)/*.txt $(ALL_TERMS_COMBINED) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 # flags to bypass recreation of existing gene expression and experiment metadata
 # NB refreshing expression data will greatly increase processing time (may take several days)
-UPDATE_FROM_FB = TRUE
-REFRESH_EXP = FALSE
-REFRESH_META = FALSE
-IMPORTS_ONLY = FALSE
-
+UPDATE_FROM_FB = true
+REFRESH_EXP = false
+REFRESH_META = false
+IMPORTS_ONLY = false
+IMP = true
 
 ########## directories and commands
 
@@ -40,7 +40,7 @@ CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
 .PHONY: get_FB_data
 get_FB_data: | $(EXPDIR) $(TMPDIR)
-ifeq ($(UPDATE_FROM_FB),TRUE)
+ifeq ($(UPDATE_FROM_FB),true)
 	apt-get update
 	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
@@ -81,21 +81,21 @@ $(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/excluded_datasets_and_assays.py
 
 .PHONY: process_FB_metadata
-# filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is FALSE, remove existing metadata (i.e. entities in a file in ontology_files) from input
+# filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in ontology_files) from input
 process_FB_metadata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv | $(METADATADIR)
 	python3 -m pip install beautifulsoup4
 	python3 -m pip install lxml
-ifeq ($(REFRESH_META),TRUE)
+ifeq ($(REFRESH_META),true)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
 	python3 $(SCRIPTSDIR)/process_metadata.py
 endif
 
 .PHONY: process_FB_expdata
-# filter FB data to remove clusters for excluded datasets/assays and, if REFRESH_EXP is FALSE, remove existing clusters (i.e. those in a file in ontology_files) from input
+# filter FB data to remove clusters for excluded datasets/assays and, if REFRESH_EXP is false, remove existing clusters (i.e. those in a file in ontology_files) from input
 # also split into tsvs for each cluster and filter by extent
 process_FB_expdata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
-ifeq ($(REFRESH_EXP),TRUE)
+ifeq ($(REFRESH_EXP),true)
 	python3 $(SCRIPTSDIR)/process_expression_data.py -r
 else
 	python3 $(SCRIPTSDIR)/process_expression_data.py
@@ -210,15 +210,26 @@ create_import_stubs:
 
 # import seeds for each ontology
 $(IMPORTDIR)/%_terms.txt: create_import_stubs | $(ONTOLOGYDIR) $(TMPDIR)
+ifeq ($(IMP),true)
 	$(ROBOT_O) query --input $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl --query ../sparql/external_terms.sparql $@ &&\
 	echo "http://purl.obolibrary.org/obo/RO_0002292" >> $@
+else
+	touch $@
+endif
 
 $(IMPORTDIR)/merged_terms_combined.txt: $(IMPORT_SEED_FILES) | $(TMPDIR)
+ifeq ($(IMP),true)
 	cat $(IMPORT_SEED_FILES) | sort | uniq > $@
+else
+	touch $@
+endif
+
+.PHONY: release_ontology_files
+release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
 
 # create merged release files (no need to reason etc)
 $(RELEASEDIR)/VFB_scRNAseq_%.owl.gz:
-	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl \
+	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl \
 	convert --format owl \
 	-o $@
 
@@ -236,7 +247,7 @@ gen_docs: install_linkml
 	gen-doc ./VFB_scRNAseq_schema.yaml --directory ../../docs
 
 
-######## overwrite some ODK goals and variables to prevent unnecessary processing
+######## overwrite some ODK goals to prevent unnecessary processing
 
 $(EDIT_PREPROCESSED): $(SRC)
 	cp $< $@
