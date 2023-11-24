@@ -140,6 +140,17 @@ for ds in all_included_datasets:
                 "name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_{id}.owl",
                 "uri" : f"../expression_data/dataset_{id}.owl"}))
 
+    # Check if the external terms import already exists in lower_catalog
+    ext_check_lower = lower_catalog.find('uri', {"name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/{id}_import.owl"})
+
+    if not ext_check_lower:
+        # Update lower_catalog only if the tag doesn't exist
+        lower_catalog.catalog.group.append(
+            lower_catalog.new_tag('uri', attrs={
+                "id":"User Entered Import Resolution",
+                "name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/{id}_import.owl",
+                "uri" : f"../imports/{id}_import.owl"}))
+
 with open("catalog-v001.xml", 'w') as file1:
     file1.write(upper_catalog.prettify())
 with open("ontology_files/catalog-v001.xml", 'w') as file2:
