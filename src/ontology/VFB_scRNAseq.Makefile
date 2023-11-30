@@ -148,13 +148,14 @@ $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl: install_linkml
 .PHONY: make_exp_ofns
 # check whether ofn exists for each cluster tsv, delete tsv if true, make ofn then delete tsv if false.
 make_exp_ofns: install_linkml
-	for file in $(wildcard $(EXPDIR)/*.tsv); do \
-		if [ -e $${file%.tsv}.ofn ]; then \
-			rm $$file; \
+	apt-get update
+	apt-get -y install parallel
+	find $(EXPDIR) -name "*.tsv" | parallel -j 5 ' \
+		if [ -e {.}.ofn ]; then \
+			rm {}; \
 		else \
-			$(LINKML) $$file -o $${file%.tsv}.ofn && rm $$file; \
-		fi; \
-	done
+			$(LINKML) {} -o {.}.ofn && rm {}; \
+		fi'
 
 # gene expression owl files for datasets that have 'cluster' expression data tsvs or ofns (names are dataset_FBlcxxxxxxx-cluster_FBlcxxxxxxx)
 DATASET_EXP_FILES = $(sort $(filter-out cluster_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.tsv))) $(filter-out cluster_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.ofn))))
