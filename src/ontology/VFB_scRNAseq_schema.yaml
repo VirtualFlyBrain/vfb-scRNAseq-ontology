@@ -236,6 +236,7 @@ slots:
     range: Thing
     annotations:
       owl.template: |-
+        {% if gene %}
         ClassAssertion ( 
             Annotation ( neo_custom:hide_in_terminfo {{hide_in_terminfo}} ) 
             Annotation ( neo_custom:expression_level {{expression_level}} ) 
@@ -243,6 +244,7 @@ slots:
             Annotation ( neo_custom:expression_extent {{expression_extent}} ) 
             {% endif %}
             ObjectSomeValuesFrom ( RO:0002292 {{gene}}) {{id}})
+        {% endif %}
   hide_in_terminfo:
     slot_uri: neo_custom:hide_in_terminfo
     description: Flag to hide expression edges in VFB Term Info pane. Range must be string - boolean changes capitalisation and does not add datatype anyway.
