@@ -176,8 +176,8 @@ $(EXPDIR)/dataset_%.owl: make_exp_ofns
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/$@" \
 	convert --format ofn -o $(TMPDIR)/$*-exp-tmp.ofn &&\
 	cat $(TMPDIR)/$*-exp-tmp.ofn | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
-	$(ROBOT) convert -i $@ --format owl -o $@ # convert from ofn to owl
-	$(ROBOT) convert -i $@ --format owl -o $@.gz # make a compressed version
+	$(ROBOT) convert -i $@ --format owl -o $@ &&\
+	$(ROBOT) convert -i $@ --format owl -o $@.gz &&\
 	rm -f $(wildcard $(EXPDIR)/dataset_$*-cluster_*.ofn) $(TMPDIR)/$*-exp-tmp.ofn
 
 .PHONY: update_ontology_files
