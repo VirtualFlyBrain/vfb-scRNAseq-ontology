@@ -4,8 +4,8 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: prepare_release_notest
-# this prepares a release without updating the source files or running any tests
-prepare_release_notest: $(SRC) all_imports release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
+# this prepares a release without updating the source files or running any tests - run using command in run_release.sh
+prepare_release_notest: $(SRC) all_imports update_catalog_files release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
 	rm -f $(CLEANFILES) $(IMPORTDIR)/*.txt $(ALL_TERMS_COMBINED) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
@@ -227,6 +227,11 @@ endif
 
 .PHONY: release_ontology_files
 release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
+	echo $@
+
+.PHONY: update_catalog_files
+update_catalog_files:
+	python3 $(SCRIPTSDIR)/update_catalogs.py
 
 # create merged release files (no need to reason etc)
 $(RELEASEDIR)/VFB_scRNAseq_%.owl.gz:
