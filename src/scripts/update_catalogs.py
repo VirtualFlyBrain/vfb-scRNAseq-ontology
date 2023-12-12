@@ -1,8 +1,8 @@
 import os
 from bs4 import BeautifulSoup
 
-upper_catalog_file = "catalog-v001-test.xml"
-lower_catalog_file = "ontology_files/catalog-v001-test.xml"
+upper_catalog_file = "catalog-v001.xml"
+lower_catalog_file = "ontology_files/catalog-v001.xml"
 
 # dataset metadata ontologies must already be in ontology_files
 all_included_datasets = [filename.split('_')[2].replace('.owl', '')  for filename in os.listdir("ontology_files") if filename.endswith('.owl')]
