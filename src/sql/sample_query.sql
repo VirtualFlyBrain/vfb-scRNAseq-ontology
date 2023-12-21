@@ -14,6 +14,7 @@ COPY (SELECT DISTINCT
     'FlyBase:'||ca.uniquename as control_assay
 FROM library l
 JOIN cvterm t ON (t.cvterm_id = l.type_id AND t.name = 'biosample')
+-- project
 JOIN library_relationship lr ON lr.subject_id = l.library_id
 JOIN library p ON p.library_id = lr.object_id AND p.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'project')
 JOIN cvterm lrt ON (lrt.cvterm_id = lr.type_id AND lrt.name = 'belongs_to')
@@ -33,6 +34,7 @@ LEFT OUTER JOIN dbxref dbx_stage ON dbx_stage.dbxref_id = stage.dbxref_id
 LEFT OUTER JOIN db db_stage ON db_stage.db_id = dbx_stage.db_id
 LEFT OUTER JOIN expression_cvterm ecvt_sex ON (ecvt_sex.expression_id = le.expression_id AND ecvt_sex.cvterm_type_id = (SELECT cvterm_id FROM cvterm WHERE cv_id = (SELECT cv_id FROM cv WHERE name = 'expression slots') AND name = 'stage') AND ecvt_sex.cvterm_id in (SELECT DISTINCT cvterm_id FROM cvterm WHERE cv_id = (SELECT cv_id FROM cv WHERE name = 'FlyBase miscellaneous CV') AND name LIKE '%male'))
 LEFT OUTER JOIN cvterm sex ON sex.cvterm_id = ecvt_sex.cvterm_id
+-- assay
 JOIN library_relationship lra ON lra.object_id = l.library_id
 JOIN library a ON (lra.subject_id=a.library_id AND a.type_id in (SELECT cvterm_id FROM cvterm WHERE name = 'assay'))
 LEFT OUTER JOIN library_relationship lra2 ON (lra2.subject_id = a.library_id AND lra2.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'biological_reference_is'))

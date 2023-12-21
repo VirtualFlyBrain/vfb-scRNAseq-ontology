@@ -15,10 +15,13 @@ JOIN cvterm cvtt ON (cvtt.cvterm_id = lcvt.cvterm_id AND cvtt.name = 'transcript
 JOIN library_synonym ls ON (ls.library_id = l.library_id AND ls.is_current is true)
 JOIN synonym s ON s.synonym_id = ls.synonym_id
 JOIN cvterm cvts ON (cvts.cvterm_id = s.type_id AND cvts.name = 'fullname')
+-- clustering
 JOIN library_relationship lr1 ON (lr1.subject_id = l.library_id AND lr1.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'belongs_to'))
 JOIN library r ON (r.library_id = lr1.object_id AND r.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'result'))
+-- project
 JOIN library_relationship lr2 ON (lr2.subject_id = r.library_id AND lr2.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'belongs_to'))
 JOIN library p ON (p.library_id = lr2.object_id AND p.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'project'))
+-- stage
 LEFT OUTER JOIN library_cvterm lcvt1 ON (lcvt1.library_id = l.library_id AND lcvt1.cvterm_id in (SELECT DISTINCT cvterm_id FROM cvterm WHERE cv_id = (SELECT cv_id FROM cv WHERE name = 'FlyBase development CV')))
 LEFT OUTER JOIN cvterm stage ON stage.cvterm_id = lcvt1.cvterm_id
 LEFT OUTER JOIN library_cvtermprop lcvtp1 ON (lcvtp1.library_cvterm_id = lcvt1.library_cvterm_id AND lcvtp1.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'derived_stage'))
