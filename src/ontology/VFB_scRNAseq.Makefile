@@ -75,7 +75,7 @@ $(TMPDIR)/internal_terms.txt: | $(TMPDIR)
 	mv $@-tmp.txt $@; done &&\
 	rm -f $(TMPDIR)/internal_terms-raw.txt
 
-# exclusions - either no nervous system terms or excluded (non-WT or experimental condition) sample
+# filter data to only get nervous system associated data and only wild-type non-experimental samples
 $(TMPDIR)/all_inclusions.tsv: get_FB_data | $(TMPDIR)
 	python3 -m pip install vfb-connect
 	python3 $(SCRIPTSDIR)/filter_data.py
@@ -83,8 +83,6 @@ $(TMPDIR)/all_inclusions.tsv: get_FB_data | $(TMPDIR)
 .PHONY: process_FB_metadata
 # filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in ontology_files) from input
 process_FB_metadata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
-	python3 -m pip install beautifulsoup4
-	python3 -m pip install lxml
 ifeq ($(REFRESH_META),true)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
@@ -231,6 +229,8 @@ release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
 
 .PHONY: update_catalog_files
 update_catalog_files:
+	python3 -m pip install beautifulsoup4
+	python3 -m pip install lxml
 	python3 $(SCRIPTSDIR)/update_catalogs.py
 
 # create merged release files (no need to reason etc)
