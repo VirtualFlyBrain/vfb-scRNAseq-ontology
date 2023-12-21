@@ -21,7 +21,7 @@ if not args.refresh:
         for line in file:
             existing_entities.append("FlyBase:" + line.rstrip())
 
-included_entities_to_update = all_inclusions - existing_entities
+included_entities_to_update = [e for e in all_inclusions if not (e in existing_entities)]
 
 # EXPRESSION DATA
 
@@ -41,7 +41,7 @@ for chunk in expression_reader:
     expression_data = pd.concat([expression_data, filtered])
 
 # make a a tsv for each new cluster
-clusters = expression_data['id'].unique()
+clusters = expression_data['id'].drop_duplicates()
 print(str(len(clusters)) + ' clusters')
 for c in clusters:
     cluster_data = expression_data[expression_data['id']==c]
