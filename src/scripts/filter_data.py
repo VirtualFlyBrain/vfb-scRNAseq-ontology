@@ -4,26 +4,47 @@ from vfb_connect.neo.neo4j_tools import Neo4jConnect, dict_cursor
 
 ## input and output
 class DataEntity:
-    name = ''
-    input_file = ''
-    output_file = ''
+    dataset_id = ''
+    datatype = ''
+    raw_file = ''
+    filtered_file = ''
     dataframe = None
-    def __init__(self, name):
-        self.name = name
-        self.input_file = 'tmp/raw_%s_data.tsv' % self.name
-        self.output_file = 'tmp/filtered_%s_data.tsv' % self.name
-        self.dataframe = pd.read_csv(self.input_file, sep='\t')
-    def write_tsv(self):
-        self.dataframe.to_csv(self.output_file, sep='\t', index=None)
+    filtered_df = None
+    def __init__(self, datatype, dataset_id=''):
+        self.dataset_id = dataset_id
+        self.datatype = datatype
+        self.raw_file = 'tmp/raw_%s_data.tsv' % self.datatype.lower()
+        self.filtered_file = 'tmp/filtered_%s_data.tsv' % self.datatype.lower()
+        self.final_output_file = 'metadata_files/%s_%s_data.tsv' % (self.dataset_id, self.datatype.lower())
+        try:
+            self.dataframe = pd.read_csv(self.raw_file, sep='\t')
+        except FileNotFoundError:
+            self.dataframe = None
+        try:
+            self.filtered_df = pd.read_csv(self.filtered_file, sep='\t')
+        except FileNotFoundError:
+            self.filtered_df = None
+    def write_filtered_tsv(self):
+        self.dataframe.to_csv(self.filtered_file, sep='\t', index=None)
+    def write_tsv_by_dataset(self):
+        self.filtered_df.to_csv(self.final_output_file, sep='\t', index=None)
     def filter_by_other(self, owncol, other, othercol):
         """Keep only rows of self.dataframe where owncol (column name) value appears in other.dataframe[othercol]"""
         self.dataframe = self.dataframe[self.dataframe[owncol].isin(other.dataframe[othercol].drop_duplicates())]
+    def split_filtered_df(self, datasets, split_by_col):
+        new_sub_entites = []
+        for i in datasets:
+            new_sub_entity = DataEntity(datatype=self.datatype, dataset_id=i.replace('FlyBase:', ''))
+            new_sub_entity.filtered_df = self.filtered_df[self.filtered_df[split_by_col]==i]
+            new_sub_entites.append(new_sub_entity)
+        return new_sub_entites
 
-assay_data = DataEntity(name='assay')
-sample_data = DataEntity(name='sample')
-dataset_data = DataEntity(name='dataset')
-clustering_data = DataEntity(name='clustering')
-cluster_data = DataEntity(name='cluster')
+
+assay_data = DataEntity(datatype='Assay')
+sample_data = DataEntity(datatype='Sample')
+dataset_data = DataEntity(datatype='DataSet')
+clustering_data = DataEntity(datatype='Clustering')
+cluster_data = DataEntity(datatype='Cluster')
 
 
 ## Manual exclusions - add IDs of datasets to exclude in format "FlyBase:FBlc0000000"
@@ -78,7 +99,8 @@ excluded_clusters = clustering_data.dataframe[clustering_data.dataframe['associa
 clustering_data.dataframe = clustering_data.dataframe[~clustering_data.dataframe['id'].isin(excluded_clusters)]
 
 # no longer need control_assay column
-assay_data.dataframe.drop('control_assay', axis=1, inplace=True)
+for d in [assay_data, sample_data]:
+    d.dataframe.drop('control_assay', axis=1, inplace=True)
 
 # keep only assay and sample rows that are associated with a kept clustering
 for d in [assay_data, sample_data]:
@@ -94,7 +116,7 @@ cluster_data.filter_by_other(owncol='associated_clustering', other = clustering_
 ## output
 # filtered dataframes
 for d in [dataset_data, cluster_data, clustering_data, assay_data, sample_data]:
-    d.write_tsv()
+    d.write_filtered_tsv()
 
 # make a list of (all) inclusions (for process_metadata and process_expression_data)
 # this is different to internal_terms.txt, which is all entities currently incorporated into ontologies
