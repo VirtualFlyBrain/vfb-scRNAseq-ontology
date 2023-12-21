@@ -136,10 +136,10 @@ classes:
     annotations:
       owl.fstring: ClassAssertion( FBcv:0009002 {id} )
     attributes:
-      associated_sample_for_clustering:
+      associated_sample_or_assay_for_clustering:
         slot_uri: BFO:0000051
-        description: Sample (FBlc ID) that the Clustering uses.
-        range: Sample
+        description: Sample or Assay (FBlc ID) that the Clustering uses.
+        range: Class
         annotations:
           owl: ObjectPropertyAssertion
     slots:
@@ -185,6 +185,9 @@ classes:
     class_uri: FBcv:0000212
     annotations:
       owl: NamedIndividual
+    attributes:
+      pub_dataset:
+        description: DataSet for the publication - created and used in tsv processing - not incorporated into ontology.
     slots:
       - neo_label
 
