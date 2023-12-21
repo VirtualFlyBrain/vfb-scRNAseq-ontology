@@ -76,13 +76,13 @@ $(TMPDIR)/internal_terms.txt: | $(TMPDIR)
 	rm -f $(TMPDIR)/internal_terms-raw.txt
 
 # exclusions - either no nervous system terms or excluded (non-WT or experimental condition) sample
-$(TMPDIR)/excluded_datasets_and_assays.tsv: get_FB_data | $(TMPDIR)
+$(TMPDIR)/all_inclusions.tsv: get_FB_data | $(TMPDIR)
 	python3 -m pip install vfb-connect
-	python3 $(SCRIPTSDIR)/excluded_datasets_and_assays.py
+	python3 $(SCRIPTSDIR)/filter_data.py
 
 .PHONY: process_FB_metadata
 # filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in ontology_files) from input
-process_FB_metadata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv | $(METADATADIR)
+process_FB_metadata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
 	python3 -m pip install beautifulsoup4
 	python3 -m pip install lxml
 ifeq ($(REFRESH_META),true)
@@ -94,7 +94,7 @@ endif
 .PHONY: process_FB_expdata
 # filter FB data to remove clusters for excluded datasets/assays and, if REFRESH_EXP is false, remove existing clusters (i.e. those in a file in ontology_files) from input
 # also split into tsvs for each cluster and filter by extent
-process_FB_expdata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/excluded_datasets_and_assays.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
+process_FB_expdata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
 ifeq ($(REFRESH_EXP),true)
 	python3 $(SCRIPTSDIR)/process_expression_data.py -r
 else
