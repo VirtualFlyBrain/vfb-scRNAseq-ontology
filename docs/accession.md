@@ -30,8 +30,6 @@ URI: [neo_custom:accession](http://n2o.neo/custom/accession)
 
 * Range: [String](String.md)
 
-* Multivalued: True
-
 
 
 
@@ -61,7 +59,6 @@ description: Accession of the Dataset at the given Site.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
 slot_uri: neo_custom:accession
-multivalued: true
 alias: accession
 owner: Dataset
 domain_of:

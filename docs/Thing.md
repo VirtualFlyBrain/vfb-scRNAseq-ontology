@@ -50,8 +50,8 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 | [Sample](Sample.md) | [sample_tissue](sample_tissue.md) | range | [Thing](Thing.md) |
 | [Assay](Assay.md) | [method](method.md) | range | [Thing](Thing.md) |
 | [Cluster](Cluster.md) | [stage](stage.md) | range | [Thing](Thing.md) |
-| [Cluster](Cluster.md) | [cell_type](cell_type.md) | range | [Thing](Thing.md) |
 | [Cluster](Cluster.md) | [gene](gene.md) | range | [Thing](Thing.md) |
+| [Cluster](Cluster.md) | [cell_type](cell_type.md) | range | [Thing](Thing.md) |
 
 
 

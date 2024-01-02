@@ -47,7 +47,7 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 
 | property | value |
 | --- | --- |
-| owl | AnnotationProperty |
+| owl.fstring | AnnotationAssertion( dcterms:source {id} {V} ) |
 
 
 
@@ -65,9 +65,9 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 ```yaml
 name: associated_dataset
 annotations:
-  owl:
-    tag: owl
-    value: AnnotationProperty
+  owl.fstring:
+    tag: owl.fstring
+    value: AnnotationAssertion( dcterms:source {id} {V} )
 description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000

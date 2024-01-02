@@ -77,7 +77,6 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 | used by | used in | type | used |
 | ---  | --- | --- | --- |
 | [Assay](Assay.md) | [associated_sample_for_assay](associated_sample_for_assay.md) | range | [Sample](Sample.md) |
-| [Clustering](Clustering.md) | [associated_sample_for_clustering](associated_sample_for_clustering.md) | range | [Sample](Sample.md) |
 
 
 
@@ -94,7 +93,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 
 | property | value |
 | --- | --- |
-| owl | NamedIndividual || owl.fstring | ClassAssertion( FBcv:0003024 {id} ) |
+| owl.fstring | ClassAssertion( FBcv:0003024 {id} ) |
 
 
 
@@ -128,9 +127,6 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 ```yaml
 name: Sample
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003024 {id} )
@@ -145,9 +141,9 @@ attributes:
   sample_tissue:
     name: sample_tissue
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( RO:0002131 {V} ) {id} )
     description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated
       with '|' or in different rows. Maps as an overlaps relationship rather than
       part_of due to imprecision of dissection.
@@ -180,9 +176,6 @@ class_uri: FBcv:0003024
 ```yaml
 name: Sample
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003024 {id} )
@@ -192,9 +185,9 @@ attributes:
   sample_tissue:
     name: sample_tissue
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( RO:0002131 {V} ) {id} )
     description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated
       with '|' or in different rows. Maps as an overlaps relationship rather than
       part_of due to imprecision of dissection.
@@ -227,9 +220,9 @@ attributes:
   stage:
     name: stage
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( RO:0002490 {V} ) {id} )
     description: Developmental stage (FBdv ID) of the Sample or Cluster.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -243,9 +236,9 @@ attributes:
   associated_dataset:
     name: associated_dataset
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( dcterms:source {id} {V} )
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -261,9 +254,9 @@ attributes:
   sex:
     name: sex
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( BFO:0000050 {V} ) {id} )
     description: Sex for the entity. Should be 'male' or 'female'.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000

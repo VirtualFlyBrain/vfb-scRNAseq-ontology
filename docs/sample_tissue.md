@@ -46,7 +46,7 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 
 | property | value |
 | --- | --- |
-| owl | ClassAssertion, ObjectSomeValuesFrom |
+| owl.fstring | ClassAssertion( ObjectSomeValuesFrom( RO:0002131 {V} ) {id} ) |
 
 
 
@@ -64,9 +64,9 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 ```yaml
 name: sample_tissue
 annotations:
-  owl:
-    tag: owl
-    value: ClassAssertion, ObjectSomeValuesFrom
+  owl.fstring:
+    tag: owl.fstring
+    value: ClassAssertion( ObjectSomeValuesFrom( RO:0002131 {V} ) {id} )
 description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separated
   with '|' or in different rows. Maps as an overlaps relationship rather than part_of
   due to imprecision of dissection.

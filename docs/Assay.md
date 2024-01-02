@@ -83,7 +83,7 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 
 | property | value |
 | --- | --- |
-| owl | NamedIndividual || owl.fstring | ClassAssertion( FBcv:0003025 {id} ) |
+| owl.fstring | ClassAssertion( FBcv:0003025 {id} ) |
 
 
 
@@ -117,9 +117,6 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 ```yaml
 name: Assay
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003025 {id} )
@@ -132,9 +129,9 @@ attributes:
   method:
     name: method
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( BAO:0000212 {V} ) {id} )
     description: Method used for the assay - currently getting any direct subclass
       of FBcv:0009005 'single-cell library sequencing' for scRNAseq data.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
@@ -166,9 +163,6 @@ class_uri: FBcv:0003025
 ```yaml
 name: Assay
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003025 {id} )
@@ -178,9 +172,9 @@ attributes:
   method:
     name: method
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( BAO:0000212 {V} ) {id} )
     description: Method used for the assay - currently getting any direct subclass
       of FBcv:0009005 'single-cell library sequencing' for scRNAseq data.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
@@ -212,9 +206,9 @@ attributes:
   associated_dataset:
     name: associated_dataset
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( dcterms:source {id} {V} )
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000

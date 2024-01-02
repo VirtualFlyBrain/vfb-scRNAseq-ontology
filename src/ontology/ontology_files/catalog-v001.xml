@@ -18,5 +18,7 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005515_import.owl" uri="../imports/FBlc0005515_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005603_import.owl" uri="../imports/FBlc0005603_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005659_import.owl" uri="../imports/FBlc0005659_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_FBlc0006090.owl" uri="../expression_data/dataset_FBlc0006090.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0006090_import.owl" uri="../imports/FBlc0006090_import.owl"/>
  </group>
 </catalog>

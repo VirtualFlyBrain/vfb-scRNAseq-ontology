@@ -1,0 +1,2949 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0006090.owl#"
+     xml:base="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0006090.owl"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://virtualflybrain.org/reports/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
+     xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:linkml="https://w3id.org/linkml/"
+     xmlns:FlyBase="http://flybase.org/reports/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:neo_custom="http://n2o.neo/custom/"
+     xmlns:neo_property="http://n2o.neo/property/">
+    <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0006090.owl">
+        <dcterms:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0006090). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dcterms:description>
+        <dcterms:title>VFB scRNAseq Ontology for dataset FBlc0006090</dcterms:title>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_FBlc0006090.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0006090_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://n2o.neo/custom/accession -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/property/nodeLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#imports -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#imports"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002811 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002811"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003629"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003718 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003718"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003720"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003721"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003726 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003726"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003727 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003727"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003728"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003730 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003730"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003741 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003741"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003743"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003744"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003767 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003767"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003776 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003776"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003788 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003788"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003793 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003793"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003797 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003797"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003832 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003832"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004046"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004211"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007438"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007439"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047527"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047841 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047841"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047955"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00048011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00048011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00048142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00048142"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00048298 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00048298"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00048313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00048313"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049526"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049537"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049834 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058144"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058202"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058203"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058204"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058206"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058222"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058251"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058254"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100163"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100486"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100501"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100504"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100525"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110065"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110074"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110107"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110925 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110925"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111271"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111282"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111286"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111316"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007075"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007076"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007078"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007081"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007084"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007089"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007090"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007104"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007105"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00007125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007125"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006090 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006090">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
+            </owl:Restriction>
+        </rdf:type>
+        <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq study of the aging brain</obo:IAO_0000115>
+        <dcterms:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
+        <dcterms:references rdf:resource="http://flybase.org/reports/FBrf0239740"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
+        <rdfs:label>scRNAseq_2018_Davie</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
+        <neo_custom:accession>E-CURD-91</neo_custom:accession>
+    </owl:Axiom>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006092 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006092">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007075"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006093"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 8-hours old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006093 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006093">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006092"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 8-hours old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D0_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006094 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006094">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007076"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006095"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 1-day old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006095 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006095">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006094"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 1-day old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D1_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006096 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006096">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007078"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006097"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 3-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006097 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006097">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006096"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 3-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D3_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006098 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006098">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007081"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006099"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 6-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006099 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006099">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006098"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 6-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D6_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006100 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006100">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007084"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006101"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 9-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006101 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006101">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006100"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 9-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D9_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006102 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006102">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007090"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006103"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 15-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D15</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006103 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006103">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006102"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 15-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D15_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006104 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006104">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007105"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006105"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 30-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D30</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006105 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006105">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006104"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 30-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D30_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006106 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006106">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007125"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006107"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 50-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D50</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006107 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006107">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006106"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 50-days old DGRP-551 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_DGRP551_D50_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006109 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006109">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007075"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006110"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 8-hours old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006110 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006110">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006109"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 8-hours old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D0_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006111 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006111">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007076"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006112"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 1-day old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006112 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006112">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006111"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 1-day old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D1_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006113 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006113">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007078"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006114"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 3-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006114 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006114">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006113"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 3-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D3_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006115 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006115">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007081"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006116"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 6-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006116 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006116">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006115"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 6-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D6_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006117 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006117">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007084"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006118"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 9-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006118 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006118">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006117"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 9-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D9_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006119 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006119">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007089"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006120"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 14-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D14</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006120 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006120">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006119"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 14-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D14_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006121 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006121">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007104"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0006122"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Brain cells from 29-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D29</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006122 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006122">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0006121"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-cell RNA-seq of brain cells from 29-days old w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_W1118_D29_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006123 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006123">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006092"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006093"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006094"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006095"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006096"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006097"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006098"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006099"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006100"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006101"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006102"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006103"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006104"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006105"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006106"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006107"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006109"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006110"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006111"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006112"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006113"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006114"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006115"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006116"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006117"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006118"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006119"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006120"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006121"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006122"/>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006124 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006124">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111286"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1224</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, TmY14 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_TmY14_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006125 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006125">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007438"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">319</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, adPN neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_adPN_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006126 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006126">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058254"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">173</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, subperineurial glial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_subperineurial_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006127 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006127">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1455</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, gamma Kenyon cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_gamma_Kenyon_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006128 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006128">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003718"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">393</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lamina monopolar neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_lamina_monopolar_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006129 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006129">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003767"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">238</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, distal medullary amacrine neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_distal_medullary_amacrine_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006130 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006130">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003730"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">409</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T3 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_T3_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006131 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006131">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058206"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, dopaminergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_dopaminergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006132 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006132">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003832"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, proximal medullary amacrine neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_proximal_medullary_amacrine_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006133 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006133">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047527"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">703</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, myoinhibitory peptide neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_myoinhibitory_peptide_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006134 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006134">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110107"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, IPC cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_IPC_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006135 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006135">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111282"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">232</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Pm4 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Pm4_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006136 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006136">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110074"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">340</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Tm5c neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Tm5c_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006137 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006137">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100486"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, LC14 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_LC14_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006138 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006138">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003743"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, C2 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_C2_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006139 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006139">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100504"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1271</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, ensheathing glial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_ensheathing_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006140 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006140">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004211"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">243</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, photoreceptor neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_photoreceptor_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006141 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006141">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">595</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, alpha beta Kenyon cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_alpha_beta_Kenyon_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006142 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006142">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058202"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">137</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, peptidergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_peptidergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006143 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006143">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058204"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, tyraminergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_tyraminergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006144 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006144">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">192</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, dopaminergic PAM neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_dopaminergic_PAM_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006145 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006145">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003788"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">281</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, transmedullary neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_transmedullary_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006146 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006146">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003744"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">188</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, C3 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_C3_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006147 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006147">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047841"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1134</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, astrocyte-like glial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006148 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006148">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007439"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lPN neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_lPN_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006149 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006149">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003728"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">445</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T2 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_T2_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006150 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006150">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100501"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">204</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, brain cell body glial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_brain_cell_body_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006151 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006151">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049537"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">208</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, dFB neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_dFB_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006152 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006152">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003726"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">580</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_T_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006153 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006153">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003741"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">220</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lamina wide-field 1 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_lamina_wide-field_1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006154 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006154">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">496</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Mi neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Mi_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006155 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006155">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100163"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, pacemaker neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_pacemaker_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006156 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006156">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058222"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, brain sugar-sensing neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_brain_sugar-sensing_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006157 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006157">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111271"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Dm9 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Dm9_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006158 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006158">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048142"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, allatostatin A neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_allatostatin_A_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006159 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006159">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048313"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, ITP neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_ITP_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006160 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006160">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110066"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Pm3 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Pm3_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006161 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006161">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058203"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, octopaminergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_octopaminergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006162 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006162">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, L2 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_L2_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006163 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006163">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100525"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, optic chiasma glial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_optic_chiasma_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006164 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006164">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, L3 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_L3_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006165 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006165">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">455</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, alphaP betaP Kenyon cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_alphaP_betaP_Kenyon_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006166 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006166">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003797"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">215</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Tm9 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Tm9_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006167 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006167">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">221</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, perineurial glial cells cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_perineurial_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006168 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006168">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049526"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">339</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, serotonergic neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_serotonergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006169 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006169">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051299"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, olfactory projection neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_olfactory_projection_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006170 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006170">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110925"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Hugin neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Hugin_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006171 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006171">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048011"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, capability neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_capability_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006172 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006172">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110065"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">156</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lamina wide-field 2 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_lamina_wide-field_2_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006173 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006173">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003793"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">304</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Tm5 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_Tm5_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006174 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006174">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003727"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">385</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T1 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_T1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006175 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006175">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058144"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">277</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, plasmatocytes cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_plasmatocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006176 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006176">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048298"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, CCHamide-1 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_CCHamide-1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006177 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006177">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004046"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, LNv neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_LNv_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006178 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006178">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, L1 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_L1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006179 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006179">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047955"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">222</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, mushroom body output neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_mushroom_body_output_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006180 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006180">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111316"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, CCAP neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_CCAP_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006181 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006181">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003629"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, DN1 neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_DN1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0006182 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006182">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051053"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005369"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
+        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</bao:BAO_0002811>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, corazonin neurons cluster</obo:IAO_0000115>
+        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
+        <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering_corazonin_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBrf0239740 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBrf0239740">
+        <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+

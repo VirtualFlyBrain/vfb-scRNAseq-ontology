@@ -432,6 +432,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005423">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005421"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005422"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
         <rdfs:label>scRNAseq_2021_Mokashi_CTRL_FEMALE_seq_clustering</rdfs:label>
@@ -832,6 +833,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005439">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005437"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005438"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
         <rdfs:label>scRNAseq_2021_Mokashi_CTRL_MALE_seq_clustering</rdfs:label>
@@ -1182,7 +1184,9 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005453">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005421"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005422"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005437"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005438"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
         <rdfs:label>scRNAseq_2021_Mokashi_CTRL_MIXEDSEX_seq_clustering</rdfs:label>

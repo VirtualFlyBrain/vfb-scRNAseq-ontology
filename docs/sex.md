@@ -45,7 +45,7 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 | property | value |
 | --- | --- |
-| owl | ClassAssertion, ObjectSomeValuesFrom |
+| owl.fstring | ClassAssertion( ObjectSomeValuesFrom( BFO:0000050 {V} ) {id} ) |
 
 
 
@@ -63,9 +63,9 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 ```yaml
 name: sex
 annotations:
-  owl:
-    tag: owl
-    value: ClassAssertion, ObjectSomeValuesFrom
+  owl.fstring:
+    tag: owl.fstring
+    value: ClassAssertion( ObjectSomeValuesFrom( BFO:0000050 {V} ) {id} )
 description: Sex for the entity. Should be 'male' or 'female'.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000

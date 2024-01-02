@@ -44,7 +44,7 @@ URI: [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312)
 
 | property | value |
 | --- | --- |
-| owl | ClassAssertion, ObjectSomeValuesFrom |
+| owl.fstring | ClassAssertion( ObjectSomeValuesFrom( OBI:0000312 {V} ) {id} ) |
 
 
 
@@ -62,9 +62,9 @@ URI: [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312)
 ```yaml
 name: assay_type
 annotations:
-  owl:
-    tag: owl
-    value: ClassAssertion, ObjectSomeValuesFrom
+  owl.fstring:
+    tag: owl.fstring
+    value: ClassAssertion( ObjectSomeValuesFrom( OBI:0000312 {V} ) {id} )
 description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000'
   ('single-cell RNA-seq').
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq

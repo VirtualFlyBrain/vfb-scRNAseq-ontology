@@ -33,18 +33,19 @@ Name: VFB_scRNAseq
 | [associated_clustering](associated_clustering.md) | Clustering (FBlc ID) that the Cluster belongs to |
 | [associated_dataset](associated_dataset.md) | Dataset (FBlc ID) that the Sample or Cluster belongs to |
 | [associated_sample_for_assay](associated_sample_for_assay.md) | Input sample(s) for the scRNAseq assay |
-| [associated_sample_for_clustering](associated_sample_for_clustering.md) | Sample (FBlc ID) that the Clustering uses |
+| [associated_sample_or_assay_for_clustering](associated_sample_or_assay_for_clustering.md) | Sample or Assay (FBlc ID) that the Clustering uses |
 | [cell_number](cell_number.md) | The number of cells in the Cluster (as integer) |
 | [cell_type](cell_type.md) | Anatomy (FBbt IDs) for the Cluster |
 | [expression_extent](expression_extent.md) | Extent of expression of the given gene |
 | [expression_level](expression_level.md) | Level of expression of the given gene |
-| [gene](gene.md) | A gene (FBgn ID) expressed by the Cluster |
+| [gene](gene.md) | A gene (FBgn ID) that is expressed by the entity |
 | [hide_in_terminfo](hide_in_terminfo.md) | Flag to hide expression edges in VFB Term Info pane |
 | [id](id.md) | Identifier for the entity |
 | [licence](licence.md) | Licence for the Dataset (all CC-BY 4 |
 | [method](method.md) | Method used for the assay - currently getting any direct subclass of FBcv:000... |
 | [name](name.md) | Short systematic label for the entity |
 | [neo_label](neo_label.md) | neo4j node label to add to entity |
+| [pub_dataset](pub_dataset.md) | DataSet for the publication - created and used in tsv processing - not incorp... |
 | [publication](publication.md) | Publication associated with the Dataset |
 | [sample_tissue](sample_tissue.md) | Tissue(s) (FBbt IDs) in the sample |
 | [sex](sex.md) | Sex for the entity |

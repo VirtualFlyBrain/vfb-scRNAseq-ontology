@@ -44,7 +44,7 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 | property | value |
 | --- | --- |
-| owl | AnnotationProperty || owl.axiom_annotation.slots | accession |
+| owl.fstring | AnnotationAssertion( Annotation( neo_custom:accession {accession} ) oboInOwl:hasDbXref {id} {V} ) |
 
 
 
@@ -62,12 +62,10 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 ```yaml
 name: site
 annotations:
-  owl:
-    tag: owl
-    value: AnnotationProperty
-  owl.axiom_annotation.slots:
-    tag: owl.axiom_annotation.slots
-    value: accession
+  owl.fstring:
+    tag: owl.fstring
+    value: AnnotationAssertion( Annotation( neo_custom:accession {accession} ) oboInOwl:hasDbXref
+      {id} {V} )
 description: VFB site node curie. The site must be created in VFB and added to the
   dictionary in ../scripts/process_site_data.py to successfully map from FB data.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq

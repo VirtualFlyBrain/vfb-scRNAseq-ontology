@@ -46,7 +46,7 @@ URI: [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473)
 
 | property | value |
 | --- | --- |
-| owl | ClassAssertion, ObjectSomeValuesFrom |
+| owl.fstring | ClassAssertion( ObjectSomeValuesFrom( RO:0002473 {V} ) {id} ) |
 
 
 
@@ -64,9 +64,9 @@ URI: [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473)
 ```yaml
 name: cell_type
 annotations:
-  owl:
-    tag: owl
-    value: ClassAssertion, ObjectSomeValuesFrom
+  owl.fstring:
+    tag: owl.fstring
+    value: ClassAssertion( ObjectSomeValuesFrom( RO:0002473 {V} ) {id} )
 description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated
   with '|'.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq

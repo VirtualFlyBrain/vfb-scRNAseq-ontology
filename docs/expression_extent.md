@@ -60,7 +60,6 @@ from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
 slot_uri: neo_custom:expression_extent
 alias: expression_extent
-owner: Cluster
 domain_of:
 - Cluster
 range: float

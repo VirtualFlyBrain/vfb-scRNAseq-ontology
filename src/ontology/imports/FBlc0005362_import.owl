@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005362_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2023-11-30/imports/FBlc0005362_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/fbcv/releases/2023-10-19/fbcv-base.owl>)
-Annotation(owl:versionInfo "2023-11-30")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2024-01-02/imports/FBlc0005362_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/fbcv/releases/2023-12-08/fbcv-base.owl>)
+Annotation(owl:versionInfo "2024-01-02")
 
 Declaration(Class(<http://flybase.org/reports/FBgn0011701>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -179,6 +179,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058212>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058215>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058217>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058218>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00059271>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00059273>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100200>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100291>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100313>))
@@ -355,6 +357,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0002076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000704>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0000509>))
@@ -2510,6 +2513,26 @@ AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0002811>
 #   Classes
 ############################
 
+# Class: <http://flybase.org/reports/FBgn0011701> (repo)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "3702")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "AbRK2")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "Antibody RK2")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "CG31240")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "CG8045(CT24072)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "CT24072")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "REPO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "RK2")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "Repo")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "Reversed Polarity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "Reversed polarity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "l(3)03702")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "reverse polarity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "reversed polarity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://flybase.org/reports/FBgn0011701> "rk2")
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBgn0011701> "repo")
+SubClassOf(<http://flybase.org/reports/FBgn0011701> <http://purl.obolibrary.org/obo/SO_0000704>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000002> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
@@ -4571,6 +4594,34 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00058218> <http://purl.obolibrary.org/obo/fbbt#cur>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058218> "larval glutamatergic neuron")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058218> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00100291> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001911>)))
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00059271> (CNS neuron)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-6095-8718") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00059271> "Any neuron that has its soma in the central nervous system.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00059271> <https://orcid.org/0000-0002-6095-8718>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00059271> "2023-11-09T16:06:03Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00059271> "VFB:FBbt_00059271")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00059271> "central nervous system neuron")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00059271> "fly_anatomy.ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00059271> "FBbt:00059271")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00059271> <http://purl.obolibrary.org/obo/fbbt#cur>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00059271> "CNS neuron")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00059271> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00005094>)))
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00059273> (larval CNS neuron)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-6095-8718") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00059273> "Any neuron that has its soma in the late embryonic or larval central nervous system.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00059273> <https://orcid.org/0000-0002-6095-8718>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00059273> "2023-11-09T16:11:09Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00059273> "VFB:FBbt_00059273")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00059273> "embryonic/larval central nervous system neuron")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00059273> "larval central nervous system neuron")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00059273> "fly_anatomy.ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00059273> "FBbt:00059273")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00059273> <http://purl.obolibrary.org/obo/fbbt#cur>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00059273> "larval CNS neuron")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00059273> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00059271> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00001727>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00059273> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00001919>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100200> (cell body rind region)
 

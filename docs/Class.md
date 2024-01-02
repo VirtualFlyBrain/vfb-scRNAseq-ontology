@@ -56,6 +56,13 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 
 
 
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [Clustering](Clustering.md) | [associated_sample_or_assay_for_clustering](associated_sample_or_assay_for_clustering.md) | range | [Class](Class.md) |
+
+
 
 
 
@@ -65,6 +72,12 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 
 
 
+
+### Annotations
+
+| property | value |
+| --- | --- |
+| owl | NamedIndividual |
 
 
 
@@ -97,6 +110,10 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 <details>
 ```yaml
 name: Class
+annotations:
+  owl:
+    tag: owl
+    value: NamedIndividual
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 is_a: Thing
 slots:
@@ -111,6 +128,10 @@ slots:
 <details>
 ```yaml
 name: Class
+annotations:
+  owl:
+    tag: owl
+    value: NamedIndividual
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 is_a: Thing
 attributes:

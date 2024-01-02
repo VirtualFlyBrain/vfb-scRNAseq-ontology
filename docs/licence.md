@@ -44,7 +44,7 @@ URI: [dcterms:licence](http://purl.org/dc/terms/licence)
 
 | property | value |
 | --- | --- |
-| owl | AnnotationProperty |
+| owl.fstring | AnnotationAssertion( dcterms:licence {id} {V} ) |
 
 
 
@@ -62,9 +62,9 @@ URI: [dcterms:licence](http://purl.org/dc/terms/licence)
 ```yaml
 name: licence
 annotations:
-  owl:
-    tag: owl
-    value: AnnotationProperty
+  owl.fstring:
+    tag: owl.fstring
+    value: AnnotationAssertion( dcterms:licence {id} {V} )
 description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000

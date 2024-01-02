@@ -44,7 +44,7 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 | property | value |
 | --- | --- |
-| owl | AnnotationProperty |
+| owl.fstring | AnnotationAssertion( dcterms:references {id} {V} ) |
 
 
 
@@ -62,9 +62,9 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 ```yaml
 name: publication
 annotations:
-  owl:
-    tag: owl
-    value: AnnotationProperty
+  owl.fstring:
+    tag: owl.fstring
+    value: AnnotationAssertion( dcterms:references {id} {V} )
 description: Publication associated with the Dataset.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000

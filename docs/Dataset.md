@@ -61,7 +61,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 | [licence](licence.md) | 0..1 <br/> [Thing](Thing.md) | Licence for the Dataset (all CC-BY 4 | direct |
 | [assay_type](assay_type.md) | 0..1 <br/> [Thing](Thing.md) | Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000' ('... | direct |
 | [site](site.md) | 0..1 <br/> [Thing](Thing.md) | VFB site node curie | direct |
-| [accession](accession.md) | 0..* <br/> [String](String.md) | Accession of the Dataset at the given Site | direct |
+| [accession](accession.md) | 0..1 <br/> [String](String.md) | Accession of the Dataset at the given Site | direct |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | [Class](Class.md) |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | [Class](Class.md) |
 | [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
@@ -94,7 +94,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 
 | property | value |
 | --- | --- |
-| owl | NamedIndividual || owl.fstring | ClassAssertion( FBcv:0003023 {id} ) |
+| owl.fstring | ClassAssertion( FBcv:0003023 {id} ) |
 
 
 
@@ -128,9 +128,6 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 ```yaml
 name: Dataset
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003023 {id} )
@@ -142,9 +139,9 @@ attributes:
   publication:
     name: publication
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( dcterms:references {id} {V} )
     description: Publication associated with the Dataset.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -153,9 +150,9 @@ attributes:
   licence:
     name: licence
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( dcterms:licence {id} {V} )
     description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -164,9 +161,9 @@ attributes:
   assay_type:
     name: assay_type
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( OBI:0000312 {V} ) {id} )
     description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000'
       ('single-cell RNA-seq').
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
@@ -176,12 +173,10 @@ attributes:
   site:
     name: site
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
-      owl.axiom_annotation.slots:
-        tag: owl.axiom_annotation.slots
-        value: accession
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( Annotation( neo_custom:accession {accession} )
+          oboInOwl:hasDbXref {id} {V} )
     description: VFB site node curie. The site must be created in VFB and added to
       the dictionary in ../scripts/process_site_data.py to successfully map from FB
       data.
@@ -195,7 +190,6 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: neo_custom:accession
-    multivalued: true
     range: string
 class_uri: FBcv:0003023
 
@@ -208,9 +202,6 @@ class_uri: FBcv:0003023
 ```yaml
 name: Dataset
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0003023 {id} )
@@ -220,9 +211,9 @@ attributes:
   publication:
     name: publication
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( dcterms:references {id} {V} )
     description: Publication associated with the Dataset.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -235,9 +226,9 @@ attributes:
   licence:
     name: licence
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( dcterms:licence {id} {V} )
     description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -250,9 +241,9 @@ attributes:
   assay_type:
     name: assay_type
     annotations:
-      owl:
-        tag: owl
-        value: ClassAssertion, ObjectSomeValuesFrom
+      owl.fstring:
+        tag: owl.fstring
+        value: ClassAssertion( ObjectSomeValuesFrom( OBI:0000312 {V} ) {id} )
     description: Assay type (FBcv ID) for the Dataset, this will probably be 'FBcv:0009000'
       ('single-cell RNA-seq').
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
@@ -266,12 +257,10 @@ attributes:
   site:
     name: site
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
-      owl.axiom_annotation.slots:
-        tag: owl.axiom_annotation.slots
-        value: accession
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( Annotation( neo_custom:accession {accession} )
+          oboInOwl:hasDbXref {id} {V} )
     description: VFB site node curie. The site must be created in VFB and added to
       the dictionary in ../scripts/process_site_data.py to successfully map from FB
       data.
@@ -289,7 +278,6 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: neo_custom:accession
-    multivalued: true
     alias: accession
     owner: Dataset
     domain_of:

@@ -45,7 +45,7 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 | property | value |
 | --- | --- |
-| owl | ClassAssertion, ObjectSomeValuesFrom |
+| owl.fstring | ClassAssertion( ObjectSomeValuesFrom( RO:0002490 {V} ) {id} ) |
 
 
 
@@ -63,9 +63,9 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 ```yaml
 name: stage
 annotations:
-  owl:
-    tag: owl
-    value: ClassAssertion, ObjectSomeValuesFrom
+  owl.fstring:
+    tag: owl.fstring
+    value: ClassAssertion( ObjectSomeValuesFrom( RO:0002490 {V} ) {id} )
 description: Developmental stage (FBdv ID) of the Sample or Cluster.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000

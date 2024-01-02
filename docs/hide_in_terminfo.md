@@ -61,7 +61,6 @@ from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
 slot_uri: neo_custom:hide_in_terminfo
 alias: hide_in_terminfo
-owner: Cluster
 domain_of:
 - Cluster
 range: string

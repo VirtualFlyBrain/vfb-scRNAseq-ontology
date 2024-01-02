@@ -44,7 +44,7 @@ URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
 
 | property | value |
 | --- | --- |
-| owl | ClassAssertion, ObjectSomeValuesFrom |
+| owl.fstring | ClassAssertion( ObjectSomeValuesFrom( BAO:0000212 {V} ) {id} ) |
 
 
 
@@ -62,9 +62,9 @@ URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
 ```yaml
 name: method
 annotations:
-  owl:
-    tag: owl
-    value: ClassAssertion, ObjectSomeValuesFrom
+  owl.fstring:
+    tag: owl.fstring
+    value: ClassAssertion( ObjectSomeValuesFrom( BAO:0000212 {V} ) {id} )
 description: Method used for the assay - currently getting any direct subclass of
   FBcv:0009005 'single-cell library sequencing' for scRNAseq data.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq

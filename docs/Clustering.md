@@ -16,9 +16,9 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
         
           Clustering --|> Dataset : associated_dataset
         
-      Clustering : associated_sample_for_clustering
+      Clustering : associated_sample_or_assay_for_clustering
         
-          Clustering --|> Sample : associated_sample_for_clustering
+          Clustering --|> Class : associated_sample_or_assay_for_clustering
         
       Clustering : id
         
@@ -45,7 +45,7 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 | Name | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- |
 | [associated_dataset](associated_dataset.md) | 0..1 <br/> [Dataset](Dataset.md) | Dataset (FBlc ID) that the Sample or Cluster belongs to | direct |
-| [associated_sample_for_clustering](associated_sample_for_clustering.md) | 0..1 <br/> [Sample](Sample.md) | Sample (FBlc ID) that the Clustering uses | direct |
+| [associated_sample_or_assay_for_clustering](associated_sample_or_assay_for_clustering.md) | 0..1 <br/> [Class](Class.md) | Sample or Assay (FBlc ID) that the Clustering uses | direct |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | [Class](Class.md) |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | [Class](Class.md) |
 | [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
@@ -75,7 +75,7 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 
 | property | value |
 | --- | --- |
-| owl | NamedIndividual || owl.fstring | ClassAssertion( FBcv:0009002 {id} ) |
+| owl.fstring | ClassAssertion( FBcv:0009002 {id} ) |
 
 
 
@@ -109,9 +109,6 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 ```yaml
 name: Clustering
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0009002 {id} )
@@ -120,17 +117,17 @@ is_a: Class
 slots:
 - associated_dataset
 attributes:
-  associated_sample_for_clustering:
-    name: associated_sample_for_clustering
+  associated_sample_or_assay_for_clustering:
+    name: associated_sample_or_assay_for_clustering
     annotations:
       owl:
         tag: owl
         value: ObjectPropertyAssertion
-    description: Sample (FBlc ID) that the Clustering uses.
+    description: Sample or Assay (FBlc ID) that the Clustering uses.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: BFO:0000051
-    range: Sample
+    range: Class
 class_uri: FBcv:0009002
 
 ```
@@ -142,36 +139,33 @@ class_uri: FBcv:0009002
 ```yaml
 name: Clustering
 annotations:
-  owl:
-    tag: owl
-    value: NamedIndividual
   owl.fstring:
     tag: owl.fstring
     value: ClassAssertion( FBcv:0009002 {id} )
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 is_a: Class
 attributes:
-  associated_sample_for_clustering:
-    name: associated_sample_for_clustering
+  associated_sample_or_assay_for_clustering:
+    name: associated_sample_or_assay_for_clustering
     annotations:
       owl:
         tag: owl
         value: ObjectPropertyAssertion
-    description: Sample (FBlc ID) that the Clustering uses.
+    description: Sample or Assay (FBlc ID) that the Clustering uses.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: BFO:0000051
-    alias: associated_sample_for_clustering
+    alias: associated_sample_or_assay_for_clustering
     owner: Clustering
     domain_of:
     - Clustering
-    range: Sample
+    range: Class
   associated_dataset:
     name: associated_dataset
     annotations:
-      owl:
-        tag: owl
-        value: AnnotationProperty
+      owl.fstring:
+        tag: owl.fstring
+        value: AnnotationAssertion( dcterms:source {id} {V} )
     description: Dataset (FBlc ID) that the Sample or Cluster belongs to.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
