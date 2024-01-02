@@ -76,7 +76,6 @@ classes:
         slot_uri: neo_custom:accession
         description: Accession of the Dataset at the given Site.
         range: string
-        multivalued: true
     slots:
       - neo_label
 

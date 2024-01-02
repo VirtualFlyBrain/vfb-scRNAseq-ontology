@@ -45,7 +45,6 @@ datasets_to_process = dataset_data.filtered_df['id'].drop_duplicates()
 dataset_data.filtered_df['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
 dataset_data.filtered_df['site'] = dataset_data.filtered_df['site_label'].apply(lambda x: "vfb:" + sites_dict[x])
 dataset_data.filtered_df = dataset_data.filtered_df.drop(['source_linkout', 'site_label'], axis=1).drop_duplicates()
-dataset_data.filtered_df = (dataset_data.filtered_df.groupby(['id', 'name', 'title', 'publication', 'licence', 'assay_type', 'site']).agg({'accession': lambda x: "|".join(x)}).reset_index())
 
 # make publication df
 publication_data = DataEntity(datatype='pub')
