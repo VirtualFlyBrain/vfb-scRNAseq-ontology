@@ -12,6 +12,8 @@ with open(upper_catalog_file, 'r') as file1:
 with open(lower_catalog_file, 'r') as file2:
     lower_catalog = BeautifulSoup(file2, 'xml')
 
+for id in all_included_datasets:
+
      # Check if the metadata ontology import already exists in upper_catalog
     meta_check_upper = upper_catalog.find('uri', {"name": f"http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_{id}.owl"})
 
