@@ -1,116 +1,32 @@
-These notes are for the EDITORS of VFB_scRNAseq
+These notes are for the maintainers of VFB_scRNAseq
 
 This project was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
 
-For more details on ontology management, please see the [OBO tutorial](https://github.com/jamesaoverton/obo-tutorial) or the [Gene Ontology Editors Tutorial](https://go-protege-tutorial.readthedocs.io/en/latest/)
-
-You may also want to read the [GO ontology editors guide](http://go-ontology.readthedocs.org/)
-
-## Requirements
-
- 1. Protege (for editing)
- 2. A git client (we assume command line git)
- 3. [docker](https://www.docker.com/get-docker) (for managing releases)
-
 ## Editors Version
 
-Make sure you have an ID range in the [idranges file](VFB_scRNAseq-idranges.owl)
+** DO NOT MANUALLY EDIT ANY ONTOLOGY FILES ON THIS REPO **
 
-If you do not have one, get one from the maintainer of this repo.
-
-The editors version is [VFB_scRNAseq-edit.owl](VFB_scRNAseq-edit.owl)
-
-** DO NOT EDIT VFB_scRNAseq.obo OR VFB_scRNAseq.owl in the top level directory **
-
-[../../VFB_scRNAseq.owl](../../VFB_scRNAseq.owl) is the release version
-
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology) for details.
-
-You should discuss the git workflow you should use with the maintainer
-of this repo, who should document it here. If you are the maintainer,
-you can contact the odk developers for assistance. You may want to
-copy the flow an existing project, for example GO: [Gene Ontology
-Editors Tutorial](https://go-protege-tutorial.readthedocs.io/en/latest/).
-
-In general, it is bad practice to commit changes to master. It is
-better to make changes on a branch, and make Pull Requests.
-
-## ID Ranges
-
-These are stored in the file
-
- * [VFB_scRNAseq-idranges.owl](VFB_scRNAseq-idranges.owl)
-
-** ONLY USE IDs WITHIN YOUR RANGE!! **
-
-If you have only just set up this repository, modify the idranges file
-	and add yourself or other editors. Note Protege does not read the file
-- it is up to you to ensure correct Protege configuration.
-
-
-### Setting ID ranges in Protege
-
-We aim to put this up on the technical docs for OBO on http://obofoundry.org/
-
-For now, consult the [GO Tutorial on configuring Protege](http://go-protege-tutorial.readthedocs.io/en/latest/Entities.html#new-entities)
+Everything is automatically generated.
 
 ## Imports
 
 All import modules are in the [imports/](imports/) folder.
 
-There are two ways to include new classes in an import module
-
- 1. Reference an external ontology class in the edit ontology. In Protege: "add new entity", then paste in the PURL
- 2. Add to the imports/ont_terms.txt file, for example imports/go_terms.txt
-
-After doing this, you can run
-
-`./run.sh make all_imports`
-
-to regenerate imports.
-
-Note: the ont_terms.txt file may include 'starter' classes seeded from
-the ontology starter kit. It is safe to remove these.
+These are automatically generated for each dataset.
 
 ## Release Manager notes
-
-You should only attempt to make a release AFTER the edit version is
-committed and pushed, AND the travis build passes.
 
 These instructions assume you have
 [docker](https://www.docker.com/get-docker). This folder has a script
 [run.sh](run.sh) that wraps docker commands.
 
-to release:
+To release:
 
-first type
+    `sh run_release.sh`
 
-    git branch
+This adds new ontology and expression files and updates imports for each dataset. Existing ontology (metadata) and expression files are not refreshed by default (would require a lot of memory).
 
-to make sure you are on master
-
-    cd src/ontology
-    sh run.sh make all
-
-If this looks good type:
-
-    sh run.sh make prepare_release
-
-This generates derived files such as VFB_scRNAseq.owl and VFB_scRNAseq.obo and places
-them in the top level (../..).
-
-Note that the versionIRI value automatically will be added, and will
-end with YYYY-MM-DD, as per OBO guidelines.
-
-Commit and push these files.
-
-    git commit -a
-
-And type a brief description of the release in the editor window
-
-Finally type:
-
-    git push origin master
+After checking that everything looks good, commit and push changes to github.
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
@@ -121,38 +37,16 @@ __IMPORTANT__: The value of the "Tag version" field MUST be
 
     vYYYY-MM-DD
 
-The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match
-what is in the `owl:versionIRI` of the derived VFB_scRNAseq.owl (`data-version` in
-VFB_scRNAseq.obo). This will be today's date.
+where YYYY-MM-DD is the release date.
 
 This cannot be changed after the fact, be sure to get this right!
 
-Release title should be YYYY-MM-DD, optionally followed by a title (e.g. "january release")
+Release title should be YYYY-MM-DD, optionally followed by a title (e.g. "January release").
 
-You can also add release notes (this can also be done after the fact). These are in markdown format.
-In future we will have better tools for auto-generating release notes.
+Drag and drop release files onto the release page.
 
 Then click "publish release"
 
 __IMPORTANT__: NO MORE THAN ONE RELEASE PER DAY.
 
-The PURLs are already configured to pull from github. This means that
-BOTH ontology purls and versioned ontology purls will resolve to the
-correct ontologies. Try it!
-
- * http://purl.obolibrary.org/obo/VFB_scRNAseq.owl <-- current ontology PURL
- * http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/YYYY-MM-DD.owl <-- change to the release you just made
-
-For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
-
-# Travis Continuous Integration System
-
-Check the build status here: [![Build Status](https://travis-ci.org/VirtualFlyBrain/vfb-scRNAseq-ontology.svg?branch=master)](https://travis-ci.org/VirtualFlyBrain/vfb-scRNAseq-ontology)
-
-Note: if you have only just created this project you will need to authorize travis for this repo.
-
- 1. Go to [https://travis-ci.org/profile/VirtualFlyBrain](https://travis-ci.org/profile/VirtualFlyBrain)
- 2. click the "Sync account" button
- 3. Click the tick symbol next to vfb-scRNAseq-ontology
-
-Travis builds should now be activated
+Most of the PURLs will not resolve, since VFB takes the ontologies directly from the repo. 
