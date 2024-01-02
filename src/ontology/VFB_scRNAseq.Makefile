@@ -121,14 +121,14 @@ update_metadata_files: $(DATASET_META_FILES)
 # make an ontology from existing linkml metadata templates
 $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl: install_linkml
 	$(LINKML) -C Dataset $(METADATADIR)/$*_dataset_data.tsv -o $(METADATADIR)/$*_dataset_data.ofn &&\
-	$(LINKML) -C Publication $(METADATADIR)/$*_publication_data.tsv -o $(METADATADIR)/$*_publication_data.ofn &&\
+	$(LINKML) -C Publication $(METADATADIR)/$*_pub_data.tsv -o $(METADATADIR)/$*_pub_data.ofn &&\
 	$(LINKML) -C Sample $(METADATADIR)/$*_sample_data.tsv -o $(METADATADIR)/$*_sample_data.ofn &&\
 	$(LINKML) -C Assay $(METADATADIR)/$*_assay_data.tsv -o $(METADATADIR)/$*_assay_data.ofn &&\
 	$(LINKML) -C Cluster $(METADATADIR)/$*_cluster_data.tsv -o $(METADATADIR)/$*_cluster_data.ofn &&\
 	$(LINKML) -C Clustering $(METADATADIR)/$*_clustering_data.tsv -o $(METADATADIR)/$*_clustering_data.ofn &&\
 	$(ROBOT) merge \
 	--input $(METADATADIR)/$*_dataset_data.ofn \
-	--input $(METADATADIR)/$*_publication_data.ofn \
+	--input $(METADATADIR)/$*_pub_data.ofn \
 	--input $(METADATADIR)/$*_sample_data.ofn \
 	--input $(METADATADIR)/$*_assay_data.ofn \
 	--input $(METADATADIR)/$*_cluster_data.ofn \
