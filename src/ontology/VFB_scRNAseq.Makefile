@@ -176,7 +176,7 @@ $(EXPDIR)/dataset_%.owl: make_exp_ofns
 	cat $(TMPDIR)/$*-exp-tmp.ofn | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
 	$(ROBOT) convert -i $@ --format owl -o $@ &&\
 	$(ROBOT) convert -i $@ --format owl -o $@.gz &&\
-	rm -f $(wildcard $(EXPDIR)/dataset_$*-cluster_*.ofn) $(TMPDIR)/$*-exp-tmp.ofn
+	rm -f $(EXPDIR)/dataset_$*-cluster_*.ofn $(TMPDIR)/$*-exp-tmp.ofn
 
 .PHONY: update_ontology_files
 update_ontology_files: update_metadata_files update_expression_files
