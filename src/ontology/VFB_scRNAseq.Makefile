@@ -5,8 +5,8 @@
 
 .PHONY: prepare_release_notest
 # this prepares a release without updating the source files or running any tests - run using command in run_release.sh
-prepare_release_notest: $(SRC) all_imports update_catalog_files release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
-	rm -f $(CLEANFILES) $(IMPORTDIR)/*terms.txt $(IMPORTDIR)/*terms_combined.txt $(ALL_TERMS_COMBINED) &&\
+prepare_release_notest: $(SRC) update_catalog_files all_imports release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
+	rm -f $(CLEANFILES) $(ALL_TERMS_COMBINED) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 # flags to bypass recreation of existing gene expression and experiment metadata
@@ -194,7 +194,7 @@ RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_scRNAseq_%.owl.gz,$(RELE
 
 .PHONY: all_imports
 all_imports: create_import_stubs $(ONTOLOGY_IMPORT_FILES) # merged import is default prerequisite
-	rm -f $(IMPORTDIR)/*.txt
+	rm -f $(IMPORTDIR)/*terms.txt $(IMPORTDIR)/*terms_combined.txt
 
 .PHONY: create_import_stubs
 # make an empty ontology for imports to stop robot complaining
@@ -248,8 +248,10 @@ $(REPORTDIR)/FBgn_list.txt: $(REPORTDIR)
 $(SRC):
 	python3 $(SCRIPTSDIR)/create_src.py
 
+# remove any existing docs and generate fresh
 .PHONY: gen_docs
 gen_docs: install_linkml
+	rm -fr ../../docs
 	gen-doc ./VFB_scRNAseq_schema.yaml --directory ../../docs
 
 
