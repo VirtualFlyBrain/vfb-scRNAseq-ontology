@@ -13,7 +13,7 @@ prepare_release_notest: $(SRC) update_catalog_files all_imports release_ontology
 # NB refreshing expression data will greatly increase processing time (may take several days)
 UPDATE_FROM_FB = true
 REFRESH_EXP = false
-REFRESH_META = false
+REFRESH_META = true
 IMPORTS_ONLY = false
 IMP = true
 
@@ -22,7 +22,7 @@ IMP = true
 EXPDIR = expression_data
 METADATADIR = metadata_files
 ONTOLOGYDIR = ontology_files
-RELEASEDIR = ../../release_files
+RELEASEDIR = ../../metadata_release_files
 
 $(EXPDIR) $(METADATADIR) $(RELEASEDIR) $(ONTOLOGYDIR):
 	mkdir -p $@
@@ -190,7 +190,7 @@ update_ontology_files: update_metadata_files update_expression_files
 RELEASE_DATASETS = $(patsubst $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl,%,$(wildcard $(ONTOLOGYDIR)/*.owl))
 ONTOLOGY_IMPORT_FILES = $(patsubst %,$(IMPORTDIR)/%_import.owl,$(RELEASE_DATASETS))
 IMPORT_SEED_FILES = $(patsubst %,$(IMPORTDIR)/%_terms.txt,$(RELEASE_DATASETS))
-RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_scRNAseq_%.owl.gz,$(RELEASE_DATASETS))
+RELEASE_ONTOLOGY_FILES = $(patsubst %,$(RELEASEDIR)/VFB_scRNAseq_%.owl,$(RELEASE_DATASETS))
 
 .PHONY: all_imports
 all_imports: create_import_stubs $(ONTOLOGY_IMPORT_FILES) # merged import is default prerequisite
@@ -234,10 +234,14 @@ update_catalog_files:
 	python3 $(SCRIPTSDIR)/update_catalogs.py
 
 # create merged release files (no need to reason etc)
-$(RELEASEDIR)/VFB_scRNAseq_%.owl.gz:
-	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl \
+# remove expression import (loaded separately into VFB)
+
+$(RELEASEDIR)/VFB_scRNAseq_%.owl: | $(RELEASEDIR)
+	cat $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl | grep -v "http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_$*.owl" > $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl
+	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl \
 	convert --format owl \
 	-o $@
+	rm -f $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl
 
 # generating seed file (to extract FBgns from there) needs too much memory
 # this is needed for gene annotations in vfb-scRNAseq-gene-annotations repo
