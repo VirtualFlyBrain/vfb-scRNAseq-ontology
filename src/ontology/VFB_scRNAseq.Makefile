@@ -13,7 +13,7 @@ prepare_release_notest: $(SRC) update_catalog_files all_imports release_ontology
 # NB refreshing expression data will greatly increase processing time (may take several days)
 UPDATE_FROM_FB = true
 REFRESH_EXP = false
-REFRESH_META = true
+REFRESH_META = false
 IMPORTS_ONLY = false
 IMP = true
 
@@ -36,13 +36,22 @@ CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 	# Default recipe for anything that doesn't have a recipe
 	# Stops make complaining that no recipe exists for tsvs
 
+########## Installations
+
+.PHONY: install_linkml
+install_linkml:
+	python3 -m pip install linkml-owl
+
+.PHONY: install_postgresql
+install_postgresql:
+	apt-get update
+	apt-get -y install postgresql-client
+
 ########## get data from FlyBase and generate input tsvs
 
 .PHONY: get_FB_data
-get_FB_data: | $(EXPDIR) $(TMPDIR)
+get_FB_data: install_postgresql | $(EXPDIR) $(TMPDIR)
 ifeq ($(UPDATE_FROM_FB),true)
-	apt-get update
-	apt-get -y install postgresql-client
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
 	 > $(TMPDIR)/raw_dataset_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/sample_query.sql \
@@ -106,9 +115,6 @@ all_tsvs: unzip_exp_files get_FB_data process_FB_metadata process_FB_expdata
 
 ########## make ontology files from input tsvs
 
-.PHONY: install_linkml
-install_linkml:
-	python3 -m pip install linkml-owl
 
 # metatdata owl files for datasets that have 'dataset' metadata files
 DATASET_META_FILES = $(patsubst $(METADATADIR)/%_dataset_data.tsv,$(ONTOLOGYDIR)/VFB_scRNAseq_%.owl,$(wildcard $(METADATADIR)/*_dataset_data.tsv))
@@ -259,6 +265,30 @@ gen_docs: install_linkml
 	gen-doc ./VFB_scRNAseq_schema.yaml --directory ../../docs
 
 
+######## UPDATE OBSOLETE GENES
+
+.PHONY: get_existing_genes
+get_existing_genes: unzip_exp_files
+	for FILE in $(EXPDIR)/*.owl; \
+	do cat $$FILE | grep --only-matching -E "FBgn[0-9]+" | sort | uniq > $$FILE.fbgns.tmp; done &&\
+	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $(TMPDIR)/existing_FBgns.txt
+
+.PHONY: get_gene_id_map
+get_gene_id_map: install_postgresql
+	# this won't work until https://flybase.github.io/docs/chado/functions#update_ids is fixed
+	python3 $(SCRIPTSDIR)/print_id_query.py &&\
+	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
+	 > $(TMPDIR)/id_validation_table.tsv
+
+replace_gene_ids_in_files:
+	# need to get id_validation_table from manual use of id validator
+	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
+	for DS in $(RELEASE_DATASETS); \
+	do if [ -f $(EXPDIR)/processed_dataset_$$DS.owl ]; \
+	then mv $(EXPDIR)/processed_dataset_$$DS.owl $(EXPDIR)/dataset_$$DS.owl; fi &&\
+	$(ROBOT) convert -i $(EXPDIR)/dataset_$$DS.owl --format owl -o $(EXPDIR)/dataset_$$DS.owl.gz &&\
+	rm $(EXPDIR)/dataset_$$DS.owl.fbgns.tmp; done
+
 ######## overwrite some ODK goals to prevent unnecessary processing
 
 $(EDIT_PREPROCESSED): $(SRC)
@@ -278,3 +308,7 @@ $(ALL_TERMS_COMBINED):
 update_repo:
 	sh $(SCRIPTSDIR)/update_repo.sh
 	rm -f $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_import.owl) $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_terms.txt)
+	# also need to remove line `ODK_USER_ID=${ODK_USER_ID:-$(id -u)}` from run.sh after odk 1.5 update
+#remove that line entirely, or
+#replace it by ODK_USER_ID=0, or
+#leave run.sh as it is but have a ODK_USER_ID=0 variable in your environment.
