@@ -14,17 +14,17 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
       
       Assay : associated_dataset
         
-          Assay --|> Dataset : associated_dataset
+          Assay --> Dataset : associated_dataset
         
       Assay : associated_sample_for_assay
         
-          Assay --|> Sample : associated_sample_for_assay
+          Assay --> Sample : associated_sample_for_assay
         
       Assay : id
         
       Assay : method
         
-          Assay --|> Thing : method
+          Assay --> Thing : method
         
       Assay : name
         
@@ -138,6 +138,8 @@ attributes:
     rank: 1000
     slot_uri: BAO:0000212
     multivalued: false
+    domain_of:
+    - Assay
     range: Thing
   associated_sample_for_assay:
     name: associated_sample_for_assay
@@ -151,6 +153,8 @@ attributes:
     rank: 1000
     slot_uri: RO:0002233
     multivalued: true
+    domain_of:
+    - Assay
     range: Sample
 class_uri: FBcv:0003025
 

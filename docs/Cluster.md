@@ -14,17 +14,17 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
       
       Cluster : associated_clustering
         
-          Cluster --|> Clustering : associated_clustering
+          Cluster --> Clustering : associated_clustering
         
       Cluster : associated_dataset
         
-          Cluster --|> Dataset : associated_dataset
+          Cluster --> Dataset : associated_dataset
         
       Cluster : cell_number
         
       Cluster : cell_type
         
-          Cluster --|> Thing : cell_type
+          Cluster --> Thing : cell_type
         
       Cluster : expression_extent
         
@@ -32,7 +32,7 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
       Cluster : gene
         
-          Cluster --|> Thing : gene
+          Cluster --> Thing : gene
         
       Cluster : hide_in_terminfo
         
@@ -44,11 +44,11 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
       Cluster : sex
         
-          Cluster --|> sex_options : sex
+          Cluster --> sex_options : sex
         
       Cluster : stage
         
-          Cluster --|> Thing : stage
+          Cluster --> Thing : stage
         
       Cluster : title
         
@@ -162,6 +162,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: BFO:0000050
+    domain_of:
+    - Cluster
     range: Clustering
   cell_number:
     name: cell_number
@@ -174,6 +176,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: BAO:0002811
+    domain_of:
+    - Cluster
     range: integer
   cell_type:
     name: cell_type
@@ -187,6 +191,8 @@ attributes:
     rank: 1000
     slot_uri: RO:0002473
     multivalued: true
+    domain_of:
+    - Cluster
     range: Thing
 class_uri: FBcv:0009003
 

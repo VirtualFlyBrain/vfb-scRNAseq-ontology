@@ -14,11 +14,11 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
       
       Sample : associated_assay
         
-          Sample --|> Assay : associated_assay
+          Sample --> Assay : associated_assay
         
       Sample : associated_dataset
         
-          Sample --|> Dataset : associated_dataset
+          Sample --> Dataset : associated_dataset
         
       Sample : id
         
@@ -28,15 +28,15 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
       Sample : sample_tissue
         
-          Sample --|> Thing : sample_tissue
+          Sample --> Thing : sample_tissue
         
       Sample : sex
         
-          Sample --|> sex_options : sex
+          Sample --> sex_options : sex
         
       Sample : stage
         
-          Sample --|> Thing : stage
+          Sample --> Thing : stage
         
       Sample : title
         
@@ -151,6 +151,8 @@ attributes:
     rank: 1000
     slot_uri: RO:0002131
     multivalued: true
+    domain_of:
+    - Sample
     range: Thing
   associated_assay:
     name: associated_assay
@@ -164,6 +166,8 @@ attributes:
     rank: 1000
     slot_uri: RO:0002352
     multivalued: true
+    domain_of:
+    - Sample
     range: Assay
 class_uri: FBcv:0003024
 

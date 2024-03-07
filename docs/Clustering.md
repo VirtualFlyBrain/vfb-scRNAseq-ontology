@@ -14,11 +14,11 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
       
       Clustering : associated_dataset
         
-          Clustering --|> Dataset : associated_dataset
+          Clustering --> Dataset : associated_dataset
         
       Clustering : associated_sample_or_assay_for_clustering
         
-          Clustering --|> Class : associated_sample_or_assay_for_clustering
+          Clustering --> Class : associated_sample_or_assay_for_clustering
         
       Clustering : id
         
@@ -127,6 +127,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: BFO:0000051
+    domain_of:
+    - Clustering
     range: Class
 class_uri: FBcv:0009002
 

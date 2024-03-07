@@ -2,7 +2,7 @@
 
 
 
-URI: [SexOptions](SexOptions)
+URI: [SexOptions](SexOptions.md)
 
 ## Permissible Values
 

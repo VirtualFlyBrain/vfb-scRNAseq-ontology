@@ -16,13 +16,13 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
       Dataset : assay_type
         
-          Dataset --|> Thing : assay_type
+          Dataset --> Thing : assay_type
         
       Dataset : id
         
       Dataset : licence
         
-          Dataset --|> Thing : licence
+          Dataset --> Thing : licence
         
       Dataset : name
         
@@ -30,11 +30,11 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
       Dataset : publication
         
-          Dataset --|> Publication : publication
+          Dataset --> Publication : publication
         
       Dataset : site
         
-          Dataset --|> Thing : site
+          Dataset --> Thing : site
         
       Dataset : title
         
@@ -146,6 +146,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: dcterms:references
+    domain_of:
+    - Dataset
     range: Publication
   licence:
     name: licence
@@ -157,6 +159,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: dcterms:licence
+    domain_of:
+    - Dataset
     range: Thing
   assay_type:
     name: assay_type
@@ -169,6 +173,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: OBI:0000312
+    domain_of:
+    - Dataset
     range: Thing
   site:
     name: site
@@ -183,6 +189,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: oboInOwl:hasDbXref
+    domain_of:
+    - Dataset
     range: Thing
   accession:
     name: accession
@@ -190,6 +198,8 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: neo_custom:accession
+    domain_of:
+    - Dataset
     range: string
 class_uri: FBcv:0003023
 
