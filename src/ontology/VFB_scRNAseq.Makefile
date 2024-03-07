@@ -308,7 +308,3 @@ $(ALL_TERMS_COMBINED):
 update_repo:
 	sh $(SCRIPTSDIR)/update_repo.sh
 	rm -f $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_import.owl) $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_terms.txt)
-	# also need to remove line `ODK_USER_ID=${ODK_USER_ID:-$(id -u)}` from run.sh after odk 1.5 update
-#remove that line entirely, or
-#replace it by ODK_USER_ID=0, or
-#leave run.sh as it is but have a ODK_USER_ID=0 variable in your environment.
