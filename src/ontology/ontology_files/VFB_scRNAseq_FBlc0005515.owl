@@ -360,7 +360,7 @@
         <dcterms:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
         <dcterms:references rdf:resource="http://flybase.org/reports/FBrf0251482"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL</rdfs:label>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -397,7 +397,7 @@
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <obo:IAO_0000115>Dissociated cells from female adult brains without cocaine exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -416,7 +416,7 @@
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq of dissociated cells from female adult brains without cocaine exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -429,7 +429,7 @@
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005517"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -455,7 +455,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_glutamatergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_glutamatergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -481,7 +481,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_cholinergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_cholinergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -507,7 +507,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_GABAergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_GABAergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -533,7 +533,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_olfactory_projection_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_olfactory_projection_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -559,7 +559,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -585,7 +585,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -611,7 +611,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_optic_lobe_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_optic_lobe_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -637,7 +637,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, CNS glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_CNS_glial_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_CNS_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -663,7 +663,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_Kenyon_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_Kenyon_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -689,7 +689,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_photoreceptor_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_photoreceptor_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -715,7 +715,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_dopaminergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_dopaminergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -741,7 +741,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_FEMALE_seq_clustering_tachykinin_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_FEMALE_seq_clustering_tachykinin_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -772,7 +772,7 @@
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <obo:IAO_0000115>Dissociated cells from male adult brains without cocaine exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -791,7 +791,7 @@
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq of dissociated cells from male adult brains without cocaine exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -804,7 +804,7 @@
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005532"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -830,7 +830,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -856,7 +856,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_GABAergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_GABAergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -882,7 +882,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_optic_lobe_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_optic_lobe_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -908,7 +908,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -934,7 +934,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_cholinergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_cholinergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -960,7 +960,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_photoreceptor_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_photoreceptor_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -986,7 +986,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_glutamatergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_glutamatergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1012,7 +1012,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_Kenyon_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_Kenyon_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1038,7 +1038,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, CNS glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_CNS_glial_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_CNS_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1064,7 +1064,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_dopaminergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_dopaminergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1090,7 +1090,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_olfactory_projection_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_olfactory_projection_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1116,7 +1116,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MALE_seq_clustering_tachykinin_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MALE_seq_clustering_tachykinin_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1131,7 +1131,7 @@
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005532"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1157,7 +1157,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_glutamatergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_glutamatergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1183,7 +1183,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_cholinergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_cholinergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1209,7 +1209,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_GABAergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_GABAergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1235,7 +1235,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_olfactory_projection_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_olfactory_projection_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1261,7 +1261,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1287,7 +1287,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1313,7 +1313,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_optic_lobe_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_optic_lobe_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1339,7 +1339,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, CNS glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_CNS_glial_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_CNS_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1365,7 +1365,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_Kenyon_cells</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_Kenyon_cells</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1391,7 +1391,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_photoreceptor_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_photoreceptor_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1417,7 +1417,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_dopaminergic_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_dopaminergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1443,7 +1443,7 @@
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
-        <rdfs:label>scRNAseq_2021_Maker_CTRL_MIXEDSEX_seq_clustering_tachykinin_neurons</rdfs:label>
+        <rdfs:label>scRNAseq_2021_Baker_CTRL_MIXEDSEX_seq_clustering_tachykinin_neurons</rdfs:label>
     </owl:NamedIndividual>
     
 
