@@ -8,12 +8,17 @@ robot_report:
 robot_java_args: '-Xmx24G'
 use_dosdps: FALSE
 edit_format: ofn
-run_as_root: True
+run_as_root: TRUE
 export_formats:
   - owl
 import_group:
   use_base_merging: TRUE
   slme_individuals: exclude
+  annotation_properties:
+    - RO:0002582
+    - RO:0002581
+    - rdfs:label
+    - IAO:0000115
   products:
     - id: FBcv
       use_base: TRUE
