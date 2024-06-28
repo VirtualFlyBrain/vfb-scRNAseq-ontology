@@ -23,7 +23,7 @@ ontology_lines.extend(import_statements)
 ontology_lines.extend([
 'Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology of Drosophila melanogaster scRNAseq data. This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources."^^xsd:string)',
 'Annotation(<http://purl.org/dc/elements/1.1/title> "VFB scRNAseq Ontology"^^xsd:string)',
-'Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:string)',
+'Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/>)',
 '',
 'Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))',
 'Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))',

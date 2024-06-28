@@ -214,6 +214,7 @@ create_import_stubs:
 		done
 
 # import seeds for each ontology
+# need to add RO_0002292 (expresses), which is only in the expression imports
 $(IMPORTDIR)/%_terms.txt: create_import_stubs | $(ONTOLOGYDIR) $(TMPDIR)
 ifeq ($(IMP),true)
 	$(ROBOT_O) query --input $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl --query ../sparql/external_terms.sparql $@ &&\
@@ -241,7 +242,6 @@ update_catalog_files:
 
 # create merged release files (no need to reason etc)
 # remove expression import (loaded separately into VFB)
-
 $(RELEASEDIR)/VFB_scRNAseq_%.owl: | $(RELEASEDIR)
 	cat $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl | grep -v "http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_$*.owl" > $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl
 	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl \
