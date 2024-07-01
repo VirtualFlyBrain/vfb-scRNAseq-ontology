@@ -1,3 +1,5 @@
+
+
 # Slot: publication
 
 
@@ -14,11 +16,12 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Dataset](Dataset.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

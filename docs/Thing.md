@@ -1,3 +1,5 @@
+
+
 # Class: Thing
 
 
@@ -7,11 +9,16 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 
 
 
+
+
 ```mermaid
  classDiagram
     class Thing
+    click Thing href "../Thing"
       Thing <|-- Class
+        click Class href "../Class"
       Thing <|-- Publication
+        click Publication href "../Publication"
       
       Thing : id
         
@@ -33,7 +40,7 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 
 | Name | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- |
-| [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | direct |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | direct |
 
 
 

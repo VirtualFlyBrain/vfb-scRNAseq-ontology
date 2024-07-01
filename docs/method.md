@@ -1,3 +1,5 @@
+
+
 # Slot: method
 
 
@@ -14,11 +16,12 @@ URI: [BAO:0000212](http://www.bioassayontology.org/bao#BAO_0000212)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Assay](Assay.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 
 
 

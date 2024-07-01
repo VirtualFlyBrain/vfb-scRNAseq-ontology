@@ -1,3 +1,5 @@
+
+
 # Slot: pub_dataset
 
 
@@ -14,11 +16,12 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:pub_dataset](htt
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Publication](Publication.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
 
 
 

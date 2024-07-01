@@ -1,3 +1,5 @@
+
+
 # Slot: name
 
 
@@ -14,16 +16,17 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Class](Class.md) |  |  no  |
-[Dataset](Dataset.md) |  |  no  |
-[Sample](Sample.md) |  |  no  |
-[Assay](Assay.md) |  |  no  |
-[Clustering](Clustering.md) |  |  no  |
-[Cluster](Cluster.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 
 
 

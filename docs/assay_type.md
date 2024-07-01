@@ -1,3 +1,5 @@
+
+
 # Slot: assay_type
 
 
@@ -14,11 +16,12 @@ URI: [OBI:0000312](http://purl.obolibrary.org/obo/OBI_0000312)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Dataset](Dataset.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

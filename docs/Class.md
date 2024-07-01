@@ -1,3 +1,5 @@
+
+
 # Class: Class
 
 
@@ -7,17 +9,26 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 
 
 
+
+
 ```mermaid
  classDiagram
     class Class
+    click Class href "../Class"
       Thing <|-- Class
+        click Thing href "../Thing"
       
 
       Class <|-- Dataset
+        click Dataset href "../Dataset"
       Class <|-- Sample
+        click Sample href "../Sample"
       Class <|-- Assay
+        click Assay href "../Assay"
       Class <|-- Clustering
+        click Clustering href "../Clustering"
       Class <|-- Cluster
+        click Cluster href "../Cluster"
       
       
       Class : id
@@ -50,7 +61,7 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 | ---  | --- | --- | --- |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | direct |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | direct |
-| [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
 
 
 

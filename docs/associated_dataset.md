@@ -1,3 +1,5 @@
+
+
 # Slot: associated_dataset
 
 
@@ -14,14 +16,15 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Sample](Sample.md) |  |  no  |
-[Assay](Assay.md) |  |  no  |
-[Clustering](Clustering.md) |  |  no  |
-[Cluster](Cluster.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 
 
 

@@ -1,3 +1,5 @@
+
+
 # Slot: neo_label
 
 
@@ -14,15 +16,16 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Dataset](Dataset.md) |  |  no  |
-[Sample](Sample.md) |  |  no  |
-[Assay](Assay.md) |  |  no  |
-[Cluster](Cluster.md) |  |  no  |
-[Publication](Publication.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 
 
 

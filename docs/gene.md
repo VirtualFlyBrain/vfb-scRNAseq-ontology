@@ -1,3 +1,5 @@
+
+
 # Slot: gene
 
 
@@ -14,11 +16,12 @@ URI: [RO:0002292](http://purl.obolibrary.org/obo/RO_0002292)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Cluster](Cluster.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

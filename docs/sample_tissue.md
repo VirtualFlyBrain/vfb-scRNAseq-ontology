@@ -1,3 +1,5 @@
+
+
 # Slot: sample_tissue
 
 
@@ -14,11 +16,12 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Sample](Sample.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 

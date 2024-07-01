@@ -1,3 +1,5 @@
+
+
 # Slot: licence
 
 
@@ -14,11 +16,12 @@ URI: [dcterms:licence](http://purl.org/dc/terms/licence)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Dataset](Dataset.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

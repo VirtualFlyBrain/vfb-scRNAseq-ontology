@@ -1,3 +1,5 @@
+
+
 # Class: Assay
 
 
@@ -7,24 +9,43 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 
 
 
+
+
 ```mermaid
  classDiagram
     class Assay
+    click Assay href "../Assay"
       Class <|-- Assay
+        click Class href "../Class"
       
       Assay : associated_dataset
         
-          Assay --> Dataset : associated_dataset
+          
+    
+    
+    Assay --> "0..1" Dataset : associated_dataset
+    click Dataset href "../Dataset"
+
         
       Assay : associated_sample_for_assay
         
-          Assay --> Sample : associated_sample_for_assay
+          
+    
+    
+    Assay --> "*" Sample : associated_sample_for_assay
+    click Sample href "../Sample"
+
         
       Assay : id
         
       Assay : method
         
-          Assay --> Thing : method
+          
+    
+    
+    Assay --> "0..1" Thing : method
+    click Thing href "../Thing"
+
         
       Assay : name
         
@@ -53,10 +74,10 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 | [associated_dataset](associated_dataset.md) | 0..1 <br/> [Dataset](Dataset.md) | Dataset (FBlc ID) that the Sample or Cluster belongs to | direct |
 | [neo_label](neo_label.md) | 0..1 <br/> [String](String.md) | neo4j node label to add to entity | direct |
 | [method](method.md) | 0..1 <br/> [Thing](Thing.md) | Method used for the assay - currently getting any direct subclass of FBcv:000... | direct |
-| [associated_sample_for_assay](associated_sample_for_assay.md) | 0..* <br/> [Sample](Sample.md) | Input sample(s) for the scRNAseq assay | direct |
+| [associated_sample_for_assay](associated_sample_for_assay.md) | * <br/> [Sample](Sample.md) | Input sample(s) for the scRNAseq assay | direct |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | [Class](Class.md) |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | [Class](Class.md) |
-| [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
 
 
 

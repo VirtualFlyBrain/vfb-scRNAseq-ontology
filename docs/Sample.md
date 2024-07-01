@@ -1,3 +1,5 @@
+
+
 # Class: Sample
 
 
@@ -7,18 +9,32 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 
 
 
+
+
 ```mermaid
  classDiagram
     class Sample
+    click Sample href "../Sample"
       Class <|-- Sample
+        click Class href "../Class"
       
       Sample : associated_assay
         
-          Sample --> Assay : associated_assay
+          
+    
+    
+    Sample --> "*" Assay : associated_assay
+    click Assay href "../Assay"
+
         
       Sample : associated_dataset
         
-          Sample --> Dataset : associated_dataset
+          
+    
+    
+    Sample --> "0..1" Dataset : associated_dataset
+    click Dataset href "../Dataset"
+
         
       Sample : id
         
@@ -28,15 +44,30 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
       Sample : sample_tissue
         
-          Sample --> Thing : sample_tissue
+          
+    
+    
+    Sample --> "*" Thing : sample_tissue
+    click Thing href "../Thing"
+
         
       Sample : sex
         
-          Sample --> sex_options : sex
+          
+    
+    
+    Sample --> "0..1" SexOptions : sex
+    click SexOptions href "../SexOptions"
+
         
       Sample : stage
         
-          Sample --> Thing : stage
+          
+    
+    
+    Sample --> "0..1" Thing : stage
+    click Thing href "../Thing"
+
         
       Sample : title
         
@@ -62,11 +93,11 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 | [associated_dataset](associated_dataset.md) | 0..1 <br/> [Dataset](Dataset.md) | Dataset (FBlc ID) that the Sample or Cluster belongs to | direct |
 | [sex](sex.md) | 0..1 <br/> [SexOptions](SexOptions.md) | Sex for the entity | direct |
 | [neo_label](neo_label.md) | 0..1 <br/> [String](String.md) | neo4j node label to add to entity | direct |
-| [sample_tissue](sample_tissue.md) | 0..* <br/> [Thing](Thing.md) | Tissue(s) (FBbt IDs) in the sample | direct |
-| [associated_assay](associated_assay.md) | 0..* <br/> [Assay](Assay.md) | Assay(s) that use this sample | direct |
+| [sample_tissue](sample_tissue.md) | * <br/> [Thing](Thing.md) | Tissue(s) (FBbt IDs) in the sample | direct |
+| [associated_assay](associated_assay.md) | * <br/> [Assay](Assay.md) | Assay(s) that use this sample | direct |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | [Class](Class.md) |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | [Class](Class.md) |
-| [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
 
 
 

@@ -1,3 +1,5 @@
+
+
 # Class: Cluster
 
 
@@ -7,24 +9,43 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 
 
 
+
+
 ```mermaid
  classDiagram
     class Cluster
+    click Cluster href "../Cluster"
       Class <|-- Cluster
+        click Class href "../Class"
       
       Cluster : associated_clustering
         
-          Cluster --> Clustering : associated_clustering
+          
+    
+    
+    Cluster --> "0..1" Clustering : associated_clustering
+    click Clustering href "../Clustering"
+
         
       Cluster : associated_dataset
         
-          Cluster --> Dataset : associated_dataset
+          
+    
+    
+    Cluster --> "0..1" Dataset : associated_dataset
+    click Dataset href "../Dataset"
+
         
       Cluster : cell_number
         
       Cluster : cell_type
         
-          Cluster --> Thing : cell_type
+          
+    
+    
+    Cluster --> "*" Thing : cell_type
+    click Thing href "../Thing"
+
         
       Cluster : expression_extent
         
@@ -32,7 +53,12 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
       Cluster : gene
         
-          Cluster --> Thing : gene
+          
+    
+    
+    Cluster --> "0..1" Thing : gene
+    click Thing href "../Thing"
+
         
       Cluster : hide_in_terminfo
         
@@ -44,11 +70,21 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
       Cluster : sex
         
-          Cluster --> sex_options : sex
+          
+    
+    
+    Cluster --> "0..1" SexOptions : sex
+    click SexOptions href "../SexOptions"
+
         
       Cluster : stage
         
-          Cluster --> Thing : stage
+          
+    
+    
+    Cluster --> "0..1" Thing : stage
+    click Thing href "../Thing"
+
         
       Cluster : title
         
@@ -80,10 +116,10 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 | [hide_in_terminfo](hide_in_terminfo.md) | 0..1 <br/> [String](String.md) | Flag to hide expression edges in VFB Term Info pane | direct |
 | [associated_clustering](associated_clustering.md) | 0..1 <br/> [Clustering](Clustering.md) | Clustering (FBlc ID) that the Cluster belongs to | direct |
 | [cell_number](cell_number.md) | 0..1 <br/> [Integer](Integer.md) | The number of cells in the Cluster (as integer) | direct |
-| [cell_type](cell_type.md) | 0..* <br/> [Thing](Thing.md) | Anatomy (FBbt IDs) for the Cluster | direct |
+| [cell_type](cell_type.md) | * <br/> [Thing](Thing.md) | Anatomy (FBbt IDs) for the Cluster | direct |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | [Class](Class.md) |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | [Class](Class.md) |
-| [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
 
 
 

@@ -1,3 +1,5 @@
+
+
 # Slot: site
 
 
@@ -14,11 +16,12 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Dataset](Dataset.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

@@ -1,3 +1,5 @@
+
+
 # Slot: hide_in_terminfo
 
 
@@ -14,11 +16,12 @@ URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Cluster](Cluster.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

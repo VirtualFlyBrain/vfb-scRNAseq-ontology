@@ -1,3 +1,5 @@
+
+
 # Slot: associated_assay
 
 
@@ -14,11 +16,12 @@ URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Sample](Sample.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 

@@ -1,3 +1,5 @@
+
+
 # Slot: id
 
 
@@ -14,18 +16,19 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://githu
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Thing](Thing.md) |  |  no  |
-[Class](Class.md) |  |  no  |
-[Dataset](Dataset.md) |  |  no  |
-[Sample](Sample.md) |  |  no  |
-[Assay](Assay.md) |  |  no  |
-[Clustering](Clustering.md) |  |  no  |
-[Cluster](Cluster.md) |  |  no  |
-[Publication](Publication.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Thing](Thing.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 
 
 

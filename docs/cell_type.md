@@ -1,3 +1,5 @@
+
+
 # Slot: cell_type
 
 
@@ -14,11 +16,12 @@ URI: [RO:0002473](http://purl.obolibrary.org/obo/RO_0002473)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Cluster](Cluster.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

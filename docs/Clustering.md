@@ -1,3 +1,5 @@
+
+
 # Class: Clustering
 
 
@@ -7,18 +9,32 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 
 
 
+
+
 ```mermaid
  classDiagram
     class Clustering
+    click Clustering href "../Clustering"
       Class <|-- Clustering
+        click Class href "../Class"
       
       Clustering : associated_dataset
         
-          Clustering --> Dataset : associated_dataset
+          
+    
+    
+    Clustering --> "0..1" Dataset : associated_dataset
+    click Dataset href "../Dataset"
+
         
       Clustering : associated_sample_or_assay_for_clustering
         
-          Clustering --> Class : associated_sample_or_assay_for_clustering
+          
+    
+    
+    Clustering --> "0..1" Class : associated_sample_or_assay_for_clustering
+    click Class href "../Class"
+
         
       Clustering : id
         
@@ -48,7 +64,7 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 | [associated_sample_or_assay_for_clustering](associated_sample_or_assay_for_clustering.md) | 0..1 <br/> [Class](Class.md) | Sample or Assay (FBlc ID) that the Clustering uses | direct |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | [Class](Class.md) |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | [Class](Class.md) |
-| [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
 
 
 

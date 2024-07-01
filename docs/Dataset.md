@@ -1,3 +1,5 @@
+
+
 # Class: Dataset
 
 
@@ -7,22 +9,36 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 
 
 
+
+
 ```mermaid
  classDiagram
     class Dataset
+    click Dataset href "../Dataset"
       Class <|-- Dataset
+        click Class href "../Class"
       
       Dataset : accession
         
       Dataset : assay_type
         
-          Dataset --> Thing : assay_type
+          
+    
+    
+    Dataset --> "0..1" Thing : assay_type
+    click Thing href "../Thing"
+
         
       Dataset : id
         
       Dataset : licence
         
-          Dataset --> Thing : licence
+          
+    
+    
+    Dataset --> "0..1" Thing : licence
+    click Thing href "../Thing"
+
         
       Dataset : name
         
@@ -30,11 +46,21 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
         
       Dataset : publication
         
-          Dataset --> Publication : publication
+          
+    
+    
+    Dataset --> "0..1" Publication : publication
+    click Publication href "../Publication"
+
         
       Dataset : site
         
-          Dataset --> Thing : site
+          
+    
+    
+    Dataset --> "0..1" Thing : site
+    click Thing href "../Thing"
+
         
       Dataset : title
         
@@ -64,7 +90,7 @@ URI: [FBcv:0003023](http://purl.obolibrary.org/obo/FBcv_0003023)
 | [accession](accession.md) | 0..1 <br/> [String](String.md) | Accession of the Dataset at the given Site | direct |
 | [name](name.md) | 0..1 _recommended_ <br/> [String](String.md) | Short systematic label for the entity | [Class](Class.md) |
 | [title](title.md) | 0..1 _recommended_ <br/> [String](String.md) | Short description of the entity | [Class](Class.md) |
-| [id](id.md) | 1..1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Identifier for the entity | [Thing](Thing.md) |
 
 
 

@@ -1,3 +1,5 @@
+
+
 # Slot: expression_extent
 
 
@@ -14,11 +16,12 @@ URI: [neo_custom:expression_extent](http://n2o.neo/custom/expression_extent)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Cluster](Cluster.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 

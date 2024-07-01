@@ -1,3 +1,5 @@
+
+
 # Slot: sex
 
 
@@ -14,12 +16,13 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 
 
+
 ## Applicable Classes
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-[Sample](Sample.md) |  |  no  |
-[Cluster](Cluster.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
