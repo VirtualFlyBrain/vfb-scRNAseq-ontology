@@ -251,8 +251,9 @@ $(RELEASEDIR)/VFB_scRNAseq_%.owl: | $(RELEASEDIR)
 
 # generating seed file (to extract FBgns from there) needs too much memory
 # this is needed for gene annotations in vfb-scRNAseq-gene-annotations repo
-$(REPORTDIR)/FBgn_list.txt: $(REPORTDIR)
-	python3 $(SCRIPTSDIR)/get_gene_list.py
+$(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/existing_FBgns.txt | $(REPORTDIR)
+	cp $< $@ &&\
+	rm -f $(EXPDIR)/*.fbgns.tmp
 
 # make a $(SRC) file that imports all the owl files in ontology_files
 $(SRC):
@@ -267,8 +268,7 @@ gen_docs: install_linkml
 
 ######## UPDATE OBSOLETE GENES
 
-.PHONY: get_existing_genes
-get_existing_genes: unzip_exp_files
+$(TMPDIR)/existing_FBgns.txt: unzip_exp_files
 	for FILE in $(EXPDIR)/*.owl; \
 	do cat $$FILE | grep --only-matching -E "FBgn[0-9]+" | sort | uniq > $$FILE.fbgns.tmp; done &&\
 	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $(TMPDIR)/existing_FBgns.txt
@@ -281,7 +281,7 @@ get_gene_id_map: install_postgresql
 	 > $(TMPDIR)/id_validation_table.tsv
 
 replace_gene_ids_in_files:
-	# need to get id_validation_table from manual use of id validator
+	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
 	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for DS in $(RELEASE_DATASETS); \
 	do if [ -f $(EXPDIR)/processed_dataset_$$DS.owl ]; \
