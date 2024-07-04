@@ -249,7 +249,6 @@ $(RELEASEDIR)/VFB_scRNAseq_%.owl: | $(RELEASEDIR)
 	-o $@
 	rm -f $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl
 
-# generating seed file (to extract FBgns from there) needs too much memory
 # this is needed for gene annotations in vfb-scRNAseq-gene-annotations repo
 $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/existing_FBgns.txt | $(REPORTDIR)
 	cp $< $@ &&\
@@ -267,11 +266,11 @@ gen_docs: install_linkml
 
 
 ######## UPDATE OBSOLETE GENES
-
+# generating seed file (to extract FBgns from there) needs too much memory (so using grep)
 $(TMPDIR)/existing_FBgns.txt: unzip_exp_files
 	for FILE in $(EXPDIR)/*.owl; \
 	do cat $$FILE | grep --only-matching -E "FBgn[0-9]+" | sort | uniq > $$FILE.fbgns.tmp; done &&\
-	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $(TMPDIR)/existing_FBgns.txt
+	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $@
 
 .PHONY: get_gene_id_map
 get_gene_id_map: install_postgresql
