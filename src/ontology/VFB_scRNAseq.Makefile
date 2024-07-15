@@ -74,6 +74,12 @@ unzip_exp_files:
 	for FILE in $(EXPDIR)/*.owl.gz; \
 	do gzip -dkf $$FILE; done
 
+.PHONY: zip_exp_files
+# zip expression files - overwrites any existing owl.gz files, keeping unzipped version too
+zip_exp_files:
+	for FILE in $(EXPDIR)/*.owl; \
+	do $(ROBOT) convert -i $$FILE --format owl -o $$FILE.gz; done
+
 # get all FBlc terms
 $(TMPDIR)/internal_terms.txt: | $(TMPDIR)
 	touch $@
