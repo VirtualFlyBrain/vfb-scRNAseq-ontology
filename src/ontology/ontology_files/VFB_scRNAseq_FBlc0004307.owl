@@ -26,7 +26,7 @@
     <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0004307.owl">
         <dcterms:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0004307). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dcterms:description>
         <dcterms:title>VFB scRNAseq Ontology for dataset FBlc0004307</dcterms:title>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_FBlc0004307.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_FBlc0004307.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0004307_import.owl"/>
     </owl:Ontology>
     
