@@ -144,7 +144,7 @@ $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl: install_linkml
 	--annotation dc:description "An ontology of Drosophila melanogaster scRNAseq data from a single dataset ($*). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources." \
 	--annotation dc:title "VFB scRNAseq Ontology for dataset $*" \
 	--link-annotation owl:imports "http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/$*_import.owl" \
-	--link-annotation owl:imports "http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_exp_$*.owl" \
+	--link-annotation owl:imports "http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_$*.owl" \
 	convert --format owl \
 	-o $@ &&\
 	rm -f $(METADATADIR)/$*_*.tsv $(METADATADIR)/$*_*.ofn
