@@ -40,7 +40,7 @@ CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
 .PHONY: install_linkml
 install_linkml:
-	python3 -m pip install linkml-owl
+	python3 -m pip install linkml-owl==v0.4.1
 
 .PHONY: install_postgresql
 install_postgresql:
