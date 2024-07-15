@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # can specify whether to regenerate tsvs for all existing datasets.
     # New datasets will always be generated.
     parser = argparse.ArgumentParser()
-    parser.add_argument("-r", "--refresh", help="refresh all existing metadata",
+    parser.add_argument("-r", "--refresh", help="refresh all existing expression data",
                         action="store_true")
     args = parser.parse_args()
 

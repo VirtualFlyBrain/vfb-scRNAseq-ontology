@@ -6,7 +6,6 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
-     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -46,6 +45,12 @@
     <!-- http://n2o.neo/custom/accession -->
 
     <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_count -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_count"/>
     
 
 
@@ -165,23 +170,6 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002811 -->
-
-    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002811"/>
     
 
 
@@ -481,7 +469,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1542</bao:BAO_0002811>
+        <neo_custom:cell_count>1542^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -507,7 +495,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2769</bao:BAO_0002811>
+        <neo_custom:cell_count>2769^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -533,7 +521,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5621</bao:BAO_0002811>
+        <neo_custom:cell_count>5621^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -559,7 +547,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">659</bao:BAO_0002811>
+        <neo_custom:cell_count>659^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 1B secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -585,7 +573,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1108</bao:BAO_0002811>
+        <neo_custom:cell_count>1108^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -611,7 +599,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">862</bao:BAO_0002811>
+        <neo_custom:cell_count>862^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 12B secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -637,7 +625,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">639</bao:BAO_0002811>
+        <neo_custom:cell_count>639^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 15 secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -663,7 +651,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">925</bao:BAO_0002811>
+        <neo_custom:cell_count>925^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 6A secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -689,7 +677,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">828</bao:BAO_0002811>
+        <neo_custom:cell_count>828^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 14 secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -715,7 +703,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">955</bao:BAO_0002811>
+        <neo_custom:cell_count>955^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 9A secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -741,7 +729,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">623</bao:BAO_0002811>
+        <neo_custom:cell_count>623^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 21A secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -767,7 +755,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">686</bao:BAO_0002811>
+        <neo_custom:cell_count>686^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 13B secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -793,7 +781,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</bao:BAO_0002811>
+        <neo_custom:cell_count>800^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 23 secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -819,7 +807,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1102</bao:BAO_0002811>
+        <neo_custom:cell_count>1102^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 8B secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -845,7 +833,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">718</bao:BAO_0002811>
+        <neo_custom:cell_count>718^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 16 secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -871,7 +859,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">584</bao:BAO_0002811>
+        <neo_custom:cell_count>584^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 10 secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -897,7 +885,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">712</bao:BAO_0002811>
+        <neo_custom:cell_count>712^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 4 secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -923,7 +911,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">219</bao:BAO_0002811>
+        <neo_custom:cell_count>219^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 9B secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -949,7 +937,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">271</bao:BAO_0002811>
+        <neo_custom:cell_count>271^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 11A secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -975,7 +963,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005606"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">384</bao:BAO_0002811>
+        <neo_custom:cell_count>384^^xsd:integer</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 1A secondary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
@@ -993,5 +981,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
