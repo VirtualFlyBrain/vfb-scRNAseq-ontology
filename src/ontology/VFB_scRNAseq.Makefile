@@ -11,7 +11,7 @@ prepare_release_notest: $(SRC) update_catalog_files all_imports release_ontology
 
 # flags to bypass recreation of existing gene expression and experiment metadata
 # NB refreshing expression data will greatly increase processing time (may take several days)
-UPDATE_FROM_FB = true
+UPDATE_FROM_FB = false
 REFRESH_EXP = false
 REFRESH_META = false
 IMPORTS_ONLY = false
@@ -243,7 +243,7 @@ update_catalog_files:
 # create merged release files (no need to reason etc)
 # remove expression import (loaded separately into VFB)
 $(RELEASEDIR)/VFB_scRNAseq_%.owl: | $(RELEASEDIR)
-	cat $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl | grep -v "http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_$*.owl" > $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl
+	cat $(ONTOLOGYDIR)/VFB_scRNAseq_$*.owl | grep -v "http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_$*.owl" > $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl
 	$(ROBOT_O) merge -i $(ONTOLOGYDIR)/VFB_scRNAseq_$*-tmp.owl \
 	convert --format owl \
 	-o $@
