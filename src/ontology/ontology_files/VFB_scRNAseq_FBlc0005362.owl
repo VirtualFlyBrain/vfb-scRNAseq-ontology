@@ -415,7 +415,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>16^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>16</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -441,7 +441,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>290^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>290</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, peptidergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -467,7 +467,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>383^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>383</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -493,7 +493,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>69^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>69</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -519,7 +519,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>300^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>300</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, neuroblasts cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -545,7 +545,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>29^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>29</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -571,7 +571,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>47^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>47</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, optic lobe neuroepithelial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -597,7 +597,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>126^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>126</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -623,7 +623,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>113^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>113</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
@@ -649,7 +649,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005365"/>
-        <neo_custom:cell_count>51^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>51</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, aminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>

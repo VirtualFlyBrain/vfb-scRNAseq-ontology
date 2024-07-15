@@ -439,7 +439,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>3155^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>3155</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -465,7 +465,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>2058^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>2058</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -491,7 +491,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>2822^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>2822</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -517,7 +517,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>561^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>561</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -543,7 +543,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>1888^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1888</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -569,7 +569,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>368^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>368</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -595,7 +595,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>1609^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1609</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -621,7 +621,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>469^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>469</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, CNS glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -647,7 +647,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>573^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>573</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -673,7 +673,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>52^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>52</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -699,7 +699,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>56^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>56</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -725,7 +725,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005518"/>
-        <neo_custom:cell_count>16^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>16</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without cocaine exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -814,7 +814,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>2336^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>2336</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -840,7 +840,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>3559^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>3559</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -866,7 +866,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>2393^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>2393</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -892,7 +892,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>340^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>340</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -918,7 +918,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>2644^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>2644</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -944,7 +944,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>109^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>109</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -970,7 +970,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>4211^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>4211</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -996,7 +996,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>942^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>942</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1022,7 +1022,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>722^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>722</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, CNS glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1048,7 +1048,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>108^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>108</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1074,7 +1074,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>825^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>825</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1100,7 +1100,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005533"/>
-        <neo_custom:cell_count>25^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>25</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without cocaine exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1141,7 +1141,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>7366^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>7366</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1167,7 +1167,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>4702^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>4702</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1193,7 +1193,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>6381^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>6381</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1219,7 +1219,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>1386^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1386</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1245,7 +1245,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>4224^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>4224</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1271,7 +1271,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>708^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>708</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1297,7 +1297,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>4002^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>4002</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1323,7 +1323,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>1191^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1191</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, CNS glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1349,7 +1349,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>1515^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1515</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1375,7 +1375,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>161^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>161</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1401,7 +1401,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>164^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>164</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>
@@ -1427,7 +1427,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005546"/>
-        <neo_custom:cell_count>41^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>41</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without cocaine exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005515"/>

@@ -1407,7 +1407,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>1224^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1224</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, TmY14 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1433,7 +1433,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>319^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>319</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, adPN neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1459,7 +1459,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>173^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>173</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, subperineurial glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1485,7 +1485,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>1455^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1455</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, gamma Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1511,7 +1511,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>393^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>393</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lamina monopolar neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1537,7 +1537,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>238^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>238</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, distal medullary amacrine neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1563,7 +1563,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>409^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>409</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1589,7 +1589,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>113^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>113</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1615,7 +1615,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>1300^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1300</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, proximal medullary amacrine neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1641,7 +1641,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>703^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>703</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, myoinhibitory peptide neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1667,7 +1667,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>15^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>15</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, IPC cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1693,7 +1693,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>232^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>232</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Pm4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1719,7 +1719,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>340^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>340</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Tm5c neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1745,7 +1745,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>90^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>90</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, LC14 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1771,7 +1771,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>113^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>113</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, C2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1797,7 +1797,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>1271^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1271</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, ensheathing glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1823,7 +1823,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>243^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>243</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1849,7 +1849,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>595^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>595</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, alpha beta Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1875,7 +1875,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>137^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>137</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, peptidergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1901,7 +1901,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>105^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>105</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, tyraminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1927,7 +1927,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>192^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>192</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, dopaminergic PAM neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1953,7 +1953,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>281^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>281</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, transmedullary neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -1979,7 +1979,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>188^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>188</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, C3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2005,7 +2005,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>1134^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1134</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2031,7 +2031,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>97^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>97</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lPN neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2057,7 +2057,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>445^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>445</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2083,7 +2083,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>204^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>204</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, brain cell body glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2109,7 +2109,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>208^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>208</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, dFB neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2135,7 +2135,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>580^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>580</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2161,7 +2161,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>220^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>220</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lamina wide-field 1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2187,7 +2187,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>496^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>496</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Mi neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2213,7 +2213,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>346^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>346</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, pacemaker neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2239,7 +2239,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>66^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>66</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, brain sugar-sensing neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2265,7 +2265,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>122^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>122</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Dm9 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2291,7 +2291,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>94^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>94</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, allatostatin A neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2317,7 +2317,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>21^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>21</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, ITP neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2343,7 +2343,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>70^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>70</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Pm3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2369,7 +2369,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>75^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>75</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, octopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2395,7 +2395,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>70^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>70</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, L2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2421,7 +2421,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>67^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>67</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, optic chiasma glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2447,7 +2447,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>89^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>89</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, L3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2473,7 +2473,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>455^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>455</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, alphaP betaP Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2499,7 +2499,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>215^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>215</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Tm9 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2525,7 +2525,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>221^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>221</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, perineurial glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2551,7 +2551,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>339^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>339</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, serotonergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2577,7 +2577,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>63^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>63</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2603,7 +2603,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>34^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>34</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Hugin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2629,7 +2629,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>66^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>66</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, capability neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2655,7 +2655,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>156^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>156</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, lamina wide-field 2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2681,7 +2681,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>304^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>304</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, Tm5 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2707,7 +2707,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>385^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>385</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, T1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2733,7 +2733,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>277^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>277</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, plasmatocytes cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2759,7 +2759,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>20^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>20</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, CCHamide-1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2785,7 +2785,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>35^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>35</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, LNv neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2811,7 +2811,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>75^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>75</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, L1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2837,7 +2837,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>222^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>222</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, mushroom body output neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2863,7 +2863,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>8^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>8</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, CCAP neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2889,7 +2889,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>25^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>25</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, DN1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
@@ -2915,7 +2915,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0006123"/>
-        <neo_custom:cell_count>8^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>8</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies, corazonin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>

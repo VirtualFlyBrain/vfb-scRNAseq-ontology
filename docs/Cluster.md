@@ -206,12 +206,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: DataPropertyAssertion( BAO:0002811 {id} {cell_number} ^^xsd:integer
-          )
+        value: AnnotationAssertion( neo_custom:cell_count {id} {cell_number} )
     description: The number of cells in the Cluster (as integer).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: BAO:0002811
+    slot_uri: neo_custom:cell_count
     domain_of:
     - Cluster
     range: integer
@@ -267,12 +266,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: DataPropertyAssertion( BAO:0002811 {id} {cell_number} ^^xsd:integer
-          )
+        value: AnnotationAssertion( neo_custom:cell_count {id} {cell_number} )
     description: The number of cells in the Cluster (as integer).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: BAO:0002811
+    slot_uri: neo_custom:cell_count
     alias: cell_number
     owner: Cluster
     domain_of:

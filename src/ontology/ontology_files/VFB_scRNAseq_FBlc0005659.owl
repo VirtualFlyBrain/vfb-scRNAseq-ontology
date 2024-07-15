@@ -745,7 +745,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>52^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>52</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -771,7 +771,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>308^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>308</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T2a neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -797,7 +797,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>103^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>103</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L5 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -823,7 +823,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>382^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>382</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY8a neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -849,7 +849,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>330^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>330</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -875,7 +875,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>1563^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>1563</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -901,7 +901,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>84^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>84</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lobula columnar neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -927,7 +927,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>333^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>333</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -953,7 +953,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>39^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>39</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC17 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -979,7 +979,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>102^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>102</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lamina wide-field 1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1005,7 +1005,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>397^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>397</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1031,7 +1031,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>284^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>284</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1057,7 +1057,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>172^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>172</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm8 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1083,7 +1083,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>250^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>250</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1109,7 +1109,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>37^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>37</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPC1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1135,7 +1135,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>338^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>338</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, C3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1161,7 +1161,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>321^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>321</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, C2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1187,7 +1187,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>317^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>317</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm3a neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1213,7 +1213,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>62^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>62</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LLPC1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1239,7 +1239,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>239^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>239</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1265,7 +1265,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>325^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>325</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi9 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1291,7 +1291,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>47^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>47</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1317,7 +1317,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>303^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>303</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm9 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1343,7 +1343,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>338^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>338</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY5a neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1369,7 +1369,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>425^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>425</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1395,7 +1395,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>86^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>86</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lamina intrinsic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1421,7 +1421,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>270^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>270</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm20 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1447,7 +1447,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>119^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>119</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm5c neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1473,7 +1473,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>104^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>104</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lamina wide-field 2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1499,7 +1499,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>341^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>341</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1525,7 +1525,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>318^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>318</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1551,7 +1551,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>86^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>86</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm15 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1577,7 +1577,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>25^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>25</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1603,7 +1603,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>127^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>127</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY14 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1629,7 +1629,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>765^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>765</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1655,7 +1655,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>329^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>329</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1681,7 +1681,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>52^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>52</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC12 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1707,7 +1707,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>177^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>177</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm10 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1733,7 +1733,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>19^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>19</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPLC1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1759,7 +1759,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>99^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>99</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm29 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1785,7 +1785,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>239^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>239</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi15 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1811,7 +1811,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>70^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>70</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm5 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1837,7 +1837,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>132^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>132</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1863,7 +1863,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>46^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>46</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm12 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1889,7 +1889,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>209^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>209</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1915,7 +1915,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>41^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>41</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10a neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1941,7 +1941,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>48^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>48</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1967,7 +1967,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>31^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>31</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC9 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -1993,7 +1993,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>21^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>21</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm3 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2019,7 +2019,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>12^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>12</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2045,7 +2045,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>15^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>15</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10c neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2071,7 +2071,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>88^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>88</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2097,7 +2097,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>41^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>41</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm11 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2123,7 +2123,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>43^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>43</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm9 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2149,7 +2149,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>28^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>28</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPi3-4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2175,7 +2175,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>69^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>69</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2201,7 +2201,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>35^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>35</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC14 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2227,7 +2227,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>50^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>50</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm4 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2253,7 +2253,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>37^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>37</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10d neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2279,7 +2279,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>24^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>24</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2305,7 +2305,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>25^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>25</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPLC2 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2331,7 +2331,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>23^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>23</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10b neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2357,7 +2357,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>22^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>22</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC6 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2383,7 +2383,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>7^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>7</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mt8 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2409,7 +2409,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>31^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>31</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm1 neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
@@ -2435,7 +2435,7 @@
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005662"/>
-        <neo_custom:cell_count>36^^xsd:integer</neo_custom:cell_count>
+        <neo_custom:cell_count>36</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>

@@ -161,7 +161,7 @@ classes:
         description: The number of cells in the Cluster (as integer).
         range: integer
         annotations:
-          owl.fstring: AnnotationAssertion( neo_custom:cell_count {id} {cell_number}^^xsd:integer )
+          owl.fstring: AnnotationAssertion( neo_custom:cell_count {id} {cell_number} )
       cell_type:
         slot_uri: RO:0002473
         description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'.

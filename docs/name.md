@@ -21,12 +21,12 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Class](Class.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
 
 
 

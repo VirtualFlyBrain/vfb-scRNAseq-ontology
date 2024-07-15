@@ -7,7 +7,6 @@
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
      xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
-     xmlns:bao="http://www.bioassayontology.org/bao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -51,6 +50,12 @@
     <!-- http://n2o.neo/custom/accession -->
 
     <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_count -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_count"/>
     
 
 
@@ -2382,25 +2387,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002811 -->
-
-    <owl:DatatypeProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0002811">
-        <rdfs:label xml:lang="en">has cell count</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -27003,7 +26989,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</bao:BAO_0002811>
+        <neo_custom:cell_count>115</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27029,7 +27015,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2698</bao:BAO_0002811>
+        <neo_custom:cell_count>2698</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27055,7 +27041,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1358</bao:BAO_0002811>
+        <neo_custom:cell_count>1358</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27081,7 +27067,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">719</bao:BAO_0002811>
+        <neo_custom:cell_count>719</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27107,7 +27093,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2482</bao:BAO_0002811>
+        <neo_custom:cell_count>2482</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27133,7 +27119,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2656</bao:BAO_0002811>
+        <neo_custom:cell_count>2656</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27159,7 +27145,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">478</bao:BAO_0002811>
+        <neo_custom:cell_count>478</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27185,7 +27171,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">239</bao:BAO_0002811>
+        <neo_custom:cell_count>239</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27211,7 +27197,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1081</bao:BAO_0002811>
+        <neo_custom:cell_count>1081</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, aminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27237,7 +27223,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</bao:BAO_0002811>
+        <neo_custom:cell_count>138</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, fan-shaped body-ellipsoid body neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27263,7 +27249,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">356</bao:BAO_0002811>
+        <neo_custom:cell_count>356</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, brain surface glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27289,7 +27275,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</bao:BAO_0002811>
+        <neo_custom:cell_count>25</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27315,7 +27301,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005423"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</bao:BAO_0002811>
+        <neo_custom:cell_count>21</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from female adult brains without alcohol exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27404,7 +27390,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1024</bao:BAO_0002811>
+        <neo_custom:cell_count>1024</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27430,7 +27416,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4945</bao:BAO_0002811>
+        <neo_custom:cell_count>4945</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27456,7 +27442,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">306</bao:BAO_0002811>
+        <neo_custom:cell_count>306</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, fan-shaped body-ellipsoid body neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27482,7 +27468,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3932</bao:BAO_0002811>
+        <neo_custom:cell_count>3932</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27508,7 +27494,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5086</bao:BAO_0002811>
+        <neo_custom:cell_count>5086</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27534,7 +27520,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2088</bao:BAO_0002811>
+        <neo_custom:cell_count>2088</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, aminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27560,7 +27546,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3607</bao:BAO_0002811>
+        <neo_custom:cell_count>3607</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27586,7 +27572,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1191</bao:BAO_0002811>
+        <neo_custom:cell_count>1191</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, brain surface glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27612,7 +27598,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1226</bao:BAO_0002811>
+        <neo_custom:cell_count>1226</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27638,7 +27624,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">571</bao:BAO_0002811>
+        <neo_custom:cell_count>571</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27664,7 +27650,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</bao:BAO_0002811>
+        <neo_custom:cell_count>400</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27690,7 +27676,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</bao:BAO_0002811>
+        <neo_custom:cell_count>21</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27716,7 +27702,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005439"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</bao:BAO_0002811>
+        <neo_custom:cell_count>86</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from male adult brains without alcohol exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27757,7 +27743,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">515</bao:BAO_0002811>
+        <neo_custom:cell_count>515</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, photoreceptor neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27783,7 +27769,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7784</bao:BAO_0002811>
+        <neo_custom:cell_count>7784</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, glutamatergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27809,7 +27795,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4965</bao:BAO_0002811>
+        <neo_custom:cell_count>4965</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, optic lobe neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27835,7 +27821,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1945</bao:BAO_0002811>
+        <neo_custom:cell_count>1945</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, Kenyon cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27861,7 +27847,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6414</bao:BAO_0002811>
+        <neo_custom:cell_count>6414</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, cholinergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27887,7 +27873,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7601</bao:BAO_0002811>
+        <neo_custom:cell_count>7601</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, GABAergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27913,7 +27899,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1502</bao:BAO_0002811>
+        <neo_custom:cell_count>1502</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, astrocyte-like glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27939,7 +27925,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">810</bao:BAO_0002811>
+        <neo_custom:cell_count>810</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, olfactory projection neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27965,7 +27951,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3169</bao:BAO_0002811>
+        <neo_custom:cell_count>3169</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, aminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -27991,7 +27977,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">444</bao:BAO_0002811>
+        <neo_custom:cell_count>444</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, fan-shaped body-ellipsoid body neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -28017,7 +28003,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1547</bao:BAO_0002811>
+        <neo_custom:cell_count>1547</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, brain surface glial cells cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -28043,7 +28029,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</bao:BAO_0002811>
+        <neo_custom:cell_count>111</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, dopaminergic neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>
@@ -28069,7 +28055,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
             </owl:Restriction>
         </rdf:type>
         <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0005453"/>
-        <bao:BAO_0002811 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</bao:BAO_0002811>
+        <neo_custom:cell_count>42</neo_custom:cell_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult brains without alcohol exposure, tachykinin neurons cluster</obo:IAO_0000115>
         <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005420"/>

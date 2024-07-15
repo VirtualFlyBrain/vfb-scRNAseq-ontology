@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005362_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2024-07-01/imports/FBlc0005362_import.owl>
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2024-07-15/imports/FBlc0005362_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/fbcv/releases/2024-06-13/fbcv-base.owl>)
-Annotation(owl:versionInfo "2024-07-01")
+Annotation(owl:versionInfo "2024-07-15")
 
 Declaration(Class(<http://flybase.org/reports/FBgn0011701>))
 Declaration(Class(<http://flybase.org/reports/FBgn0011723>))
@@ -564,7 +564,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0017001>))
 Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000212>))
 Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000391>))
 Declaration(ObjectProperty(owl:topObjectProperty))
-Declaration(DataProperty(<http://www.bioassayontology.org/bao#BAO_0002811>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000028>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
@@ -1740,15 +1739,6 @@ InverseObjectProperties(<http://www.bioassayontology.org/bao#BAO_0000212> <http:
 
 AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0000391> "is assay method of")
 SubObjectPropertyOf(<http://www.bioassayontology.org/bao#BAO_0000391> owl:topObjectProperty)
-
-
-############################
-#   Data Properties
-############################
-
-# Data Property: <http://www.bioassayontology.org/bao#BAO_0002811> (has cell count)
-
-AnnotationAssertion(rdfs:label <http://www.bioassayontology.org/bao#BAO_0002811> "has cell count"@en)
 
 
 
