@@ -175,7 +175,7 @@ update_expression_files: $(DATASET_EXP_FILES)
 
 # merge and annotate cluster ofns for each dataset
 # need to reformat expression annotations as these don't get the right types from linkml
-$(EXPDIR)/dataset_%.owl: make_exp_ofns
+$(EXPDIR)/dataset_exp_%.owl: make_exp_ofns
 	$(ROBOT) merge --inputs "$(EXPDIR)/dataset_$*-cluster_*.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/$@" \
 	convert --format ofn -o $(TMPDIR)/$*-exp-tmp.ofn &&\
@@ -283,10 +283,10 @@ replace_gene_ids_in_files:
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
 	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for DS in $(RELEASE_DATASETS); \
-	do if [ -f $(EXPDIR)/processed_dataset_$$DS.owl ]; \
-	then mv $(EXPDIR)/processed_dataset_$$DS.owl $(EXPDIR)/dataset_$$DS.owl; fi &&\
-	$(ROBOT) convert -i $(EXPDIR)/dataset_$$DS.owl --format owl -o $(EXPDIR)/dataset_$$DS.owl.gz &&\
-	rm $(EXPDIR)/dataset_$$DS.owl.fbgns.tmp; done
+	do if [ -f $(EXPDIR)/processed_dataset_exp_$$DS.owl ]; \
+	then mv $(EXPDIR)/processed_dataset_exp_$$DS.owl $(EXPDIR)/dataset_exp_$$DS.owl; fi &&\
+	$(ROBOT) convert -i $(EXPDIR)/dataset_exp_$$DS.owl --format owl -o $(EXPDIR)/dataset_exp_$$DS.owl.gz &&\
+	rm $(EXPDIR)/dataset_exp_$$DS.owl.fbgns.tmp; done
 
 ######## overwrite some ODK goals to prevent unnecessary processing
 
