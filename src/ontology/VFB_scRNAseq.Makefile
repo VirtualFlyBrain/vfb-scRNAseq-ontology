@@ -283,10 +283,10 @@ replace_gene_ids_in_files:
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
 	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for DS in $(RELEASE_DATASETS); \
-	do if [ -f $(EXPDIR)/processed_dataset_exp_$$DS.owl ]; \
-	then mv $(EXPDIR)/processed_dataset_exp_$$DS.owl $(EXPDIR)/dataset_exp_$$DS.owl; fi &&\
-	$(ROBOT) convert -i $(EXPDIR)/dataset_exp_$$DS.owl --format owl -o $(EXPDIR)/dataset_exp_$$DS.owl.gz &&\
-	rm $(EXPDIR)/dataset_exp_$$DS.owl.fbgns.tmp; done
+	do if [ -f $(EXPDIR)/processed_VFB_scRNAseq_exp_$$DS.owl ]; \
+	then mv $(EXPDIR)/processed_VFB_scRNAseq_exp_$$DS.owl $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl; fi &&\
+	$(ROBOT) convert -i $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl --format owl -o $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl.gz &&\
+	rm $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl.fbgns.tmp; done
 
 ######## overwrite some ODK goals to prevent unnecessary processing
 
