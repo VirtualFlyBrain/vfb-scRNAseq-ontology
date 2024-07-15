@@ -26,26 +26,26 @@ for id in all_included_datasets:
                 "uri" : f"ontology_files/VFB_scRNAseq_{id}.owl"}))
 
     # Check if the expression import already exists in upper_catalog
-    exp_check_upper = upper_catalog.find('uri', {"name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_{id}.owl"})
+    exp_check_upper = upper_catalog.find('uri', {"name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_{id}.owl"})
 
     if not exp_check_upper:
         # Update upper_catalog only if the tag doesn't exist
         upper_catalog.catalog.group.append(
             upper_catalog.new_tag('uri', attrs={
                 "id":"User Entered Import Resolution",
-                "name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_{id}.owl",
-                "uri" : f"expression_data/dataset_{id}.owl"}))
+                "name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_{id}.owl",
+                "uri" : f"expression_data/VFB_scRNAseq_exp_{id}.owl"}))
 
     # Check if the expression import already exists in lower_catalog
-    exp_check_lower = lower_catalog.find('uri', {"name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_{id}.owl"})
+    exp_check_lower = lower_catalog.find('uri', {"name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_{id}.owl"})
 
     if not exp_check_lower:
         # Update lower_catalog only if the tag doesn't exist
         lower_catalog.catalog.group.append(
             lower_catalog.new_tag('uri', attrs={
                 "id":"User Entered Import Resolution",
-                "name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/dataset_{id}.owl",
-                "uri" : f"../expression_data/dataset_{id}.owl"}))
+                "name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_{id}.owl",
+                "uri" : f"../expression_data/VFB_scRNAseq_exp_{id}.owl"}))
 
     # Check if the external terms import already exists in lower_catalog
     ext_check_lower = lower_catalog.find('uri', {"name": f"http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/{id}_import.owl"})
