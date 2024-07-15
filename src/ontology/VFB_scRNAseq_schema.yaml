@@ -157,11 +157,11 @@ classes:
         annotations:
           owl: ObjectPropertyAssertion
       cell_number:
-        slot_uri: BAO:0002811
+        slot_uri: neo_custom:cell_count
         description: The number of cells in the Cluster (as integer).
         range: integer
         annotations:
-          owl.fstring: DataPropertyAssertion( BAO:0002811 {id} {cell_number} ^^xsd:integer )
+          owl.fstring: DataPropertyAssertion( neo_custom:cell_count {id} {cell_number} ^^xsd:integer )
       cell_type:
         slot_uri: RO:0002473
         description: Anatomy (FBbt IDs) for the Cluster. Multiple IDs should be separated with '|'.
