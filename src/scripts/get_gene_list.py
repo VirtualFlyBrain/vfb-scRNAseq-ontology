@@ -1,6 +1,6 @@
 # NO LONGER USED - genes are grepped out of expression files using $(TMPDIR)/existing_FBgns.txt goal
 
-import pandas as pd
+import modin.pandas as pd
 
 expression_data = pd.read_csv('tmp/raw_expression_data.tsv', sep='\t')
 

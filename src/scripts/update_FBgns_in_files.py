@@ -1,4 +1,4 @@
-import pandas as pd
+import modin.pandas as pd
 pd.set_option('display.max_columns', 10)
 import glob
 import re

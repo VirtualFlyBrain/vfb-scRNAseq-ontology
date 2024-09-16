@@ -1,17 +1,11 @@
-import pandas as pd
+import modin.pandas as pd  # faster alternative for large dataframes
 import argparse
 
 
 def expression_file_loader(included_ids, cutoff):
-    """Function to load the raw expression data in chunks, discarding anything we don't need."""
-    # get headers from expression_data file
-    expression_data = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', nrows=0)
-    # read expression_data in chunks of 1000 rows
-    expression_reader = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', dtype={'id': 'category', 'gene': 'category'}, chunksize=1000)
-    # filter each chunk and concatenate
-    for chunk in expression_reader:
-        filtered = chunk[(chunk['expression_extent']>cutoff) & (chunk['id'].isin(included_ids))]
-        expression_data = pd.concat([expression_data, filtered])
+    """Function to load the raw expression data and discard anything we don't need."""
+    expression_data = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', dtype={'id': 'category', 'gene': 'category'})
+    expression_data = expression_data[(expression_data['expression_extent']>cutoff) & (expression_data['id'].isin(included_ids))]
     return expression_data
     
 
