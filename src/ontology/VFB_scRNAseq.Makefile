@@ -47,6 +47,25 @@ install_postgresql:
 	apt-get update
 	apt-get -y install postgresql-client
 
+.PHONY: install_parallel
+install_parallel:
+	apt-get update
+	apt-get -y install parallel
+
+.PHONY: install_vfb_connect
+install_vfb_connect:
+	python3 -m pip install vfb-connect
+
+.PHONY: install_modin
+install_modin:
+	python3 -m pip install "modin[all]"
+
+.PHONY: install_xml_tools
+install_xml_tools:
+	python3 -m pip install beautifulsoup4
+	python3 -m pip install lxml
+
+
 ########## get data from FlyBase and generate input tsvs
 
 .PHONY: get_FB_data
@@ -91,13 +110,12 @@ $(TMPDIR)/internal_terms.txt: | $(TMPDIR)
 	rm -f $(TMPDIR)/internal_terms-raw.txt
 
 # filter data to only get nervous system associated data and only wild-type non-experimental samples
-$(TMPDIR)/all_inclusions.tsv: get_FB_data | $(TMPDIR)
-	python3 -m pip install vfb-connect
+$(TMPDIR)/all_inclusions.tsv: get_FB_data install_vfb_connect install_modin | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/filter_data.py
 
 .PHONY: process_FB_metadata
 # filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in ontology_files) from input
-process_FB_metadata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
+process_FB_metadata: install_modin $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
 ifeq ($(REFRESH_META),true)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
@@ -107,7 +125,7 @@ endif
 .PHONY: process_FB_expdata
 # filter FB data to remove clusters for excluded datasets/assays and, if REFRESH_EXP is false, remove existing clusters (i.e. those in a file in ontology_files) from input
 # also split into tsvs for each cluster and filter by extent
-process_FB_expdata: $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
+process_FB_expdata: install_modin $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
 ifeq ($(REFRESH_EXP),true)
 	python3 $(SCRIPTSDIR)/process_expression_data.py -r
 else
@@ -157,9 +175,7 @@ $(ONTOLOGYDIR)/VFB_scRNAseq_%.owl: install_linkml
 
 .PHONY: make_exp_ofns
 # check whether ofn exists for each cluster tsv, delete tsv if true, make ofn then delete tsv if false.
-make_exp_ofns: install_linkml
-	apt-get update
-	apt-get -y install parallel
+make_exp_ofns: install_linkml install_parallel
 	find $(EXPDIR) -name "*.tsv" | parallel -j 5 ' \
 		if [ -e {.}.ofn ]; then \
 			rm {}; \
@@ -241,9 +257,7 @@ release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
 	echo $@
 
 .PHONY: update_catalog_files
-update_catalog_files:
-	python3 -m pip install beautifulsoup4
-	python3 -m pip install lxml
+update_catalog_files: install_xml_tools
 	python3 $(SCRIPTSDIR)/update_catalogs.py
 
 # create merged release files (no need to reason etc)
@@ -285,7 +299,7 @@ get_gene_id_map: install_postgresql
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
 	 > $(TMPDIR)/id_validation_table.tsv
 
-replace_gene_ids_in_files:
+replace_gene_ids_in_files: install_modin
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
 	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for DS in $(RELEASE_DATASETS); \
