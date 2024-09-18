@@ -54,7 +54,7 @@ install_parallel:
 
 .PHONY: install_vfb_connect
 install_vfb_connect:
-	python3 -m pip install vfb-connect
+	python3 -m pip install vfb-connect==v1.6.0 
 
 .PHONY: install_modin
 install_modin:
