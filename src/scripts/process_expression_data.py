@@ -1,13 +1,18 @@
-import modin.pandas as pd  # faster alternative for large dataframes
+import pandas as pd
+import dask
+import dask.dataframe as dd
 import argparse
 
-
 def expression_file_loader(included_ids, cutoff):
-    """Function to load the raw expression data and discard anything we don't need."""
-    expression_data = pd.read_csv("tmp/raw_expression_data.tsv", sep='\t', dtype={'id': 'category', 'gene': 'category'})
-    expression_data = expression_data[(expression_data['expression_extent']>cutoff) & (expression_data['id'].isin(included_ids))]
+    #Function to load the raw expression data and discard anything we don't need.
+    #Might give an empty dataframe if not refreshing and no new data.
+    expression_data = dd.read_parquet("tmp/expression_data/", filters=[('id', 'in', included_ids)])
+    if not included_ids:
+        print("No new expression data to load.")
+        return dd.from_pandas(pd.DataFrame(), npartitions=1)
+    expression_data = expression_data[(expression_data['expression_extent']>cutoff)].set_index('id')
     return expression_data
-    
+
 
 if __name__ == "__main__":
     # run the expression processing only if this is run rather than imported
@@ -43,11 +48,10 @@ if __name__ == "__main__":
 
     expression_data = expression_file_loader(included_entities_to_update, expression_cutoff)
 
-    # make a a tsv for each new cluster
-    clusters = expression_data['id'].drop_duplicates()
-    print(str(len(clusters)) + ' clusters')
-    for c in clusters:
-        cluster_data = expression_data[expression_data['id']==c]
-        cluster_data = cluster_data.assign(hide_in_terminfo = 'true')
-        cluster_id = c.replace("FlyBase:", "")
-        cluster_data.to_csv("expression_data/dataset_%s-cluster_%s.tsv" % (dataset_cluster_dict[c].replace("FlyBase:", ""), cluster_id), sep='\t', index=False)
+    if expression_data.size.compute() > 0:
+        def expression_outfile_namer(n):
+            dataset = dataset_cluster_dict[expression_data.divisions[n]].replace("FlyBase:", "")
+            cluster = expression_data.divisions[n].replace("FlyBase:", "")
+            filename = f"dataset_{dataset}-cluster_{cluster}"
+            return filename
+        expression_data.to_csv("expression_data/*.tsv", name_function=expression_outfile_namer, sep='\t')

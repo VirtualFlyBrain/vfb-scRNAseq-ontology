@@ -56,9 +56,9 @@ install_parallel:
 install_vfb_connect:
 	python3 -m pip install vfb-connect==v1.6.0 
 
-.PHONY: install_modin
-install_modin:
-	python3 -m pip install "modin[all]"
+.PHONY: install_dask
+install_dask:
+	python3 -m pip install "dask[complete]"
 
 .PHONY: install_xml_tools
 install_xml_tools:
@@ -69,7 +69,7 @@ install_xml_tools:
 ########## get data from FlyBase and generate input tsvs
 
 .PHONY: get_FB_data
-get_FB_data: install_postgresql | $(EXPDIR) $(TMPDIR)
+get_FB_data: install_postgresql install_dask | $(EXPDIR) $(TMPDIR)
 ifeq ($(UPDATE_FROM_FB),true)
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
 	 > $(TMPDIR)/raw_dataset_data.tsv
@@ -83,6 +83,7 @@ ifeq ($(UPDATE_FROM_FB),true)
 	 > $(TMPDIR)/raw_cluster_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql \
 	 > $(TMPDIR)/raw_expression_data.tsv
+	 python3 $(SCRIPTSDIR)/convert_expression_data.py
 else
 	echo "Not updating FlyBase data."
 endif
@@ -110,12 +111,12 @@ $(TMPDIR)/internal_terms.txt: | $(TMPDIR)
 	rm -f $(TMPDIR)/internal_terms-raw.txt
 
 # filter data to only get nervous system associated data and only wild-type non-experimental samples
-$(TMPDIR)/all_inclusions.tsv: get_FB_data install_vfb_connect install_modin | $(TMPDIR)
+$(TMPDIR)/all_inclusions.tsv: get_FB_data install_vfb_connect | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/filter_data.py
 
 .PHONY: process_FB_metadata
 # filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in ontology_files) from input
-process_FB_metadata: install_modin $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
+process_FB_metadata: install_dask $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
 ifeq ($(REFRESH_META),true)
 	python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
@@ -125,7 +126,7 @@ endif
 .PHONY: process_FB_expdata
 # filter FB data to remove clusters for excluded datasets/assays and, if REFRESH_EXP is false, remove existing clusters (i.e. those in a file in ontology_files) from input
 # also split into tsvs for each cluster and filter by extent
-process_FB_expdata: install_modin $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
+process_FB_expdata: install_dask $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
 ifeq ($(REFRESH_EXP),true)
 	python3 $(SCRIPTSDIR)/process_expression_data.py -r
 else
