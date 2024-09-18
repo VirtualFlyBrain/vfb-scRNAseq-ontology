@@ -1,3 +1,5 @@
+set -e
+
 # Create tsv files for all ofns that need updating
 sh run.sh make all_tsvs -B
 
