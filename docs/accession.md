@@ -53,6 +53,16 @@ URI: [neo_custom:accession](http://n2o.neo/custom/accession)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:accession |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:accession |
+
+
+
+
 ## LinkML Source
 
 <details>

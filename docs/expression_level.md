@@ -53,6 +53,16 @@ URI: [neo_custom:expression_level](http://n2o.neo/custom/expression_level)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:expression_level |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:expression_level |
+
+
+
+
 ## LinkML Source
 
 <details>

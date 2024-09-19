@@ -61,6 +61,16 @@ URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002352 |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:associated_assay |
+
+
+
+
 ## LinkML Source
 
 <details>
@@ -75,12 +85,12 @@ description: Assay(s) that use this sample. Multiple IDs should be separated wit
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
 slot_uri: RO:0002352
-multivalued: true
 alias: associated_assay
 owner: Sample
 domain_of:
 - Sample
 range: Assay
+multivalued: true
 
 ```
 </details>

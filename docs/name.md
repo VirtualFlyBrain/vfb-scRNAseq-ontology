@@ -22,9 +22,9 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Assay](Assay.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
 
@@ -62,6 +62,16 @@ URI: [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 
 * from schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | rdfs:label |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:name |
 
 
 

@@ -103,13 +103,14 @@ URI: [FBcv:0009002](http://purl.obolibrary.org/obo/FBcv_0009002)
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0009002 |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Clustering |
+
+
 
 
 

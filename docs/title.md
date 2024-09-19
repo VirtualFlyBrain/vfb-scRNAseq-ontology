@@ -22,9 +22,9 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Assay](Assay.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
 
@@ -62,6 +62,16 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 
 * from schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | IAO:0000115 |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:title |
 
 
 

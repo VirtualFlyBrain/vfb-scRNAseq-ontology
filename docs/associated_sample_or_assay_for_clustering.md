@@ -59,6 +59,16 @@ URI: [BFO:0000051](http://purl.obolibrary.org/obo/BFO_0000051)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | BFO:0000051 |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:associated_sample_or_assay_for_clustering |
+
+
+
+
 ## LinkML Source
 
 <details>

@@ -81,13 +81,14 @@ URI: [owl:Class](http://www.w3.org/2002/07/owl#Class)
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | owl:Class |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Thing |
+
+
 
 
 

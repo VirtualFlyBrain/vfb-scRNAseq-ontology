@@ -61,6 +61,16 @@ URI: [RO:0002131](http://purl.obolibrary.org/obo/RO_0002131)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002131 |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:sample_tissue |
+
+
+
+
 ## LinkML Source
 
 <details>
@@ -76,12 +86,12 @@ description: Tissue(s) (FBbt IDs) in the sample. Multiple IDs should be separate
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
 slot_uri: RO:0002131
-multivalued: true
 alias: sample_tissue
 owner: Sample
 domain_of:
 - Sample
 range: Thing
+multivalued: true
 
 ```
 </details>

@@ -59,6 +59,16 @@ URI: [dcterms:licence](http://purl.org/dc/terms/licence)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | dcterms:licence |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:licence |
+
+
+
+
 ## LinkML Source
 
 <details>

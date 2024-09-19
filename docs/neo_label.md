@@ -21,10 +21,10 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Publication](Publication.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 
 
@@ -59,6 +59,16 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 
 * from schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_property:nodeLabel |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:neo_label |
 
 
 

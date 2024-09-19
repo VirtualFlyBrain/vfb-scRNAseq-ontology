@@ -59,6 +59,16 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | dcterms:references |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:publication |
+
+
+
+
 ## LinkML Source
 
 <details>

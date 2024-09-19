@@ -22,9 +22,9 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Assay](Assay.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
 
 
 
@@ -58,6 +58,16 @@ URI: [dcterms:source](http://purl.org/dc/terms/source)
 
 
 * from schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | dcterms:source |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:associated_dataset |
 
 
 

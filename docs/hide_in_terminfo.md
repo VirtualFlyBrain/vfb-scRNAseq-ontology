@@ -53,6 +53,16 @@ URI: [neo_custom:hide_in_terminfo](http://n2o.neo/custom/hide_in_terminfo)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:hide_in_terminfo |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:hide_in_terminfo |
+
+
+
+
 ## LinkML Source
 
 <details>

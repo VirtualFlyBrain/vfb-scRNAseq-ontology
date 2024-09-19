@@ -100,13 +100,14 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class |
+
+
 
 
 

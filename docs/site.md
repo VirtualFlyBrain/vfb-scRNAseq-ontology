@@ -59,6 +59,16 @@ URI: [oboInOwl:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | oboInOwl:hasDbXref |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:site |
+
+
+
+
 ## LinkML Source
 
 <details>

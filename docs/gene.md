@@ -67,6 +67,16 @@ ClassAssertion (
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | RO:0002292 |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:gene |
+
+
+
+
 ## LinkML Source
 
 <details>

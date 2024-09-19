@@ -47,7 +47,7 @@ URI: [neo_custom:cell_count](http://n2o.neo/custom/cell_count)
 
 | property | value |
 | --- | --- |
-| owl.fstring | AnnotationAssertion( neo_custom:cell_count {id} {cell_number} ) |
+| owl | AnnotationProperty |
 
 
 
@@ -59,15 +59,25 @@ URI: [neo_custom:cell_count](http://n2o.neo/custom/cell_count)
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | neo_custom:cell_count |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:cell_number |
+
+
+
+
 ## LinkML Source
 
 <details>
 ```yaml
 name: cell_number
 annotations:
-  owl.fstring:
-    tag: owl.fstring
-    value: AnnotationAssertion( neo_custom:cell_count {id} {cell_number} )
+  owl:
+    tag: owl
+    value: AnnotationProperty
 description: The number of cells in the Cluster (as integer).
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000

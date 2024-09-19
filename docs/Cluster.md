@@ -51,6 +51,8 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
       Cluster : expression_level
         
+      Cluster : filtered_gene_count
+        
       Cluster : gene
         
           
@@ -88,6 +90,8 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
         
       Cluster : title
         
+      Cluster : total_gene_count
+        
       
 ```
 
@@ -114,6 +118,8 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 | [expression_level](expression_level.md) | 0..1 <br/> [Float](Float.md) | Level of expression of the given gene | direct |
 | [expression_extent](expression_extent.md) | 0..1 <br/> [Float](Float.md) | Extent of expression of the given gene | direct |
 | [hide_in_terminfo](hide_in_terminfo.md) | 0..1 <br/> [String](String.md) | Flag to hide expression edges in VFB Term Info pane | direct |
+| [total_gene_count](total_gene_count.md) | 0..1 <br/> [Integer](Integer.md) | Total number of distinct genes associated with the entity before filtering by... | direct |
+| [filtered_gene_count](filtered_gene_count.md) | 0..1 <br/> [Integer](Integer.md) | Total number of distinct genes associated with the entity after filtering by ... | direct |
 | [associated_clustering](associated_clustering.md) | 0..1 <br/> [Clustering](Clustering.md) | Clustering (FBlc ID) that the Cluster belongs to | direct |
 | [cell_number](cell_number.md) | 0..1 <br/> [Integer](Integer.md) | The number of cells in the Cluster (as integer) | direct |
 | [cell_type](cell_type.md) | * <br/> [Thing](Thing.md) | Anatomy (FBbt IDs) for the Cluster | direct |
@@ -151,13 +157,14 @@ URI: [FBcv:0009003](http://purl.obolibrary.org/obo/FBcv_0009003)
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0009003 |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Cluster |
+
+
 
 
 
@@ -187,6 +194,8 @@ slots:
 - expression_level
 - expression_extent
 - hide_in_terminfo
+- total_gene_count
+- filtered_gene_count
 attributes:
   associated_clustering:
     name: associated_clustering
@@ -204,9 +213,9 @@ attributes:
   cell_number:
     name: cell_number
     annotations:
-      owl.fstring:
-        tag: owl.fstring
-        value: AnnotationAssertion( neo_custom:cell_count {id} {cell_number} )
+      owl:
+        tag: owl
+        value: AnnotationProperty
     description: The number of cells in the Cluster (as integer).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -225,10 +234,10 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002473
-    multivalued: true
     domain_of:
     - Cluster
     range: Thing
+    multivalued: true
 class_uri: FBcv:0009003
 
 ```
@@ -264,9 +273,9 @@ attributes:
   cell_number:
     name: cell_number
     annotations:
-      owl.fstring:
-        tag: owl.fstring
-        value: AnnotationAssertion( neo_custom:cell_count {id} {cell_number} )
+      owl:
+        tag: owl
+        value: AnnotationProperty
     description: The number of cells in the Cluster (as integer).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
@@ -287,12 +296,12 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002473
-    multivalued: true
     alias: cell_type
     owner: Cluster
     domain_of:
     - Cluster
     range: Thing
+    multivalued: true
   stage:
     name: stage
     annotations:
@@ -418,6 +427,40 @@ attributes:
     domain_of:
     - Cluster
     range: string
+  total_gene_count:
+    name: total_gene_count
+    annotations:
+      owl:
+        tag: owl
+        value: AnnotationProperty
+    description: Total number of distinct genes associated with the entity before
+      filtering by extent.
+    from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+    rank: 1000
+    slot_uri: neo_custom:total_gene_count
+    alias: total_gene_count
+    owner: Cluster
+    domain_of:
+    - Dataset
+    - Cluster
+    range: integer
+  filtered_gene_count:
+    name: filtered_gene_count
+    annotations:
+      owl:
+        tag: owl
+        value: AnnotationProperty
+    description: Total number of distinct genes associated with the entity after filtering
+      by extent.
+    from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+    rank: 1000
+    slot_uri: neo_custom:filtered_gene_count
+    alias: filtered_gene_count
+    owner: Cluster
+    domain_of:
+    - Dataset
+    - Cluster
+    range: integer
   name:
     name: name
     annotations:

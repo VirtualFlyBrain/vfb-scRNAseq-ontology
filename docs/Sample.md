@@ -136,13 +136,14 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0003024 |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Sample |
+
+
 
 
 
@@ -181,10 +182,10 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002131
-    multivalued: true
     domain_of:
     - Sample
     range: Thing
+    multivalued: true
   associated_assay:
     name: associated_assay
     annotations:
@@ -196,10 +197,10 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002352
-    multivalued: true
     domain_of:
     - Sample
     range: Assay
+    multivalued: true
 class_uri: FBcv:0003024
 
 ```
@@ -229,12 +230,12 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002131
-    multivalued: true
     alias: sample_tissue
     owner: Sample
     domain_of:
     - Sample
     range: Thing
+    multivalued: true
   associated_assay:
     name: associated_assay
     annotations:
@@ -246,12 +247,12 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002352
-    multivalued: true
     alias: associated_assay
     owner: Sample
     domain_of:
     - Sample
     range: Assay
+    multivalued: true
   stage:
     name: stage
     annotations:

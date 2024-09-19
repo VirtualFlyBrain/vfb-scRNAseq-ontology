@@ -116,13 +116,14 @@ URI: [FBcv:0003025](http://purl.obolibrary.org/obo/FBcv_0003025)
 
 
 
-
 ## Mappings
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | FBcv:0003025 |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Assay |
+
+
 
 
 
@@ -158,10 +159,10 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: BAO:0000212
-    multivalued: false
     domain_of:
     - Assay
     range: Thing
+    multivalued: false
   associated_sample_for_assay:
     name: associated_sample_for_assay
     annotations:
@@ -173,10 +174,10 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002233
-    multivalued: true
     domain_of:
     - Assay
     range: Sample
+    multivalued: true
 class_uri: FBcv:0003025
 
 ```
@@ -205,12 +206,12 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: BAO:0000212
-    multivalued: false
     alias: method
     owner: Assay
     domain_of:
     - Assay
     range: Thing
+    multivalued: false
   associated_sample_for_assay:
     name: associated_sample_for_assay
     annotations:
@@ -222,12 +223,12 @@ attributes:
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
     slot_uri: RO:0002233
-    multivalued: true
     alias: associated_sample_for_assay
     owner: Assay
     domain_of:
     - Assay
     range: Sample
+    multivalued: true
   associated_dataset:
     name: associated_dataset
     annotations:

@@ -53,6 +53,16 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:pub_dataset](htt
 
 
 
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:pub_dataset |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:pub_dataset |
+
+
+
+
 ## LinkML Source
 
 <details>

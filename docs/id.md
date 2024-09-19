@@ -21,13 +21,13 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://githu
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Publication](Publication.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Thing](Thing.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
-| [Thing](Thing.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
 
 
@@ -58,6 +58,16 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://githu
 
 
 * from schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id |
 
 
 
