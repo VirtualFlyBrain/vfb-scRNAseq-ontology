@@ -63,12 +63,12 @@ for d in [dataset_data, cluster_data, assay_data, sample_data, publication_data]
 # get numbers of genes in each cluster and dataset
 def get_gene_counts(input_dataframe, cutoff):
     """Needs id as index and columns ['gene', 'expression_extent'] (at least).
-       Output has id as index and columns = ['all_gene_counts', 'filtered_gene_counts']"""
+       Output has id as index and columns = ['total_gene_count', 'filtered_gene_count']"""
     unfiltered_genes = input_dataframe.loc[:,['gene']]
     filtered_genes = input_dataframe.loc[input_dataframe['expression_extent'] > cutoff,['gene']]
-    all_gene_counts = unfiltered_genes.index.value_counts().to_frame(name='all_gene_counts')
-    filtered_gene_counts = filtered_genes.index.value_counts().to_frame(name='filtered_gene_counts')
-    gene_counts = all_gene_counts.join(filtered_gene_counts, how='outer').compute()
+    total_gene_count = unfiltered_genes.index.value_counts().to_frame(name='total_gene_count')
+    filtered_gene_count = filtered_genes.index.value_counts().to_frame(name='filtered_gene_count')
+    gene_counts = total_gene_count.join(filtered_gene_count, how='outer').compute()
     return gene_counts
 
 # clusters
@@ -86,8 +86,8 @@ dataset_gene_counts = get_gene_counts(exp_data, expression_cutoff)
 dataset_data.filtered_df = dataset_data.filtered_df.merge(dataset_gene_counts, how='left', right_index=True, left_on='id')
 
 # if a cluster or dataset has no genes after filtering, drop it (not actually expected to happen)
-cluster_data.filtered_df = cluster_data.filtered_df[cluster_data.filtered_df['filtered_gene_counts'].notnull()]
-dataset_data.filtered_df = dataset_data.filtered_df[dataset_data.filtered_df['filtered_gene_counts'].notnull()]
+cluster_data.filtered_df = cluster_data.filtered_df[cluster_data.filtered_df['filtered_gene_count'].notnull()]
+dataset_data.filtered_df = dataset_data.filtered_df[dataset_data.filtered_df['filtered_gene_count'].notnull()]
 
 
 ## spilt data and make new tsvs
