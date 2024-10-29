@@ -72,22 +72,26 @@ def get_gene_counts(input_dataframe, cutoff):
     return gene_counts
 
 # clusters
-cluster_ids = cluster_data.filtered_df['id'].drop_duplicates().to_list()
-exp_data = expression_file_loader(cluster_ids, 0)
+if len(cluster_data.filtered_df) > 0:
+    cluster_ids = cluster_data.filtered_df['id'].drop_duplicates().to_list()
+    exp_data = expression_file_loader(cluster_ids, 0)
 
-cluster_gene_counts = get_gene_counts(exp_data, expression_cutoff)
-cluster_data.filtered_df = cluster_data.filtered_df.merge(cluster_gene_counts, how='left', right_index=True, left_on='id')
+    cluster_gene_counts = get_gene_counts(exp_data, expression_cutoff)
+    cluster_data.filtered_df = cluster_data.filtered_df.merge(cluster_gene_counts, how='left', right_index=True, left_on='id')
+    
+    # drop if no genes after filtering
+    cluster_data.filtered_df = cluster_data.filtered_df[cluster_data.filtered_df['filtered_gene_count'].notnull()]
+    
+    # datasets
+    if len(dataset_data.filtered_df) > 0:
+        exp_data = exp_data.merge(cluster_data.filtered_df[['id', 'associated_dataset']], how='left', left_index=True, right_on='id')
+        exp_data = exp_data.set_index('associated_dataset')
 
-# datasets
-exp_data = exp_data.merge(cluster_data.filtered_df[['id', 'associated_dataset']], how='left', left_index=True, right_on='id')
-exp_data = exp_data.set_index('associated_dataset')
-
-dataset_gene_counts = get_gene_counts(exp_data, expression_cutoff)
-dataset_data.filtered_df = dataset_data.filtered_df.merge(dataset_gene_counts, how='left', right_index=True, left_on='id')
-
-# if a cluster or dataset has no genes after filtering, drop it (not actually expected to happen)
-cluster_data.filtered_df = cluster_data.filtered_df[cluster_data.filtered_df['filtered_gene_count'].notnull()]
-dataset_data.filtered_df = dataset_data.filtered_df[dataset_data.filtered_df['filtered_gene_count'].notnull()]
+        dataset_gene_counts = get_gene_counts(exp_data, expression_cutoff)
+        dataset_data.filtered_df = dataset_data.filtered_df.merge(dataset_gene_counts, how='left', right_index=True, left_on='id')
+        
+        # drop if no genes after filtering
+        dataset_data.filtered_df = dataset_data.filtered_df[dataset_data.filtered_df['filtered_gene_count'].notnull()]
 
 
 ## spilt data and make new tsvs
