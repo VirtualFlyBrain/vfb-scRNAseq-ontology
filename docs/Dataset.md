@@ -176,11 +176,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:references {id} {V} )
+        value: AnnotationAssertion( dc:references {id} {V} )
     description: Publication associated with the Dataset.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:references
+    slot_uri: dc:references
     domain_of:
     - Dataset
     range: Publication
@@ -189,11 +189,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:licence {id} {V} )
+        value: AnnotationAssertion( dc:licence {id} {V} )
     description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:licence
+    slot_uri: dc:licence
     domain_of:
     - Dataset
     range: Thing
@@ -258,11 +258,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:references {id} {V} )
+        value: AnnotationAssertion( dc:references {id} {V} )
     description: Publication associated with the Dataset.
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:references
+    slot_uri: dc:references
     alias: publication
     owner: Dataset
     domain_of:
@@ -273,11 +273,11 @@ attributes:
     annotations:
       owl.fstring:
         tag: owl.fstring
-        value: AnnotationAssertion( dcterms:licence {id} {V} )
+        value: AnnotationAssertion( dc:licence {id} {V} )
     description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
     from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
     rank: 1000
-    slot_uri: dcterms:licence
+    slot_uri: dc:licence
     alias: licence
     owner: Dataset
     domain_of:

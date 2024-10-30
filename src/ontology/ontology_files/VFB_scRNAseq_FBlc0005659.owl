@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005659.owl#"
      xml:base="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005659.owl"
      xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/terms/"
      xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
@@ -18,13 +19,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:linkml="https://w3id.org/linkml/"
      xmlns:FlyBase="http://flybase.org/reports/"
-     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:neo_custom="http://n2o.neo/custom/"
      xmlns:neo_property="http://n2o.neo/property/">
     <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005659.owl">
-        <dcterms:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005659). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dcterms:description>
-        <dcterms:title>VFB scRNAseq Ontology for dataset FBlc0005659</dcterms:title>
+        <dc:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005659). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dc:description>
+        <dc:title>VFB scRNAseq Ontology for dataset FBlc0005659</dc:title>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_FBlc0005659.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005659_import.owl"/>
     </owl:Ontology>
@@ -671,8 +671,8 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">424264</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq study of pupal and adult optic lobes</obo:IAO_0000115>
-        <dcterms:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
-        <dcterms:references rdf:resource="http://flybase.org/reports/FBrf0247762"/>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0247762"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
         <rdfs:label>scRNAseq_2021_Ozel</rdfs:label>
     </owl:NamedIndividual>
@@ -704,7 +704,7 @@
         <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0005661"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <obo:IAO_0000115>Dissociated cells from adult optic lobes</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -723,7 +723,7 @@
         <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0005660"/>
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq of dissociated cells from adult optic lobes</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq</rdfs:label>
     </owl:NamedIndividual>
     
@@ -736,7 +736,7 @@
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005660"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005661"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering</rdfs:label>
     </owl:NamedIndividual>
     
@@ -764,7 +764,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6065</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_L1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -792,7 +792,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7296</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T2a neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_T2a_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -820,7 +820,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6595</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L5 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_L5_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -848,7 +848,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7384</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY8a neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_TmY8a_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -876,7 +876,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7341</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -904,7 +904,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8226</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_T_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -932,7 +932,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6450</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lobula columnar neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_lobula_columnar_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -960,7 +960,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7570</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Mi1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -988,7 +988,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5830</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC17 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC17_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1016,7 +1016,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6856</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lamina wide-field 1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_lamina_wide-field_1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1044,7 +1044,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7449</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_T2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1072,7 +1072,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7350</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Mi4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1100,7 +1100,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6832</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm8 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm8_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1128,7 +1128,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7234</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1156,7 +1156,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5241</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPC1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LPC1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1184,7 +1184,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7391</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, C3 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_C3_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1212,7 +1212,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7198</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, C2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_C2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1240,7 +1240,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7273</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm3a neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm3a_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1268,7 +1268,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6233</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LLPC1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LLPC1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1296,7 +1296,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6943</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1324,7 +1324,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7200</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi9 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Mi9_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1352,7 +1352,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6402</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Pm2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1380,7 +1380,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7204</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm9 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm9_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1408,7 +1408,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7350</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY5a neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_TmY5a_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1436,7 +1436,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7714</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_T1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1464,7 +1464,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6973</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lamina intrinsic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_lamina_intrinsic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1492,7 +1492,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7125</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm20 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm20_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1520,7 +1520,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6432</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm5c neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm5c_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1548,7 +1548,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6821</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, lamina wide-field 2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_lamina_wide-field_2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1576,7 +1576,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7491</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1604,7 +1604,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7073</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm3 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm3_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1632,7 +1632,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6255</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm15 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm15_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1660,7 +1660,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6159</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1688,7 +1688,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7019</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY14 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_TmY14_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1716,7 +1716,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8850</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, glial cells cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1744,7 +1744,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7237</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, T3 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_T3_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1772,7 +1772,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5727</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC12 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC12_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1800,7 +1800,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6833</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm10 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm10_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1828,7 +1828,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5637</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPLC1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LPLC1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1856,7 +1856,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6343</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm29 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm29_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1884,7 +1884,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7097</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mi15 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Mi15_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1912,7 +1912,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5922</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Tm5 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Tm5_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1940,7 +1940,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6719</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_TmY4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1968,7 +1968,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6026</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm12 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm12_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1996,7 +1996,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7148</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, TmY3 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_TmY3_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2024,7 +2024,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5494</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10a neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC10a_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2052,7 +2052,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5727</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L3 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_L3_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2080,7 +2080,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5392</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC9 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC9_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2108,7 +2108,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5940</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm3 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Pm3_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2136,7 +2136,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4103</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2164,7 +2164,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4323</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10c neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC10c_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2192,7 +2192,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7061</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_L2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2220,7 +2220,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5554</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm11 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm11_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2248,7 +2248,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6072</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm9 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm9_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2276,7 +2276,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5368</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPi3-4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LPi3-4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2304,7 +2304,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5972</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, L4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_L4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2332,7 +2332,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5534</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC14 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC14_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2360,7 +2360,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6672</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm4 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Pm4_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2388,7 +2388,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5579</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10d neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC10d_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2416,7 +2416,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5165</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Pm1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Pm1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2444,7 +2444,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5730</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LPLC2 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LPLC2_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2472,7 +2472,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5058</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC10b neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC10b_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2500,7 +2500,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4893</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, LC6 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_LC6_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2528,7 +2528,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3363</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Mt8 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Mt8_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2556,7 +2556,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6121</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, Dm1 neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_Dm1_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2584,7 +2584,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5629</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from adult optic lobes, photoreceptor neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005659"/>
         <rdfs:label>scRNAseq_2021_Ozel_ADM1_seq_clustering_photoreceptor_neurons</rdfs:label>
     </owl:NamedIndividual>
     

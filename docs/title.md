@@ -21,12 +21,12 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Assay](Assay.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Class](Class.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 
 
 

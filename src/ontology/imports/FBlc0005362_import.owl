@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005362_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2024-09-19/imports/FBlc0005362_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/fbcv/releases/2024-08-08/fbcv-base.owl>)
-Annotation(owl:versionInfo "2024-09-19")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2024-10-29/imports/FBlc0005362_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/fbcv/releases/2024-10-17/fbcv-base.owl>)
+Annotation(owl:versionInfo "2024-10-29")
 
 Declaration(Class(<http://flybase.org/reports/FBgn0011701>))
 Declaration(Class(<http://flybase.org/reports/FBgn0011723>))
@@ -559,7 +559,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0017001>))
 Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000212>))
 Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000391>))
 Declaration(ObjectProperty(owl:topObjectProperty))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000028>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
@@ -590,7 +589,6 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#EmbDevSlim>)
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#FB_gloss>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#cur>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#deprecated>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbbt#expressionslim_flybase_ribbon>))
@@ -601,11 +599,6 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbcv#attributionU
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbcv#do_not_annotate>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/uberon/core#upper_level>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/type>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
@@ -725,10 +718,6 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_L
 # Annotation Property: <http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE> (<http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE> <http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>)
-
-# Annotation Property: <http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL> (<http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL>)
-
-SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL> <http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/fbbt#cur> (<http://purl.obolibrary.org/obo/fbbt#cur>)
 
@@ -956,7 +945,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000417> "achieves_planned_objective")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000417> "A cell sorting process achieves the objective specification 'material separation objective'")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/IAO_0000120>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000417> "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000417> "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000417> "BP, AR, PPPB branch")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000417> "PPPB branch derived")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000417> "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch")
@@ -969,7 +958,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.ob
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000833> "objective_achieved_by")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000833> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000833> "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000833> "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000833> "OBI")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000833> "OBI")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000833> "objective_achieved_by")
@@ -2832,11 +2821,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003685> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00003686> (Kenyon cell)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0246888") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/FBbt_00003686> "KC")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0092568") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0205263") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0214059") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00003686> "Intrinsic neuron of the mushroom body. They have tightly-packed cell bodies, situated in the rind above the calyx of the mushroom body (Ito et al., 1997). Four short fascicles, one per lineage, extend from the cell bodies of the Kenyon cells into the calyx (Ito et al., 1997). These 4 smaller fascicles converge in the calyx where they arborize and form pre- and post-synaptic terminals (Christiansen et al., 2011), with different Kenyon cells receiving input in different calyx regions/accessory calyces (Tanaka et al., 2008). They emerge from the calyx as a thick axon bundle referred to as the peduncle that bifurcates to innervate the dorsal and medial lobes of the mushroom body (Tanaka et al., 2008).")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003686> "CL:0000673")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003686> "VFB:FBbt_00003686")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0246888") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL>) Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00003686> "KC")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0246888") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00003686> "KC")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00003686> "intrinsic cell of mushroom body")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00003686> "intrinsic neuron of mushroom body")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0236359") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00003686> "mature Kenyon cell")
@@ -3533,7 +3521,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005408> ObjectSomeValuesFrom(<
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005413> (anlage in statu nascendi)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0155831") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0178740") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00005413> "Domain that does not yet coincide 1:1 with a later organ. Anlagen in statu nascendi are typically defined for the early blastoderm by the expression domains of genes which, in the late blastoderm or later, are expressed in specific anlagen, but initially come on in larger domains.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0155831") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0178740") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00005413> "Domain that is in the process of forming an anlage and does not yet coincide 1:1 with a mature structure. These domains can be identified based on the expression of genes characteristic of the corresponding anlagen and are typically found in the early blastoderm.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00005413> "fly_anatomy.ontology")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/FBbt_00005413> "A0")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00005413> "FBbt:00005413")
@@ -5193,6 +5181,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00059272> "VFB:FBbt_00059272")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00059272> "peripheral nervous system neuron")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00059272> "fly_anatomy.ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0260546") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/FBbt_00059272> "afferent neuron")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00059272> "FBbt:00059272")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00059272> <http://purl.obolibrary.org/obo/fbbt#cur>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00059272> "PNS neuron")
@@ -7356,7 +7345,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000112> ObjectSomeValuesFrom(<ht
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000659> "specimen collection process")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000659> "drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000659> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000659> "A planned process with the objective of collecting a specimen.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000659> "A planned process with the objective of collecting a specimen."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000659> "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000659> "Philly2013: A specimen collection can have as part a material entity acquisition, such as ordering from a bank. The distinction is that specimen collection necessarily involves the creation of a specimen role. However ordering cell lines cells from ATCC for use in an investigation is NOT a specimen collection, because the cell lines already have a specimen role.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000659> "Philly2013: The specimen_role for the specimen is created during the specimen collection process.")
@@ -7377,7 +7366,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000659> ObjectSomeValuesFrom(<ht
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000684> "specimen collection objective")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000684> "The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000684> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000684> "A objective specification to obtain a material entity for potential use as an input during an investigation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000684> "A objective specification to obtain a material entity for potential use as an input during an investigation."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000684> "Bjoern Peters")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000684> "Bjoern Peters")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000684> "specimen collection objective")
@@ -7392,7 +7381,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0002076> "Details see tracker: https://sourceforge.net/p/obi/obi-terms/778/")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0002076> "Person: Chris Stoeckert, Jie Zheng"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0002076> "OBIB, OBI")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/OBI_0002076> "Biobank")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0002076> "collection of specimens"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0002076> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/OBI_0100051>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0002076> <http://purl.obolibrary.org/obo/BFO_0000040>)

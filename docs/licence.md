@@ -7,7 +7,7 @@ _Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas)._
 
 
 
-URI: [dcterms:licence](http://purl.org/dc/terms/licence)
+URI: [dc:licence](http://purl.org/dc/terms/licence)
 
 
 
@@ -47,7 +47,7 @@ URI: [dcterms:licence](http://purl.org/dc/terms/licence)
 
 | property | value |
 | --- | --- |
-| owl.fstring | AnnotationAssertion( dcterms:licence {id} {V} ) |
+| owl.fstring | AnnotationAssertion( dc:licence {id} {V} ) |
 
 
 
@@ -63,7 +63,7 @@ URI: [dcterms:licence](http://purl.org/dc/terms/licence)
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | dcterms:licence |
+| self | dc:licence |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:licence |
 
 
@@ -77,11 +77,11 @@ name: licence
 annotations:
   owl.fstring:
     tag: owl.fstring
-    value: AnnotationAssertion( dcterms:licence {id} {V} )
+    value: AnnotationAssertion( dc:licence {id} {V} )
 description: Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas).
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
-slot_uri: dcterms:licence
+slot_uri: dc:licence
 alias: licence
 owner: Dataset
 domain_of:

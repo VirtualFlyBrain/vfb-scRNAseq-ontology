@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005603.owl#"
      xml:base="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005603.owl"
      xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/terms/"
      xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
@@ -18,13 +19,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:linkml="https://w3id.org/linkml/"
      xmlns:FlyBase="http://flybase.org/reports/"
-     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:neo_custom="http://n2o.neo/custom/"
      xmlns:neo_property="http://n2o.neo/property/">
     <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005603.owl">
-        <dcterms:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005603). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dcterms:description>
-        <dcterms:title>VFB scRNAseq Ontology for dataset FBlc0005603</dcterms:title>
+        <dc:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005603). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dc:description>
+        <dc:title>VFB scRNAseq Ontology for dataset FBlc0005603</dc:title>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_FBlc0005603.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005603_import.owl"/>
     </owl:Ontology>
@@ -395,8 +395,8 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">181659</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq study of adult ventral nerve cords</obo:IAO_0000115>
-        <dcterms:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
-        <dcterms:references rdf:resource="http://flybase.org/reports/FBrf0245499"/>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0245499"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
         <rdfs:label>scRNAseq_2020_Allen</rdfs:label>
     </owl:NamedIndividual>
@@ -428,7 +428,7 @@
         <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0005605"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <obo:IAO_0000115>Dissociated cells from ventral nerve cords of 5-days old flies</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -447,7 +447,7 @@
         <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0005604"/>
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq of dissociated cells from ventral nerve cords of 5-days old flies</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq</rdfs:label>
     </owl:NamedIndividual>
     
@@ -460,7 +460,7 @@
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005604"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005605"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering</rdfs:label>
     </owl:NamedIndividual>
     
@@ -488,7 +488,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11232</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -516,7 +516,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10752</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, GABAergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_GABAergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -544,7 +544,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11288</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, cholinergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_cholinergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -572,7 +572,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8596</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 1B secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_1B_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -600,7 +600,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9909</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, glutamatergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_glutamatergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -628,7 +628,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8921</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 12B secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_12B_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -656,7 +656,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9017</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 15 secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_lineage_15_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -684,7 +684,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8905</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 6A secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_6A_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -712,7 +712,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8759</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 14 secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_lineage_14_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -740,7 +740,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8988</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 9A secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_9A_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -768,7 +768,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8550</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 21A secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_21A_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -796,7 +796,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8655</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 13B secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_13B_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -824,7 +824,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8829</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 23 secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_lineage_23_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -852,7 +852,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9390</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 8B secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_8B_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -880,7 +880,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8664</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 16 secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_lineage_16_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -908,7 +908,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8538</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 10 secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_lineage_10_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -936,7 +936,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8771</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, lineage 4 secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_lineage_4_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -964,7 +964,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7791</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 9B secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_9B_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -992,7 +992,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7915</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 11A secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_11A_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1020,7 +1020,7 @@
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8189</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from ventral nerve cords of 5-days old flies, hemilineage 1A secondary neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005603"/>
         <rdfs:label>scRNAseq_2020_Allen_S1_seq_clustering_hemilineage_1A_secondary_neurons</rdfs:label>
     </owl:NamedIndividual>
     

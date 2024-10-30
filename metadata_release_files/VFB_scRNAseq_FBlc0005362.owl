@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005362.owl#"
      xml:base="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005362.owl"
      xmlns:RO="http://purl.obolibrary.org/obo/RO_"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dc="http://purl.org/dc/terms/"
      xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
      xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
      xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
@@ -23,14 +23,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:linkml="https://w3id.org/linkml/"
      xmlns:FlyBase="http://flybase.org/reports/"
-     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:neo_custom="http://n2o.neo/custom/"
      xmlns:neo_property="http://n2o.neo/property/">
     <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0005362.owl">
-        <dcterms:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005362). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dcterms:description>
-        <dcterms:title>VFB scRNAseq Ontology for dataset FBlc0005362</dcterms:title>
+        <dc:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0005362). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dc:description>
+        <dc:title>VFB scRNAseq Ontology for dataset FBlc0005362</dc:title>
     </owl:Ontology>
     
 
@@ -73,12 +72,6 @@
     <!-- http://n2o.neo/property/nodeLabel -->
 
     <owl:AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000028"/>
     
 
 
@@ -325,14 +318,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/fbbt#cur -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#cur">
@@ -408,36 +393,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#upper_level">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/type -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 
@@ -748,7 +703,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000116 xml:lang="en">An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">is preceded by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">preceded_by</obo:IAO_0000118>
-        <dcterms:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</dcterms:source>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</dc:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
     </owl:ObjectProperty>
@@ -877,7 +832,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000111>achieves_planned_objective</obo:IAO_0000111>
         <obo:IAO_0000112>A cell sorting process achieves the objective specification &apos;material separation objective&apos;</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>BP, AR, PPPB branch</obo:IAO_0000117>
         <obo:IAO_0000119>PPPB branch derived</obo:IAO_0000119>
         <obo:IAO_0000232>modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
@@ -893,7 +848,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111>objective_achieved_by</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>OBI</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <rdfs:label>objective_achieved_by</rdfs:label>
@@ -975,7 +930,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
-        <dcterms:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dcterms:source>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1470,7 +1425,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Allen%27s_interval_algebra"/>
         <obo:IAO_0000232>Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends.</obo:IAO_0000232>
-        <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1</dcterms:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1</dc:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:comment>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</rdfs:comment>
         <rdfs:label xml:lang="en">temporally related to</rdfs:label>
@@ -2062,8 +2017,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y.</obo:IAO_0000115>
         <obo:IAO_0000232>A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input.</obo:IAO_0000232>
         <obo:IAO_0000232>See github ticket https://github.com/oborel/obo-relations/issues/497</obo:IAO_0000232>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-2620-0345"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0003-2620-0345"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-11-08T12:00:00Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>utilizes</oboInOwl:hasBroadSynonym>
         <rdfs:label xml:lang="en">device utilizes material</rdfs:label>
@@ -5127,7 +5082,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003685"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000028>KC</obo:IAO_0000028>
         <obo:IAO_0000115>Intrinsic neuron of the mushroom body. They have tightly-packed cell bodies, situated in the rind above the calyx of the mushroom body (Ito et al., 1997). Four short fascicles, one per lineage, extend from the cell bodies of the Kenyon cells into the calyx (Ito et al., 1997). These 4 smaller fascicles converge in the calyx where they arborize and form pre- and post-synaptic terminals (Christiansen et al., 2011), with different Kenyon cells receiving input in different calyx regions/accessory calyces (Tanaka et al., 2008). They emerge from the calyx as a thick axon bundle referred to as the peduncle that bifurcates to innervate the dorsal and medial lobes of the mushroom body (Tanaka et al., 2008).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CL:0000673</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003686</oboInOwl:hasDbXref>
@@ -5145,12 +5099,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003686"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
-        <owl:annotatedTarget>KC</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003686"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Intrinsic neuron of the mushroom body. They have tightly-packed cell bodies, situated in the rind above the calyx of the mushroom body (Ito et al., 1997). Four short fascicles, one per lineage, extend from the cell bodies of the Kenyon cells into the calyx (Ito et al., 1997). These 4 smaller fascicles converge in the calyx where they arborize and form pre- and post-synaptic terminals (Christiansen et al., 2011), with different Kenyon cells receiving input in different calyx regions/accessory calyces (Tanaka et al., 2008). They emerge from the calyx as a thick axon bundle referred to as the peduncle that bifurcates to innervate the dorsal and medial lobes of the mushroom body (Tanaka et al., 2008).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0092568</oboInOwl:hasDbXref>
@@ -5162,7 +5110,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>KC</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003686"/>
@@ -6765,7 +6712,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005413">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004208"/>
-        <obo:IAO_0000115>Domain that does not yet coincide 1:1 with a later organ. Anlagen in statu nascendi are typically defined for the early blastoderm by the expression domains of genes which, in the late blastoderm or later, are expressed in specific anlagen, but initially come on in larger domains.</obo:IAO_0000115>
+        <obo:IAO_0000115>Domain that is in the process of forming an anlage and does not yet coincide 1:1 with a mature structure. These domains can be identified based on the expression of genes characteristic of the corresponding anlagen and are typically found in the early blastoderm.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>A0</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00005413</oboInOwl:id>
@@ -6776,7 +6723,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005413"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Domain that does not yet coincide 1:1 with a later organ. Anlagen in statu nascendi are typically defined for the early blastoderm by the expression domains of genes which, in the late blastoderm or later, are expressed in specific anlagen, but initially come on in larger domains.</owl:annotatedTarget>
+        <owl:annotatedTarget>Domain that is in the process of forming an anlage and does not yet coincide 1:1 with a mature structure. These domains can be identified based on the expression of genes characteristic of the corresponding anlagen and are typically found in the early blastoderm.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0155831</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0178740</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -8412,8 +8359,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005106"/>
         <obo:IAO_0000115>Any neuron (FBbt:00005106) that is capable of some acetylcholine secretion, neurotransmission (GO:0014055).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://www.wikidata.org/entity/Q3074571"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-05-15T03:05:53Z</dcterms:date>
+        <dc:contributor rdf:resource="https://www.wikidata.org/entity/Q3074571"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-05-15T03:05:53Z</dc:date>
         <oboInOwl:hasDbXref>CL:0000108</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00007173</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -8441,8 +8388,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Calyx of the larval mushroom body. It contains dendrites of the larval Kenyon cells (Masuda-Nakagawa et al., 2009; Saumweber et al., 2018). It is organized into around 34 glomeruli, each innervated by a single projection neuron (Masuda-Nakagawa et al., 2009).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-09-08T12:52:54Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-09-08T12:52:54Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00007191</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:289</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:467</oboInOwl:hasDbXref>
@@ -8486,8 +8433,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000617"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005106"/>
         <obo:IAO_0000115>Any neuron (FBbt:00005106) that is capable of some gamma-aminobutyric acid secretion, neurotransmission (GO:0061534).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-09-08T03:36:17Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-09-08T03:36:17Z</dc:date>
         <oboInOwl:hasDbXref>CL:0000617</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00007228</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>GABA-ergic neuron</oboInOwl:hasExactSynonym>
@@ -8512,8 +8459,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
         <obo:IAO_0000115>A cluster of cells of various types which form a discrete structure with a largely bona fide boundary.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-21T12:18:17Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-21T12:18:17Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0010001</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007229</oboInOwl:id>
@@ -8534,8 +8481,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007152"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007373"/>
         <obo:IAO_0000115>Sensillum that is internal to the animal - i.e. having no part that is part of the cuticle.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-21T02:04:23Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-21T02:04:23Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007233</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00007233</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -8568,8 +8515,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00002639"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007152"/>
         <obo:IAO_0000115>Any sensillum of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-22T09:42:58Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-22T09:42:58Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007240</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval sensillum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -8603,8 +8550,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007240"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007280"/>
         <obo:IAO_0000115>Any sensillum (FBbt:00007152) that is part of some larval head (FBbt:00001730).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-22T09:42:58Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-22T09:42:58Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007242</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>larval head sensillum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -8631,8 +8578,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Specialized structure that is found on the cuticle.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-22T02:20:05Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-22T02:20:05Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007245</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007245</oboInOwl:id>
@@ -8652,8 +8599,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007276">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007016"/>
         <obo:IAO_0000115>Material anatomical entity generated by coordinated expression of the organism&apos;s own genome and whose component parts are not all continuous with each other.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-04T03:09:28Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-04T03:09:28Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0034923</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007276</oboInOwl:id>
@@ -8673,8 +8620,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007277">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007276"/>
         <obo:IAO_0000115>Anatomical group whose component anatomical structures lie in close proximity to each other.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-04T03:13:41Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-04T03:13:41Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0000477</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007277</oboInOwl:id>
@@ -8694,8 +8641,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007278">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007276"/>
         <obo:IAO_0000115>An anatomical group whose component structures share a common function.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-04T03:18:01Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-04T03:18:01Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0015203</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007278</oboInOwl:id>
@@ -8732,8 +8679,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any sense organ (FBbt:00005155) that is part of some larval head (FBbt:00001730).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-05T10:34:14Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-05T10:34:14Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007280</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00007280</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>larval head sense organ</oboInOwl:hasExactSynonym>
@@ -8761,8 +8708,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Specialized structure that is found on the integument.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-06T03:13:52Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-11-06T03:13:52Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007288</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>integumentary specialisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -8782,8 +8729,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:29Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:29Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0011216</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007330</oboInOwl:id>
@@ -8797,8 +8744,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007331">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
         <obo:IAO_0000115>The part of some organism that is part of some specified segment.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:57Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:57Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007331</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007331</oboInOwl:id>
@@ -8819,8 +8766,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007014"/>
         <obo:IAO_0000115>Stem cell that is a progenitor of somatic cells.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-25T05:38:39Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-25T05:38:39Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007344</oboInOwl:id>
         <rdfs:label>somatic stem cell</rdfs:label>
@@ -8839,8 +8786,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007368">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005106"/>
         <obo:IAO_0000115>A neuron that uses a biogenic amine as its neurotransmitter (Vomel and Wegener, 2008; Fuchs et al., 2014).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-13T04:06:57Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-13T04:06:57Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00007368</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007368</oboInOwl:id>
@@ -8862,8 +8809,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007373">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005155"/>
         <obo:IAO_0000115>Sense organ that is internal to the animal - i.e. having no part that is part of the cuticle.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-19T02:27:41Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-19T02:27:41Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6007373</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00007373</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -8950,8 +8897,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Structure consisting of the embryonic/larval foregut, midgut and hindgut.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T09:58:25Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T09:58:25Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007512</oboInOwl:id>
         <rdfs:label>embryonic/larval gut</rdfs:label>
@@ -9008,8 +8955,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An anlage that is a precursor of some part of the adult optic lobe in the larva. It develops from the embryonic optic lobe primordium.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-03-13T02:59:16Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-03-13T02:59:16Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00007676</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007676</oboInOwl:id>
@@ -9693,8 +9640,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007276"/>
         <obo:IAO_0000115>The sum of all the anlagen and primordia that will develop into a single system.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-29T07:57:11Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-29T07:57:11Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6040003</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00040003</oboInOwl:id>
@@ -9721,8 +9668,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The part of the neuropil consisting largely of synapsing neuron projections.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-08-12T06:32:24Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-08-12T06:32:24Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6040005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00040005</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -9751,7 +9698,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100200"/>
         <obo:IAO_0000115>Region of synaptic neuropil whose boundaries are largely discontinuities in the density of presynaptic terminals: high density in the synaptic neuropil domain, lower or zero density outside this region. These boundaries often correspond to a boundary with glial sheath, tract neuropil or cortex.</obo:IAO_0000115>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-12-09T05:03:55Z</dcterms:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-12-09T05:03:55Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6040007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00040007</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -9785,8 +9732,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A closely associated group of synaptic neuropil domains.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-08-12T04:30:28Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-08-12T04:30:28Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6041000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00041000</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>level 1 neuropil</oboInOwl:hasExactSynonym>
@@ -9821,7 +9768,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Structure consisting of a simple epithelium surrounded by visceral muscles, nerves and tracheae. The gut is divided into foregut, midgut and hindgut regions, based on developmental origin.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00047143</oboInOwl:id>
         <rdfs:label>gut</rdfs:label>
@@ -9840,8 +9787,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047552">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007006"/>
         <obo:IAO_0000115>Any group of similar imaginal cells, such as an imaginal disc, imaginal ring or imaginal island, or a precursor tissue that forms one of them. These tissues develop separately from other embryonic and larval tissues and they generate adult structures during metamorphosis.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-08-15T09:31:08Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-08-15T09:31:08Z</dc:date>
         <oboInOwl:hasExactSynonym>imaginal structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00047552</oboInOwl:id>
@@ -9885,8 +9832,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An anatomical system consisting of all of the anatomical entities that function in some part of the sensory perception of light.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-18T13:08:28Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-18T13:08:28Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00047735</oboInOwl:id>
         <rdfs:label>visual system</rdfs:label>
@@ -9928,8 +9875,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuron (FBbt:00005106) that capable of part of some sensory perception of light stimulus (GO:0050953).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-18T13:09:24Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-18T13:09:24Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00047736</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00047736</oboInOwl:id>
@@ -9970,8 +9917,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any glial cell of the embryo or larva that derives from the neurogenic region of the ectoderm. Their identity is established by the expression of the gene glial cells missing (gcm), which results in expression of reversed polarity (repo), often used as a marker for lateral glia (Jacobs, 2000). This includes perineurial and subperineurial glia of the central and peripheral nervous systems, cell body (cortex) glia, wrapping glia and some of the neuropil associated glia (Beckervordersandforth et al., 2008). There are around 25 of these per abdominal hemisegment in a stage 16 embryo (Beckervordersandforth et al., 2008).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-22T12:36:01Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-22T12:36:01Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00047861</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00047861</oboInOwl:id>
@@ -9998,8 +9945,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Brain excluding the optic lobes.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-24T15:11:55Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-24T15:11:55Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00047888</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00047888</oboInOwl:id>
@@ -10026,8 +9973,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Larval brain excluding the optic lobes.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-24T15:12:43Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-24T15:12:43Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00047889</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00047889</oboInOwl:id>
@@ -10059,8 +10006,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Region of the cell body rind overlying the larval mushroom body.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-15T10:26:28Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-15T10:26:28Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00047951</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>larval mushroom body cortex</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10087,8 +10034,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Superficial layer of neuronal cell bodies and glia that overlies the neuropil of the larval central nervous system.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-15T13:37:38Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-15T13:37:38Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00049602</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>larval cortex</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10126,8 +10073,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell located amongst neuronal cell bodies in the cortex of the embryonic/larval brain.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-15T14:20:49Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-15T14:20:49Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00049604</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval brain cortex glial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>larval brain CBG</oboInOwl:hasExactSynonym>
@@ -10149,8 +10096,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005144"/>
         <obo:IAO_0000115>Glial cell that has not differentiated into a stable specialist fate. These cells may be migratory and/or phagocytic (Edwards and Meinertzhagen, 2010; Shklyar et al., 2014).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-18T10:07:15Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-18T10:07:15Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00049609</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>developing glial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>udg</oboInOwl:hasExactSynonym>
@@ -10202,8 +10149,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any synaptic neuropil (FBbt:00040005) that is part of some mushroom body (FBbt:00005801).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-29T13:11:07Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-29T13:11:07Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00049824</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00049824</oboInOwl:id>
@@ -10272,8 +10219,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Kenyon cell (KC) of the larval (or late embryonic) mushroom body. It has its soma in the mushroom body cell body rind (above the calyx) and dendrites in the calyx and its axon projects through the pedunculus and bifurcates into the vertical and medial lobes (Lee et al., 1999). The first KCs generated in the embryo and early larva are gamma neurons, with alpha&apos;/beta&apos; neurons being born in the late larva (Lee et al., 1999; Kunz et al., 2012). Later born neurons occupy more central positions within the pedunculus and lobe bundles, so that in the late third instar, the embryonic gamma axons occupy the periphery, with the larval-born gamma neurons beneath, and the alpha&apos;/beta&apos; neurons at the core (Kurusu et al., 2002). During the pupal stage, gamma KCs are dramatically remodeled to form the adult gamma lobe, alpha&apos;/beta&apos; KCs remain largely the same and alpha/beta neurons are generated to form the alpha and beta lobes (Lee et al., 1999).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-30T09:55:32Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-30T09:55:32Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00049826</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval KC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>embryonic/larval Kenyon cell</oboInOwl:hasExactSynonym>
@@ -10310,8 +10257,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Neuropil mass above the esophagus (Ito et al., 2014). It is part of the cerebral (supraesophageal) ganglion (Ito et al., 2014).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-26T13:05:56Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-26T13:05:56Z</dc:date>
         <oboInOwl:hasBroadSynonym>supraesophageal ganglion</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VFB:FBbt_00051069</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>SPZ</oboInOwl:hasExactSynonym>
@@ -10362,8 +10309,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Neuropil mass above the larval esophagus consisting of the protocerebral and deutocerebral neuromeres and part of the tritocerebrum.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-26T13:07:57Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-26T13:07:57Z</dc:date>
         <oboInOwl:hasBroadSynonym>larval supraesophageal ganglion</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VFB:FBbt_00051070</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>larval SPZ</oboInOwl:hasExactSynonym>
@@ -10386,8 +10333,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051493">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005125"/>
         <obo:IAO_0000115>Neuron of the central nervous system that has the majority of its inputs and outputs in close proximity within the same region of the neuropil. Some arbors may spread outside of the region, but without sufficient polarity to define the neuron as an input or output neuron.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-22T08:47:38Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-22T08:47:38Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00051493</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>local interneuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10433,8 +10380,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any interneuron of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-13T15:32:23Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-13T15:32:23Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00052047</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00052047</oboInOwl:id>
@@ -10466,8 +10413,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Region of the larval cell body rind that overlies the neuropil of the larval deutocerebrum.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-14T10:45:19Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-14T10:45:19Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00052050</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00052050</oboInOwl:id>
@@ -10499,8 +10446,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Region of the larval cell body rind that overlies the neuropil of the larval protocerebrum.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-14T10:45:44Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-14T10:45:44Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00052051</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00052051</oboInOwl:id>
@@ -10537,8 +10484,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Neuron that innervates any part of the gut. These cells include sensory neurons, as well as efferent neurons that terminate on the visceral muscles and the underlying epithelium (Lemaitre and Miguel-Aliaga, 2013). They are chemically and neuroanatomically diverse, with efferent neurons collectively producing several neuropeptides and serotonin (Lemaitre and Miguel-Aliaga, 2013).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-24T13:50:11Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-24T13:50:11Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00052149</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>enteric neuron</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10578,8 +10525,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any gut-innervating neuron of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-24T14:16:12Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-24T14:16:12Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00052151</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>larval enteric neuron</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10606,8 +10553,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell of the embryo that has not yet reached its mature larval form. These cells may further divide (or die), migrate or extend processes prior to adopting their mature larval forms, positions and numbers (Ito et al., 1995).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-26T15:19:19Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-26T15:19:19Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00052369</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00052369</oboInOwl:id>
@@ -10626,8 +10573,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00057001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007009"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-06-30T04:15:23Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-06-30T04:15:23Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:6057001</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00057001</oboInOwl:id>
@@ -10654,8 +10601,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007368"/>
         <obo:IAO_0000115>Any aminergic neuron of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058211</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00058211</oboInOwl:id>
@@ -10688,8 +10635,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004101"/>
         <obo:IAO_0000115>Any peptidergic neuron of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058212</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00058212</oboInOwl:id>
@@ -10722,8 +10669,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007173"/>
         <obo:IAO_0000115>Any cholinergic neuron of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058215</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00058215</oboInOwl:id>
@@ -10756,8 +10703,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007228"/>
         <obo:IAO_0000115>Any GABAergic neuron of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058217</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00058217</oboInOwl:id>
@@ -10790,8 +10737,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100291"/>
         <obo:IAO_0000115>Any glutamatergic neuron of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-03T18:57:00Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058218</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00058218</oboInOwl:id>
@@ -10824,8 +10771,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005124"/>
         <obo:IAO_0000115>Any larval neuron (FBbt:00001446) that is capable of some detection of stimulus involved in sensory perception (GO:0050906).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-27T12:17:06Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-27T12:17:06Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058245</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>larval SN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10871,8 +10818,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any PNS glial cell of the larva.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-27T16:42:39Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-27T16:42:39Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058259</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval PNS glial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10911,8 +10858,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuron that has its soma in the central nervous system.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:06:03Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:06:03Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059271</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>central nervous system neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -10951,11 +10898,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuron that has its soma in the peripheral nervous system.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:08:28Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:08:28Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059272</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>peripheral nervous system neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>afferent neuron</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00059272</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:label>PNS neuron</rdfs:label>
@@ -10965,6 +10913,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any neuron that has its soma in the peripheral nervous system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6095-8718</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059272"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>afferent neuron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260546</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10992,8 +10946,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuron that has its soma in the late embryonic or larval central nervous system.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:11:09Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:11:09Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059273</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval central nervous system neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>larval central nervous system neuron</oboInOwl:hasExactSynonym>
@@ -11034,8 +10988,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuron that has its soma in the late embryonic or larval peripheral nervous system.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:12:15Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-09T16:12:15Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059275</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval peripheral nervous system neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>larval peripheral nervous system neuron</oboInOwl:hasExactSynonym>
@@ -11075,8 +11029,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any glial cell that is found in an eye-antennal disc (Gonzalez-Blas et al., 2020).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-18T16:40:39Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-18T16:40:39Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059299</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00059299</oboInOwl:id>
@@ -11113,8 +11067,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A(n) somatic cell that is part of a(n) ectoderm anlage.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-24T15:19:10Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-24T15:19:10Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00059301</oboInOwl:id>
         <rdfs:label>somatic cell of ectoderm anlage</rdfs:label>
@@ -11150,8 +11104,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A(n) somatic cell that is part of a(n) ectoderm.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-24T15:19:10Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-24T15:19:10Z</dc:date>
         <oboInOwl:hasExactSynonym>ectodermal cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00059305</oboInOwl:id>
@@ -11188,8 +11142,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A(n) somatic cell that is part of a(n) stage 5 embryo.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-24T15:19:10Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-24T15:19:10Z</dc:date>
         <oboInOwl:hasExactSynonym>blastoderm cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00059313</oboInOwl:id>
@@ -11215,8 +11169,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A subdivision of the cell body rind of the central nervous system. It includes the neuronal cell bodies.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T02:26:08Z</dcterms:date>
+        <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T02:26:08Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00100200</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cell body layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cortex region</oboInOwl:hasExactSynonym>
@@ -11258,8 +11212,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005106"/>
         <obo:IAO_0000115>Any neuron (FBbt:00005106) that is capable of some glutamate secretion, neurotransmission (GO:0061535).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-13T02:35:30Z</dcterms:date>
+        <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-13T02:35:30Z</dc:date>
         <oboInOwl:hasDbXref>CL:0000679</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00100291</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -11281,8 +11235,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <obo:IAO_0000115>Anatomical structure that has multiple cells as parts.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T02:25:04Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T02:25:04Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0010000</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100313</oboInOwl:id>
@@ -11308,8 +11262,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A subdivision of the gut along its long axis.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T05:21:35Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T05:21:35Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0004921</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100315</oboInOwl:id>
@@ -11328,8 +11282,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007002"/>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T08:35:02Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T08:35:02Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100318</oboInOwl:id>
         <rdfs:label>somatic cell</rdfs:label>
@@ -11348,8 +11302,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The entire embryonic/larval anatomical structure through which food and its digestion products are ingested, digested and excreted. At its anterior and posterior ends this includes structures that are not foregut or hindgut.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T02:13:05Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T02:13:05Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100323</oboInOwl:id>
         <rdfs:label>embryonic/larval alimentary canal</rdfs:label>
@@ -11443,8 +11397,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Pedunculus of the larval mushroom body.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-03T02:51:41Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-03T02:51:41Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00110187</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:393</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:571</oboInOwl:hasDbXref>
@@ -11506,8 +11460,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The medial lobe of the larval mushroom body. It is associated with appetitive memory (Eschbach et al., 2020).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-03T02:51:41Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-03T02:51:41Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00110188</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:387</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:565</oboInOwl:hasDbXref>
@@ -11562,8 +11516,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The vertical lobe of the larval mushroom body (Pauls et al., 2010).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-03T02:51:41Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-03T02:51:41Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00110189</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:421</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>larvalbrain_neuropil:599</oboInOwl:hasDbXref>
@@ -11610,8 +11564,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The larval mushroom body lobe system consists of a dorsal branch and a medial branch (Pauls et al., 2010). At third instar, both lobes comprise three types of Kenyon cells: embryonic-born gamma neurons, larval-born gamma neurons and larval born alpha&apos;/beta&apos; neurons (Pauls et al., 2010).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-09T16:48:14Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-09T16:48:14Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00110641</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>lobe of corpora pedunculata</oboInOwl:hasRelatedSynonym>
@@ -11646,8 +11600,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Region of the larval cell body rind that overlies the neuropil of the brain.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-29T11:43:24Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-29T11:43:24Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111226</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cortex of larval brain</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -11681,8 +11635,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Symmetrically-dividing stem cell with epithelial properties and a columnar morphology that is a precursor to an optic neuroblast (Egger et al., 2007). These cells increase in number by symmetric divisions during embryonic and larval development (Egger et al., 2007). A small number differentiate into optic neuroblasts during the embryonic stage, while the remainder enter G0 quiescence prior to larval hatching (Hakes et al., 2018). Divisions resume in the first instar (Hakes et al., 2018), followed by differentiation to neuroblasts mainly during the third instar stage (Yasugi et al., 2008).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T17:06:45Z</dcterms:date>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T17:06:45Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111738</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>optic lobe NE cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -11937,8 +11891,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000013"/>
         <obo:IAO_0000115>Term that describes a dataset.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase miscellaneous CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003021</oboInOwl:id>
         <rdfs:label>dataset descriptor</rdfs:label>
@@ -11957,8 +11911,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003021"/>
         <obo:IAO_0000115>Term that specifies the dataset component type.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>dataset_entity_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003022</oboInOwl:id>
         <rdfs:label>dataset entity type</rdfs:label>
@@ -11977,8 +11931,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003022"/>
         <obo:IAO_0000115>A set of biological data from a single study. Corresponds to the NCBI bioproject, GEO series or SRA study.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>dataset_entity_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003023</oboInOwl:id>
         <rdfs:label>project</rdfs:label>
@@ -11997,8 +11951,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003022"/>
         <obo:IAO_0000115>Biological source material characterized by an experiment.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>dataset_entity_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003024</oboInOwl:id>
         <rdfs:label>biosample</rdfs:label>
@@ -12017,8 +11971,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003022"/>
         <obo:IAO_0000115>Quantitative or qualitative assessment of biological source material to measure some attribute.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>dataset_entity_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003025</oboInOwl:id>
         <rdfs:label>assay</rdfs:label>
@@ -12037,8 +11991,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003021"/>
         <obo:IAO_0000115>The data type content of a dataset.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase miscellaneous CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003028</oboInOwl:id>
         <rdfs:label>dataset data type</rdfs:label>
@@ -12057,8 +12011,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003028"/>
         <obo:IAO_0000115>The type of assay as characterized by its data content.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>assay_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003050</oboInOwl:id>
         <rdfs:label>assay type</rdfs:label>
@@ -12077,8 +12031,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003050"/>
         <obo:IAO_0000115>A quantitative method for mapping transcribed regions, in which complementary DNA fragments are subjected to high-throughput sequencing.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasDbXref>EFO:0008896</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>assay_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003068</oboInOwl:id>
@@ -12098,8 +12052,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003028"/>
         <obo:IAO_0000115>The type of result as characterized by its data content.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003082</oboInOwl:id>
         <rdfs:label>result type</rdfs:label>
@@ -12118,8 +12072,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003082"/>
         <obo:IAO_0000115>A result that is produced from the detailed examination of data to come to some conclusion.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003108</oboInOwl:id>
         <rdfs:label>analysis</rdfs:label>
@@ -12138,8 +12092,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003021"/>
         <obo:IAO_0000115>A descriptor that describes some aspect of a dataset.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase miscellaneous CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003121</oboInOwl:id>
         <rdfs:label>dataset attribute</rdfs:label>
@@ -12158,8 +12112,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003121"/>
         <obo:IAO_0000115>Some characteristic of an assay pertaining to the methods involved in processing the biological source material or generating the raw output data of the assay.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>assay_attribute</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003175</oboInOwl:id>
         <rdfs:label>assay attribute</rdfs:label>
@@ -12178,8 +12132,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003208">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003175"/>
         <obo:IAO_0000115>A method used to characterize the biological molecules isolated from a biosample.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-24T19:19:21Z</dc:date>
         <oboInOwl:hasOBONamespace>assay_attribute</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0003208</oboInOwl:id>
         <rdfs:label>assay method</rdfs:label>
@@ -12198,8 +12152,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003068"/>
         <obo:IAO_0000115>A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single cells are subjected to high-throughput sequencing and mapping to a reference genome.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:18:07Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:18:07Z</dc:date>
         <oboInOwl:hasDbXref>EFO:0008913</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OBI:0002631</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>scRNA-Seq</oboInOwl:hasExactSynonym>
@@ -12228,8 +12182,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003108"/>
         <obo:IAO_0000115>A result that groups individual cells into populations sharing a similar transcriptional profile.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:21:05Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:21:05Z</dc:date>
         <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0009002</oboInOwl:id>
         <rdfs:label>cell clustering analysis</rdfs:label>
@@ -12248,8 +12202,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003082"/>
         <obo:IAO_0000115>A result that represents a population of cells sharing a similar transcriptional profile.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:22:16Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T12:22:16Z</dc:date>
         <oboInOwl:hasOBONamespace>result_type</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0009003</oboInOwl:id>
         <rdfs:label>transcriptional cell cluster</rdfs:label>
@@ -12268,8 +12222,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003208"/>
         <obo:IAO_0000115>A method to prepare and sequence a library of cDNAs obtained from single cells.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T13:40:26Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T13:40:26Z</dc:date>
         <oboInOwl:hasOBONamespace>assay_attribute</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0009005</oboInOwl:id>
         <rdfs:label>single-cell library sequencing</rdfs:label>
@@ -12288,8 +12242,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009005"/>
         <obo:IAO_0000115>A method that uses the Chromium platform from 10x Genomics to prepare and sequence a cDNA library.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T13:45:06Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-26T13:45:06Z</dc:date>
         <oboInOwl:hasOBONamespace>assay_attribute</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0009008</oboInOwl:id>
         <rdfs:label>10x sequencing</rdfs:label>
@@ -12418,8 +12372,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005259">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>A temporal subdivision of a developmental process.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2009-10-01T05:56:56Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2009-10-01T05:56:56Z</dc:date>
         <oboInOwl:hasAlternativeId>FBdv:00007010</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00005259</oboInOwl:id>
@@ -14724,8 +14678,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Third instar larva prior to the wandering stage (approximately the first 24 hours of the third instar larval stage under standard conditions at 25&apos;C.).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2008-11-13T11:51:56Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2008-11-13T11:51:56Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00005340</oboInOwl:id>
         <rdfs:comment>Temporal ordering number - 440.</rdfs:comment>
@@ -14757,8 +14711,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Stage of the third larval instar during which the larva wanders out of the food and climbs. Under optimum conditions at 25&apos;C, this occurs approximately 24 hours after the start of the third instar larval stage.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2008-11-13T11:55:46Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2008-11-13T11:55:46Z</dc:date>
         <oboInOwl:hasBroadSynonym>late third instar</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>post-feeding larva</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
@@ -16206,8 +16160,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The stage of the Drosophila life-cycle from the formation of the puparium (beginning of the prepupal stage) to eclosion.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2008-06-05T04:51:40Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2008-06-05T04:51:40Z</dc:date>
         <oboInOwl:hasBroadSynonym>metamorphosis</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>pupal stage</oboInOwl:hasRelatedSynonym>
@@ -16323,8 +16277,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Third instar larva from the beginning of wandering to the beginning of puparium formation.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2008-12-11T01:19:53Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2008-12-11T01:19:53Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007007</oboInOwl:id>
         <rdfs:comment>Temporal ordering number - 450.</rdfs:comment>
@@ -16344,8 +16298,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007024"/>
         <obo:IAO_0000115>A biological process whose specific outcome is the progression of an integrated living unit (an anatomical structure or an entire organism) over time from an initial condition to a later condition.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2009-10-01T05:56:42Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2009-10-01T05:56:42Z</dc:date>
         <oboInOwl:hasDbXref>GO:0032502</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007009</oboInOwl:id>
@@ -16366,8 +16320,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007024"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0045448"/>
         <obo:IAO_0000115>A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant. Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2009-10-01T05:57:41Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2009-10-01T05:57:41Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007011</oboInOwl:id>
         <rdfs:label>embryonic cycle</rdfs:label>
@@ -16393,8 +16347,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A temporal subdivision of a Drosophila life, delimited by major transitions in the circumstances of the organism, such as: fertilization; hatching; pupal ecdysis; eclosion.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2009-10-01T05:59:22Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2009-10-01T05:59:22Z</dc:date>
         <oboInOwl:hasExactSynonym>life cycle stage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007012</oboInOwl:id>
@@ -16414,8 +16368,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2010-09-29T12:25:36Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2010-09-29T12:25:36Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007013</oboInOwl:id>
         <rdfs:label>age</rdfs:label>
@@ -16434,8 +16388,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00007014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007013"/>
         <obo:IAO_0000115>Temporal subdivision of adulthood in days post-eclosion.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2010-09-29T12:28:05Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2010-09-29T12:28:05Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007014</oboInOwl:id>
         <rdfs:label>adult age in days</rdfs:label>
@@ -16466,8 +16420,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The first two hours of embryonic stage 17 at 25&apos;C. (Approximately 16-18 hours at 25&apos;C after egg laying).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2011-04-26T11:57:15Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2011-04-26T11:57:15Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007015</oboInOwl:id>
         <rdfs:comment>Temporal ordering number - 391. Should not be used to stage embryos whose development is at temperatures other than 25&apos;C.</rdfs:comment>
@@ -16499,8 +16453,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Hours 2-4 of embryonic stage 17 at 25&apos;C. (Approximately 18-20 hours at 25&apos;C after egg laying).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2011-04-26T12:00:15Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2011-04-26T12:00:15Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007016</oboInOwl:id>
         <rdfs:comment>Temporal ordering number - 392. Should not be used to stage embryos whose development is at temperatures other than 25&apos;C.</rdfs:comment>
@@ -16532,8 +16486,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Hours 4-6 of embryonic stage 17 at 25&apos;C. (Approximately 20-22 hours at 25&apos;C after egg laying).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2011-04-26T12:01:18Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2011-04-26T12:01:18Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007017</oboInOwl:id>
         <rdfs:comment>Temporal ordering number - 393. Should not be used to stage embryos whose development is at temperatures other than 25&apos;C.</rdfs:comment>
@@ -16565,8 +16519,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Hours 6-8 (the last two hours) of embryonic stage 17 at 25&apos;C. (Approximately 22-24 hours at 25&apos;C after egg laying).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2011-04-26T12:03:14Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2011-04-26T12:03:14Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007018</oboInOwl:id>
         <rdfs:comment>Temporal ordering number - 394. Should not be used to stage embryos whose development is at temperatures other than 25&apos;C.</rdfs:comment>
@@ -16722,8 +16676,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The developmental stage that lasts from eclosion of the adult from the pupal case until tanning is complete (the end of adult stage A3).</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2013-01-08T20:06:59Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2013-01-08T20:06:59Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007025</oboInOwl:id>
         <rdfs:comment>Temporal ordering number - 782.</rdfs:comment>
@@ -16755,8 +16709,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Life stage from the end of adult stage A3, when tanning is complete, to death.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date>2013-01-10T13:03:54Z</dcterms:date>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <dc:date>2013-01-10T13:03:54Z</dc:date>
         <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBdv:00007026</oboInOwl:id>
         <rdfs:label>mature adult stage</rdfs:label>
@@ -17052,7 +17006,7 @@ specimen can later be subject.</obo:IAO_0000116>
         <obo:IAO_0000111>specimen collection process</obo:IAO_0000111>
         <obo:IAO_0000112>drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
         <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000116>Philly2013: A specimen collection can have as part a material entity acquisition, such as ordering from a bank. The distinction is that specimen collection necessarily involves the creation of a specimen role. However ordering cell lines cells from ATCC for use in an investigation is NOT a specimen collection, because the cell lines already have a specimen role.</obo:IAO_0000116>
         <obo:IAO_0000116>Philly2013: The specimen_role for the specimen is created during the specimen collection process.</obo:IAO_0000116>
@@ -17074,7 +17028,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000111>specimen collection objective</obo:IAO_0000111>
         <obo:IAO_0000112>The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <rdfs:label>specimen collection objective</rdfs:label>
@@ -17104,7 +17058,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000116>Details see tracker: https://sourceforge.net/p/obi/obi-terms/778/</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>OBIB, OBI</obo:IAO_0000119>
-        <dc:source>Biobank</dc:source>
         <rdfs:label xml:lang="en">collection of specimens</rdfs:label>
     </owl:Class>
     
@@ -17263,8 +17216,8 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82212</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq study of first instar larval brains upon starvation</obo:IAO_0000115>
-        <dcterms:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
-        <dcterms:references rdf:resource="http://flybase.org/reports/FBrf0244302"/>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0244302"/>
         <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
         <rdfs:label>scRNAseq_2019_Avalos</rdfs:label>
     </owl:NamedIndividual>
@@ -17296,7 +17249,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0005364"/>
         <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
         <obo:IAO_0000115>Cells from first instar larval brain upon normal feeding condition</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17315,7 +17268,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0005363"/>
         <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq of cells from first instar larval brain upon normal feeding condition</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17328,7 +17281,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005363"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005364"/>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17356,7 +17309,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5733</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17384,7 +17337,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9580</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, peptidergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_peptidergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17412,7 +17365,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9230</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, cholinergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_cholinergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17440,7 +17393,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8856</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, glial cells cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_glial_cells</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17468,7 +17421,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9588</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, neuroblasts cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_neuroblasts</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17496,7 +17449,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6197</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, Kenyon cells cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_Kenyon_cells</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17524,7 +17477,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8500</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, optic lobe neuroepithelial cells cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_optic_lobe_neuroepithelial_cells</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17552,7 +17505,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8184</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, glutamatergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_glutamatergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17580,7 +17533,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8486</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, GABAergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_GABAergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17608,7 +17561,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7858</neo_custom:total_gene_count>
         <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition, aminergic neurons cluster</obo:IAO_0000115>
-        <dcterms:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering_aminergic_neurons</rdfs:label>
     </owl:NamedIndividual>
     

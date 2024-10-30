@@ -7,7 +7,7 @@ _Publication associated with the Dataset._
 
 
 
-URI: [dcterms:references](http://purl.org/dc/terms/references)
+URI: [dc:references](http://purl.org/dc/terms/references)
 
 
 
@@ -47,7 +47,7 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 | property | value |
 | --- | --- |
-| owl.fstring | AnnotationAssertion( dcterms:references {id} {V} ) |
+| owl.fstring | AnnotationAssertion( dc:references {id} {V} ) |
 
 
 
@@ -63,7 +63,7 @@ URI: [dcterms:references](http://purl.org/dc/terms/references)
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | dcterms:references |
+| self | dc:references |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:publication |
 
 
@@ -77,11 +77,11 @@ name: publication
 annotations:
   owl.fstring:
     tag: owl.fstring
-    value: AnnotationAssertion( dcterms:references {id} {V} )
+    value: AnnotationAssertion( dc:references {id} {V} )
 description: Publication associated with the Dataset.
 from_schema: http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq
 rank: 1000
-slot_uri: dcterms:references
+slot_uri: dc:references
 alias: publication
 owner: Dataset
 domain_of:
