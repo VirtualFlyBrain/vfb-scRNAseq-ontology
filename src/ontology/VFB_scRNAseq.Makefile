@@ -229,7 +229,7 @@ all_imports: create_import_stubs $(ONTOLOGY_IMPORT_FILES) # merged import is def
 
 # dc/elements in imports is somehow contaminating the release files, so strip these out
 .PHONY: filtered_imports
-filtered_imports: #all_imports
+filtered_imports: all_imports
 	for FILE in $(ONTOLOGY_IMPORT_FILES); do \
 		cat $$FILE | grep -v "http://purl.org/dc/elements/1.1" > $$FILE.tmp &&\
 		mv $$FILE.tmp $$FILE; \
