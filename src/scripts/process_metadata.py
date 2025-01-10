@@ -49,7 +49,7 @@ datasets_to_process = dataset_data.filtered_df['id'].drop_duplicates()
 
 # extra processing for DataSet
 dataset_data.filtered_df['licence'] = "http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"
-dataset_data.filtered_df['site'] = dataset_data.filtered_df['site_label'].apply(lambda x: "vfb:" + sites_dict[x])
+dataset_data.filtered_df['site'] = dataset_data.filtered_df['site_label'].map(lambda x: "vfb:" + sites_dict[x], na_action='ignore')
 dataset_data.filtered_df = dataset_data.filtered_df.drop(['source_linkout', 'site_label'], axis=1).drop_duplicates()
 
 # make publication df
@@ -82,6 +82,9 @@ if len(cluster_data.filtered_df) > 0:
     # drop if no genes after filtering
     cluster_data.filtered_df = cluster_data.filtered_df[cluster_data.filtered_df['filtered_gene_count'].notnull()]
     
+    # make sure count cols are ints
+    cluster_data.filtered_df = cluster_data.filtered_df.astype({'total_gene_count': int, 'filtered_gene_count': int})
+    
     # datasets
     if len(dataset_data.filtered_df) > 0:
         exp_data = exp_data.merge(cluster_data.filtered_df[['id', 'associated_dataset']], how='left', left_index=True, right_on='id')
@@ -92,6 +95,9 @@ if len(cluster_data.filtered_df) > 0:
         
         # drop if no genes after filtering
         dataset_data.filtered_df = dataset_data.filtered_df[dataset_data.filtered_df['filtered_gene_count'].notnull()]
+        
+        # make sure count cols are ints
+        cluster_data.filtered_df = cluster_data.filtered_df.astype({'total_gene_count': int, 'filtered_gene_count': int})
 
 
 ## spilt data and make new tsvs
