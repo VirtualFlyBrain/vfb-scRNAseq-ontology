@@ -58,10 +58,6 @@ install_parallel:
 	apt-get update
 	apt-get -y install parallel
 
-.PHONY: install_vfb_connect
-install_vfb_connect:
-	python3 -m pip install vfb-connect==v1.6.0 
-
 .PHONY: install_dask
 install_dask: setup_venv
 	my-venv/bin/pip install "dask[complete]"

@@ -40,7 +40,7 @@ class DataEntity:
 
 if __name__ == '__main__':
 
-    from vfb_connect.neo.neo4j_tools import Neo4jConnect, dict_cursor
+    from cypher_query import query_neo4j, pdb
     
     assay_data = DataEntity(datatype='Assay')
     sample_data = DataEntity(datatype='Sample')
@@ -75,10 +75,8 @@ if __name__ == '__main__':
 
     ## filter for nervous system term-containing clusters
     # get :Nervous_system FBbt IDs from VFB
-    nc = Neo4jConnect('http://pdb.virtualflybrain.org', 'vfb', 'neo4j')
     query = "MATCH (c:Class:Nervous_system) WHERE c.short_form STARTS WITH \"FBbt\" RETURN DISTINCT c.short_form AS FBbt_ID"
-    q = nc.commit_list([query])
-    FBbt_IDs = pd.DataFrame(dict_cursor(q))
+    FBbt_IDs = query_neo4j(query, url=pdb)
     FBbt_IDs = list(FBbt_IDs['FBbt_ID'].apply(lambda x: x.replace('_', ':')))
 
     # check which clusters are linked to :Nervous_system FBbt terms
