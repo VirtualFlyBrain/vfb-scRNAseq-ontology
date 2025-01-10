@@ -27,7 +27,7 @@ RELEASEDIR = ../../metadata_release_files
 $(EXPDIR) $(METADATADIR) $(RELEASEDIR) $(ONTOLOGYDIR):
 	mkdir -p $@
 
-LINKML = linkml-data2owl -s VFB_scRNAseq_schema.yaml
+LINKML = my-venv/bin/linkml-data2owl -s VFB_scRNAseq_schema.yaml
 ROBOT_O = robot --catalog $(CATALOG_O)
 CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
@@ -38,9 +38,15 @@ CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
 
 ########## Installations
 
+.PHONY: setup_venv
+setup_venv:
+	apt-get update
+	apt-get -y install python3.12-venv
+	python3 -m venv my-venv
+
 .PHONY: install_linkml
-install_linkml:
-	python3 -m pip install linkml-owl==v0.4.1
+install_linkml: setup_venv
+	my-venv/bin/pip install linkml-owl==v0.4.1
 
 .PHONY: install_postgresql
 install_postgresql:
@@ -57,13 +63,13 @@ install_vfb_connect:
 	python3 -m pip install vfb-connect==v1.6.0 
 
 .PHONY: install_dask
-install_dask:
-	python3 -m pip install "dask[complete]"
+install_dask: setup_venv
+	my-venv/bin/pip install "dask[complete]"
 
 .PHONY: install_xml_tools
-install_xml_tools:
-	python3 -m pip install beautifulsoup4
-	python3 -m pip install lxml
+install_xml_tools: setup_venv
+	my-venv/bin/pip install beautifulsoup4
+	my-venv/bin/pip install lxml
 
 
 ########## get data from FlyBase and generate input tsvs
@@ -83,7 +89,7 @@ ifeq ($(UPDATE_FROM_FB),true)
 	 > $(TMPDIR)/raw_cluster_data.tsv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql \
 	 > $(TMPDIR)/raw_expression_data.tsv
-	 python3 $(SCRIPTSDIR)/convert_expression_data.py
+	 my-venv/bin/python3 $(SCRIPTSDIR)/convert_expression_data.py
 else
 	echo "Not updating FlyBase data."
 endif
@@ -111,16 +117,16 @@ $(TMPDIR)/internal_terms.txt: | $(TMPDIR)
 	rm -f $(TMPDIR)/internal_terms-raw.txt
 
 # filter data to only get nervous system associated data and only wild-type non-experimental samples
-$(TMPDIR)/all_inclusions.tsv: get_FB_data install_vfb_connect | $(TMPDIR)
-	python3 $(SCRIPTSDIR)/filter_data.py
+$(TMPDIR)/all_inclusions.tsv: get_FB_data setup_venv | $(TMPDIR)
+	my-venv/bin/python3 $(SCRIPTSDIR)/filter_data.py
 
 .PHONY: process_FB_metadata
 # filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in ontology_files) from input
 process_FB_metadata: install_dask $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
 ifeq ($(REFRESH_META),true)
-	python3 $(SCRIPTSDIR)/process_metadata.py -r
+	my-venv/bin/python3 $(SCRIPTSDIR)/process_metadata.py -r
 else
-	python3 $(SCRIPTSDIR)/process_metadata.py
+	my-venv/bin/python3 $(SCRIPTSDIR)/process_metadata.py
 endif
 
 .PHONY: process_FB_expdata
@@ -128,9 +134,9 @@ endif
 # also split into tsvs for each cluster and filter by extent
 process_FB_expdata: install_dask $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv process_FB_metadata | $(EXPDIR) $(METADATADIR)
 ifeq ($(REFRESH_EXP),true)
-	python3 $(SCRIPTSDIR)/process_expression_data.py -r
+	my-venv/bin/python3 $(SCRIPTSDIR)/process_expression_data.py -r
 else
-	python3 $(SCRIPTSDIR)/process_expression_data.py
+	my-venv/bin/python3 $(SCRIPTSDIR)/process_expression_data.py
 endif
 
 .PHONY: all_tsvs
@@ -267,7 +273,7 @@ release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
 
 .PHONY: update_catalog_files
 update_catalog_files: install_xml_tools
-	python3 $(SCRIPTSDIR)/update_catalogs.py
+	my-venv/bin/python3 $(SCRIPTSDIR)/update_catalogs.py
 
 # create merged release files (no need to reason etc)
 # remove expression import (loaded separately into VFB)
@@ -284,8 +290,8 @@ $(REPORTDIR)/FBgn_list.txt: $(TMPDIR)/existing_FBgns.txt | $(REPORTDIR)
 	rm -f $(EXPDIR)/*.fbgns.tmp
 
 # make a $(SRC) file that imports all the owl files in ontology_files
-$(SRC):
-	python3 $(SCRIPTSDIR)/create_src.py
+$(SRC): setup_venv
+	my-venv/bin/python3 $(SCRIPTSDIR)/create_src.py
 
 # remove any existing docs and generate fresh
 .PHONY: gen_docs
@@ -302,15 +308,16 @@ $(TMPDIR)/existing_FBgns.txt: unzip_exp_files
 	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $@
 
 .PHONY: get_gene_id_map
-get_gene_id_map: install_postgresql
+get_gene_id_map: install_postgresql setup_venv
 	# this won't work until https://flybase.github.io/docs/chado/functions#update_ids is fixed
-	python3 $(SCRIPTSDIR)/print_id_query.py &&\
+	my-venv/bin/python3 $(SCRIPTSDIR)/print_id_query.py &&\
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
 	 > $(TMPDIR)/id_validation_table.tsv
 
-replace_gene_ids_in_files: install_modin
+replace_gene_ids_in_files: #install_modin
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
-	python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
+	# modin not working in odk docker
+	my-venv/bin/python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for DS in $(RELEASE_DATASETS); \
 	do if [ -f $(EXPDIR)/processed_VFB_scRNAseq_exp_$$DS.owl ]; \
 	then mv $(EXPDIR)/processed_VFB_scRNAseq_exp_$$DS.owl $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl; fi &&\
