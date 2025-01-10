@@ -34,12 +34,23 @@ FROM (
   JOIN pub p ON p.pub_id = lp.pub_id
   LEFT JOIN library_relationship lr ON l.library_id=lr.subject_id
   WHERE l.is_obsolete is false) AS project
+-- Get superprojects (up to 2 levels above)
+LEFT JOIN (
+  SELECT 
+    l.uniquename,
+    l.library_id,
+    lr.object_id
+  FROM library l
+  LEFT JOIN library_relationship lr ON l.library_id=lr.subject_id) AS superproject
+ON project.object_id=superproject.library_id
 LEFT JOIN (
   SELECT 
     l.uniquename,
     l.library_id
-  FROM library l) AS superproject
-ON project.object_id=superproject.library_id
+  FROM library l
+  LEFT JOIN library_relationship lr ON l.library_id=lr.subject_id) AS superproject2
+ON superproject.object_id=superproject2.library_id
+--Get details for project (or its superprojects)
 LEFT JOIN (
   SELECT 
     ld.library_id, 
@@ -51,7 +62,9 @@ LEFT JOIN (
   JOIN db
   ON dx.db_id=db.db_id
   WHERE db.name!='FlyBase') AS xrefs
-ON (xrefs.library_id=project.library_id OR xrefs.library_id=superproject.library_id)
+ON (xrefs.library_id=project.library_id 
+  OR xrefs.library_id=superproject.library_id 
+  OR xrefs.library_id=superproject2.library_id)
 LEFT JOIN (
   SELECT
     lp.library_id,
@@ -61,5 +74,7 @@ LEFT JOIN (
   ON lp.type_id=cv.cvterm_id
   WHERE cv.name='owner'
 ) AS source
-ON (project.library_id=source.library_id OR superproject.library_id=source.library_id)
+ON (project.library_id=source.library_id 
+  OR superproject.library_id=source.library_id 
+  OR superproject2.library_id=source.library_id)
 ) TO STDOUT WITH DELIMITER E'\t' CSV HEADER;
