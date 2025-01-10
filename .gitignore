@@ -9,6 +9,8 @@ bin/
 
 src/ontology/mirror
 src/ontology/mirror/*
+src/ontology/my-venv
+src/ontology/my-venv/*
 src/ontology/expression_data/*.tsv
 src/ontology/expression_data/*.ofn
 src/ontology/expression_data/*.owl
