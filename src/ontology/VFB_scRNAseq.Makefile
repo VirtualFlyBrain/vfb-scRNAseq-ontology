@@ -105,7 +105,7 @@ zip_exp_files:
 # get all FBlc terms
 $(TMPDIR)/internal_terms.txt: | $(TMPDIR)
 	touch $@
-	for FILE in $(ONTOLOGYDIR)/*.owl; \
+	for FILE in $(RELEASEDIR)/*.owl; \
 	do $(ROBOT_O) query --input $$FILE \
 	--query ../sparql/internal_terms.sparql $(TMPDIR)/internal_terms-raw.txt &&\
 	cat $(TMPDIR)/internal_terms-raw.txt $@ | grep -oE 'FBlc[0-9]+' | sort | uniq > $@-tmp.txt &&\
@@ -117,7 +117,7 @@ $(TMPDIR)/all_inclusions.tsv: get_FB_data setup_venv | $(TMPDIR)
 	my-venv/bin/python3 $(SCRIPTSDIR)/filter_data.py
 
 .PHONY: process_FB_metadata
-# filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in ontology_files) from input
+# filter FB data to remove metadata for excluded datasets/assays and, if REFRESH_META is false, remove existing metadata (i.e. entities in a file in metadata_release_files) from input
 process_FB_metadata: install_dask $(TMPDIR)/internal_terms.txt get_FB_data $(TMPDIR)/all_inclusions.tsv | $(METADATADIR)
 ifeq ($(REFRESH_META),true)
 	my-venv/bin/python3 $(SCRIPTSDIR)/process_metadata.py -r
