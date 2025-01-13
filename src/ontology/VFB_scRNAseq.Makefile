@@ -5,7 +5,7 @@
 
 .PHONY: prepare_release_notest
 # this prepares a release without updating the source files or running any tests - run using command in run_release.sh
-prepare_release_notest: $(SRC) update_catalog_files filtered_imports release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
+prepare_release_notest: $(SRC) filtered_imports release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
 	rm -f $(CLEANFILES) $(ALL_TERMS_COMBINED) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
@@ -209,8 +209,12 @@ $(EXPDIR)/VFB_scRNAseq_exp_%.owl: make_exp_ofns
 	$(ROBOT) convert -i $@ --format owl -o $@.gz &&\
 	rm -f $(EXPDIR)/VFB_scRNAseq_exp_$*-cluster_*.ofn $(TMPDIR)/$*-exp-tmp.ofn
 
+.PHONY: update_catalog_files
+update_catalog_files: install_xml_tools
+	my-venv/bin/python3 $(SCRIPTSDIR)/update_catalogs.py
+
 .PHONY: update_ontology_files
-update_ontology_files: update_metadata_files update_expression_files
+update_ontology_files: update_metadata_files update_expression_files update_catalog_files
 	echo  "All ontology files updated"
 
 
@@ -266,10 +270,6 @@ endif
 .PHONY: release_ontology_files
 release_ontology_files: $(RELEASE_ONTOLOGY_FILES)
 	echo $@
-
-.PHONY: update_catalog_files
-update_catalog_files: install_xml_tools
-	my-venv/bin/python3 $(SCRIPTSDIR)/update_catalogs.py
 
 # create merged release files (no need to reason etc)
 # remove expression import (loaded separately into VFB)
