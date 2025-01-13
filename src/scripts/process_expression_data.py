@@ -52,6 +52,6 @@ if __name__ == "__main__":
         def expression_outfile_namer(n):
             dataset = dataset_cluster_dict[expression_data.divisions[n]].replace("FlyBase:", "")
             cluster = expression_data.divisions[n].replace("FlyBase:", "")
-            filename = f"dataset_{dataset}-cluster_{cluster}"
+            filename = f"VFB_scRNAseq_exp_{dataset}-cluster_{cluster}"
             return filename
         expression_data.to_csv("expression_data/*.tsv", name_function=expression_outfile_namer, sep='\t')

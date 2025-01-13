@@ -186,7 +186,7 @@ make_exp_ofns: install_linkml install_parallel
 			$(LINKML) {} -o {.}.ofn && rm {}; \
 		fi'
 
-# gene expression owl files for datasets that have 'cluster' expression data tsvs or ofns (names are dataset_FBlcxxxxxxx-cluster_FBlcxxxxxxx)
+# gene expression owl files for datasets that have 'cluster' expression data tsvs or ofns (names are VFB_scRNAseq_exp_FBlcxxxxxxx-cluster_FBlcxxxxxxx)
 DATASET_EXP_FILES = $(sort $(filter-out cluster_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.tsv))) $(filter-out cluster_%,$(subst -,.owl ,$(wildcard $(EXPDIR)/*.ofn))))
 
 # for troubleshooting (check that expected dataset files are in list)
@@ -200,14 +200,14 @@ update_expression_files: $(DATASET_EXP_FILES)
 
 # merge and annotate cluster ofns for each dataset
 # need to reformat expression annotations as these don't get the right types from linkml
-$(EXPDIR)/dataset_exp_%.owl: make_exp_ofns
-	$(ROBOT) merge --inputs "$(EXPDIR)/dataset_$*-cluster_*.ofn" \
+$(EXPDIR)/VFB_scRNAseq_exp_%.owl: make_exp_ofns
+	$(ROBOT) merge --inputs "$(EXPDIR)/VFB_scRNAseq_exp_$*-cluster_*.ofn" \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/VFB_scRNAseq/$@" \
 	convert --format ofn -o $(TMPDIR)/$*-exp-tmp.ofn &&\
 	cat $(TMPDIR)/$*-exp-tmp.ofn | sed -e 's/(neo_custom:expression_\([a-z]\+\) "\([0-9]\+\.[0-9]\+\)")/(neo_custom:expression_\1 "\2"^^xsd:float)/g' -e 's/(neo_custom:hide_in_terminfo "\([a-z]\+\)")/(neo_custom:hide_in_terminfo "\1"^^xsd:boolean)/g' > $@ &&\
 	$(ROBOT) convert -i $@ --format owl -o $@ &&\
 	$(ROBOT) convert -i $@ --format owl -o $@.gz &&\
-	rm -f $(EXPDIR)/dataset_$*-cluster_*.ofn $(TMPDIR)/$*-exp-tmp.ofn
+	rm -f $(EXPDIR)/VFB_scRNAseq_exp_$*-cluster_*.ofn $(TMPDIR)/$*-exp-tmp.ofn
 
 .PHONY: update_ontology_files
 update_ontology_files: update_metadata_files update_expression_files
