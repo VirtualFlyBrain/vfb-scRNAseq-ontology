@@ -56,18 +56,50 @@ if __name__ == '__main__':
 
     ## link assays and samples to the same dataset as any clusterings they appear in
     # (this may mean they end up linked to > 1 dataset)
-    def update_dataset_from_clustering(input_df):
-        updated_entity_df_list = []
-        for a in input_df['id'].drop_duplicates():
-            single_entity_data = input_df[input_df['id']==a]
-            clustering_datasets = clustering_data.dataframe[clustering_data.dataframe['associated_sample_or_assay_for_clustering']==a]['associated_dataset'].drop_duplicates()
-            updated_dataset_df_list = []
-            for ds in clustering_datasets:
-                updated_dataset = single_entity_data
-                updated_dataset['associated_dataset']=ds
-                updated_dataset_df_list.append(updated_dataset)
-            updated_entity_df_list.append(pd.concat(updated_dataset_df_list))
-        return pd.concat(updated_entity_df_list)
+    def update_dataset_from_clustering(input_df, clustering_data=clustering_data):
+        """
+        Expands dataset associations by creating additional rows with datasets from clustering data.
+        Each input row may generate multiple output rows if additional dataset associations exist.
+        Preserves the original associated_dataset values from input_df.
+        
+        Parameters:
+        -----------
+        input_df : pandas.DataFrame
+            Input dataframe with 'id' and 'associated_dataset' columns
+        clustering_data : object
+            Object containing clustering information with a dataframe attribute
+            that has 'associated_sample_or_assay_for_clustering' and 'associated_dataset' columns
+        
+        Returns:
+        --------
+        pandas.DataFrame
+            Expanded dataframe with additional rows for new dataset associations
+        """
+        # Get unique id-dataset mappings from clustering data
+        additional_datasets = (
+            clustering_data.dataframe[['associated_sample_or_assay_for_clustering', 'associated_dataset']]
+            .drop_duplicates()
+            .rename(columns={'associated_sample_or_assay_for_clustering': 'id'})
+        )
+        
+        # Initialize list to store dataframes
+        result_dfs = [input_df.copy()]  # Start with the original data
+        
+        # For each unique ID, create additional rows with new dataset associations
+        for id_val in input_df['id'].unique():
+            entity_data = input_df[input_df['id'] == id_val]
+            cluster_datasets = additional_datasets[additional_datasets['id'] == id_val]['associated_dataset']
+            
+            if not cluster_datasets.empty:
+                for dataset in cluster_datasets:
+                    new_rows = entity_data.copy()
+                    new_rows['associated_dataset'] = dataset
+                    result_dfs.append(new_rows)
+        
+        # Combine all dataframes
+        output = pd.concat(result_dfs, ignore_index=True)
+        output = output.drop_duplicates()
+        return output
 
     assay_data.dataframe = update_dataset_from_clustering(assay_data.dataframe)
     sample_data.dataframe = update_dataset_from_clustering(sample_data.dataframe)

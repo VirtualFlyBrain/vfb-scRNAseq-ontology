@@ -149,9 +149,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
     
 
 
@@ -169,6 +199,12 @@
     <!-- http://purl.obolibrary.org/obo/FBbt_00001252 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001252"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003007"/>
     
 
 
@@ -325,6 +361,12 @@
     <!-- http://purl.obolibrary.org/obo/FBbt_00006007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00006007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007004"/>
     
 
 
@@ -520,6 +562,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059181"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00059270 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059270"/>
@@ -646,6 +694,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBcv_0009001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009001"/>
@@ -661,6 +721,18 @@
     <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_0010010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_0010010"/>
     
 
 
@@ -705,13 +777,51 @@
 
     <!-- http://flybase.org/reports/FBlc0007533 -->
 
-    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007533"/>
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007533">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003007"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_0010010"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0007534"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Cells from 70-days old male heads</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007532"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_HEAD</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://flybase.org/reports/FBlc0007534 -->
 
-    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007534"/>
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007534">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0007533"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-nucleus RNA-seq of cells from 70-days old male heads</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007532"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_HEAD_seq</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -1764,13 +1874,51 @@
 
     <!-- http://flybase.org/reports/FBlc0007583 -->
 
-    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007583"/>
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007583">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059181"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_0010010"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0007584"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Cells from 70-days old male bodies</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007532"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_BODY</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://flybase.org/reports/FBlc0007584 -->
 
-    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007584"/>
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007584">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0007583"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-nucleus RNA-seq of cells from 70-days old male bodies</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007532"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_BODY_seq</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
