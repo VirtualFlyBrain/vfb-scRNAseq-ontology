@@ -1,0 +1,3199 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0007347.owl#"
+     xml:base="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0007347.owl"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:BAO="http://www.bioassayontology.org/bao#BAO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vfb="http://virtualflybrain.org/reports/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:FBbt="http://purl.obolibrary.org/obo/FBbt_"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv_"
+     xmlns:FBdv="http://purl.obolibrary.org/obo/FBdv_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:linkml="https://w3id.org/linkml/"
+     xmlns:FlyBase="http://flybase.org/reports/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:neo_custom="http://n2o.neo/custom/"
+     xmlns:neo_property="http://n2o.neo/property/">
+    <owl:Ontology rdf:about="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0007347.owl">
+        <dc:description>An ontology of Drosophila melanogaster scRNAseq data from a single dataset (FBlc0007347). This information is taken from FlyBase, which sources it from the EMBL-EBI Single Cell Expression Atlas, which compiles scRNAseq data from multiple sources.</dc:description>
+        <dc:title>VFB scRNAseq Ontology for dataset FBlc0007347</dc:title>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_FBlc0007347.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0007347_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://n2o.neo/custom/accession -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/accession"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_count -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/filtered_gene_count -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/filtered_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/custom/total_gene_count -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/total_gene_count"/>
+    
+
+
+    <!-- http://n2o.neo/property/nodeLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/property/nodeLabel"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#imports -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#imports"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002490 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002490"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000212 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000212"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00001252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001252"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003185"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003361"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003545"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003550"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003720"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003721"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003722 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003722"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003725 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003725"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003727 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003727"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003741 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003741"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003743"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003744"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003746 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003746"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003770 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003770"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003776 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003776"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003779 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003779"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003784 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003784"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004193"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004225"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004227"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004230"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004242"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004904 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004904"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004907 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004907"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004931 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004931"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00004960 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004960"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00005735 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005735"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00006007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00006007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00006030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00006030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00006049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00006049"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007037"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007039"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007254"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007386"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007422"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007684"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00013774 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00013774"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047095"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047147"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047149"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047182"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047841 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047841"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00048284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00048284"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049281"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049474"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049477"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049568"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00049834 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051420"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00057012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00057012"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058143"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058203"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058230"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058238"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058242"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058247"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058249"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058251"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058263"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058264"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058267"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058269"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058271"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058273"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058274"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058276"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00058282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00058282"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059155"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059160"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059181"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059269"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059270"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059276"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059289 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059289"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100482"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100497"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100501"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100504"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100506"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100525"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110065"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110135"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110205"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00110908 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00110908"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111271"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111273"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111285"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111302 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111302"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111752 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111752"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0003025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBcv_0009008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_0010010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_0010010"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007347 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007347">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003023"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009001"/>
+            </owl:Restriction>
+        </rdf:type>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116045</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">862878</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-nucleus RNA-seq on cells from 70-days old flies</obo:IAO_0000115>
+        <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>
+        <dc:references rdf:resource="http://flybase.org/reports/FBrf0256843"/>
+        <oboInOwl:hasDbXref rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:resource="http://virtualflybrain.org/reports/scExpressionAtlas"/>
+        <neo_custom:accession>E-GEOD-218661</neo_custom:accession>
+    </owl:Axiom>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007349 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007349">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007011"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003007"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_0010010"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0007350"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Cells from 70-days old female heads</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_FEMALE_HEAD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007350 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007350">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0007349"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-nucleus RNA-seq of cells from 70-days old female heads</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_FEMALE_HEAD_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007399 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007399">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007011"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059181"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_0010010"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0007400"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Cells from 70-days old female bodies</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_FEMALE_BODY</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007400 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007400">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0007399"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-nucleus RNA-seq of cells from 70-days old female bodies</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_FEMALE_BODY_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007533 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007533">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003007"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_0010010"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0007534"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Cells from 70-days old male heads</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_HEAD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007534 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007534">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0007533"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-nucleus RNA-seq of cells from 70-days old male heads</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_HEAD_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007583 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007583">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003024"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007004"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059181"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002490"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBdv_0010010"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002352 rdf:resource="http://flybase.org/reports/FBlc0007584"/>
+        <neo_property:nodeLabel>Sample</neo_property:nodeLabel>
+        <obo:IAO_0000115>Cells from 70-days old male bodies</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_BODY</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007584 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007584">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0003025"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009008"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:RO_0002233 rdf:resource="http://flybase.org/reports/FBlc0007583"/>
+        <neo_property:nodeLabel>Assay</neo_property:nodeLabel>
+        <obo:IAO_0000115>Single-nucleus RNA-seq of cells from 70-days old male bodies</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MALE_BODY_seq</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007701 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007701">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007349"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007350"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007399"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007400"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007533"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007534"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007583"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007584"/>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007702 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007702">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047095"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28741</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1362</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16505</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007703 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007703">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058238"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11822</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">842</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14782</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007704 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007704">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">387</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1031</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9869</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, L1 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_L1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007705 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007705">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100525"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">315</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1449</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10378</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, optic chiasma glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_optic_chiasma_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007706 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007706">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00006007"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3363</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1724</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13834</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, outer photoreceptor cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_outer_photoreceptor_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007707 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007707">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058264"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">492</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1229</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10769</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, lamina neuropil associated glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_lamina_neuropil_associated_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007708 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007708">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049834"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1124</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8500</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, alphaP betaP Kenyon cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_alphaP_betaP_Kenyon_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007709 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007709">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100000"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">521</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1193</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10724</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Johnston organ neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Johnston_organ_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007710 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007710">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049828"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">382</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1308</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10074</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, gamma Kenyon cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_gamma_Kenyon_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007711 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007711">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100506"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">849</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1311</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11568</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, brain perineurial glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_brain_perineurial_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007712 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007712">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100248"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1106</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9634</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, alpha/beta Kenyon cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_alpha_beta_Kenyon_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007713 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007713">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007386"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">858</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1539</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11814</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, olfactory receptor neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_olfactory_receptor_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007714 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007714">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003744"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">294</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">832</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8853</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, C3 centrifugal neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_C3_centrifugal_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007715 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007715">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007684"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1434</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10271</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, auditory sensory neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_auditory_sensory_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007716 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007716">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">538</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1333</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10766</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, L2 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_L2_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007717 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007717">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058203"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4411</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, octopaminergic neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_octopaminergic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007718 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007718">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110135"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">867</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7211</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Dm10 amacrine neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Dm10_amacrine_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007719 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007719">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004227"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">422</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1189</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10234</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, R8 photoreceptor cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_R8_photoreceptor_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007720 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007720">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058267"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1560</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2532</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13253</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, pericerebral fat cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_pericerebral_fat_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007721 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007721">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">776</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6085</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Mi9 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Mi9_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007722 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007722">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004193"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3578</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1283</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13386</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, cone cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_cone_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007723 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007723">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">961</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9704</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Mi4 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Mi4_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007724 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007724">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003743"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">298</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">806</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9036</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, C2 centrifugal neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_C2_centrifugal_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007725 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007725">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047841"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">673</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1124</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11139</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, astrocyte-like glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_astrocyte-like_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007726 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007726">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">251</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">883</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8727</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Dm8 amacrine neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Dm8_amacrine_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007727 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007727">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100504"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">857</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1182</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11168</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, ensheathing glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_ensheathing_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007728 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007728">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058143"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">954</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1574</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12039</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, hemocytes cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_hemocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007729 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007729">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004230"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">840</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10849</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, pigment cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_pigment_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007730 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007730">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">417</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1112</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9892</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Mi1 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Mi1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007731 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007731">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003741"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1124</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7074</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, lamina wide-field 1 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_lamina_wide-field_1_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007732 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007732">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100482"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1059</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6954</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, LC10 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_LC10_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007733 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007733">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111302"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">263</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1469</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9929</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, optic lobe cortex glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_optic_lobe_cortex_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007734 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007734">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003770"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">661</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7800</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Dm3 amacrine neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Dm3_amacrine_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007735 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007735">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003725"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">267</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">725</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8460</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, L5 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_L5_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007736 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007736">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003722"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">189</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">794</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8228</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, L4 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_L4_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007737 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007737">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111285"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">786</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7012</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Mi15 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Mi15_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007738 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007738">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003727"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1449</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11389</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, T1 columnar neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_T1_columnar_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007739 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007739">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003746"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1049</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7829</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, lamina intrinsic neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_lamina_intrinsic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007740 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007740">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111273"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">925</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5897</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Dm12 amacrine neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Dm12_amacrine_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007741 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007741">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111271"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1111</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6989</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Dm9 amacrine neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Dm9_amacrine_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007742 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007742">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100501"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">265</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2042</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10677</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, brain cell body glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_brain_cell_body_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007743 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007743">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">332</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">879</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9221</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, L3 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_L3_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007744 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007744">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004225"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">285</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1110</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9357</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, R7 photoreceptor cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_R7_photoreceptor_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007745 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007745">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007422"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1425</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6802</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, antennal lobe projection neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_antennal_lobe_projection_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007746 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007746">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111752"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1146</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7381</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, LC17 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_LC17_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007747 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007747">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100214"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1195</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6842</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, dopaminergic PAM neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_dopaminergic_PAM_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007748 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007748">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110065"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1138</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7001</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, lamina wide-field 2 neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_lamina_wide-field_2_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007749 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007749">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004242"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1365</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4742</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, ocellar retinula cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_ocellar_retinula_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007750 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007750">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059276"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">923</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">848</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11076</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, PNS neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_PNS_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007751 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007751">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6112</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">736</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13780</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, muscle cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_muscle_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007752 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007752">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004904"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5932</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1221</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13475</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, follicle cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_follicle_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007753 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007753">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005040"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1007</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12264</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, tracheocytes cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_tracheocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007754 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007754">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059289"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3443</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1128</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13431</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, VNC neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_VNC_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007755 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007755">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003361"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">870</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">644</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11040</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, indirect flight muscle cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_indirect_flight_muscle_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007756 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007756">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00006049"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">178</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1502</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9213</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, escort cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_escort_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007757 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007757">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003185"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1484</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1417</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12324</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, oenocytes cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_oenocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007758 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007758">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059155"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6514</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1902</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14485</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, abdominal fat cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_abdominal_fat_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007759 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007759">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058263"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1512</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1127</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11808</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, crop epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_crop_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007760 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007760">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110205"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">760</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1547</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11298</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, enteroblasts cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_enteroblasts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007761 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007761">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007039"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">812</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1260</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11400</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, intestinal stem cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_intestinal_stem_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007762 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007762">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00057012"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">695</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1478</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11634</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, female germline cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_female_germline_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007763 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007763">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100497"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">393</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">739</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9160</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007764 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007764">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058282"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">317</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1768</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9914</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, proventriculus epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_proventriculus_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007765 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007765">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00006030"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">207</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1119</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8669</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, ovariole somatic cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_ovariole_somatic_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007766 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007766">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007254"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">569</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">727</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9973</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, eo sensory organ accessory cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_eo_sensory_organ_accessory_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007767 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007767">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059269"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">137</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1932</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8893</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, salivary gland epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_salivary_gland_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007768 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007768">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047147"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1905</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6708</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, enterocytes cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_enterocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007769 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007769">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059160"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">231</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2044</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10810</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, female cyst cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_female_cyst_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007770 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007770">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007037"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1828</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7045</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, posterior midgut enterocytes cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_posterior_midgut_enterocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007771 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007771">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059270"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">532</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">955</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10040</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, cell body glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_cell_body_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007772 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007772">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049474"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">783</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4388</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Malpighian tubule initial segment principal cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Malpighian_tubule_initial_segment_principal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007773 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007773">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051420"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">947</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7487</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, mechanosensory neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_mechanosensory_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007774 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007774">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058273"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">523</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1374</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10425</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, oviduct epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_oviduct_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007775 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007775">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003545"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">362</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">892</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8853</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, alary muscle cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_alary_muscle_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007776 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007776">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">542</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">742</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9752</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, perineurial glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_perineurial_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007777 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007777">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047149"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">277</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1107</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9416</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, enteroendocrine cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_enteroendocrine_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007778 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007778">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058276"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1734</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9031</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, hindgut epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_hindgut_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007779 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007779">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058249"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">769</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7217</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, gustatory receptor neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_gustatory_receptor_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007780 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007780">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005735"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1083</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5053</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Malpighian tubule principal cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Malpighian_tubule_principal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007781 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007781">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058247"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">825</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6774</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, pheromone-sensing neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_pheromone-sensing_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007782 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007782">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058274"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1101</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7567</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, organ boundary intestinal stem cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_organ_boundary_intestinal_stem_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007783 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007783">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004907"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1377</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7411</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, polar follicle cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_polar_follicle_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007784 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007784">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047182"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1375</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7885</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, midgut enterocytes cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_midgut_enterocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007785 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007785">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048284"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1398</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5277</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, multidendritic neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_multidendritic_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007786 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007786">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049568"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1751</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7142</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, leg muscle motor neurons cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_leg_muscle_motor_neurons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007787 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007787">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001252"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">616</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3873</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, CNS surface glial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_CNS_surface_glial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007788 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007788">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049281"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2190</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7067</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, differentiating enterocytes cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_differentiating_enterocytes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007789 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007789">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110908"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1142</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3601</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, copper cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_copper_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007790 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007790">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003550"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1002</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2979</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, heart ventral longitudinal muscle cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_heart_ventral_longitudinal_muscle_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007791 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007791">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049477"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1480</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4466</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, Malpighian tubule lower segment principal cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_Malpighian_tubule_lower_segment_principal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007792 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007792">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058269"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">181</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1416</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8306</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, ejaculatory bulb epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_ejaculatory_bulb_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007793 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007793">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004931"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">901</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6105</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, cyst cell of testiss cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_cyst_cell_of_testiss</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007794 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007794">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058271"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1385</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4707</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, ejaculatory duct epithelial cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_ejaculatory_duct_epithelial_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007795 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007795">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004960"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">225</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1722</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10289</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, male accessory gland main cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_male_accessory_gland_main_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBlc0007796 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007796">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009003"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058242"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000050 rdf:resource="http://flybase.org/reports/FBlc0007701"/>
+        <neo_custom:cell_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</neo_custom:cell_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">691</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4308</neo_custom:total_gene_count>
+        <neo_property:nodeLabel>Cluster</neo_property:nodeLabel>
+        <obo:IAO_0000115>Clustering analysis of adult cells from 70 days-old mixed-sex flies, epidermal cells cluster</obo:IAO_0000115>
+        <dc:source rdf:resource="http://flybase.org/reports/FBlc0007347"/>
+        <rdfs:label>scRNAseq_2023_AFCA_D70_MIXED_FULL_seq_clustering_epidermal_cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://flybase.org/reports/FBrf0256843 -->
+
+    <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBrf0256843">
+        <neo_property:nodeLabel>pub</neo_property:nodeLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
