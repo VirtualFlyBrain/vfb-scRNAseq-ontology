@@ -402,6 +402,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
@@ -2192,7 +2198,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_10000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2563,7 +2568,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00000119 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00000119">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3132,10 +3136,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005434"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Primordium of the early extended germ band embryo that will give rise to the larval Bolwig organ, larval optic anlage and adult eye. It is a dorsoposterior strip of the embryonic procephalon that invaginates at stages 12-13. It can be subdivided into 4 different regions. The most anterior gives rise to the embryonic primordium of adult eye. Posterior to it, the anterior lip develops into the embryonic inner optic lobe primordium, that will give rise to the larval inner optic anlage. Posteriorly, the posterior lip develops into the embryonic outer optic lobe primordium, that will give rise to the larval outer optic anlage. The most posterior region will develop into the Bolwig organ primordium.</obo:IAO_0000115>
+        <obo:IAO_0000115>Primordium that develops from the posterior procephalic region of the embryo and gives rise to visual structures of the larva and adult (Green et al., 1993; Chang et al., 2001). An optic placode forms from cells of the visual primordium when they become columnar in shape towards the end of stage 11 (Green et al., 1993; Chang et al., 2001). This placode invaginates during stages 12-13, forming a deep pouch of approximately 85 cells (Green et al., 1993). Its ventral lip segregates from the rest of the primordium and develops into the Bolwig organ (Green et al., 1993). The remainder of the placode, which will form the optic lobe, detaches from the surface of the embryo and attaches to the lateral brain, maintaining a tubular appearance until larval hatching (Green et al., 1993). Its anterior and posterior domains will become the larval inner and outer optic anlage, respectively (Chang et al., 2001). The cells that will become the eye disc are anterior and dorsal to the optic lobe placode cells (Chang et al., 2001). They move into the interior of the embryo during head involution, when they are pushed under the dorsal ridge (Huang et al., 2017).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:6001059</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>optic lobe placode</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>optic lobe primordium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>optic lobe placode</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>optic lobe primordium</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>P2 VisSys</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00001059</oboInOwl:id>
@@ -3146,15 +3150,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001059"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Primordium of the early extended germ band embryo that will give rise to the larval Bolwig organ, larval optic anlage and adult eye. It is a dorsoposterior strip of the embryonic procephalon that invaginates at stages 12-13. It can be subdivided into 4 different regions. The most anterior gives rise to the embryonic primordium of adult eye. Posterior to it, the anterior lip develops into the embryonic inner optic lobe primordium, that will give rise to the larval inner optic anlage. Posteriorly, the posterior lip develops into the embryonic outer optic lobe primordium, that will give rise to the larval outer optic anlage. The most posterior region will develop into the Bolwig organ primordium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0151275</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Primordium that develops from the posterior procephalic region of the embryo and gives rise to visual structures of the larva and adult (Green et al., 1993; Chang et al., 2001). An optic placode forms from cells of the visual primordium when they become columnar in shape towards the end of stage 11 (Green et al., 1993; Chang et al., 2001). This placode invaginates during stages 12-13, forming a deep pouch of approximately 85 cells (Green et al., 1993). Its ventral lip segregates from the rest of the primordium and develops into the Bolwig organ (Green et al., 1993). The remainder of the placode, which will form the optic lobe, detaches from the surface of the embryo and attaches to the lateral brain, maintaining a tubular appearance until larval hatching (Green et al., 1993). Its anterior and posterior domains will become the larval inner and outer optic anlage, respectively (Chang et al., 2001). The cells that will become the eye disc are anterior and dorsal to the optic lobe placode cells (Chang et al., 2001). They move into the interior of the embryo during head involution, when they are pushed under the dorsal ridge (Huang et al., 2017).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064481</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0141490</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0235170</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0243080</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001059"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>optic lobe placode</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0151275</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0141490</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001059"/>
@@ -3874,7 +3880,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00001727 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001727">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3882,6 +3887,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism during the period between hatching and prepupa formation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0002548</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00001727</oboInOwl:id>
@@ -3890,6 +3896,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <rdfs:label>larva</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Organism during the period between hatching and prepupa formation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0036849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3944,7 +3957,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4193,7 +4205,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047552"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5496,7 +5507,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00004970 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004970">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007013"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5965,7 +5975,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005144 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005144">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100318"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6240,7 +6249,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005293 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005293">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000054"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005290"/>
         <rdfs:subClassOf>
@@ -6268,7 +6276,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005301 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005301">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000054"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005305"/>
         <rdfs:subClassOf>
@@ -6339,7 +6346,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005306 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005306">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000054"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005305"/>
         <rdfs:subClassOf>
@@ -6367,7 +6373,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005311 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005311">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005304"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6397,7 +6402,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005317 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005317">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6425,7 +6429,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005321 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005321">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6452,7 +6455,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005331 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005331">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6481,7 +6483,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005333 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005333">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6508,7 +6509,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005384 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005384">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100315"/>
         <rdfs:subClassOf>
@@ -6870,7 +6870,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005434 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005434">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004208"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005426"/>
         <rdfs:subClassOf>
@@ -6898,6 +6897,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anlage of the visual system in the gastrula embryo that will give rise to the visual primordium.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>eye field</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>A VisSys</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>AVis</oboInOwl:hasRelatedSynonym>
@@ -6911,6 +6911,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anlage of the visual system in the gastrula embryo that will give rise to the visual primordium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0141490</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005434"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>eye field</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0141490</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005434"/>
@@ -6924,7 +6931,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005495 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005495">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7192,7 +7198,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005558 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005558">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004208"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7614,7 +7619,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Visual organ of the larva. It consists of a dense cluster of 12 ciliated photoreceptor neurons located on either side of the midline in a dorsomedial position in the anterior region of the larva.</obo:IAO_0000115>
+        <obo:IAO_0000115>Visual organ of the larva that is anchored to the basal surface of the thin epithelium of the dorsal pouch, lateral to the musculature of the pharynx (Green et al., 1993; Hartenstein et al., 2019). It consists of a dense cluster of approximately 12 photoreceptor neurons and no support cells (Green et al., 1993; Hartenstein et al., 2019). It is connected to the brain via the Bolwig nerve (Green et al., 1993).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>FBbt:00002643</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>FBbt:00005742</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>FBbt:00015250</oboInOwl:hasAlternativeId>
@@ -7637,8 +7642,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005805"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Visual organ of the larva. It consists of a dense cluster of 12 ciliated photoreceptor neurons located on either side of the midline in a dorsomedial position in the anterior region of the larva.</owl:annotatedTarget>
+        <owl:annotatedTarget>Visual organ of the larva that is anchored to the basal surface of the thin epithelium of the dorsal pouch, lateral to the musculature of the pharynx (Green et al., 1993; Hartenstein et al., 2019). It consists of a dense cluster of approximately 12 photoreceptor neurons and no support cells (Green et al., 1993; Hartenstein et al., 2019). It is connected to the brain via the Bolwig nerve (Green et al., 1993).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064481</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0243080</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005805"/>
@@ -7716,21 +7723,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005830 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005830">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004208"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005495"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00025991"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004450"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005331"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -7743,10 +7737,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005805"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Primordium of the late extended and dorsal closure embryo that gives rise to the larval Bolwig organ. It corresponds to the most posterior region that develops from the visual primordium.</obo:IAO_0000115>
+        <obo:IAO_0000115>Primordium of the embryo that gives rise to the larval Bolwig organ. It develops from the most posterior region of the visual primordium, remaining attached to the surface as the rest of the optic placode becomes internalized during stages 12-13 (Green et al., 1993). It consists of approximately 12 cells, which begin to differentiate into photoreceptors during stage 13 (Green et al., 1993). During stages 15-16, the photoreceptors move out of the epidermis and come to lie attached to the outer lining of the dorsal pouch (Green et al., 1993).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:6005830</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Bolwig&apos;s organ primordium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>P1 BolOrg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval eye primordium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00005830</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
@@ -7756,17 +7751,23 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005830"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Primordium of the late extended and dorsal closure embryo that gives rise to the larval Bolwig organ. It corresponds to the most posterior region that develops from the visual primordium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:VH</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Primordium of the embryo that gives rise to the larval Bolwig organ. It develops from the most posterior region of the visual primordium, remaining attached to the surface as the rest of the optic placode becomes internalized during stages 12-13 (Green et al., 1993). It consists of approximately 12 cells, which begin to differentiate into photoreceptors during stage 13 (Green et al., 1993). During stages 15-16, the photoreceptors move out of the epidermis and come to lie attached to the outer lining of the dorsal pouch (Green et al., 1993).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0064481</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0151275</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0243080</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005830"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>P1 BolOrg</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005830"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>larval eye primordium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0141490</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9180,7 +9181,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00015256 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015256">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004208"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005426"/>
         <rdfs:subClassOf>
@@ -16892,6 +16892,30 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_7227 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7227">
@@ -16959,7 +16983,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000111>specimen role</obo:IAO_0000111>
         <obo:IAO_0000112>liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen.</obo:IAO_0000115>
         <obo:IAO_0000116>22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.</obo:IAO_0000116>
         <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">blood taken from animal: animal continues in study, whereas blood has role specimen.
@@ -17004,9 +17028,10 @@ specimen can later be subject.</obo:IAO_0000116>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111>specimen collection process</obo:IAO_0000111>
-        <obo:IAO_0000112>drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation</obo:IAO_0000112>
+        <obo:IAO_0000112>drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation, collecting a stone from a site</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed.</obo:IAO_0000115>
+        <obo:IAO_0000116>Definition updated following discussion on 2024-10-07 OBI dev call.</obo:IAO_0000116>
         <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000116>Philly2013: A specimen collection can have as part a material entity acquisition, such as ordering from a bank. The distinction is that specimen collection necessarily involves the creation of a specimen role. However ordering cell lines cells from ATCC for use in an investigation is NOT a specimen collection, because the cell lines already have a specimen role.</obo:IAO_0000116>
         <obo:IAO_0000116>Philly2013: The specimen_role for the specimen is created during the specimen collection process.</obo:IAO_0000116>
@@ -17028,10 +17053,55 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000111>specimen collection objective</obo:IAO_0000111>
         <obo:IAO_0000112>The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">OBI recommends against subclassing this term in order to avoid further parallel hierarchies between this term and specimen collection process.</obo:IAO_0000116>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <rdfs:label>specimen collection objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000659"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000477"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000111>specimen from organism</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118>tissue specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>MO_954 organism_part</obo:IAO_0000119>
+        <rdfs:label>specimen from organism</rdfs:label>
     </owl:Class>
     
 
@@ -17063,6 +17133,38 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <obo:IAO_0000116>10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
+        <obo:IAO_0000116>13-02-2009:
+OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
+This issue is outside the scope of OBI.</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051">
@@ -17079,10 +17181,9 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000111 xml:lang="en">specimen</obo:IAO_0000111>
-        <obo:IAO_0000112>Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen; collecting a stone from a site.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity that has the specimen role.</obo:IAO_0000115>
-        <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is collected for potential use as an input upon which measurements or observations are performed.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: James Malone</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
@@ -17097,6 +17198,12 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000477"/>
     
 
 

@@ -7,6 +7,8 @@ _Total number of distinct genes associated with the entity before filtering by e
 
 
 
+
+
 URI: [neo_custom:total_gene_count](http://n2o.neo/custom/total_gene_count)
 
 
@@ -21,8 +23,8 @@ URI: [neo_custom:total_gene_count](http://n2o.neo/custom/total_gene_count)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Dataset](Dataset.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

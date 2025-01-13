@@ -7,6 +7,8 @@ _Developmental stage (FBdv ID) of the Sample or Cluster._
 
 
 
+
+
 URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 
@@ -21,8 +23,8 @@ URI: [RO:0002490](http://purl.obolibrary.org/obo/RO_0002490)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 

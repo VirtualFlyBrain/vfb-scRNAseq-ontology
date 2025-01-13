@@ -7,6 +7,8 @@ _Sex for the entity. Should be 'male' or 'female'._
 
 
 
+
+
 URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 
@@ -21,8 +23,8 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 

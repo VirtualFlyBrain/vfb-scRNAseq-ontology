@@ -7,6 +7,8 @@ _Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase
 
 
 
+
+
 URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id)
 
 
@@ -21,14 +23,14 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://githu
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Class](Class.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Thing](Thing.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

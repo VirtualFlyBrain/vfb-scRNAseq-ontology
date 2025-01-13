@@ -7,6 +7,8 @@ _A gene (FBgn ID) that is expressed by the entity. Max one gene per tsv row alon
 
 
 
+
+
 URI: [RO:0002292](http://purl.obolibrary.org/obo/RO_0002292)
 
 

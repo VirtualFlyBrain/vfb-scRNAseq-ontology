@@ -7,6 +7,8 @@ _neo4j node label to add to entity._
 
 
 
+
+
 URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 
@@ -21,11 +23,11 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Publication](Publication.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

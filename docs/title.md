@@ -7,6 +7,8 @@ _Short description of the entity._
 
 
 
+
+
 URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 
@@ -21,12 +23,12 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [Sample](Sample.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 
 
 
