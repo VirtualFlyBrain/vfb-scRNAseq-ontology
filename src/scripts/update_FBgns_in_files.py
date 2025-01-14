@@ -1,11 +1,11 @@
-import modin.pandas as pd
+import pandas as pd
 pd.set_option('display.max_columns', 10)
 import glob
 import re
 from process_expression_data import expression_file_loader
 from filter_data import DataEntity
 
-# ids to modify
+# ids to modify - old id not in new ids col and id only once in old id col
 mapping = pd.read_csv('tmp/id_validation_table.txt', sep='\t', low_memory=False)
 changed_ids = mapping[~mapping['#submitted_item'].isin(mapping['validated_id'])]
 changed_ids = changed_ids.set_index('#submitted_item', verify_integrity=True)
@@ -14,6 +14,16 @@ replacement_dict = changed_ids['validated_id'].to_dict()
 exp_files = glob.glob('expression_data/*.owl')
 
 regex = re.compile("|".join(replacement_dict))
+print(replacement_dict)
+print(regex)
+
+def process_file(filename, pattern=regex, replacement_dict=replacement_dict):
+    output_filename = filename.replace('VFB_scRNAseq_exp_', 'processed_dataset_')
+    with open(filename, "r") as infile, open(output_filename, "w") as outfile:
+        for line in infile:
+            processed_line = pattern.sub(lambda m: replacement_dict[m.group(0)], line)
+            outfile.write(processed_line)
+    print(f'{filename} successfully processed to {output_filename}!')
 
 for f in exp_files:
     dataset = 'FlyBase:' + re.search('FBlc[0-9]{7}', f)[0]
@@ -39,7 +49,4 @@ for f in exp_files:
     if len(old_exists) == 0:
         print(f'nothing to update in {f}')
     else:
-        with open(f, "r") as infile, open(f.replace('dataset_', 'processed_dataset_'), "w+") as outfile:
-            for line in infile:
-                outfile.write(regex.sub(lambda m: replacement_dict[m.group()], line))
-            print(f'{f} updated!')
+        process_file(f)
