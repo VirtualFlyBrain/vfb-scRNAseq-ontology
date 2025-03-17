@@ -24,8 +24,8 @@ URI: [dc:source](http://purl.org/dc/terms/source)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Clustering](Clustering.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 
 

@@ -23,11 +23,11 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 
 
 

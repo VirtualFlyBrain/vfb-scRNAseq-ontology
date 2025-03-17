@@ -74,6 +74,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000028"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
@@ -102,6 +108,26 @@
         <obo:IAO_0000115>The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115>The official definition.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
 Barry Smith
 
@@ -199,6 +225,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002259 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002259">
@@ -289,6 +321,14 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#RD">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -423,6 +463,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
@@ -456,8 +502,13 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112>disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
+        <obo:IAO_0000115>An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
         <obo:IAO_0000115>Reference database or publication source.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
         <rdfs:label>database_cross_reference</rdfs:label>
+        <rdfs:label>has cross-reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -489,6 +540,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
     
 
 
@@ -619,6 +676,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this disease course realizes this disease</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -709,16 +767,16 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000111>has_specified_input</obo:IAO_0000111>
+        <obo:IAO_0000111>has specified input</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is_specified_input_of</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified input of</obo:IAO_0000115>
         <obo:IAO_0000116>8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Coutot</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
+        <rdfs:label xml:lang="en">has specified input</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -728,13 +786,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000111>is_specified_input_of</obo:IAO_0000111>
+        <obo:IAO_0000111>is specified input of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
+        <rdfs:label xml:lang="en">is specified input of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -745,14 +803,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000111>has_specified_output</obo:IAO_0000111>
+        <obo:IAO_0000111>has specified output</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is_specified_output_of</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified output of</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
+        <rdfs:label xml:lang="en">has specified output</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -762,12 +820,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000111>is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000111>is specified output of</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+        <rdfs:label xml:lang="en">is specified output of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -890,10 +948,17 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">is concretized as</rdfs:label>
     </owl:ObjectProperty>
     
@@ -902,11 +967,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">concretizes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1293,7 +1365,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002254"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000112>Mammalian thymus has developmental contribution from some pharyngeal pouch 3; Mammalian thymus has developmental contribution from some pharyngeal pouch 4 [Kardong]</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -1489,6 +1561,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
         <obo:IAO_0000119>SIO</obo:IAO_0000119>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
@@ -1544,7 +1617,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">x has the potential to develop into y iff x develops into y or if x is capable of developing into y</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <rdfs:comment>This relation has a stronger meaning than merely indicating that X may develop into Y, in that the capability of developing into Y is always present, even if X does not always actually develop into Y. In particular, this means that if Y is restricted to a given taxon T, X is necessarily likewise restricted.</rdfs:comment>
         <rdfs:label xml:lang="en">has potential to develop into</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/oborel/obo-relations/issues/810"/>
     </owl:ObjectProperty>
     
 
@@ -1599,6 +1674,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002501"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002418"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
         <obo:IAO_0000115>p is &apos;causally upstream or within&apos; q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.</obo:IAO_0000115>
         <obo:IAO_0000116>We would like to make this disjoint with &apos;preceded by&apos;, but this is prohibited in OWL2</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
@@ -2218,38 +2297,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004860"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005311"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005317"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005321"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005331"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005333"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053322"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2258,26 +2307,30 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBgn0283442"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Cell that forms at the posterior pole of the early embryo. It is a diploid germ cell that enters into close association with the somatic cells of the gonad and proliferates during larval stages to give rise to male or female germ cells.</obo:IAO_0000115>
+        <obo:IAO_0000115>Cell that begins as a pole cell, becomes incorporated into the gonad and can develop into a germline stem cell (Campos-Ortega and Hartenstein, 1997; Dansereau and Lasko, 2008; Slaidina et al., 2020).</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>GC</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>CL:0000301</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>GC</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>pole cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PGC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>pole cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00000092</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:comment>Can be identified by expression of vasa (Slaidina et al., 2020).</rdfs:comment>
+        <rdfs:comment>Can be identified in the larva by expression of vasa (Slaidina et al., 2020). Only a small subset of pole cells can become germ cells and this fate might be specified by the time the posterior midgut primordium invaginates (Okada, 1998).</rdfs:comment>
         <rdfs:label>primordial germ cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Cell that forms at the posterior pole of the early embryo. It is a diploid germ cell that enters into close association with the somatic cells of the gonad and proliferates during larval stages to give rise to male or female germ cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0045371</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Cell that begins as a pole cell, becomes incorporated into the gonad and can develop into a germline stem cell (Campos-Ortega and Hartenstein, 1997; Dansereau and Lasko, 2008; Slaidina et al., 2020).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0216027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0244767</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000092"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>GC</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244767</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -3796,6 +3849,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002451"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>System comprising the internal and external anatomy required for production of gametes and fertilization. It is sexually dimorphic.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000990</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00004857</oboInOwl:id>
@@ -3803,6 +3857,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#expressionslim_flybase_ribbon"/>
         <rdfs:label>reproductive system</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004857"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>System comprising the internal and external anatomy required for production of gametes and fertilization. It is sexually dimorphic.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3837,12 +3897,20 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004860">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007002"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+        <obo:IAO_0000115>Cell that can contribute DNA to the next generation. It is or may become a gamete.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>germ cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00004860</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:label>germline cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004860"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Cell that can contribute DNA to the next generation. It is or may become a gamete.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0216027</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3851,6 +3919,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004861">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004860"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Stem cell that is the precursor of gametes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CL:0000014</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>GSC</oboInOwl:hasExactSynonym>
@@ -4182,7 +4256,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004891">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007012"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048491"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4201,7 +4274,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005290"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Specialized region of the female egg cytoplasm characterized by the presence of dense organelles (polar granules).</obo:IAO_0000115>
+        <obo:IAO_0000115>Specialized region of the posterior egg/embryo cytoplasm characterized by the presence of non-membrane limited electron dense bodies (polar granules) (Okada, 1998).</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>germ plasm</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00004891</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
@@ -4211,8 +4285,15 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004891"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Specialized region of the female egg cytoplasm characterized by the presence of dense organelles (polar granules).</owl:annotatedTarget>
+        <owl:annotatedTarget>Specialized region of the posterior egg/embryo cytoplasm characterized by the presence of non-membrane limited electron dense bodies (polar granules) (Okada, 1998).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0064781</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004891"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>germ plasm</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4292,8 +4373,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007585"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>.</obo:IAO_0000115>
+        <obo:IAO_0000115>Air-filled network of tracheae, opening to the exterior via spiracles and containing minute tracheoles where gaseous exchange between air and tissues occurs (Miller, 1950).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0005155</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>respiratory system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00005024</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
@@ -4303,8 +4385,15 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005024"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>.</owl:annotatedTarget>
+        <owl:annotatedTarget>Air-filled network of tracheae, opening to the exterior via spiracles and containing minute tracheoles where gaseous exchange between air and tissues occurs (Miller, 1950).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0064787</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005024"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>respiratory system</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4339,6 +4428,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004856"/>
+        <obo:IAO_0000115>System that functions to circulate hemolymph throughout the body. It is an open circulatory system, consisting of the dorsal vessel, body cavity, accessory pulsatile organs and the hemolymph (Miller, 1950).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0009054</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00005057</oboInOwl:id>
@@ -4346,6 +4436,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#expressionslim_flybase_ribbon"/>
         <rdfs:label>circulatory system</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005057"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>System that functions to circulate hemolymph throughout the body. It is an open circulatory system, consisting of the dorsal vessel, body cavity, accessory pulsatile organs and the hemolymph (Miller, 1950).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0007735</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -4440,12 +4536,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007344"/>
+        <obo:IAO_0000028>NB</obo:IAO_0000028>
         <obo:IAO_0000115>Precursor of the central nervous system that derives from the neurogenic region of the ectoderm or the mesectoderm (Doe, 1992; Schmid et al., 1999; Crews, 2019). It produces neurons and/or glia (Doe, 1992; Beckervordersandforth et al., 2008). Neuroblasts may also divide during adult life to regenerate the adult brain (Fernandez-Hernandez et al., 2013).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CL:0000338</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00005146</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>NB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>neural stem cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>NB</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00005146</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
@@ -4462,6 +4559,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0205499</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222020</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244240</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005146"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>NB</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005146"/>
@@ -4715,60 +4818,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryo during stages 9-12.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0229323</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00005331 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005331">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004450"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Embryo during the dorsal closure stage, which corresponds to stages 13-15 (Hartenstein, 1993; Campos-Ortega and Hartenstein, 1997). Dorsal closure occurs by extension of the dorsal epidermal primordium on either side, leading to fusion at the dorsal midline (Campos-Ortega and Hartenstein, 1997).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FBdv:00005331</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>contracted germ band embryo</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>head involution embryo</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>FBbt:00005331</oboInOwl:id>
-        <rdfs:label>dorsal closure embryo</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005331"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Embryo during the dorsal closure stage, which corresponds to stages 13-15 (Hartenstein, 1993; Campos-Ortega and Hartenstein, 1997). Dorsal closure occurs by extension of the dorsal epidermal primordium on either side, leading to fusion at the dorsal midline (Campos-Ortega and Hartenstein, 1997).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0064803</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00005333 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005333">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005331"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Embryo during stages 16 and 17.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FBdv:00005333</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UBERON:0000323</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00005333</oboInOwl:id>
-        <rdfs:label>late embryo</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005333"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Embryo during stages 16 and 17.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -5352,12 +5401,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+        <obo:IAO_0000115>Somatic cell that is a precursor to a mature cell.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007008</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#scrnaseq_slim"/>
         <rdfs:label>somatic precursor cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Somatic cell that is a precursor to a mature cell.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -6493,6 +6549,55 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Spherical cell that arises at the posterior pole of the stage 3 embryo (Campos-Ortega and Hartenstein, 1997; Okada, 1998). These cells are formed by nuclei that migrate posteriorly to the pole plasm, which they incorporate as cytoplasm as they bud off to become cells (Okada, 1998). At the blastoderm stage, they are mostly found posterior to the posterior midgut anlage and some cells divide up to two times (Technau and Campos-Ortega, 1986; Campos-Ortega and Hartenstein, 1997). They accompany the posterior midgut primordium as it sinks inwards during gastrulation and as it moves anteriorly during germ band extension (Campos-Ortega and Hartenstein, 1997). At stage 10, pole cells exit the posterior midgut primordium and after some further movements, a subset of the original set of pole cells become incorporated into the gonad by stage 16 (Campos-Ortega and Hartenstein, 1997).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-16T14:46:10Z</dc:date>
+        <oboInOwl:hasExactSynonym>Pole cells that become incorporated into the gonad are the primordial germ cells (FBbt:00000092).</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prospective PGC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prospective primordial germ cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053322</oboInOwl:id>
+        <rdfs:label>embryonic pole cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053322"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spherical cell that arises at the posterior pole of the stage 3 embryo (Campos-Ortega and Hartenstein, 1997; Okada, 1998). These cells are formed by nuclei that migrate posteriorly to the pole plasm, which they incorporate as cytoplasm as they bud off to become cells (Okada, 1998). At the blastoderm stage, they are mostly found posterior to the posterior midgut anlage and some cells divide up to two times (Technau and Campos-Ortega, 1986; Campos-Ortega and Hartenstein, 1997). They accompany the posterior midgut primordium as it sinks inwards during gastrulation and as it moves anteriorly during germ band extension (Campos-Ortega and Hartenstein, 1997). At stage 10, pole cells exit the posterior midgut primordium and after some further movements, a subset of the original set of pole cells become incorporated into the gonad by stage 16 (Campos-Ortega and Hartenstein, 1997).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0045371</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0089570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053322"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>prospective PGC</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053322"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>prospective primordial germ cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00057001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00057001">
@@ -7064,6 +7169,80 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059314"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A(n) somatic cell that is part of a(n) amnioserosa.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059340">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007045"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059305"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A(n) somatic cell that is part of a(n) trunk ectoderm.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-16T16:51:10Z</dc:date>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00059340</oboInOwl:id>
+        <rdfs:label>somatic cell of trunk ectoderm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059340"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A(n) somatic cell that is part of a(n) trunk ectoderm.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00059341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059341">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000112"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059340"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A(n) somatic cell that is part of a(n) dorsal ectoderm.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-16T16:51:10Z</dc:date>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00059341</oboInOwl:id>
+        <rdfs:label>somatic cell of dorsal ectoderm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059341"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A(n) somatic cell that is part of a(n) dorsal ectoderm.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -12456,17 +12635,20 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
         <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1515976"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <oboInOwl:hasDbXref>AAO:0010841</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BFO:0000004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:6</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBbt_root:00000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MA:0000001</oboInOwl:hasDbXref>
@@ -12479,6 +12661,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
         <rdfs:label>anatomical entity</rdfs:label>
