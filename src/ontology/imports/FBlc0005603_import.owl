@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0005603_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-03-17/imports/FBlc0005603_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/fbcv/releases/2025-02-13/fbcv-base.owl>)
-Annotation(owl:versionInfo "2025-03-17")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-04-29/imports/FBlc0005603_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/fbcv/releases/2025-03-27/fbcv-base.owl>)
+Annotation(owl:versionInfo "2025-04-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -3132,6 +3132,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007276> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007330> (organ system subdivision)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-1373-1705") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00007330> "Any subdivision of an organ system.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00007330> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00007330> "2008-12-12T07:22:29Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00007330> "UBERON:0011216")
@@ -3139,6 +3140,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00007330> "FBbt:00007330")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007330> "organ system subdivision")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007330> <http://purl.obolibrary.org/obo/FBbt_00100313>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007330> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004856>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007344> (somatic stem cell)
 
@@ -5386,6 +5388,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100313> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100318> (somatic cell)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0101973") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00100318> "Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00100318> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00100318> "2010-11-04T08:35:02Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00100318> "fly_anatomy.ontology")

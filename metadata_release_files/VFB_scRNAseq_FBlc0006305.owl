@@ -2128,6 +2128,25 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0013010 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0013010">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0013010"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000112>An optic lobe intrinsic neuron has its synapses restricted to optic lobe neuropil.</obo:IAO_0000112>
+        <obo:IAO_0000115>A relationship between a neuron and a region, where all of the functionally relevant input and output synapses are in that region.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-17T12:17:24Z</dc:date>
+        <oboInOwl:hasExactSynonym>intrinsic to</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This relation may still be used if a very small number of synapses fall slightly outside the boundaries of the region, but any class using this relation should not have another restriction using this relation to another non-overlapping region.</rdfs:comment>
+        <rdfs:label xml:lang="en">synapses restricted to region</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0017001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0017001">
@@ -5827,62 +5846,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FBbt_00003660 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003660">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005125"/>
-        <obo:IAO_0000115>An interneuron that extends projections between different neuropil domains.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>VFB:FBbt_00003660</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00003660</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>extrinsic neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003660"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An interneuron that extends projections between different neuropil domains.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:SPR</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00003664 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003664">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051493"/>
-        <obo:IAO_0000115>Neuron of the central nervous system that arborizes exclusively within a given neuropil domain, ipsilaterally or bilaterally.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>FBbt:00005126</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>VFB:FBbt_00003664</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>local interneuron</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>FBbt:00003664</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>intrinsic neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003664"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Neuron of the central nervous system that arborizes exclusively within a given neuropil domain, ipsilaterally or bilaterally.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:SPR</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0205263</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0210154</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003664"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>local interneuron</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0210154</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FBbt_00003701 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003701">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053384"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6917,6 +6885,59 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003882 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003882">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003852"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003852"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>Li</obo:IAO_0000028>
+        <obo:IAO_0000115>Neuron that only innervates the lobula.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00003882</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Li</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lobular intrinsic neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00003882</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>lobula intrinsic neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003882"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>Li</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003882"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuron that only innervates the lobula.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003882"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Li</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00003885 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003885">
@@ -7131,6 +7152,64 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>lobula plate layer D</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252436</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003910 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003910">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003885"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000634"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003885"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>Lpi</obo:IAO_0000028>
+        <obo:IAO_0000115>Any interneuron that innervates only the lobula plate (Raghu and Borst, 2011).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00003910</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Lpi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00003910</oboInOwl:id>
+        <rdfs:label>lobula plate intrinsic neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003910"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>Lpi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0213690</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003910"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any interneuron that innervates only the lobula plate (Raghu and Borst, 2011).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0213690</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003910"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Lpi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0213690</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
     
 
@@ -8057,6 +8136,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A neuron that is entirely confined to the central nervous system and is neither a sensory neuron nor a motor neuron.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>FBbt:00005126</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>CL:0000099</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00005125</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>central neuron</oboInOwl:hasExactSynonym>
@@ -8066,6 +8146,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#scrnaseq_slim"/>
+        <rdfs:comment>alt_id of FBbt:00005126 moved over following obsoletion of &apos;intrinsic neuron&apos;, unclear what this term was or whether &apos;interneuron&apos; is a suitable replacement.</rdfs:comment>
         <rdfs:label>interneuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -10637,6 +10718,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any subdivision of an organ system.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:29Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0011216</oboInOwl:hasDbXref>
@@ -10644,6 +10732,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00007330</oboInOwl:id>
         <rdfs:label>organ system subdivision</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any subdivision of an organ system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -10714,7 +10808,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00007392 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007392">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003660"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053396"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
@@ -10755,6 +10849,47 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>second order projection neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0255988</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007426">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000634"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000634"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A tract of the central nervous system that does not cross the midline.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-03-10T11:43:43Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00007426</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ipsilateral tract</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00007426</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>fascicle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007426"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A tract of the central nervous system that does not cross the midline.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10852,23 +10987,15 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00003664"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003701"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003664"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052046"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059247"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003701"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
@@ -10881,7 +11008,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003701"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Any intrinsic neuron (FBbt:00003664) that has synaptic IO in region some adult optic lobe (FBbt:00003701).</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003701"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any neuron (FBbt:00005106) that synapses restricted to region some adult optic lobe (FBbt:00003701).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00007577</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007577</oboInOwl:id>
@@ -10890,7 +11023,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any intrinsic neuron (FBbt:00003664) that has synaptic IO in region some adult optic lobe (FBbt:00003701).</owl:annotatedTarget>
+        <owl:annotatedTarget>Any neuron (FBbt:00005106) that synapses restricted to region some adult optic lobe (FBbt:00003701).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -10908,7 +11041,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003701"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A columnar neuron whose arborizations are restricted to the optic lobe.</obo:IAO_0000115>
+        <obo:IAO_0000115>A columnar neuron whose arborizations are restricted to the adult optic lobe.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00007578</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007578</oboInOwl:id>
@@ -10917,7 +11050,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007578"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A columnar neuron whose arborizations are restricted to the optic lobe.</owl:annotatedTarget>
+        <owl:annotatedTarget>A columnar neuron whose arborizations are restricted to the adult optic lobe.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -11851,6 +11984,64 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00047733 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047733">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048289"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001366"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001920"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111226"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048289"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Larval neuron that does not extend neurites beyond the optic neuropil.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-18T11:03:37Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00047733</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>VLN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00047733</oboInOwl:id>
+        <rdfs:label>larval visual local interneuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047733"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Larval neuron that does not extend neurites beyond the optic neuropil.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237760</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047733"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>VLN</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237760</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00047734 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00047734">
@@ -12479,8 +12670,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003660"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052046"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053396"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
@@ -13004,29 +13195,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Neuron that is in a transient, immature, state between birth and its first mature morphology.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0156020</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247750</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00051493 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051493">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005125"/>
-        <obo:IAO_0000115>Neuron of the central nervous system that has the majority of its inputs and outputs in close proximity within the same region of the neuropil. Some arbors may spread outside of the region, but without sufficient polarity to define the neuron as an input or output neuron.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-22T08:47:38Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00051493</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>local interneuron</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00051493</oboInOwl:id>
-        <rdfs:label>local neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051493"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Neuron of the central nervous system that has the majority of its inputs and outputs in close proximity within the same region of the neuropil. Some arbors may spread outside of the region, but without sufficient polarity to define the neuron as an input or output neuron.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0232785</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0242477</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13864,18 +14032,152 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003624"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Region of the adult brain that receives photoreceptor input, i.e. the optic lobe or ocellar ganglion.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-13T15:24:25Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00053384</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053384</oboInOwl:id>
+        <rdfs:label>adult primary visual center</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053384"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Region of the adult brain that receives photoreceptor input, i.e. the optic lobe or ocellar ganglion.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260546</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053385">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any neuron with its arborizations exclusively within the medulla (Raghu and Borst, 2011).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-13T14:52:57Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00053385</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053385</oboInOwl:id>
+        <rdfs:label>medulla intrinsic neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053385"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any neuron with its arborizations exclusively within the medulla (Raghu and Borst, 2011).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0213690</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053386">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110639"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110639"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any neuron (FBbt:00005106) that synapses restricted to region some adult subesophageal zone (FBbt:00110639).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-13T16:11:00Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00053386</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>adult SEZ intrinsic neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053386</oboInOwl:id>
+        <rdfs:label>adult subesophageal zone intrinsic neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053386"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any neuron (FBbt:00005106) that synapses restricted to region some adult subesophageal zone (FBbt:00110639).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053396">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005125"/>
+        <obo:IAO_0000115>An interneuron that has distinct dendritic and axonal branches that arborize in different neuropil regions. These neurons relay information between different parts of the central nervous system.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-21T10:32:23Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00053396</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053396</oboInOwl:id>
+        <rdfs:comment>Includes neurons with axonal and dendritic arbors in the same region if there is another branch that extends elsewhere (Frechter et al., 2019). Excludes neurons that only have a &apos;local&apos; innervation pattern, where both inputs/outputs may be present on arbors that span neuropil boundaries.</rdfs:comment>
+        <rdfs:label>input/output neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053396"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An interneuron that has distinct dendritic and axonal branches that arborize in different neuropil regions. These neurons relay information between different parts of the central nervous system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0238440</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0242628</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00057001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00057001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007009"/>
+        <obo:IAO_0000115>Division of an organism along its anterior-posterior axis.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-06-30T04:15:23Z</dc:date>
-        <oboInOwl:hasDbXref>UBERON:6057001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0011676</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00057001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <rdfs:label>anterior-posterior subdivision of organism</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00057001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Division of an organism along its anterior-posterior axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -14027,23 +14329,22 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00003664"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047887"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003664"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052046"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047887"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Any neuron that has its soma in the adult central brain and whose processes are restricted to the central brain.</obo:IAO_0000115>
+        <obo:IAO_0000115>Neuron with its synapses restricted to the central brain.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-13T16:35:14Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059245</oboInOwl:hasDbXref>
@@ -14055,7 +14356,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059245"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any neuron that has its soma in the adult central brain and whose processes are restricted to the central brain.</owl:annotatedTarget>
+        <owl:annotatedTarget>Neuron with its synapses restricted to the central brain.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -14064,21 +14365,38 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00059247 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00059247">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047095"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053384"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047736"/>
-        <obo:IAO_0000115>A neuron that is fully contained within the optic lobes or the ocellar ganglia.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052046"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuron with its synapses restricted to the primary visual centers of the adult, i.e. the optic lobes or ocellar ganglia.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-16T09:39:18Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059247</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00059247</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>visual neuropil intrinsic neuron</rdfs:label>
+        <rdfs:label>adult visual neuropil intrinsic neuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059247"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A neuron that is fully contained within the optic lobes or the ocellar ganglia.</owl:annotatedTarget>
+        <owl:annotatedTarget>Neuron with its synapses restricted to the primary visual centers of the adult, i.e. the optic lobes or ocellar ganglia.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -14659,12 +14977,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007002"/>
+        <obo:IAO_0000115>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T08:35:02Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100318</oboInOwl:id>
         <rdfs:label>somatic cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -20776,6 +21101,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <rdfs:label>structure</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000634"/>
     
 
 

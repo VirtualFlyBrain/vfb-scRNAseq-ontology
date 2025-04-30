@@ -23,8 +23,8 @@ URI: [neo_custom:filtered_gene_count](http://n2o.neo/custom/filtered_gene_count)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Dataset](Dataset.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 

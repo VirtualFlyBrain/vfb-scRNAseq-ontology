@@ -11,9 +11,9 @@ prepare_release_notest: $(SRC) filtered_imports release_ontology_files $(REPORTD
 
 # flags to bypass recreation of existing gene expression and experiment metadata
 # NB refreshing expression data will greatly increase processing time (may take several days)
-UPDATE_FROM_FB = false
+UPDATE_FROM_FB = true
 REFRESH_EXP = false
-REFRESH_META = false
+REFRESH_META = true
 IMPORTS_ONLY = false
 IMP = true
 

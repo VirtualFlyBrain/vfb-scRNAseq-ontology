@@ -2369,6 +2369,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A squamous epithelial tissue that derives from the dorsal-most region of the cellular blastoderm and that covers the dorsal side of the embryo following germ-band retraction, prior to dorsal closure.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0041814</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0174479</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244630</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246683</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -5174,7 +5175,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00005835 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005835">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
+        <obo:IAO_0000115>Structure associated with the embryo that does not contribute to the mature embryo (Reed et al., 2004).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CARO:0000042</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UBERON:0000478</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -5184,6 +5186,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:comment>Odd to be part_of embryo, but where would you put it instead? ds051110.</rdfs:comment>
         <rdfs:label>extraembryonic structure</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005835"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Structure associated with the embryo that does not contribute to the mature embryo (Reed et al., 2004).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0174479</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -5742,6 +5750,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any subdivision of an organ system.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:29Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0011216</oboInOwl:hasDbXref>
@@ -5749,6 +5764,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00007330</oboInOwl:id>
         <rdfs:label>organ system subdivision</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any subdivision of an organ system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -6602,14 +6623,21 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00057001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007009"/>
+        <obo:IAO_0000115>Division of an organism along its anterior-posterior axis.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-06-30T04:15:23Z</dc:date>
-        <oboInOwl:hasDbXref>UBERON:6057001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0011676</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00057001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <rdfs:label>anterior-posterior subdivision of organism</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00057001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Division of an organism along its anterior-posterior axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -7273,12 +7301,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007002"/>
+        <obo:IAO_0000115>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T08:35:02Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100318</oboInOwl:id>
         <rdfs:label>somatic cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 

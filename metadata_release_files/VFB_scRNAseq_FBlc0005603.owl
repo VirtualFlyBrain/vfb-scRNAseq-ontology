@@ -5835,6 +5835,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any subdivision of an organ system.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:29Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0011216</oboInOwl:hasDbXref>
@@ -5842,6 +5849,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00007330</oboInOwl:id>
         <rdfs:label>organ system subdivision</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any subdivision of an organ system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -11983,12 +11996,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007002"/>
+        <obo:IAO_0000115>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T08:35:02Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100318</oboInOwl:id>
         <rdfs:label>somatic cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 

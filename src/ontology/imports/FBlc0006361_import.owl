@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0006361_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-03-17/imports/FBlc0006361_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/fbcv/releases/2025-02-13/fbcv-base.owl>)
-Annotation(owl:versionInfo "2025-03-17")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-04-29/imports/FBlc0006361_import.owl>
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/fbcv/releases/2025-03-27/fbcv-base.owl>)
+Annotation(owl:versionInfo "2025-04-29")
 
 Declaration(Class(<http://flybase.org/reports/FBgn0002565>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003507>))
@@ -638,6 +638,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052759>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052760>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052761>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052762>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053390>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053391>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00057001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058111>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058143>))
@@ -7057,8 +7059,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005461> ObjectSomeValuesFrom(<
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005473> (gonadal sheath proper primordium)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0092473") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00005473> "The primordium of the gonadal sheath. This arises from clusters of cells in parasegments 10, 11 and 12 of the dorsal branch of the fat body/gonad primordium which split off during stage 14 and then cluster around the germ cells.")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0092473") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00005473> "SGP")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0092473") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FBbt_00005473> "somatic gonadal precursor")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0092473") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/FBbt_00005473> "SGP")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0092473") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/FBbt_00005473> "somatic gonadal precursor")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00005473> "fly_anatomy.ontology")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/FBbt_00005473> "gonadal mesoderm")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:VH") Annotation(rdf:type owl:Axiom) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/FBbt_00005473> "gonadal sheath specific anlage")
@@ -8572,6 +8574,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007325> ObjectSomeValuesFrom(<
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007330> (organ system subdivision)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-1373-1705") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00007330> "Any subdivision of an organ system.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00007330> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00007330> "2008-12-12T07:22:29Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00007330> "UBERON:0011216")
@@ -8579,6 +8582,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00007330> "FBbt:00007330")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007330> "organ system subdivision")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007330> <http://purl.obolibrary.org/obo/FBbt_00100313>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007330> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004856>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007331> (segmental subdivision of organ system)
 
@@ -10151,10 +10155,9 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00051985> "fly_anatomy.ontology")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00051985> "FBbt:00051985")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00051985> "larval ring gland projection neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00051985> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00049602>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00049645>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051985> <http://purl.obolibrary.org/obo/FBbt_00051965>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00051985> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00049645>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051985> <http://purl.obolibrary.org/obo/FBbt_00058212>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051985> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00049645>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051985> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00053391>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00052007> (adult neurosecretory neuron)
 
@@ -10584,11 +10587,40 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052762> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052762> <http://purl.obolibrary.org/obo/FBbt_00052760>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052762> <http://purl.obolibrary.org/obo/FBbt_00059273>)
 
+# Class: <http://purl.obolibrary.org/obo/FBbt_00053390> (adult nervus corporis cardiaci)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:Autogenerated") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00053390> "Any nervus corporis cardiaci of the adult.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00053390> <https://orcid.org/0000-0002-1373-1705>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00053390> "2025-03-18T15:59:45Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00053390> "VFB:FBbt_00053390")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00053390> "fly_anatomy.ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00053390> "FBbt:00053390")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00053390> "adult nervus corporis cardiaci")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00053390> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00049645> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00003004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053390> <http://purl.obolibrary.org/obo/FBbt_00049645>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053390> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005892>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053390> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00003004>))
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00053391> (larval nervus corporis cardiaci)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FBC:Autogenerated") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00053391> "Any nervus corporis cardiaci of the larva.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00053391> <https://orcid.org/0000-0002-1373-1705>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00053391> "2025-03-18T16:00:17Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00053391> "VFB:FBbt_00053391")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00053391> "fly_anatomy.ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00053391> "FBbt:00053391")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00053391> "larval nervus corporis cardiaci")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00053391> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00049645> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00001727>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053391> <http://purl.obolibrary.org/obo/FBbt_00049645>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053391> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005893>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053391> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00001727>))
+
 # Class: <http://purl.obolibrary.org/obo/FBbt_00057001> (anterior-posterior subdivision of organism)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-1373-1705") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00057001> "Division of an organism along its anterior-posterior axis.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00057001> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00057001> "2008-06-30T04:15:23Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00057001> "UBERON:6057001")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00057001> "UBERON:0011676")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00057001> "fly_anatomy.ontology")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/FBbt_00057001> "FBbt:00057001")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/FBbt_00057001> <http://purl.obolibrary.org/obo/fbbt#larval_OF>)
@@ -11184,7 +11216,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00059246> "a
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00059246> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00003624>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00049645>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00059246> <http://purl.obolibrary.org/obo/FBbt_00051964>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00059246> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00003624>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00059246> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00049645>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00059246> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00053390>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00059269> (adult salivary gland epithelial cell)
 
@@ -11757,6 +11789,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100317> ObjectSomeValuesFrom(<
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100318> (somatic cell)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FlyBase:FBrf0101973") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FBbt_00100318> "Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FBbt_00100318> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FBbt_00100318> "2010-11-04T08:35:02Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/FBbt_00100318> "fly_anatomy.ontology")

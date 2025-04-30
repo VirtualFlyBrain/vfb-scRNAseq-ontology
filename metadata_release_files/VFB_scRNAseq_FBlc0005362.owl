@@ -2079,6 +2079,25 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0013010 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0013010">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0013010"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000112>An optic lobe intrinsic neuron has its synapses restricted to optic lobe neuropil.</obo:IAO_0000112>
+        <obo:IAO_0000115>A relationship between a neuron and a region, where all of the functionally relevant input and output synapses are in that region.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-17T12:17:24Z</dc:date>
+        <oboInOwl:hasExactSynonym>intrinsic to</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This relation may still be used if a very small number of synapses fall slightly outside the boundaries of the region, but any class using this relation should not have another restriction using this relation to another non-overlapping region.</rdfs:comment>
+        <rdfs:label xml:lang="en">synapses restricted to region</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0017001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0017001">
@@ -5063,37 +5082,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FBbt_00003664 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003664">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051493"/>
-        <obo:IAO_0000115>Neuron of the central nervous system that arborizes exclusively within a given neuropil domain, ipsilaterally or bilaterally.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>FBbt:00005126</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>VFB:FBbt_00003664</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>local interneuron</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>FBbt:00003664</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>intrinsic neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003664"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Neuron of the central nervous system that arborizes exclusively within a given neuropil domain, ipsilaterally or bilaterally.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:SPR</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0205263</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0210154</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003664"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>local interneuron</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0210154</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FBbt_00003685 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003685">
@@ -5932,6 +5920,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A neuron that is entirely confined to the central nervous system and is neither a sensory neuron nor a motor neuron.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>FBbt:00005126</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>CL:0000099</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00005125</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>central neuron</oboInOwl:hasExactSynonym>
@@ -5941,6 +5930,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#scrnaseq_slim"/>
+        <rdfs:comment>alt_id of FBbt:00005126 moved over following obsoletion of &apos;intrinsic neuron&apos;, unclear what this term was or whether &apos;interneuron&apos; is a suitable replacement.</rdfs:comment>
         <rdfs:label>interneuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -8725,6 +8715,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004856"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any subdivision of an organ system.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-12-12T07:22:29Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0011216</oboInOwl:hasDbXref>
@@ -8732,6 +8729,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00007330</oboInOwl:id>
         <rdfs:label>organ system subdivision</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007330"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any subdivision of an organ system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -8828,18 +8831,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00003664"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005801"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003664"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005125"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005801"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10145,6 +10148,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110189"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00011929"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Kenyon cell (KC) of the larval (or late embryonic) mushroom body. It has its soma in the mushroom body cell body rind (above the calyx) and dendrites in the calyx and its axon projects through the pedunculus and bifurcates into the vertical and medial lobes (Lee et al., 1999). The first KCs generated in the embryo and early larva are gamma neurons, with alpha&apos;/beta&apos; neurons being born in the late larva (Lee et al., 1999; Kunz et al., 2012). Later born neurons occupy more central positions within the pedunculus and lobe bundles, so that in the late third instar, the embryonic gamma axons occupy the periphery, with the larval-born gamma neurons beneath, and the alpha&apos;/beta&apos; neurons at the core (Kurusu et al., 2002). During the pupal stage, gamma KCs are dramatically remodeled to form the adult gamma lobe, alpha&apos;/beta&apos; KCs remain largely the same and alpha/beta neurons are generated to form the alpha and beta lobes (Lee et al., 1999).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-30T09:55:32Z</dc:date>
@@ -10251,29 +10260,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Neuropil mass above the larval esophagus consisting of the protocerebral and deutocerebral neuromeres and part of the tritocerebrum.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00051493 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051493">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005125"/>
-        <obo:IAO_0000115>Neuron of the central nervous system that has the majority of its inputs and outputs in close proximity within the same region of the neuropil. Some arbors may spread outside of the region, but without sufficient polarity to define the neuron as an input or output neuron.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-22T08:47:38Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00051493</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>local interneuron</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00051493</oboInOwl:id>
-        <rdfs:label>local neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051493"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Neuron of the central nervous system that has the majority of its inputs and outputs in close proximity within the same region of the neuropil. Some arbors may spread outside of the region, but without sufficient polarity to define the neuron as an input or output neuron.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0232785</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0242477</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10500,14 +10486,21 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00057001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007009"/>
+        <obo:IAO_0000115>Division of an organism along its anterior-posterior axis.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-06-30T04:15:23Z</dc:date>
-        <oboInOwl:hasDbXref>UBERON:6057001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:0011676</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00057001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
         <rdfs:label>anterior-posterior subdivision of organism</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00057001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Division of an organism along its anterior-posterior axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -11283,12 +11276,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007002"/>
+        <obo:IAO_0000115>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-04T08:35:02Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100318</oboInOwl:id>
         <rdfs:label>somatic cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100318"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any cell that is not a germ cell (Okada, 1998). During development, somatic cells differentiate into various types, but they do not persist beyond the lifespan of a single organism (Okada, 1998).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0101973</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
