@@ -312,13 +312,22 @@ get_gene_id_map: install_postgresql setup_venv
 
 replace_gene_ids_in_files: $(TMPDIR)/existing_FBgns.txt install_dask
 	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
-	#my-venv/bin/python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
+	my-venv/bin/python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for DS in $(RELEASE_DATASETS); \
 	do if [ -f $(EXPDIR)/processed_dataset_$$DS.owl ]; \
-	then mv $(EXPDIR)/processed_dataset_$$DS.owl $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl; fi &&\
+	then cp $(EXPDIR)/processed_dataset_$$DS.owl $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl; fi &&\
 	$(ROBOT) convert -i $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl --format owl -o $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl.gz &&\
-	rm $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl.fbgns.tmp; done
+	rm $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl.fbgns.tmp $(EXPDIR)/processed_dataset_$$DS.owl; done
 
+find_and_replace_in_exp_files: setup_venv
+	# edit script to specify replacement
+	my-venv/bin/python3 $(SCRIPTSDIR)/exp_find_and_replace.py &&\
+	for DS in $(RELEASE_DATASETS); \
+	do if [ -f $(EXPDIR)/processed_dataset_$$DS.owl ]; \
+	then cp $(EXPDIR)/processed_dataset_$$DS.owl $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl; fi &&\
+	$(ROBOT) convert -i $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl --format owl -o $(EXPDIR)/VFB_scRNAseq_exp_$$DS.owl.gz &&\
+	rm $(EXPDIR)/processed_dataset_$$DS.owl.; done
+	
 ######## overwrite some ODK goals to prevent unnecessary processing
 
 $(EDIT_PREPROCESSED): $(SRC)
