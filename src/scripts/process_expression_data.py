@@ -47,6 +47,7 @@ if __name__ == "__main__":
     dataset_cluster_dict = {c: cluster_metadata['associated_dataset'][c] for c in cluster_metadata.index.values}
 
     expression_data = expression_file_loader(included_entities_to_update, expression_cutoff)
+    expression_data['hide_in_terminfo'] = 'true'
 
     if expression_data.size.compute() > 0:
         def expression_outfile_namer(n):
