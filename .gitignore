@@ -1,3 +1,6 @@
+# ODK-managed rules, do not modify
+# If you need to add your own ignore rules, you may do so below
+# the "End ODK-managed rules" marker at the end of this file.
 .DS_Store
 semantic.cache
 bin/
@@ -6,19 +9,33 @@ bin/
 *.tmp.obo
 *.tmp.owl
 *.tmp.json
+*-relation-graph.tsv.gz
+.template.db
+
+.github/token.txt
+
+/VFB_scRNAseq.owl
+/VFB_scRNAseq.obo
+/VFB_scRNAseq.json
+/VFB_scRNAseq.db
+/VFB_scRNAseq-base.*
+/VFB_scRNAseq-basic.*
+/VFB_scRNAseq-full.*
+/VFB_scRNAseq-simple.*
+/VFB_scRNAseq-simple-non-classified.*
+/mappings/
+/patterns/
+/reports/
+/subsets/
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/my-venv
-src/ontology/my-venv/*
-src/ontology/expression_data/*.tsv
-src/ontology/expression_data/*.ofn
-src/ontology/expression_data/*.owl
-src/ontology/metadata_files
-src/ontology/metadata_files/*
+src/ontology/reports/*
+!src/ontology/reports/release-diff.md
 src/ontology/VFB_scRNAseq.owl
 src/ontology/VFB_scRNAseq.obo
 src/ontology/VFB_scRNAseq.json
+src/ontology/VFB_scRNAseq.db
 src/ontology/VFB_scRNAseq-base.*
 src/ontology/VFB_scRNAseq-basic.*
 src/ontology/VFB_scRNAseq-full.*
@@ -32,19 +49,39 @@ src/ontology/ontologyterms.txt
 src/ontology/simple_seed.txt
 src/ontology/patterns
 src/ontology/merged-VFB_scRNAseq-edit.owl
+src/ontology/VFB_scRNAseq-edit.properties
 
 src/ontology/target/
 src/ontology/tmp/*
+!src/ontology/tmp/.gitkeep
 !src/ontology/tmp/README.md
 
+src/ontology/run.sh.conf
+src/ontology/run.sh.env
+
 src/ontology/imports/*_terms_combined.txt
-src/ontology/imports/*_terms.txt
-src/ontology/imports/external_terms.txt
 
 src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
+
+# End of ODK-managed rules
+
+
+src/ontology/my-venv
+src/ontology/my-venv/*
+src/ontology/expression_data/*.tsv
+src/ontology/expression_data/*.ofn
+src/ontology/expression_data/*.owl
+src/ontology/metadata_files
+src/ontology/metadata_files/*
+
+
+
+src/ontology/imports/*_terms.txt
+src/ontology/imports/external_terms.txt
+
 
 VFB_scRNAseq-base.owl
 VFB_scRNAseq-full.owl
