@@ -1,6 +1,6 @@
 
 
-# Slot: sex
+# Slot: sex 
 
 
 _Sex for the entity. Should be 'male' or 'female'._
@@ -10,8 +10,7 @@ _Sex for the entity. Should be 'male' or 'female'._
 
 
 URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
-
-
+Alias: sex
 
 <!-- no inheritance hierarchy -->
 
@@ -23,8 +22,8 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
@@ -54,6 +53,7 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 
 
 
+
 ### Schema Source
 
 
@@ -67,7 +67,7 @@ URI: [BFO:0000050](http://purl.obolibrary.org/obo/BFO_0000050)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | BFO:0000050 |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:sex |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/sex |
 
 
 

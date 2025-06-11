@@ -1,4 +1,4 @@
-# Type: Boolean
+# Type: Boolean 
 
 
 
@@ -43,7 +43,7 @@ URI: [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:boolean |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:boolean |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/boolean |
 | exact | schema:Boolean |
 
 

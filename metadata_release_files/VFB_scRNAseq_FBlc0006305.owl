@@ -6682,6 +6682,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:comment>Nern et al. (2025) - doi:10.1038/s41586-025-08746-0 say distal is M1-5 and M6-7 is central medulla.</rdfs:comment>
         <rdfs:label>medulla</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -6801,6 +6802,68 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>T4 layer</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00003775 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003775">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00007578"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053385"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100205"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>Mi</obo:IAO_0000028>
+        <obo:IAO_0000115>A columnar neuron that is intrinsic to the medulla, connecting distal and proximal layers (Fischbach and Dittrich, 1989; Kind et al., 2021). It has its soma in the cell body rind of the medulla (Fischbach and Dittrich, 1989).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00003775</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Mi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medulla intrinsic cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary intrinsic columnar neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00003775</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>medulla intrinsic columnar neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>Mi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A columnar neuron that is intrinsic to the medulla, connecting distal and proximal layers (Fischbach and Dittrich, 1989; Kind et al., 2021). It has its soma in the cell body rind of the medulla (Fischbach and Dittrich, 1989).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003775"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003775"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>medulla intrinsic cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14084,6 +14147,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-13T14:52:57Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00053385</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>medullary intrinsic neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00053385</oboInOwl:id>
         <rdfs:label>medulla intrinsic neuron</rdfs:label>
@@ -14925,6 +14989,50 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00100205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100205">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100200"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Region of the adult brain cell body rind that overlies the medulla.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T02:45:39Z</dc:date>
+        <oboInOwl:hasAlternativeId>FBbt:00001937</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>VFB:FBbt_00100205</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cortex of medulla</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medulla cortex</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>rME</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00100205</oboInOwl:id>
+        <rdfs:label>cell body rind of adult medulla</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100205"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Region of the adult brain cell body rind that overlies the medulla.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100205"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>rME</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00100313 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
@@ -15515,6 +15623,50 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Region of the larval cell body rind that overlies the neuropil of the brain.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5948-3092</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005129"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048286"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>MC</obo:IAO_0000028>
+        <obo:IAO_0000115>An extrinsic columnar neuron that innervates the medulla.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-05-26T17:57:24Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00111640</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00111640</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>medulla columnar neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>MC</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An extrinsic columnar neuron that innervates the medulla.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0224242</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MC</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
     
 

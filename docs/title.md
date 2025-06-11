@@ -1,6 +1,6 @@
 
 
-# Slot: title
+# Slot: title 
 
 
 _Short description of the entity._
@@ -10,8 +10,7 @@ _Short description of the entity._
 
 
 URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
-
-
+Alias: title
 
 <!-- no inheritance hierarchy -->
 
@@ -23,12 +22,12 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [Assay](Assay.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 
 
 
@@ -60,6 +59,7 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 
 
 
+
 ### Schema Source
 
 
@@ -73,7 +73,7 @@ URI: [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | IAO:0000115 |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:title |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/title |
 
 
 

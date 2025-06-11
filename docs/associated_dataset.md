@@ -1,6 +1,6 @@
 
 
-# Slot: associated_dataset
+# Slot: associated_dataset 
 
 
 _Dataset (FBlc ID) that the Sample or Cluster belongs to._
@@ -10,8 +10,7 @@ _Dataset (FBlc ID) that the Sample or Cluster belongs to._
 
 
 URI: [dc:source](http://purl.org/dc/terms/source)
-
-
+Alias: associated_dataset
 
 <!-- no inheritance hierarchy -->
 
@@ -24,9 +23,9 @@ URI: [dc:source](http://purl.org/dc/terms/source)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Cluster](Cluster.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
@@ -56,6 +55,7 @@ URI: [dc:source](http://purl.org/dc/terms/source)
 
 
 
+
 ### Schema Source
 
 
@@ -69,7 +69,7 @@ URI: [dc:source](http://purl.org/dc/terms/source)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | dc:source |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:associated_dataset |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/associated_dataset |
 
 
 

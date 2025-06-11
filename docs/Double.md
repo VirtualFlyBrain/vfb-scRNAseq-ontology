@@ -1,4 +1,4 @@
-# Type: Double
+# Type: Double 
 
 
 
@@ -42,7 +42,7 @@ URI: [xsd:double](http://www.w3.org/2001/XMLSchema#double)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:double |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:double |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/double |
 | close | schema:Float |
 
 

@@ -1,4 +1,4 @@
-# Type: Uriorcurie
+# Type: Uriorcurie 
 
 
 
@@ -43,7 +43,7 @@ URI: [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:anyURI |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:uriorcurie |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/uriorcurie |
 
 
 

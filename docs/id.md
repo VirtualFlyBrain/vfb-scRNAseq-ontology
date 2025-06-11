@@ -1,6 +1,6 @@
 
 
-# Slot: id
+# Slot: id 
 
 
 _Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase:'._
@@ -9,9 +9,8 @@ _Identifier for the entity. FlyBase identifiers should be prefixed with 'FlyBase
 
 
 
-URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id)
-
-
+URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/id](http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/id)
+Alias: id
 
 <!-- no inheritance hierarchy -->
 
@@ -23,14 +22,14 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://githu
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [Thing](Thing.md) |  |  no  |
 | [Publication](Publication.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
-| [Thing](Thing.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 
@@ -68,8 +67,8 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id](http://githu
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:id |
+| self | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/id |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/id |
 
 
 

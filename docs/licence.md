@@ -1,6 +1,6 @@
 
 
-# Slot: licence
+# Slot: licence 
 
 
 _Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas)._
@@ -10,8 +10,7 @@ _Licence for the Dataset (all CC-BY 4.0 for scExpressionAtlas)._
 
 
 URI: [dc:licence](http://purl.org/dc/terms/licence)
-
-
+Alias: licence
 
 <!-- no inheritance hierarchy -->
 
@@ -53,6 +52,7 @@ URI: [dc:licence](http://purl.org/dc/terms/licence)
 
 
 
+
 ### Schema Source
 
 
@@ -66,7 +66,7 @@ URI: [dc:licence](http://purl.org/dc/terms/licence)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | dc:licence |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:licence |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/licence |
 
 
 

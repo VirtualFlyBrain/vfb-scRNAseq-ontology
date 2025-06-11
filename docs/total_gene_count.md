@@ -1,6 +1,6 @@
 
 
-# Slot: total_gene_count
+# Slot: total_gene_count 
 
 
 _Total number of distinct genes associated with the entity before filtering by extent._
@@ -10,8 +10,7 @@ _Total number of distinct genes associated with the entity before filtering by e
 
 
 URI: [neo_custom:total_gene_count](http://n2o.neo/custom/total_gene_count)
-
-
+Alias: total_gene_count
 
 <!-- no inheritance hierarchy -->
 
@@ -54,6 +53,7 @@ URI: [neo_custom:total_gene_count](http://n2o.neo/custom/total_gene_count)
 
 
 
+
 ### Schema Source
 
 
@@ -67,7 +67,7 @@ URI: [neo_custom:total_gene_count](http://n2o.neo/custom/total_gene_count)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_custom:total_gene_count |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:total_gene_count |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/total_gene_count |
 
 
 

@@ -1,10 +1,10 @@
 
 
-# Class: Class
+# Class: Class 
 
 
 
-URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class)
+URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/Class](http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/Class)
 
 
 
@@ -92,6 +92,7 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 
 
 
+
 ### Schema Source
 
 
@@ -104,8 +105,8 @@ URI: [http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class](http://gi
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:Class |
+| self | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/Class |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/Class |
 
 
 

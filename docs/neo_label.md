@@ -1,6 +1,6 @@
 
 
-# Slot: neo_label
+# Slot: neo_label 
 
 
 _neo4j node label to add to entity._
@@ -10,8 +10,7 @@ _neo4j node label to add to entity._
 
 
 URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
-
-
+Alias: neo_label
 
 <!-- no inheritance hierarchy -->
 
@@ -24,10 +23,10 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Publication](Publication.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 
 
 
@@ -57,6 +56,7 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 
 
 
+
 ### Schema Source
 
 
@@ -70,7 +70,7 @@ URI: [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | neo_property:nodeLabel |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:neo_label |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/neo_label |
 
 
 

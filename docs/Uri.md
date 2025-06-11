@@ -1,4 +1,4 @@
-# Type: Uri
+# Type: Uri 
 
 
 
@@ -47,7 +47,7 @@ URI: [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:anyURI |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:uri |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/uri |
 | close | schema:URL |
 
 

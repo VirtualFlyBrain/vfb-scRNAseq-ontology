@@ -1,4 +1,4 @@
-# Type: Datetime
+# Type: Datetime 
 
 
 
@@ -43,7 +43,7 @@ URI: [xsd:dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | xsd:dateTime |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:datetime |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/datetime |
 | exact | schema:DateTime |
 
 

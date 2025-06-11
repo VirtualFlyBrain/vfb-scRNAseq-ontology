@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-04-29/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-04-29")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-06-11/imports/merged_import.owl>
+Annotation(owl:versionInfo "2025-06-11")
 
 Declaration(Class(<http://flybase.org/reports/FBgn0000137>))
 Declaration(Class(<http://flybase.org/reports/FBgn0000158>))
@@ -2157,6 +2157,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00050251>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00051000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00051022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00051036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00051041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00051052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00051053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00051067>))
@@ -2296,6 +2297,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052134>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052135>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052142>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052149>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00052151>))
@@ -2527,6 +2529,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053391>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053396>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053397>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053398>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053404>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00057000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00057001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00057003>))
@@ -3109,6 +3112,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111360>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111516>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111638>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111639>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111640>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111643>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111661>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111670>))
@@ -3143,6 +3147,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10005249>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_10005326>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_20003824>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_20007266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBcv_0003021>))
@@ -3562,33 +3567,25 @@ Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000212>))
 Declaration(ObjectProperty(<http://www.bioassayontology.org/bao#BAO_0000391>))
 Declaration(ObjectProperty(owl:topObjectProperty))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002581>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002582>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/fbcv#attributionURL>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/type>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
 ############################
 #   Annotation Properties
 ############################
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "textual definition")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0002581> (is a defining property chain axiom)
@@ -9769,19 +9766,21 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003771> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003771> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00003755>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003771> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00111268>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00003775> (medullary intrinsic columnar neuron)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00003775> (medulla intrinsic columnar neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003775> "VFB:FBbt_00003775")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003775> "medullary intrinsic columnar neuron")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003775> "medulla intrinsic columnar neuron")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00003775> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007578> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013010> <http://purl.obolibrary.org/obo/FBbt_00003748>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003775> <http://purl.obolibrary.org/obo/FBbt_00007578>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003775> <http://purl.obolibrary.org/obo/FBbt_00053385>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003775> <http://purl.obolibrary.org/obo/FBbt_00111640>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003775> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00100205>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00003776> (medullary intrinsic neuron Mi1)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00003776> (medulla intrinsic neuron Mi1)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003776> "FlyBrain_NDB:10097")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003776> "VFB:FBbt_00003776")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003776> "medullary intrinsic neuron Mi1")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003776> "medulla intrinsic neuron Mi1")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003776> <http://purl.obolibrary.org/obo/FBbt_00003775>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003776> <http://purl.obolibrary.org/obo/FBbt_00049541>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003776> <http://purl.obolibrary.org/obo/FBbt_00058205>)
@@ -9801,11 +9800,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003776> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003776> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013009> <http://purl.obolibrary.org/obo/FBbt_00003731>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003776> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013009> <http://purl.obolibrary.org/obo/FBbt_00003791>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00003779> (medullary intrinsic neuron Mi4)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00003779> (medulla intrinsic neuron Mi4)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003779> "FlyBrain_NDB:10103")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003779> "VFB:FBbt_00003779")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003779> "medullary intrinsic neuron Mi4")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003779> "medulla intrinsic neuron Mi4")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003779> <http://purl.obolibrary.org/obo/FBbt_00003775>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003779> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003779> <http://purl.obolibrary.org/obo/FBbt_00058207>)
@@ -9825,11 +9824,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003779> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003779> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013008> <http://purl.obolibrary.org/obo/FBbt_00003725>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003779> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013008> <http://purl.obolibrary.org/obo/FBbt_00004227>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00003784> (medullary intrinsic neuron Mi9)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00003784> (medulla intrinsic neuron Mi9)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003784> "FlyBrain_NDB:10108")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003784> "VFB:FBbt_00003784")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003784> "medullary intrinsic neuron Mi9")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003784> "medulla intrinsic neuron Mi9")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003784> <http://purl.obolibrary.org/obo/FBbt_00003775>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003784> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003784> <http://purl.obolibrary.org/obo/FBbt_00058208>)
@@ -9852,6 +9851,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003784> ObjectSomeValuesFrom(<
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003788> "VFB:FBbt_00003788")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003788> "transmedullary neuron")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003788> <http://purl.obolibrary.org/obo/FBbt_00007578>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003788> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000634>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003788> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00100205>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003788> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00003922>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003788> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00003748>))
@@ -10128,17 +10128,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003835> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003835> <http://purl.obolibrary.org/obo/FBbt_00110137>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003835> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00052322>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00003836> (medullary tangential neuron)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00003836> (medulla tangential neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003836> "VFB:FBbt_00003836")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003836> "medullary tangential neuron")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003836> "medulla tangential neuron")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003836> <http://purl.obolibrary.org/obo/FBbt_00007579>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003836> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00003748>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00003844> (medullary tangential neuron Mt8)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00003844> (medulla tangential neuron Mt8)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00003844> "VFB:FBbt_00003844")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003844> "medullary tangential neuron Mt8")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00003844> "medulla tangential neuron Mt8")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003844> <http://purl.obolibrary.org/obo/FBbt_00003836>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003844> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00003756>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003844> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00003758>))
@@ -10629,8 +10629,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004046> "L
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004046> <http://purl.obolibrary.org/obo/CL_0000167>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004046> <http://purl.obolibrary.org/obo/FBbt_00004044>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004046> <http://purl.obolibrary.org/obo/FBbt_00052761>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004046> <http://purl.obolibrary.org/obo/FBbt_00053404>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004046> <http://purl.obolibrary.org/obo/FBbt_00058202>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00045003>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004047> (adult hypocerebral ganglion)
 
@@ -16603,11 +16603,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013695> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013695> <http://purl.obolibrary.org/obo/FBbt_00049824>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007677>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00013774> (distal medullary amacrine neuron Dm8)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00013774> (distal medullary amacrine neuron Dm8a)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00013774> "FlyBrain_NDB:10088")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00013774> "VFB:FBbt_00013774")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00013774> "distal medullary amacrine neuron Dm8")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00013774> "distal medullary amacrine neuron Dm8a")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> <http://purl.obolibrary.org/obo/FBbt_00003767>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> <http://purl.obolibrary.org/obo/FBbt_00058208>)
@@ -20996,11 +20996,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049914> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00049916> "VFB:FBbt_00049916")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00049916> "transmedullary neuron Tm29")
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> <http://purl.obolibrary.org/obo/FBbt_00003788>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> <http://purl.obolibrary.org/obo/FBbt_00058208>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> <http://purl.obolibrary.org/obo/FBbt_20007266>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00052328>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00003748>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00111744>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049916> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00111744>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00049929> (adult mushroom body commissure)
 
@@ -21683,6 +21684,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051036> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001948>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/FBbt_00003885>))
 
+# Class: <http://purl.obolibrary.org/obo/FBbt_00051041> (cell body rind of adult lateral medulla)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00051041> "VFB:FBbt_00051041")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00051041> "cell body rind of adult lateral medulla")
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051041> <http://purl.obolibrary.org/obo/FBbt_00100200>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00100205>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/FBbt_00003748>))
+
 # Class: <http://purl.obolibrary.org/obo/FBbt_00051052> (corazonin neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00051052> "VFB:FBbt_00051052")
@@ -21819,7 +21828,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051228> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051228> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003748>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051228> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00007059>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051228> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00051217>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051228> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013008> <http://purl.obolibrary.org/obo/FBbt_00004225>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00051292> (adult olfactory antennal lobe glomerulus)
 
@@ -22841,6 +22849,16 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052140> ObjectIntersect
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052140> <http://purl.obolibrary.org/obo/FBbt_00003836>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052140> <http://purl.obolibrary.org/obo/FBbt_00048286>)
 
+# Class: <http://purl.obolibrary.org/obo/FBbt_00052142> (medulla tangential intrinsic neuron)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00052142> "VFB:FBbt_00052142")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052142> "medulla tangential intrinsic neuron")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052142> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007579> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013010> <http://purl.obolibrary.org/obo/FBbt_00003748>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052142> <http://purl.obolibrary.org/obo/FBbt_00003702>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052142> <http://purl.obolibrary.org/obo/FBbt_00003836>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052142> <http://purl.obolibrary.org/obo/FBbt_00053385>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052142> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00100205>))
+
 # Class: <http://purl.obolibrary.org/obo/FBbt_00052149> (gut-innervating neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00052149> "VFB:FBbt_00052149")
@@ -23226,10 +23244,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052313> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052313> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00001938>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052313> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002203> <http://purl.obolibrary.org/obo/FBbt_00003771>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00052314> (immature distal medullary amacrine neuron Dm8)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00052314> (immature distal medullary amacrine neuron Dm8a)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00052314> "VFB:FBbt_00052314")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052314> "immature distal medullary amacrine neuron Dm8")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052314> "immature distal medullary amacrine neuron Dm8a")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052314> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00051424> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002203> <http://purl.obolibrary.org/obo/FBbt_00013774>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052314> <http://purl.obolibrary.org/obo/FBbt_00025991>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052314> <http://purl.obolibrary.org/obo/FBbt_00049542>)
@@ -24920,6 +24938,14 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00053398> ObjectIntersect
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053398> <http://purl.obolibrary.org/obo/FBbt_00049427>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053398> <http://purl.obolibrary.org/obo/FBbt_00067123>)
 
+# Class: <http://purl.obolibrary.org/obo/FBbt_00053404> (accessory medulla neuron)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00053404> "VFB:FBbt_00053404")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00053404> "accessory medulla neuron")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00053404> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00045003>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053404> <http://purl.obolibrary.org/obo/FBbt_00047095>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053404> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00045003>))
+
 # Class: <http://purl.obolibrary.org/obo/FBbt_00057000> (early-mid elongation-stage spermatid)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00057000> "early-mid elongation-stage spermatid")
@@ -25671,9 +25697,12 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058227> "lobula-lobula plate columnar neuron LLPC1")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> <http://purl.obolibrary.org/obo/FBbt_00003881>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> <http://purl.obolibrary.org/obo/FBbt_00058205>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000634>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003856>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003886>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003887>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003888>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00040044>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00058230> (adult muscle cell)
 
@@ -29634,13 +29663,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> <http://purl.obolibrary.org/obo/FBbt_00058207>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00100205>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00052323>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00003758>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00003759>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003758>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003759>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00003758>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00003759>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00111285> (medullary intrinsic neuron Mi15)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00111285> (medulla intrinsic neuron Mi15)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00111285> "VFB:FBbt_00111285")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00111285> "medullary intrinsic neuron Mi15")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00111285> "medulla intrinsic neuron Mi15")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111285> <http://purl.obolibrary.org/obo/FBbt_00003775>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111285> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111285> <http://purl.obolibrary.org/obo/FBbt_00058205>)
@@ -29661,7 +29692,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111285> ObjectSomeValuesFrom(<
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00111286> "VFB:FBbt_00111286")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00111286> "transmedullary Y neuron TmY14")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111286> <http://purl.obolibrary.org/obo/FBbt_00003817>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111286> <http://purl.obolibrary.org/obo/FBbt_00048286>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111286> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111286> <http://purl.obolibrary.org/obo/FBbt_00058208>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111286> <http://purl.obolibrary.org/obo/FBbt_00110137>)
@@ -29858,6 +29888,14 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00111639> ObjectIntersect
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111639> <http://purl.obolibrary.org/obo/FBbt_00002725>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111639> <http://purl.obolibrary.org/obo/FBbt_00005198>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111639> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00052118>))
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00111640> (medulla columnar neuron)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00111640> "VFB:FBbt_00111640")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00111640> "medulla columnar neuron")
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111640> <http://purl.obolibrary.org/obo/FBbt_00005129>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111640> <http://purl.obolibrary.org/obo/FBbt_00048286>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00111640> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013001> <http://purl.obolibrary.org/obo/FBbt_00003748>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00111643> (zone C/E Johnston organ neuron)
 
@@ -30189,6 +30227,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20003824> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20003824> <http://purl.obolibrary.org/obo/FBbt_00067350>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20003824> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obolibrary.org/obo/GO_0019236>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20003824> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00045032>))
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_20007266> (adult transmedullary CB3851 neuron)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_20007266> "VFB:FBbt_20007266")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_20007266> "adult transmedullary CB3851 neuron")
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20007266> <http://purl.obolibrary.org/obo/FBbt_00003788>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20007266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00051041>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20007266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00003755>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20007266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00040016>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20007266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00003755>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_20007266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00040016>))
 
 # Class: <http://purl.obolibrary.org/obo/FBcv_0000000> (FlyBase CV)
 

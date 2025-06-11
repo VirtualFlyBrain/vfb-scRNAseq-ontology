@@ -1,6 +1,6 @@
 
 
-# Slot: associated_assay
+# Slot: associated_assay 
 
 
 _Assay(s) that use this sample. Multiple IDs should be separated with '|' or in different rows._
@@ -10,8 +10,7 @@ _Assay(s) that use this sample. Multiple IDs should be separated with '|' or in 
 
 
 URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
-
-
+Alias: associated_assay
 
 <!-- no inheritance hierarchy -->
 
@@ -55,6 +54,7 @@ URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 
 
 
+
 ### Schema Source
 
 
@@ -68,7 +68,7 @@ URI: [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352)
 | Mapping Type | Mapped Value |
 | ---  | ---  |
 | self | RO:0002352 |
-| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/:associated_assay |
+| native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/associated_assay |
 
 
 

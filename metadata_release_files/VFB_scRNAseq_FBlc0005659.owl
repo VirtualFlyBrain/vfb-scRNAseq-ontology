@@ -7493,7 +7493,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>L1</obo:IAO_0000028>
-        <obo:IAO_0000115>Lamina monopolar neuron that has short collaterals projecting radially from the main projection in the lamina and arborization in medulla layers M1 and M5 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina, these short collaterals are strongly postsynaptic to the terminals of photoreceptors R1-6 (Rivera-Alba et al., 2011). In the medulla, it makes strong reciprocal synaptic connections with lamina monopolar cell L5 and centrifugal neuron C2, as well as substantial output synapses to C3, Mi1 and Tm3 cells (Takemura et al., 2013). It is also electrically synapsed to lamina monopolar neuron L2 (Joesch et al., 2010). It is a glutamatergic neuron (Gao et al., 2008; Takemura et al., 2011).</obo:IAO_0000115>
+        <obo:IAO_0000115>Lamina monopolar neuron that has short collaterals projecting radially from the main projection in the lamina and arborization in medulla layers M1 and M5 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina, these short collaterals are strongly postsynaptic to the terminals of photoreceptors R1-6 (Rivera-Alba et al., 2011). In the medulla, it makes strong reciprocal synaptic connections with lamina monopolar cell L5 and centrifugal neuron C2, as well as substantial output synapses to C3, Mi1 and Tm3 cells (Takemura et al., 2013). It is also electrically synapsed to lamina monopolar neuron L2 (Joesch et al., 2010). It is a glutamatergic neuron (Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10089</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003719</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>L1</oboInOwl:hasExactSynonym>
@@ -7513,7 +7513,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Lamina monopolar neuron that has short collaterals projecting radially from the main projection in the lamina and arborization in medulla layers M1 and M5 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina, these short collaterals are strongly postsynaptic to the terminals of photoreceptors R1-6 (Rivera-Alba et al., 2011). In the medulla, it makes strong reciprocal synaptic connections with lamina monopolar cell L5 and centrifugal neuron C2, as well as substantial output synapses to C3, Mi1 and Tm3 cells (Takemura et al., 2013). It is also electrically synapsed to lamina monopolar neuron L2 (Joesch et al., 2010). It is a glutamatergic neuron (Gao et al., 2008; Takemura et al., 2011).</owl:annotatedTarget>
+        <owl:annotatedTarget>Lamina monopolar neuron that has short collaterals projecting radially from the main projection in the lamina and arborization in medulla layers M1 and M5 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina, these short collaterals are strongly postsynaptic to the terminals of photoreceptors R1-6 (Rivera-Alba et al., 2011). In the medulla, it makes strong reciprocal synaptic connections with lamina monopolar cell L5 and centrifugal neuron C2, as well as substantial output synapses to C3, Mi1 and Tm3 cells (Takemura et al., 2013). It is also electrically synapsed to lamina monopolar neuron L2 (Joesch et al., 2010). It is a glutamatergic neuron (Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0205531</oboInOwl:hasDbXref>
@@ -7523,6 +7523,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0217052</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
@@ -7654,7 +7655,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>L2</obo:IAO_0000028>
-        <obo:IAO_0000115>A lamina monopolar neuron with short collaterals that project radially from the main projection in the lamina and that arborizes in medulla layer M2. In the lamina it receives strong input from photoreceptors R1-R6 (Rivera-Alba et al., 2011). It has both pre- and postsynaptic connections in medulla layer M2, with strong synaptic input coming from centrifugal neurons C2 and C3 (Takemura et al., 2013). It has a large number of presynaptic connections to lamina monopolar neuron L5, columnar neuron T1, and transmedullary neurons Tm1, Tm2 and Tm4 (Takemura et al., 2013). It is a cholinergic neuron (Takemura et al., 2011) and is electrically synapsed to lamina monopolar neuron L1 (Joesch et al., 2010).</obo:IAO_0000115>
+        <obo:IAO_0000115>A lamina monopolar neuron with short collaterals that project radially from the main projection in the lamina and that arborizes in medulla layer M2. In the lamina it receives strong input from photoreceptors R1-R6 (Rivera-Alba et al., 2011). It has both pre- and postsynaptic connections in medulla layer M2, with strong synaptic input coming from centrifugal neurons C2 and C3 (Takemura et al., 2013). It has a large number of presynaptic connections to lamina monopolar neuron L5, columnar neuron T1, and transmedullary neurons Tm1, Tm2 and Tm4 (Takemura et al., 2013). It is a cholinergic neuron (Takemura et al., 2011) and is electrically synapsed to lamina monopolar neuron L1 (Joesch et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10090</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003720</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>L2</oboInOwl:hasExactSynonym>
@@ -7674,7 +7675,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A lamina monopolar neuron with short collaterals that project radially from the main projection in the lamina and that arborizes in medulla layer M2. In the lamina it receives strong input from photoreceptors R1-R6 (Rivera-Alba et al., 2011). It has both pre- and postsynaptic connections in medulla layer M2, with strong synaptic input coming from centrifugal neurons C2 and C3 (Takemura et al., 2013). It has a large number of presynaptic connections to lamina monopolar neuron L5, columnar neuron T1, and transmedullary neurons Tm1, Tm2 and Tm4 (Takemura et al., 2013). It is a cholinergic neuron (Takemura et al., 2011) and is electrically synapsed to lamina monopolar neuron L1 (Joesch et al., 2010).</owl:annotatedTarget>
+        <owl:annotatedTarget>A lamina monopolar neuron with short collaterals that project radially from the main projection in the lamina and that arborizes in medulla layer M2. In the lamina it receives strong input from photoreceptors R1-R6 (Rivera-Alba et al., 2011). It has both pre- and postsynaptic connections in medulla layer M2, with strong synaptic input coming from centrifugal neurons C2 and C3 (Takemura et al., 2013). It has a large number of presynaptic connections to lamina monopolar neuron L5, columnar neuron T1, and transmedullary neurons Tm1, Tm2 and Tm4 (Takemura et al., 2013). It is a cholinergic neuron (Takemura et al., 2011) and is electrically synapsed to lamina monopolar neuron L1 (Joesch et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0205531</oboInOwl:hasDbXref>
@@ -7682,6 +7683,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0216925</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0217052</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
@@ -7741,7 +7743,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>L3</obo:IAO_0000028>
-        <obo:IAO_0000115>Lamina monopolar neuron with short spines that project to one side of the main projection as it extends through the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It terminates with an arborization in medulla layer M3 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina it is postsynaptic to the outer photoreceptors (R1-R6) (Rivera-Alba et al., 2011). It also receives input from the inner photoreceptors, partly in the first optic chiasm and partly in the medulla (Kind et al., 2021). It forms presynaptic terminals in medulla layer M3 (Takemura et al., 2008), with strong outputs to Mi9 and Tm20 (Takemura et al., 2013). It is a GABAergic neuron (Raghu et al., 2013).</obo:IAO_0000115>
+        <obo:IAO_0000115>Lamina monopolar neuron with short spines that project to one side of the main projection as it extends through the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It terminates with an arborization in medulla layer M3 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina it is postsynaptic to the outer photoreceptors (R1-R6) (Rivera-Alba et al., 2011). It also receives input from the inner photoreceptors, partly in the first optic chiasm and partly in the medulla (Kind et al., 2021). It forms presynaptic terminals in medulla layer M3 (Takemura et al., 2008), with strong outputs to Mi9 and Tm20 (Takemura et al., 2013). It is a GABAergic neuron (Raghu et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10091</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003721</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>L3</oboInOwl:hasExactSynonym>
@@ -7761,7 +7763,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Lamina monopolar neuron with short spines that project to one side of the main projection as it extends through the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It terminates with an arborization in medulla layer M3 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina it is postsynaptic to the outer photoreceptors (R1-R6) (Rivera-Alba et al., 2011). It also receives input from the inner photoreceptors, partly in the first optic chiasm and partly in the medulla (Kind et al., 2021). It forms presynaptic terminals in medulla layer M3 (Takemura et al., 2008), with strong outputs to Mi9 and Tm20 (Takemura et al., 2013). It is a GABAergic neuron (Raghu et al., 2013).</owl:annotatedTarget>
+        <owl:annotatedTarget>Lamina monopolar neuron with short spines that project to one side of the main projection as it extends through the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It terminates with an arborization in medulla layer M3 (Fischbach and Dittrich, 1989; Kind et al., 2021). In the lamina it is postsynaptic to the outer photoreceptors (R1-R6) (Rivera-Alba et al., 2011). It also receives input from the inner photoreceptors, partly in the first optic chiasm and partly in the medulla (Kind et al., 2021). It forms presynaptic terminals in medulla layer M3 (Takemura et al., 2008), with strong outputs to Mi9 and Tm20 (Takemura et al., 2013). It is a GABAergic neuron (Raghu et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0205531</oboInOwl:hasDbXref>
@@ -7770,6 +7772,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0220286</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
@@ -7974,7 +7977,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>L5</obo:IAO_0000028>
-        <obo:IAO_0000115>A lamina monopolar neuron that hardly arborizes at all in the lamina, but forms a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. In the medulla, it forms strong reciprocal synaptic connections with monopolar lamina monopolar neuron L1 (Takemura et al., 2013). It also receives substantial input from L2 and C2 neurons and has many presynapses connecting to medullary intrinsic neurons Mi1 and Mi4, and to transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Davis et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000115>A lamina monopolar neuron that hardly arborizes at all in the lamina, but forms a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. In the medulla, it forms strong reciprocal synaptic connections with monopolar lamina monopolar neuron L1 (Takemura et al., 2013). It also receives substantial input from L2 and C2 neurons and has many presynapses connecting to medullary intrinsic neurons Mi1 and Mi4, and to transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Davis et al., 2020). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10093</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003725</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>L5</oboInOwl:hasExactSynonym>
@@ -7994,13 +7997,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003725"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A lamina monopolar neuron that hardly arborizes at all in the lamina, but forms a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. In the medulla, it forms strong reciprocal synaptic connections with monopolar lamina monopolar neuron L1 (Takemura et al., 2013). It also receives substantial input from L2 and C2 neurons and has many presynapses connecting to medullary intrinsic neurons Mi1 and Mi4, and to transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Davis et al., 2020).</owl:annotatedTarget>
+        <owl:annotatedTarget>A lamina monopolar neuron that hardly arborizes at all in the lamina, but forms a branched arborization in medulla layers M1 and M2 and a clump of terminals in M5. In the medulla, it forms strong reciprocal synaptic connections with monopolar lamina monopolar neuron L1 (Takemura et al., 2013). It also receives substantial input from L2 and C2 neurons and has many presynapses connecting to medullary intrinsic neurons Mi1 and Mi4, and to transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Davis et al., 2020). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0205531</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0216925</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003725"/>
@@ -8093,7 +8097,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>T1</obo:IAO_0000028>
-        <obo:IAO_0000115>An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). Synaptic connections in the lamina are exclusively postsynaptic and include a large number of connections from lamina intrinsic (amacrine) neurons (Meinertzhagen and O&apos;Neil, 1991; Rivera-Alba et al., 2011). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2 (Takemura et al., 2008; Takemura et al., 2013).</obo:IAO_0000115>
+        <obo:IAO_0000115>An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). Synaptic connections in the lamina are exclusively postsynaptic and include a large number of connections from lamina intrinsic (amacrine) neurons (Meinertzhagen and O&apos;Neil, 1991; Rivera-Alba et al., 2011). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2 (Takemura et al., 2008; Takemura et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10115</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003727</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>T neuron T1</oboInOwl:hasExactSynonym>
@@ -8113,12 +8117,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003727"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). Synaptic connections in the lamina are exclusively postsynaptic and include a large number of connections from lamina intrinsic (amacrine) neurons (Meinertzhagen and O&apos;Neil, 1991; Rivera-Alba et al., 2011). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2 (Takemura et al., 2008; Takemura et al., 2013).</owl:annotatedTarget>
+        <owl:annotatedTarget>An intrinsic columnar neuron whose cell body lies in the cortex of the medulla. The fiber of the T1 cell body branches at the medulla surface to form a T-shaped linking fiber between a bush-like arborization in the distal part of a medulla column (M1 and M2), and a bundle of climbing fibers in the equivalent column of the lamina (Fischbach and Dittrich, 1989). Synaptic connections in the lamina are exclusively postsynaptic and include a large number of connections from lamina intrinsic (amacrine) neurons (Meinertzhagen and O&apos;Neil, 1991; Rivera-Alba et al., 2011). In the medulla, it is strongly synapsed by centrifugal neuron C3 in medulla layer M2 and lamina monopolar neuron L2 (Takemura et al., 2008; Takemura et al., 2013). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0205531</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0216925</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003727"/>
@@ -9260,7 +9265,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>C2</obo:IAO_0000028>
-        <obo:IAO_0000115>Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010).</obo:IAO_0000115>
+        <obo:IAO_0000115>Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10079</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003743</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>C2</oboInOwl:hasExactSynonym>
@@ -9279,7 +9284,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003743"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010).</owl:annotatedTarget>
+        <owl:annotatedTarget>Adult centrifugal neuron with arborizations in the medulla layers M1, M5/M6, M8 and M10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). In the medulla, it makes reciprocal connections to lamina monopolar neuron L1, and is presynaptic to L2 and L5, as well as medullary intrinsic neuron Mi1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0205531</oboInOwl:hasDbXref>
@@ -9287,6 +9292,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0216925</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003743"/>
@@ -9377,7 +9383,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>C3</obo:IAO_0000028>
-        <obo:IAO_0000115>Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010).</obo:IAO_0000115>
+        <obo:IAO_0000115>Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10080</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003744</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>C3</oboInOwl:hasExactSynonym>
@@ -9396,7 +9402,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003744"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010).</owl:annotatedTarget>
+        <owl:annotatedTarget>Adult centrifugal neuron with arborizations in medulla layers M1-2, M5, and M9-10 and more restricted arborizations in the lamina (Fischbach and Dittrich, 1989; Kind et al., 2021). It forms presynapses and postsynapses in the lamina (Morante and Desplan, 2008; Rivera-Alba et al., 2011). In the medulla it is strongly presynaptic to monopolar lamina neuron L2 and columnar neuron T1, and strongly postsynaptic to L1 (Takemura et al., 2013). It is GABAergic (Fei et al., 2010). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
@@ -9405,6 +9411,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0216925</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003744"/>
@@ -9536,7 +9543,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Lai</obo:IAO_0000028>
-        <obo:IAO_0000115>Intrinsic amacrine neuron of the lamina with arborizations spanning the proximal and distal lamina, whose cell body lies proximal to the lamina (Fischbach and Dittrich, 1989; Meinertzhagen and Sorra, 2001). It has extensive arborizations and forms a substantial number of presynaptic terminals with columnar neuron T1 and epithelial glia (Rivera-Alba et al., 2011). It receives strong input from each of photoreceptors R1-R6, and from lamina wide-field cells (Rivera-Alba et al., 2011). It is a glutamatergic neuron (Davis et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000115>Intrinsic amacrine neuron of the lamina with arborizations spanning the proximal and distal lamina, whose cell body lies proximal to the lamina (Fischbach and Dittrich, 1989; Meinertzhagen and Sorra, 2001). It has extensive arborizations and forms a substantial number of presynaptic terminals with columnar neuron T1 and epithelial glia (Rivera-Alba et al., 2011). It receives strong input from each of photoreceptors R1-R6, and from lamina wide-field cells (Rivera-Alba et al., 2011). It is a glutamatergic neuron (Davis et al., 2020). There are approximately 210 of these cells on each side (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>Am</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>amacrine cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VFB:FBbt_00003746</oboInOwl:hasDbXref>
@@ -9556,11 +9563,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003746"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Intrinsic amacrine neuron of the lamina with arborizations spanning the proximal and distal lamina, whose cell body lies proximal to the lamina (Fischbach and Dittrich, 1989; Meinertzhagen and Sorra, 2001). It has extensive arborizations and forms a substantial number of presynaptic terminals with columnar neuron T1 and epithelial glia (Rivera-Alba et al., 2011). It receives strong input from each of photoreceptors R1-R6, and from lamina wide-field cells (Rivera-Alba et al., 2011). It is a glutamatergic neuron (Davis et al., 2020).</owl:annotatedTarget>
+        <owl:annotatedTarget>Intrinsic amacrine neuron of the lamina with arborizations spanning the proximal and distal lamina, whose cell body lies proximal to the lamina (Fischbach and Dittrich, 1989; Meinertzhagen and Sorra, 2001). It has extensive arborizations and forms a substantial number of presynaptic terminals with columnar neuron T1 and epithelial glia (Rivera-Alba et al., 2011). It receives strong input from each of photoreceptors R1-R6, and from lamina wide-field cells (Rivera-Alba et al., 2011). It is a glutamatergic neuron (Davis et al., 2020). There are approximately 210 of these cells on each side (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0159582</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0216925</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003746"/>
@@ -9640,6 +9648,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#FB_gloss"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:comment>Nern et al. (2025) - doi:10.1038/s41586-025-08746-0 say distal is M1-5 and M6-7 is central medulla.</rdfs:comment>
         <rdfs:label>medulla</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -10358,6 +10367,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBrain_NDB:10083</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003770</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Dm3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Dm3 line amacrine cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Dm3 line amacrine neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003770</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
@@ -10386,6 +10397,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Dm3</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003770"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Dm3 line amacrine cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003770"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Dm3 line amacrine neuron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10478,8 +10501,20 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00003775 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003775">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00007578"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007578"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053385"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -10491,10 +10526,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>VFB:FBbt_00003775</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Mi</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>medulla intrinsic cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary intrinsic columnar neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003775</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>medullary intrinsic columnar neuron</rdfs:label>
+        <rdfs:label>medulla intrinsic columnar neuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003775"/>
@@ -10616,18 +10652,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Mi1</obo:IAO_0000028>
-        <obo:IAO_0000115>Unicolumnar medullary intrinsic neuron with bushy, fine arborizations in medulla layers M1, M5 and M9-10 (Fischbach and Dittrich, 1989; Kind et al., 2021). The projection of this neuron branches at the inner-face of the medulla to form two to three varicose recurrent terminal specializations that extend back up to the inner border of layer M8 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In central (non-dorsal margin) columns it receives input from an R8 photoreceptor cell, but connections are substantially weaker in dorsal margin columns (Kind et al., 2021). Pre-synaptic terminals are present mainly in medulla layers M9-M10, but also in all other layers where neurites extend laterally (Pankova and Borst, 2017). It receives input from lamina monopolar neurons L1 and L5 and centrifugal neuron C2 (Takemura et al., 2013). It outputs to T4 neurons and transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Hasegawa et al., 2011; Pankova and Borst, 2017).</obo:IAO_0000115>
+        <obo:IAO_0000115>Unicolumnar medullary intrinsic neuron with bushy, fine arborizations in medulla layers M1, M5 and M9-10 (Fischbach and Dittrich, 1989; Kind et al., 2021). The projection of this neuron branches at the inner-face of the medulla to form two to three varicose recurrent terminal specializations that extend back up to the inner border of layer M8 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In central (non-dorsal margin) columns it receives input from an R8 photoreceptor cell, but connections are substantially weaker in dorsal margin columns (Kind et al., 2021). Pre-synaptic terminals are present mainly in medulla layers M9-M10, but also in all other layers where neurites extend laterally (Pankova and Borst, 2017). It receives input from lamina monopolar neurons L1 and L5 and centrifugal neuron C2 (Takemura et al., 2013). It outputs to T4 neurons and transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Hasegawa et al., 2011; Pankova and Borst, 2017). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10097</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003776</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Mi1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>medullary intrinsic neuron 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary intrinsic neuron Mi1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Sut</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>small field unilateral tristratified neuron</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00003776</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre-synaptic terminals were assessed by labelling with a UAS-Synaptotagmin reporter (P{UAS-HA-syt} - FBtp0015803). The neurotransmitter was assessed by labelling cells with an anti-ChAT antibody (Hasegawa et al., 2011). The morphology of the terminals was judged from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. Connectivity and morphology in the medulla were assessed by electron microscopy reconstruction from 7 columns (Takemura et al., 2013).</rdfs:comment>
-        <rdfs:label>medullary intrinsic neuron Mi1</rdfs:label>
+        <rdfs:label>medulla intrinsic neuron Mi1</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
@@ -10638,13 +10675,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Unicolumnar medullary intrinsic neuron with bushy, fine arborizations in medulla layers M1, M5 and M9-10 (Fischbach and Dittrich, 1989; Kind et al., 2021). The projection of this neuron branches at the inner-face of the medulla to form two to three varicose recurrent terminal specializations that extend back up to the inner border of layer M8 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In central (non-dorsal margin) columns it receives input from an R8 photoreceptor cell, but connections are substantially weaker in dorsal margin columns (Kind et al., 2021). Pre-synaptic terminals are present mainly in medulla layers M9-M10, but also in all other layers where neurites extend laterally (Pankova and Borst, 2017). It receives input from lamina monopolar neurons L1 and L5 and centrifugal neuron C2 (Takemura et al., 2013). It outputs to T4 neurons and transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Hasegawa et al., 2011; Pankova and Borst, 2017).</owl:annotatedTarget>
+        <owl:annotatedTarget>Unicolumnar medullary intrinsic neuron with bushy, fine arborizations in medulla layers M1, M5 and M9-10 (Fischbach and Dittrich, 1989; Kind et al., 2021). The projection of this neuron branches at the inner-face of the medulla to form two to three varicose recurrent terminal specializations that extend back up to the inner border of layer M8 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In central (non-dorsal margin) columns it receives input from an R8 photoreceptor cell, but connections are substantially weaker in dorsal margin columns (Kind et al., 2021). Pre-synaptic terminals are present mainly in medulla layers M9-M10, but also in all other layers where neurites extend laterally (Pankova and Borst, 2017). It receives input from lamina monopolar neurons L1 and L5 and centrifugal neuron C2 (Takemura et al., 2013). It outputs to T4 neurons and transmedullary neuron Tm3a (Takemura et al., 2013). It is a cholinergic neuron (Hasegawa et al., 2011; Pankova and Borst, 2017). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0213020</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0235353</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
@@ -10748,15 +10786,16 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Mi4</obo:IAO_0000028>
-        <obo:IAO_0000115>Medullary intrinsic narrow field neuron with both fine and bleb-type arborizations in medulla layers M1, M2, M3 and M8, but with only fine arborizations in medulla layers M4 and M5, and only bleb-type arborizations in medulla layer M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It receives input from the lamina monopolar neuron L5 and photoreceptor R8 (Takemura et al., 2013). It is a GABAergic neuron (Takemura et al., 2017).</obo:IAO_0000115>
+        <obo:IAO_0000115>Medulla intrinsic narrow field neuron with both fine and bleb-type arborizations in medulla layers M1, M2, M3 and M8, but with only fine arborizations in medulla layers M4 and M5, and only bleb-type arborizations in medulla layer M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It receives input from the lamina monopolar neuron L5 and photoreceptor R8 (Takemura et al., 2013). It is a GABAergic neuron (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10103</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003779</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Mi4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary intrinsic neuron Mi4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003779</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Raghu and Borst (2011) identified this as glutamatergic using a vGlut[CNSIII]-GAL4 driver (FBti0129148), but vGlut antibody staining performed by Takemura et al. (2017) was not strong compared to neighboring cells, whereas GAD1 staining was strong. Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. Connectivity in the medulla was assessed by electron microscopy reconstruction from 7 columns (Takemura et al., 2013). Kind et al. (2020) say that it is not contacted by R7/R8 in the DRA, but not clear whether Mi4 is present in the DRA.</rdfs:comment>
-        <rdfs:label>medullary intrinsic neuron Mi4</rdfs:label>
+        <rdfs:label>medulla intrinsic neuron Mi4</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
@@ -10767,12 +10806,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Medullary intrinsic narrow field neuron with both fine and bleb-type arborizations in medulla layers M1, M2, M3 and M8, but with only fine arborizations in medulla layers M4 and M5, and only bleb-type arborizations in medulla layer M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It receives input from the lamina monopolar neuron L5 and photoreceptor R8 (Takemura et al., 2013). It is a GABAergic neuron (Takemura et al., 2017).</owl:annotatedTarget>
+        <owl:annotatedTarget>Medulla intrinsic narrow field neuron with both fine and bleb-type arborizations in medulla layers M1, M2, M3 and M8, but with only fine arborizations in medulla layers M4 and M5, and only bleb-type arborizations in medulla layer M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). It receives input from the lamina monopolar neuron L5 and photoreceptor R8 (Takemura et al., 2013). It is a GABAergic neuron (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0213690</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
@@ -10864,15 +10904,16 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Mi9</obo:IAO_0000028>
-        <obo:IAO_0000115>Medullary intrinsic narrow field neuron with a bushy mix of bleb-type and fine terminal arborization in layers M2, M3 and M4 and in the lower medulla layers M9-M10 (Fischbach and Dittrich, 1989; Kind et al., 2021). It establishes pre- and post-synaptic connections in both the inner and outer medulla layers (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). It receives input from lamina monopolar neuron L3 (Takemura et al., 2013). It is glutamatergic (Takemura et al., 2017).</obo:IAO_0000115>
+        <obo:IAO_0000115>Medulla intrinsic narrow field neuron with a bushy mix of bleb-type and fine terminal arborization in layers M2, M3 and M4 and in the lower medulla layers M9-M10 (Fischbach and Dittrich, 1989; Kind et al., 2021). It establishes pre- and post-synaptic connections in both the inner and outer medulla layers (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). It receives input from lamina monopolar neuron L3 (Takemura et al., 2013). It is glutamatergic (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10108</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003784</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Mi9</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary intrinsic neuron Mi9</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003784</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre-synaptic terminals were assessed by labelling with a UAS-Synaptotagmin reporter (P{UAS-HA-syt} - FBtp0015803). The identification of dendrites and axons was done using a UAS-Dscam (P{UAS-Dscam.exon17.1.GFP} - FBtp0021447) or a UAS-tau (P{UAS-tau-lacZ.O} - FBtp0010033) reporter, respectively (Morante and Desplan, 2008). Connectivity in the medulla was extrapolated from serial EM from 7 columns (Takemura et al., 2013).</rdfs:comment>
-        <rdfs:label>medullary intrinsic neuron Mi9</rdfs:label>
+        <rdfs:label>medulla intrinsic neuron Mi9</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
@@ -10883,12 +10924,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Medullary intrinsic narrow field neuron with a bushy mix of bleb-type and fine terminal arborization in layers M2, M3 and M4 and in the lower medulla layers M9-M10 (Fischbach and Dittrich, 1989; Kind et al., 2021). It establishes pre- and post-synaptic connections in both the inner and outer medulla layers (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). It receives input from lamina monopolar neuron L3 (Takemura et al., 2013). It is glutamatergic (Takemura et al., 2017).</owl:annotatedTarget>
+        <owl:annotatedTarget>Medulla intrinsic narrow field neuron with a bushy mix of bleb-type and fine terminal arborization in layers M2, M3 and M4 and in the lower medulla layers M9-M10 (Fischbach and Dittrich, 1989; Kind et al., 2021). It establishes pre- and post-synaptic connections in both the inner and outer medulla layers (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). It receives input from lamina monopolar neuron L3 (Takemura et al., 2013). It is glutamatergic (Takemura et al., 2017). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0235606</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
@@ -10904,6 +10946,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00003788">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000634"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -11016,7 +11064,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Tm1</obo:IAO_0000028>
-        <obo:IAO_0000115>Transmedullary narrow field neuron that terminates in lobula layer 1 with a bleb-type terminal arborization and that has fine arborizations in medulla layer M2 and bleb-type arborizations in M3 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). In the medulla, it receives strong synaptic input from lamina monopolar neuron L2 (Takemura et al., 2011; Takemura et al., 2013). It outputs onto T5 neurons (Shinomiya et al., 2019). It is a cholinergic neuron (Varija Raghu et al., 2011; Shinomiya et al., 2014).</obo:IAO_0000115>
+        <obo:IAO_0000115>Transmedullary narrow field neuron that terminates in lobula layer 1 with a bleb-type terminal arborization and that has fine arborizations in medulla layer M2 and bleb-type arborizations in M3 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). In the medulla, it receives strong synaptic input from lamina monopolar neuron L2 (Takemura et al., 2011; Takemura et al., 2013). It outputs onto T5 neurons (Shinomiya et al., 2019). It is a cholinergic neuron (Varija Raghu et al., 2011; Shinomiya et al., 2014). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10132</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003789</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Tm1</oboInOwl:hasExactSynonym>
@@ -11035,7 +11083,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003789"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Transmedullary narrow field neuron that terminates in lobula layer 1 with a bleb-type terminal arborization and that has fine arborizations in medulla layer M2 and bleb-type arborizations in M3 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). In the medulla, it receives strong synaptic input from lamina monopolar neuron L2 (Takemura et al., 2011; Takemura et al., 2013). It outputs onto T5 neurons (Shinomiya et al., 2019). It is a cholinergic neuron (Varija Raghu et al., 2011; Shinomiya et al., 2014).</owl:annotatedTarget>
+        <owl:annotatedTarget>Transmedullary narrow field neuron that terminates in lobula layer 1 with a bleb-type terminal arborization and that has fine arborizations in medulla layer M2 and bleb-type arborizations in M3 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). In the medulla, it receives strong synaptic input from lamina monopolar neuron L2 (Takemura et al., 2011; Takemura et al., 2013). It outputs onto T5 neurons (Shinomiya et al., 2019). It is a cholinergic neuron (Varija Raghu et al., 2011; Shinomiya et al., 2014). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212356</oboInOwl:hasDbXref>
@@ -11043,6 +11091,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0225094</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0241236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003789"/>
@@ -11133,7 +11182,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Tm2</obo:IAO_0000028>
-        <obo:IAO_0000115>Transmedullary narrow field neuron that has its main dendritic arborization in medulla layer M2 (Ting et al., 2014), where it receives input from lamina monopolar neuron L2 (Takemura et al., 2011), and additional postsynaptic terminals in M4-M5, where it receives input from lamina monopolar neuron L4 (Takemura et al., 2011). It has presynaptic terminals in layers M3, M4 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma to terminate in lobula layers 1 and 2 (Fischbach and Dittrich, 1989). In layer 1 it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Varija Raghu et al., 2011; Gao et al., 2008; Takemura et al., 2011).</obo:IAO_0000115>
+        <obo:IAO_0000115>Transmedullary narrow field neuron that has its main dendritic arborization in medulla layer M2 (Ting et al., 2014), where it receives input from lamina monopolar neuron L2 (Takemura et al., 2011), and additional postsynaptic terminals in M4-M5, where it receives input from lamina monopolar neuron L4 (Takemura et al., 2011). It has presynaptic terminals in layers M3, M4 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma to terminate in lobula layers 1 and 2 (Fischbach and Dittrich, 1989). In layer 1 it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Varija Raghu et al., 2011; Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10144</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003790</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Tm2</oboInOwl:hasExactSynonym>
@@ -11152,7 +11201,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003790"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Transmedullary narrow field neuron that has its main dendritic arborization in medulla layer M2 (Ting et al., 2014), where it receives input from lamina monopolar neuron L2 (Takemura et al., 2011), and additional postsynaptic terminals in M4-M5, where it receives input from lamina monopolar neuron L4 (Takemura et al., 2011). It has presynaptic terminals in layers M3, M4 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma to terminate in lobula layers 1 and 2 (Fischbach and Dittrich, 1989). In layer 1 it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Varija Raghu et al., 2011; Gao et al., 2008; Takemura et al., 2011).</owl:annotatedTarget>
+        <owl:annotatedTarget>Transmedullary narrow field neuron that has its main dendritic arborization in medulla layer M2 (Ting et al., 2014), where it receives input from lamina monopolar neuron L2 (Takemura et al., 2011), and additional postsynaptic terminals in M4-M5, where it receives input from lamina monopolar neuron L4 (Takemura et al., 2011). It has presynaptic terminals in layers M3, M4 and M9 (Fischbach and Dittrich, 1989; Takemura et al., 2011). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma to terminate in lobula layers 1 and 2 (Fischbach and Dittrich, 1989). In layer 1 it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Varija Raghu et al., 2011; Gao et al., 2008; Takemura et al., 2011). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0206213</oboInOwl:hasDbXref>
@@ -11161,6 +11210,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224196</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0225094</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003790"/>
@@ -11413,7 +11463,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Tm4</obo:IAO_0000028>
-        <obo:IAO_0000115>Transmedullary narrow field neuron that terminates in lobula layers 1, 2 and 4 with bleb-type arborizations, and with fine arborizations in layer 3. It displays fine arborizations in medulla layers M2, M3, M4 and M9, and has bleb-type arborizations in layers M2, M4, and M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). In the medulla, receives input from lamina monopolar neuron L2 and centrifugal neuron C3 (Takemura et al., 2013). In lobula layer 1, it outputs to T5 neurons (Shinomiya et al., 2014). It seems to be capable of both cholinergic and GABAergic neurotransmission.</obo:IAO_0000115>
+        <obo:IAO_0000115>Transmedullary narrow field neuron that terminates in lobula layers 1, 2 and 4 with bleb-type arborizations, and with fine arborizations in layer 3. It displays fine arborizations in medulla layers M2, M3, M4 and M9, and has bleb-type arborizations in layers M2, M4, and M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). In the medulla, receives input from lamina monopolar neuron L2 and centrifugal neuron C3 (Takemura et al., 2013). In lobula layer 1, it outputs to T5 neurons (Shinomiya et al., 2014). It seems to be capable of both cholinergic and GABAergic neurotransmission. There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10155</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003792</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Tm4</oboInOwl:hasExactSynonym>
@@ -11432,13 +11482,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003792"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Transmedullary narrow field neuron that terminates in lobula layers 1, 2 and 4 with bleb-type arborizations, and with fine arborizations in layer 3. It displays fine arborizations in medulla layers M2, M3, M4 and M9, and has bleb-type arborizations in layers M2, M4, and M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). In the medulla, receives input from lamina monopolar neuron L2 and centrifugal neuron C3 (Takemura et al., 2013). In lobula layer 1, it outputs to T5 neurons (Shinomiya et al., 2014). It seems to be capable of both cholinergic and GABAergic neurotransmission.</owl:annotatedTarget>
+        <owl:annotatedTarget>Transmedullary narrow field neuron that terminates in lobula layers 1, 2 and 4 with bleb-type arborizations, and with fine arborizations in layer 3. It displays fine arborizations in medulla layers M2, M3, M4 and M9, and has bleb-type arborizations in layers M2, M4, and M9 (Morante and Desplan, 2008; Fischbach and Dittrich, 1989). In the medulla, receives input from lamina monopolar neuron L2 and centrifugal neuron C3 (Takemura et al., 2013). In lobula layer 1, it outputs to T5 neurons (Shinomiya et al., 2014). It seems to be capable of both cholinergic and GABAergic neurotransmission. There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212356</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0220286</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0225094</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003792"/>
@@ -11574,7 +11625,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Tm9</obo:IAO_0000028>
-        <obo:IAO_0000115>Transmedullary narrow field neuron that has most of its dendritic arborization in medulla layers M2 and M3, with some extensions into M1, M4 and M5 (Gao et al., 2008; Ting et al., 2014), and presynapses in M3 (Gao et al., 2008). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses in the second optic chiasma and terminates in lobula layer 1 (Fischbach and Dittrich, 1989; Ting et al., 2014), where it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Gao et al., 2008; Shinomiya et al., 2014). It expresses the transcription factor sim (Ozel et al., 2021).</obo:IAO_0000115>
+        <obo:IAO_0000115>Transmedullary narrow field neuron that has most of its dendritic arborization in medulla layers M2 and M3, with some extensions into M1, M4 and M5 (Gao et al., 2008; Ting et al., 2014), and presynapses in M3 (Gao et al., 2008). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses in the second optic chiasma and terminates in lobula layer 1 (Fischbach and Dittrich, 1989; Ting et al., 2014), where it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Gao et al., 2008; Shinomiya et al., 2014). It expresses the transcription factor sim (Ozel et al., 2021). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10163</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003797</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Tm9</oboInOwl:hasExactSynonym>
@@ -11593,13 +11644,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003797"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Transmedullary narrow field neuron that has most of its dendritic arborization in medulla layers M2 and M3, with some extensions into M1, M4 and M5 (Gao et al., 2008; Ting et al., 2014), and presynapses in M3 (Gao et al., 2008). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses in the second optic chiasma and terminates in lobula layer 1 (Fischbach and Dittrich, 1989; Ting et al., 2014), where it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Gao et al., 2008; Shinomiya et al., 2014). It expresses the transcription factor sim (Ozel et al., 2021).</owl:annotatedTarget>
+        <owl:annotatedTarget>Transmedullary narrow field neuron that has most of its dendritic arborization in medulla layers M2 and M3, with some extensions into M1, M4 and M5 (Gao et al., 2008; Ting et al., 2014), and presynapses in M3 (Gao et al., 2008). Its axon follows the posterior edge of its cognate medulla column (Ting et al., 2014), then crosses in the second optic chiasma and terminates in lobula layer 1 (Fischbach and Dittrich, 1989; Ting et al., 2014), where it outputs to T5 neurons (Shinomiya et al., 2014). It is a cholinergic neuron (Gao et al., 2008; Shinomiya et al., 2014). It expresses the transcription factor sim (Ozel et al., 2021). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0206213</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224196</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0225094</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003797"/>
@@ -11672,7 +11724,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Tm20</obo:IAO_0000028>
-        <obo:IAO_0000115>Transmedullary neuron that has dendritic arborization in medulla layers M1-M3, as well as presynaptic sites in M8 (Fischbach and Dittrich, 1989; Gao et al., 2008). In the medulla, it spans just one column (Kind et al., 2021), and receives input from lamina monopolar neuron L3 (Takemura et al., 2013) and an R8 photoreceptor (Kind et al., 2021). Its axon follows the anterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma and projects to lobula layer 5 (Fischbach and Dittrich, 1989; Gao et al., 2008). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a cholinergic neuron (Gao et al., 2008).</obo:IAO_0000115>
+        <obo:IAO_0000115>Transmedullary neuron that has dendritic arborization in medulla layers M1-M3, as well as presynaptic sites in M8 (Fischbach and Dittrich, 1989; Gao et al., 2008). In the medulla, it spans just one column (Kind et al., 2021), and receives input from lamina monopolar neuron L3 (Takemura et al., 2013) and an R8 photoreceptor (Kind et al., 2021). Its axon follows the anterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma and projects to lobula layer 5 (Fischbach and Dittrich, 1989; Gao et al., 2008). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a cholinergic neuron (Gao et al., 2008). There is usually one of these cells per optic column (Nern et al., 2025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10145</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003808</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Tm20</oboInOwl:hasExactSynonym>
@@ -11691,13 +11743,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003808"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Transmedullary neuron that has dendritic arborization in medulla layers M1-M3, as well as presynaptic sites in M8 (Fischbach and Dittrich, 1989; Gao et al., 2008). In the medulla, it spans just one column (Kind et al., 2021), and receives input from lamina monopolar neuron L3 (Takemura et al., 2013) and an R8 photoreceptor (Kind et al., 2021). Its axon follows the anterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma and projects to lobula layer 5 (Fischbach and Dittrich, 1989; Gao et al., 2008). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a cholinergic neuron (Gao et al., 2008).</owl:annotatedTarget>
+        <owl:annotatedTarget>Transmedullary neuron that has dendritic arborization in medulla layers M1-M3, as well as presynaptic sites in M8 (Fischbach and Dittrich, 1989; Gao et al., 2008). In the medulla, it spans just one column (Kind et al., 2021), and receives input from lamina monopolar neuron L3 (Takemura et al., 2013) and an R8 photoreceptor (Kind et al., 2021). Its axon follows the anterior edge of its cognate medulla column (Ting et al., 2014), then crosses the second optic chiasma and projects to lobula layer 5 (Fischbach and Dittrich, 1989; Gao et al., 2008). It provides input to the lobula intrinsic neuron Li4 via many synapses (Lin et al., 2016). It is a cholinergic neuron (Gao et al., 2008). There is usually one of these cells per optic column (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0206213</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224196</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0230403</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003808"/>
@@ -12345,14 +12398,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Pm1</obo:IAO_0000028>
-        <obo:IAO_0000115>Proximal medullary wide-field amacrine neuron that forms a broad terminal arbor with mixed morphology terminals that is restricted to medulla layer M9. This layer contains both dendrites and presynaptic terminals (Morante and Desplan, 2008; Fischbach and Dittrich, 1989).</obo:IAO_0000115>
+        <obo:IAO_0000115>Proximal medullary wide-field amacrine neuron that branches as it enters the proximal side of the medulla and forms broad terminal arbors, with mixed pre- and post-synaptic terminals, mainly in medulla layer M9 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10109</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003833</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Pm1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Pm01</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pm02</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pm06</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pm5</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pm6</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003833</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:comment>Pre-synaptic terminals were assessed by labelling with a UAS-Synaptotagmin reporter (P{UAS-HA-syt} - FBtp0015803). The identification of dendrites was done using a UAS-Dscam (P{UAS-Dscam.exon17.1.GFP} - FBtp0021447) reporter (Morante and Desplan, 2008). Neurotransmitter determined to be acetylcholine based on Cha-GAL4.7.4 driver (FBtp0014830) expression and anti-ChaT staining (Varija Raghu et al., 2011 - FBrf0212356), but scRNAseq data assigns as GABA based on Gad1 transcripts and lineage (Konstantinides et al., 2022 - FBrf0253187). The morphology of terminals was judged figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB.</rdfs:comment>
+        <rdfs:comment>Neurotransmitter determined to be acetylcholine based on Cha-GAL4.7.4 driver (FBtp0014830) expression and anti-ChaT staining (Varija Raghu et al., 2011 - FBrf0212356), but scRNAseq data assigns as GABA based on Gad1 transcripts and lineage (Konstantinides et al., 2022 - FBrf0253187). EM also predicts GABA (Nern et al., 2025 - doi:10.1038/s41586-025-08746-0). Nern et al. (2025) split this into 3 subtypes (Pm1, Pm5, Pm6), which seem to have small differences in layer and column spans.</rdfs:comment>
         <rdfs:label>proximal medullary amacrine neuron Pm1</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12364,7 +12422,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003833"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Proximal medullary wide-field amacrine neuron that forms a broad terminal arbor with mixed morphology terminals that is restricted to medulla layer M9. This layer contains both dendrites and presynaptic terminals (Morante and Desplan, 2008; Fischbach and Dittrich, 1989).</owl:annotatedTarget>
+        <owl:annotatedTarget>Proximal medullary wide-field amacrine neuron that branches as it enters the proximal side of the medulla and forms broad terminal arbors, with mixed pre- and post-synaptic terminals, mainly in medulla layer M9 (Fischbach and Dittrich, 1989; Morante and Desplan, 2008).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0204652</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -12374,6 +12432,39 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Pm1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003833"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Pm01</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003833"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Pm02</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003833"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Pm06</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003833"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Pm5</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003833"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Pm6</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -12395,10 +12486,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>Proximal medullary wide-field amacrine neuron that projects along M7 and branches extensively at the M7/M8 boundary with each branch projecting into medulla layer M9 where it forms an arbor with mixed bleb-type and fine terminals (Morante and Desplan, 2008; Fischbach and Dittrich, 1989).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00003835</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Pm2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Pm03</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pm08</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003835</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:comment>Neurotransmitter determined to be glutamate based on vGlut[CNSIII]-GAL4 driver (FBti0129148) expression (Raghu and Borst, 2011 - FBrf0213690), but scRNAseq data assigns as GABA based on Gad1 transcripts and lineage (Konstantinides et al., 2022 - FBrf0253187).</rdfs:comment>
+        <rdfs:comment>Neurotransmitter determined to be glutamate based on vGlut[CNSIII]-GAL4 driver (FBti0129148) expression (Raghu and Borst, 2011 - FBrf0213690), but scRNAseq data assigns as GABA based on Gad1 transcripts and lineage (Konstantinides et al., 2022 - FBrf0253187). Nern et al. (2025) - doi:10.1038/s41586-025-08746-0 identify two subtypes (Pm2a and Pm2b) in the EM data, but do not distinguish these at light level.</rdfs:comment>
         <rdfs:label>proximal medullary amacrine neuron Pm2</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12421,6 +12514,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003835"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Pm03</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003835"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>Pm08</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -12438,11 +12543,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>Tangential neuron of the optic lobe that projects and arborizes along the plane of one or more medulla layers.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00003836</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Mt</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>medulla tangential neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary tangential neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003836</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>medullary tangential neuron</rdfs:label>
+        <rdfs:label>medulla tangential neuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003836"/>
@@ -12495,13 +12600,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Mt8</obo:IAO_0000028>
-        <obo:IAO_0000115>Medullary tangential neuron that arborizes along medulla layers M7 and M8 and has additional arborization in the innermost layer (6) of the lobula and the lateral protocerebrum (Fischbach and Dittrich, 1989).</obo:IAO_0000115>
+        <obo:IAO_0000115>Medulla tangential neuron that arborizes along medulla layers M7 and M8 and has additional arborization in the innermost layer (6) of the lobula and the lateral protocerebrum (Fischbach and Dittrich, 1989).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00003844</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Mt8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary tangential neuron Mt8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003844</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>medullary tangential neuron Mt8</rdfs:label>
+        <rdfs:label>medulla tangential neuron Mt8</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003844"/>
@@ -12512,7 +12618,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003844"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Medullary tangential neuron that arborizes along medulla layers M7 and M8 and has additional arborization in the innermost layer (6) of the lobula and the lateral protocerebrum (Fischbach and Dittrich, 1989).</owl:annotatedTarget>
+        <owl:annotatedTarget>Medulla tangential neuron that arborizes along medulla layers M7 and M8 and has additional arborization in the innermost layer (6) of the lobula and the lateral protocerebrum (Fischbach and Dittrich, 1989).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -15157,10 +15263,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
-        <obo:IAO_0000115>Optic lobe intrinsic neuron with modular arborizations. Each module has a narrow field, but may span multiple neuropils. Modules of the same cell tend to tile the neuropil.</obo:IAO_0000115>
+        <obo:IAO_0000115>Optic lobe intrinsic neuron without defined axons or dendrites, having processes with mixed pre- and post-synapses in approximately the same ratio throughout the cell (Matsliah et al., 2024). Some amacrine cells, such as CT1, have multiple compartmentalized, modular arborizations (Meier and Borst, 2019).</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>amacrine cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VFB:FBbt_00005127</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>amacrine cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00005127</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:label>optic lobe amacrine neuron</rdfs:label>
@@ -15168,9 +15274,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005127"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Optic lobe intrinsic neuron with modular arborizations. Each module has a narrow field, but may span multiple neuropils. Modules of the same cell tend to tile the neuropil.</owl:annotatedTarget>
+        <owl:annotatedTarget>Optic lobe intrinsic neuron without defined axons or dendrites, having processes with mixed pre- and post-synapses in approximately the same ratio throughout the cell (Matsliah et al., 2024). Some amacrine cells, such as CT1, have multiple compartmentalized, modular arborizations (Meier and Borst, 2019).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0243899</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0242197</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20388,23 +20495,24 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110074"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000028>Dm8</obo:IAO_0000028>
+        <obo:IAO_0000028>Dm8a</obo:IAO_0000028>
         <obo:IAO_0000115>Glutamatergic (Gao et al., 2008; Karuppudurai et al., 2014) distal medullary amacrine neuron that branches extensively in medulla layer M6A (Fischbach and Dittrich, 1989; Takemura et al., 2013; Nern et al., 2015), spanning approximately 16 medulla columns (Karuppudurai et al., 2014), with centrifugal projections back to layer M4 (Takemura et al., 2013; Nern et al., 2015). The highest arbor density and longest distal projection are usually found in one optic column (its &apos;home column&apos;), near the center of the M6A arborization, with these columns tiling between different individual Dm8 cells, while the rest of the arbor overlaps with other Dm8 cells considerably (Gao et al., 2008; Nern et al., 2015; Kind et al., 2021). In layer M6, it is postsynaptic to several R7 photoreceptor cells and presynaptic to Tm5c (Gao et al., 2008; Takemura et al., 2013; Karuppudurai et al., 2014). The contacts with Tm5c are clustered in one column at the center of the dendritic field of Dm8 (Karuppudurai et al., 2014). It is involved in UV preference (Gao et al., 2008).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FlyBrain_NDB:10088</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00013774</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Dm8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Dm8a</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>distal medullary amacrine neuron Dm8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00013774</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Connectivity inferred from EM reconstructions from a single EM section. The neurotransmitter was assessed in cells labelled with a glutamate GAL4 driver P\{GawB}vGlut[OK371] (FBti0076967) (Gao et al., 2008), RT-PCR and by immunohistochemistry (Karuppudurai et al., 2014). Connectivity with R7 was assessed by EM reconstruction of a single medulla column (Gao et al., 2008) or reconstruction of serial-section TEM (Takemura et al., 2013).</rdfs:comment>
-        <rdfs:label>distal medullary amacrine neuron Dm8</rdfs:label>
+        <rdfs:label>distal medullary amacrine neuron Dm8a</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
-        <owl:annotatedTarget>Dm8</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Dm8a</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
@@ -20421,13 +20529,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Dm8</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0213020</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Dm8a</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>distal medullary amacrine neuron Dm8</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0213020</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -24508,7 +24622,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00045027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000028>WPN</obo:IAO_0000028>
+        <obo:IAO_0000028>WEDPN</obo:IAO_0000028>
         <obo:IAO_0000115>Any projection neuron (FBbt:00007392) that receives synaptic input in region some wedge (FBbt:00045027).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-10T11:40:53Z</dc:date>
@@ -24523,6 +24637,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048516"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>WEDPN</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0249560</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048516"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any projection neuron (FBbt:00007392) that receives synaptic input in region some wedge (FBbt:00045027).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
@@ -24532,11 +24652,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>WEDPN</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0249560</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048516"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>WPN</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
     
@@ -25297,9 +25412,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00049916 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00049916">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003788"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049542"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_20007266"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -25308,16 +25423,23 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111744"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111744"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Tm29</obo:IAO_0000028>
-        <obo:IAO_0000115>Transmedullary neuron that arborizes in several layers of the medulla, crosses the second optic chiasm and arborizes in a relatively deep region of the lobula, close to the terminals of Tm20 (Davis et al., 2020). It is glutamatergic (Davis et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000115>Transmedullary neuron that receives most of its input in around 5 columns of medulla layer M6, where it also has a small number of presynapses (Nern et al., 2025). It also has a small amount of arborization in the rest of M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5B (Nern et al., 2025). It is glutamatergic (Davis et al., 2020). There are around 170-270 of these cells per hemisphere (Nern et al., 2025).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-20T09:32:15Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00049916</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Tm29</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Tm5d</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00049916</oboInOwl:id>
         <rdfs:label>transmedullary neuron Tm29</rdfs:label>
@@ -25325,14 +25447,22 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049916"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Transmedullary neuron that arborizes in several layers of the medulla, crosses the second optic chiasm and arborizes in a relatively deep region of the lobula, close to the terminals of Tm20 (Davis et al., 2020). It is glutamatergic (Davis et al., 2020).</owl:annotatedTarget>
+        <owl:annotatedTarget>Transmedullary neuron that receives most of its input in around 5 columns of medulla layer M6, where it also has a small number of presynapses (Nern et al., 2025). It also has a small amount of arborization in the rest of M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5B (Nern et al., 2025). It is glutamatergic (Davis et al., 2020). There are around 170-270 of these cells per hemisphere (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049916"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Tm29</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049916"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Tm5d</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -26137,6 +26267,45 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100200"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100205"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Adult cell body rind region that overlies the lateral surface of the medulla (Ito et al., 2014).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00051041</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>rMEl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00051041</oboInOwl:id>
+        <rdfs:label>cell body rind of adult lateral medulla</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Adult cell body rind region that overlies the lateral surface of the medulla (Ito et al., 2014).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051041"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>rMEl</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00051067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051067">
@@ -26467,14 +26636,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051217"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004225"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000028>MeTu</obo:IAO_0000028>
-        <obo:IAO_0000115>Neuron that connects the medulla to the anterior optic tubercle (AOTU), via the anterior optic tract, innervating the small unit of the AOTU (Timaeus et al., 2020; Hulse et al., 2021; Kandimalla et al., 2023). It receives input from R7 (and not R8) photoreceptors (Kind et al., 2021). It is derived from an optic neuroblast (Kandimalla et al., 2023).</obo:IAO_0000115>
+        <obo:IAO_0000115>Neuron that connects the medulla to the anterior optic tubercle (AOTU), via the anterior optic tract, innervating the small unit of the AOTU (Timaeus et al., 2020; Hulse et al., 2021; Kandimalla et al., 2023). It is derived from an optic neuroblast (Kandimalla et al., 2023). There are around 500 of these cells per hemisphere (Nern et al., 2025).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-04-22T11:23:51Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00051228</oboInOwl:hasDbXref>
@@ -26496,11 +26659,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051228"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Neuron that connects the medulla to the anterior optic tubercle (AOTU), via the anterior optic tract, innervating the small unit of the AOTU (Timaeus et al., 2020; Hulse et al., 2021; Kandimalla et al., 2023). It receives input from R7 (and not R8) photoreceptors (Kind et al., 2021). It is derived from an optic neuroblast (Kandimalla et al., 2023).</owl:annotatedTarget>
+        <owl:annotatedTarget>Neuron that connects the medulla to the anterior optic tubercle (AOTU), via the anterior optic tract, innervating the small unit of the AOTU (Timaeus et al., 2020; Hulse et al., 2021; Kandimalla et al., 2023). It is derived from an optic neuroblast (Kandimalla et al., 2023). There are around 500 of these cells per hemisphere (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224242</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0254510</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0257023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051228"/>
@@ -27330,6 +27494,62 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052140"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Mt-VPN</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00052142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052142">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00007579"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003836"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053385"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100205"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>Mti</obo:IAO_0000028>
+        <obo:IAO_0000115>Intrinsic neuron of the medulla that has a tangential arborization pattern (Kind et al., 2021).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-21T16:12:15Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00052142</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Mti</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary tangential intrinsic neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00052142</oboInOwl:id>
+        <rdfs:label>medulla tangential intrinsic neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052142"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>Mti</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052142"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Intrinsic neuron of the medulla that has a tangential arborization pattern (Kind et al., 2021).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052142"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mti</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0252485</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
@@ -28294,18 +28514,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013774"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Immature form of the distal medullary amacrine neuron Dm8 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).</obo:IAO_0000115>
+        <obo:IAO_0000115>Immature form of the distal medullary amacrine neuron Dm8a (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-29T14:00:00Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00052314</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>immature distal medullary amacrine neuron Dm8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00052314</oboInOwl:id>
-        <rdfs:label>immature distal medullary amacrine neuron Dm8</rdfs:label>
+        <rdfs:label>immature distal medullary amacrine neuron Dm8a</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052314"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Immature form of the distal medullary amacrine neuron Dm8 (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).</owl:annotatedTarget>
+        <owl:annotatedTarget>Immature form of the distal medullary amacrine neuron Dm8a (Konstantinides et al., 2022). It is a Notch OFF hemilineage secondary neuron, born from a medulla forming neuroblast during the Hbn/Opa/Slp temporal window (Konstantinides et al., 2022).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0253187</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -30366,6 +30587,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-13T14:52:57Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00053385</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>medullary intrinsic neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00053385</oboInOwl:id>
         <rdfs:label>medulla intrinsic neuron</rdfs:label>
@@ -30993,6 +31215,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058205"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000634"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003856"/>
             </owl:Restriction>
@@ -31006,11 +31234,23 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003887"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003888"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000028>LLPC1</obo:IAO_0000028>
-        <obo:IAO_0000115>A lobula-lobula plate columnar neuron that receives input from layer 4 of the lobula and layers 1 and 3 of the lobula plate (Isaacson, 2019; Davis et al., 2020). It is highly sensitive to front-to-back motion on the ipsilateral eye (Isaacson, 2019). It is cholinergic (Davis et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000115>Lobula-lobula plate columnar neuron that receives input from around 5-10 columns of lobula layer 4 and around 10 columns of lobula plate layer 1, with additional postsynapses in lobula plate layers 2-3 (Isaacson, 2019; Davis et al., 2020; Nern et al., 2025). It remains ipsilateral and sends output to the posterior lateral protocerebrum (Dorkenwald et al., 2024). It is highly sensitive to front-to-back motion on the ipsilateral eye (Isaacson, 2019). It is cholinergic (Davis et al., 2020). There are around 100-120 of these cells on each side (Nern et al., 2025).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-15T10:42:07Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058227</oboInOwl:hasDbXref>
@@ -31023,8 +31263,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058227"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A lobula-lobula plate columnar neuron that receives input from layer 4 of the lobula and layers 1 and 3 of the lobula plate (Isaacson, 2019; Davis et al., 2020). It is highly sensitive to front-to-back motion on the ipsilateral eye (Isaacson, 2019). It is cholinergic (Davis et al., 2020).</owl:annotatedTarget>
+        <owl:annotatedTarget>Lobula-lobula plate columnar neuron that receives input from around 5-10 columns of lobula layer 4 and around 10 columns of lobula plate layer 1, with additional postsynapses in lobula plate layers 2-3 (Isaacson, 2019; Davis et al., 2020; Nern et al., 2025). It remains ipsilateral and sends output to the posterior lateral protocerebrum (Dorkenwald et al., 2024). It is highly sensitive to front-to-back motion on the ipsilateral eye (Isaacson, 2019). It is cholinergic (Davis et al., 2020). There are around 100-120 of these cells on each side (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260546</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>doi:10.17863/CAM.36002</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -34007,10 +34249,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Pm3</obo:IAO_0000028>
-        <obo:IAO_0000115>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, with both branches forming a broad terminal arbor in medulla layer M9. The processes of different cells intermingle significantly, and the arbor density is heterogeneous. It occupies a peripheral intracolumnar position. It is GABAergic (Davis et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000115>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, with both branches forming a broad terminal arbor in medulla layer M9. The processes of different cells intermingle significantly, and the arbor density is heterogeneous. It occupies a peripheral intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 35-40 of these cells per hemisphere (Nern et al., 2025).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-12-13T11:05:21Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00110066</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CB3856</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pm09</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pm3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00110066</oboInOwl:id>
@@ -34027,10 +34271,25 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110066"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, with both branches forming a broad terminal arbor in medulla layer M9. The processes of different cells intermingle significantly, and the arbor density is heterogeneous. It occupies a peripheral intracolumnar position. It is GABAergic (Davis et al., 2020).</owl:annotatedTarget>
+        <owl:annotatedTarget>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, with both branches forming a broad terminal arbor in medulla layer M9. The processes of different cells intermingle significantly, and the arbor density is heterogeneous. It occupies a peripheral intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 35-40 of these cells per hemisphere (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0213020</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0228639</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110066"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CB3856</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110066"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Pm09</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110066"/>
@@ -35346,21 +35605,34 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003758"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003758"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013003"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003759"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Pm4</obo:IAO_0000028>
-        <obo:IAO_0000115>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, in medulla layers M8 and M9. Its arbor covers around 11 columns. It occupies a central intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 60 Pm4 neurons per hemisphere.</obo:IAO_0000115>
+        <obo:IAO_0000115>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla. It covers around 10-20 columns with its pre- and post-synapses mostly in layers M8-M9 (Nern et al., 2025). It occupies a central intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 75-85 of these neurons per hemisphere (Nern et al., 2025).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-11-10T14:48:20Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111282</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Pm05</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pm4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00111282</oboInOwl:id>
@@ -35376,9 +35648,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111282"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla, in medulla layers M8 and M9. Its arbor covers around 11 columns. It occupies a central intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 60 Pm4 neurons per hemisphere.</owl:annotatedTarget>
+        <owl:annotatedTarget>Proximal medullary amacrine neuron that branches at the proximal surface of the medulla. It covers around 10-20 columns with its pre- and post-synapses mostly in layers M8-M9 (Nern et al., 2025). It occupies a central intracolumnar position. It is GABAergic (Davis et al., 2020). There are around 75-85 of these neurons per hemisphere (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0228639</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111282"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Pm05</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111282"/>
@@ -35453,15 +35733,16 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>Mi15</obo:IAO_0000028>
-        <obo:IAO_0000115>Medullary intrinsic unicolumnar neuron whose primary neurite splits in the M1 layer, sending vertical branches as far as the M7 layer (Takemura et al., 2013; Takemura et al., 2015; Kind et al., 2021). A process also extends from the distal medulla into the first optic chiasma, where it receives around half of its photoreceptor input (Kind et al., 2021). In central columns, these cells selectively receive input from R8, rather than R7 photoreceptors, but selectivity is not maintained in Mi15 cells of the dorsal rim area (Kind et al., 2021). It seems to be both cholinergic and dopaminergic (Davis et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000115>Medulla intrinsic unicolumnar neuron whose primary neurite splits in the M1 layer, sending vertical branches as far as the M7 layer (Takemura et al., 2013; Takemura et al., 2015; Kind et al., 2021). A process also extends from the distal medulla into the first optic chiasma, where it receives around half of its photoreceptor input (Kind et al., 2021). In central columns, these cells selectively receive input from R8, rather than R7 photoreceptors, but selectivity is not maintained in Mi15 cells of the dorsal rim area (Kind et al., 2021). It seems to be both cholinergic and dopaminergic (Davis et al., 2020).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-11-10T17:28:29Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111285</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Mi15</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medullary intrinsic neuron Mi15</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00111285</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>medullary intrinsic neuron Mi15</rdfs:label>
+        <rdfs:label>medulla intrinsic neuron Mi15</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111285"/>
@@ -35472,7 +35753,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111285"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Medullary intrinsic unicolumnar neuron whose primary neurite splits in the M1 layer, sending vertical branches as far as the M7 layer (Takemura et al., 2013; Takemura et al., 2015; Kind et al., 2021). A process also extends from the distal medulla into the first optic chiasma, where it receives around half of its photoreceptor input (Kind et al., 2021). In central columns, these cells selectively receive input from R8, rather than R7 photoreceptors, but selectivity is not maintained in Mi15 cells of the dorsal rim area (Kind et al., 2021). It seems to be both cholinergic and dopaminergic (Davis et al., 2020).</owl:annotatedTarget>
+        <owl:annotatedTarget>Medulla intrinsic unicolumnar neuron whose primary neurite splits in the M1 layer, sending vertical branches as far as the M7 layer (Takemura et al., 2013; Takemura et al., 2015; Kind et al., 2021). A process also extends from the distal medulla into the first optic chiasma, where it receives around half of its photoreceptor input (Kind et al., 2021). In central columns, these cells selectively receive input from R8, rather than R7 photoreceptors, but selectivity is not maintained in Mi15 cells of the dorsal rim area (Kind et al., 2021). It seems to be both cholinergic and dopaminergic (Davis et al., 2020).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0230092</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0244935</oboInOwl:hasDbXref>
@@ -35492,7 +35773,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111286">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003817"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048286"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049542"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058208"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110137"/>
@@ -35545,7 +35825,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>TmY14</obo:IAO_0000028>
-        <obo:IAO_0000115>Transmedullary Y wide-field neuron that terminates in the lobula and lobula plate (Takemura et al., 2013). It displays fine arborizations in medulla layers M3-M5 and M8-M10 (Takemura et al., 2013). It projects to the central brain, an unusual feature in TmY neurons (Takemura et al., 2013; Shinomiya et al., 2019). It is glutamatergic (Konstantinides et al., 2022).</obo:IAO_0000115>
+        <obo:IAO_0000115>Transmedullary Y wide-field neuron that terminates in the lobula and lobula plate (Takemura et al., 2013). It displays fine arborizations in medulla layers M3-M5 and M8-M10 (Takemura et al., 2013). Some of these cells have an axon that projects to the central brain, an unusual feature in TmY neurons (Takemura et al., 2013; Shinomiya et al., 2019; Matsliah et al., 2024), but this axon has very few synapses (Matsliah et al., 2024). It is glutamatergic (Konstantinides et al., 2022).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-11-10T17:28:29Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111286</oboInOwl:hasDbXref>
@@ -35553,6 +35833,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00111286</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:comment>Matsliah et al. (2024) identify &apos;typical&apos; TmY14 that have central brain axon and &apos;atypical&apos; that do not in FAFB. Unclear if &apos;atypical&apos; exist in other brains.</rdfs:comment>
         <rdfs:label>transmedullary Y neuron TmY14</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35564,10 +35845,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111286"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Transmedullary Y wide-field neuron that terminates in the lobula and lobula plate (Takemura et al., 2013). It displays fine arborizations in medulla layers M3-M5 and M8-M10 (Takemura et al., 2013). It projects to the central brain, an unusual feature in TmY neurons (Takemura et al., 2013; Shinomiya et al., 2019). It is glutamatergic (Konstantinides et al., 2022).</owl:annotatedTarget>
+        <owl:annotatedTarget>Transmedullary Y wide-field neuron that terminates in the lobula and lobula plate (Takemura et al., 2013). It displays fine arborizations in medulla layers M3-M5 and M8-M10 (Takemura et al., 2013). Some of these cells have an axon that projects to the central brain, an unusual feature in TmY neurons (Takemura et al., 2013; Shinomiya et al., 2019; Matsliah et al., 2024), but this axon has very few synapses (Matsliah et al., 2024). It is glutamatergic (Konstantinides et al., 2022).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0222324</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0243899</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0253187</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111286"/>
@@ -35622,14 +35904,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000028>LPi3-4</obo:IAO_0000028>
-        <obo:IAO_0000115>Lobula plate intrinsic neuron with its soma in the cell body rind of the medulla (Mauss et al., 2015; Shinomiya et al., 2019). The primary neurite traverses the medulla, from distal to proximal and crosses the second optic chiasm, to terminate in the lobula plate (Mauss et al., 2015; Shinomiya et al., 2019). It has presynaptic terminals in layer 4 and postsynaptic ones in layer 3 (Mauss et al., 2015; Shinomiya et al., 2019). It receives most of its input from T4c and T5c neurons (Shinomiya et al., 2022). It is a glutamatergic neuron (Mauss et al., 2015).</obo:IAO_0000115>
+        <obo:IAO_0000115>Lobula plate intrinsic neuron with its soma in the cell body rind of the medulla (Mauss et al., 2015; Shinomiya et al., 2019). The primary neurite traverses the medulla, from distal to proximal and crosses the second optic chiasm, to terminate in the lobula plate (Mauss et al., 2015; Shinomiya et al., 2019). It has presynaptic terminals in layer 4 and postsynaptic ones in layer 3 (Mauss et al., 2015; Shinomiya et al., 2019). It receives most of its input from T4c and T5c neurons (Shinomiya et al., 2022). It is a glutamatergic neuron (Mauss et al., 2015). There are around 55-60 of these cells on each side (Nern et al., 2025).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-11-11T14:58:39Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111289</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CB3857</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LPi09</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LPi3-4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>LPi34</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00111289</oboInOwl:id>
-        <rdfs:comment>The glutamate neurotransmitter was assessed by antibody staining and mRNA profiling (Mauss et al., 2015).</rdfs:comment>
+        <rdfs:comment>The glutamate neurotransmitter was assessed by antibody staining and mRNA profiling (Mauss et al., 2015). Matsliah et al. (2024) - FBrf0260545 nomenclature scheme unrelated to layer innervation.</rdfs:comment>
         <rdfs:label>lobula plate intrinsic neuron LPi3-4</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -35641,10 +35926,25 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111289"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Lobula plate intrinsic neuron with its soma in the cell body rind of the medulla (Mauss et al., 2015; Shinomiya et al., 2019). The primary neurite traverses the medulla, from distal to proximal and crosses the second optic chiasm, to terminate in the lobula plate (Mauss et al., 2015; Shinomiya et al., 2019). It has presynaptic terminals in layer 4 and postsynaptic ones in layer 3 (Mauss et al., 2015; Shinomiya et al., 2019). It receives most of its input from T4c and T5c neurons (Shinomiya et al., 2022). It is a glutamatergic neuron (Mauss et al., 2015).</owl:annotatedTarget>
+        <owl:annotatedTarget>Lobula plate intrinsic neuron with its soma in the cell body rind of the medulla (Mauss et al., 2015; Shinomiya et al., 2019). The primary neurite traverses the medulla, from distal to proximal and crosses the second optic chiasm, to terminate in the lobula plate (Mauss et al., 2015; Shinomiya et al., 2019). It has presynaptic terminals in layer 4 and postsynaptic ones in layer 3 (Mauss et al., 2015; Shinomiya et al., 2019). It receives most of its input from T4c and T5c neurons (Shinomiya et al., 2022). It is a glutamatergic neuron (Mauss et al., 2015). There are around 55-60 of these cells on each side (Nern et al., 2025).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0228988</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0243899</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0254308</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111289"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CB3857</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111289"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>LPi09</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111289"/>
@@ -35652,6 +35952,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>LPi3-4</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0228988</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111289"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>LPi34</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -35837,6 +36143,50 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Li4</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0230403</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00111640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00111640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005129"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048286"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>MC</obo:IAO_0000028>
+        <obo:IAO_0000115>An extrinsic columnar neuron that innervates the medulla.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-05-26T17:57:24Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00111640</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00111640</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
+        <rdfs:label>medulla columnar neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>MC</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An extrinsic columnar neuron that innervates the medulla.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0224242</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111640"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MC</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0246888</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
     
@@ -37226,6 +37576,76 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>A DenBl</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_20007266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_20007266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003788"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003755"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003755"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013003"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>CB3851</obo:IAO_0000028>
+        <obo:IAO_0000115>Adult transmedullary neuron with its soma distal to the medulla (Nern et al., 2025). It is mainly postsynaptic, but also has presynapses, in around 5 columns of the medulla, with arbors mainly in M6, but also other layers from M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5 (Nern et al., 2025). There are approximately 370-550 of these cells per hemisphere (Nern et al., 2025).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-5633-1314"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-05T12:00:00Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_20007266</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CB3851</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:20007266</oboInOwl:id>
+        <rdfs:comment>Cell type from Schlegel et al. (2024), based on FlyWire v783 (FAFB) data (Dorkenwald et al., 2024), two of three (Tm29, Tm39, Tm40) proposed subtypes identified at light level by Nern et al. (2025).</rdfs:comment>
+        <rdfs:label>adult transmedullary CB3851 neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_20007266"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <owl:annotatedTarget>CB3851</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_20007266"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Adult transmedullary neuron with its soma distal to the medulla (Nern et al., 2025). It is mainly postsynaptic, but also has presynapses, in around 5 columns of the medulla, with arbors mainly in M6, but also other layers from M3-M8 (Nern et al., 2025). It crosses the second optic chiasm and has mixed pre- and post-synapses in around 3 columns of lobula layer 5 (Nern et al., 2025). There are approximately 370-550 of these cells per hemisphere (Nern et al., 2025).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260546</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>doi:10.1038/s41586-025-08746-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_20007266"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CB3851</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
     </owl:Axiom>
     
 
