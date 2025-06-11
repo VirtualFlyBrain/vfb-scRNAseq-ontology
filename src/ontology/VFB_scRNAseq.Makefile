@@ -357,11 +357,3 @@ $(PRESEED):
 
 $(ALL_TERMS_COMBINED):
 	touch $@
-
-.PHONY: update_repo
-# don't keep adding extra imports
-update_repo:
-	sh $(SCRIPTSDIR)/update_repo.sh
-	rm -f $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_import.owl) $(foreach n,$(IMPORTS), $(IMPORTDIR)/$(n)_terms.txt) VFB_scRNAseq-idranges.owl
-	sed -i 's!PREFIX dc: <http://purl.org/dc/elements/1.1/>!PREFIX dc: <http://purl.org/dc/terms/>!g' $(SPARQLDIR)/postprocess-module.ru
-	sed -i 's!PREFIX dc: <http://purl.org/dc/elements/1.1/>!PREFIX dc: <http://purl.org/dc/terms/>!g' $(SPARQLDIR)/preprocess-module.ru
