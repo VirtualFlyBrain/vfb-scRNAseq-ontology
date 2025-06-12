@@ -6,7 +6,7 @@
 .PHONY: prepare_release_notest
 # this prepares a release without updating the source files or running any tests - run using command in run_release.sh
 prepare_release_notest: $(SRC) filtered_imports release_ontology_files $(REPORTDIR)/FBgn_list.txt gen_docs
-	rm -f $(CLEANFILES) $(ALL_TERMS_COMBINED) &&\
+	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 # flags to bypass recreation of existing gene expression and experiment metadata
@@ -353,7 +353,4 @@ $(SRCMERGED): $(EDIT_PREPROCESSED) $(OTHER_SRC)
 	cp $< $@
 
 $(PRESEED):
-	touch $@
-
-$(ALL_TERMS_COMBINED):
 	touch $@

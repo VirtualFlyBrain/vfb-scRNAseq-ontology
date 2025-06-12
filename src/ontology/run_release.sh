@@ -7,5 +7,4 @@ sh run.sh make all_tsvs -B
 sh run.sh make update_ontology_files -B
 
 # Release - update imports, merge meta, exp and imports for each ds and put zipped versions in release_files.
-# Can't overwrite ALL_TERMS_COMBINED in file
-sh run.sh make prepare_release_notest ALL_TERMS_COMBINED=dummy.txt -B
+sh run.sh make prepare_release_notest -B
