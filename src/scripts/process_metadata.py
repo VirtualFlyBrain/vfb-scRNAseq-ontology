@@ -9,7 +9,8 @@ from process_expression_data import expression_file_loader
 expression_cutoff = 0.2
 
 # new sites must be added to VFB KB, then add FB name and VFB short form here:
-sites_dict= {'EMBL-EBI Single Cell Expression Atlas Datasets': 'scExpressionAtlas'}
+sites_dict= {'EMBL-EBI Single Cell Expression Atlas Datasets': 'scExpressionAtlas',
+             'GEO': 'GEO'}
 
 # can specify whether to regenerate tsvs for all existing datasets. New datasets will always be generated.
 parser = argparse.ArgumentParser()
