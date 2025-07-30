@@ -48,5 +48,7 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_FBlc0007347.owl" uri="expression_data/VFB_scRNAseq_exp_FBlc0007347.owl"/>
   <uri id="User Entered Import Resolution" name="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0006887.owl" uri="ontology_files/VFB_scRNAseq_FBlc0006887.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_FBlc0006887.owl" uri="expression_data/VFB_scRNAseq_exp_FBlc0006887.owl"/>
+  <uri id="User Entered Import Resolution" name="http://virtualflybrain.org/data/VFB/OWL/VFB_scRNAseq_FBlc0007797.owl" uri="ontology_files/VFB_scRNAseq_FBlc0007797.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/VFB_scRNAseq/expression_data/VFB_scRNAseq_exp_FBlc0007797.owl" uri="expression_data/VFB_scRNAseq_exp_FBlc0007797.owl"/>
  </group>
 </catalog>

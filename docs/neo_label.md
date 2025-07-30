@@ -23,10 +23,10 @@ Alias: neo_label
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Publication](Publication.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
 
 
 
