@@ -3323,12 +3323,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005393"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Apodeme that is part of the late embryo/larva. Apodemes are not a continuous structure, but are split into two halves. In the embryo, this break is visible laterally. In the larva, the dorsal and ventral halves in the thoracic and abdominal segments are staggered, with the dorsal part being posterior to the ventral one.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>embryonic/larval apodeme</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -3687,12 +3681,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001911"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell of the late embryo/larva.</obo:IAO_0000115>
@@ -4218,12 +4206,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001911"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Neuron that is part of the larval nervous system. Neurons with functional roles in the larva are born during the embryonic phase of neurogenesis and further neurons, with adult-specific roles, are born during the postembryonic phase, which begins during larval development (Lacin and Truman, 2016).</obo:IAO_0000115>
@@ -4962,12 +4944,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Neuromere of the larval nervous system.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00001912</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -5006,12 +4982,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001911"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Central nervous system of the embryo/larva.</obo:IAO_0000115>
@@ -5064,12 +5034,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5970,12 +5934,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005396"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Apodeme that is part of an adult.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003516</oboInOwl:id>
@@ -6054,12 +6012,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003559"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Central nervous system of the adult.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:6003623</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00003623</oboInOwl:hasDbXref>
@@ -6106,12 +6058,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Portion of the adult central nervous system found in the head, consisting of the cerebral and gnathal ganglia (Ito et al., 2014).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:6003624</oboInOwl:hasDbXref>
@@ -6889,22 +6835,16 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003701"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111152"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Neuron that has its cell body in the optic lobe. These neurons develop from neuroblasts of the larval optic anlage (Hofbauer and Campos-Ortega, 1990).</obo:IAO_0000115>
+        <obo:IAO_0000115>Neuron that has its cell body in the adult optic lobe. These neurons develop from neuroblasts of the larval optic anlage (Hofbauer and Campos-Ortega, 1990).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00003702</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003702</oboInOwl:id>
@@ -6914,7 +6854,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Neuron that has its cell body in the optic lobe. These neurons develop from neuroblasts of the larval optic anlage (Hofbauer and Campos-Ortega, 1990).</owl:annotatedTarget>
+        <owl:annotatedTarget>Neuron that has its cell body in the adult optic lobe. These neurons develop from neuroblasts of the larval optic anlage (Hofbauer and Campos-Ortega, 1990).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0052913</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0064800</oboInOwl:hasDbXref>
@@ -7957,6 +7897,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000700"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007368"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053522"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuron (FBbt:00005106) that is capable of some dopamine secretion, neurotransmission (GO:0061527).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CL:0000700</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00005131</oboInOwl:hasDbXref>
@@ -9883,12 +9829,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003559"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Peripheral nervous system of the adult.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00005892</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>adult PNS</oboInOwl:hasExactSynonym>
@@ -9925,12 +9865,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001911"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Peripheral nervous system of the embryo or larva.</obo:IAO_0000115>
@@ -10446,6 +10380,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007054"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>IDLP</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007054"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>slpr</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0193607</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007054"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Lateral synaptic neuropil domain of the adult superior neuropils. It lies behind the anterior optic tubercle, in front of the mushroom body calyx and above the superior clamp and lateral horn. Its boundary with the anterior optic tubercle (AOTU), mushroom body calyx and lateral horn is demarcated by the extent of arborization of visual projection neurons and antennal lobe projection neurons. Boundaries with the superior clamp, anterior and posterior ventro-lateral protocerebrum are defined using clearly distinguishable fiber bundles.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0211016</oboInOwl:hasDbXref>
@@ -10465,18 +10411,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>DLP</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007054"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>IDLP</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007054"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>slpr</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0193607</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10566,18 +10500,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
-        <obo:IAO_0000115>A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>CARO:0001000</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A structure mainly consisting of cell components, rather than complete cells.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0005162</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007060</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval_OF"/>
+        <rdfs:comment>May contain some complete cells in addition to partial ones (e.g. glia in nervous system regions).</rdfs:comment>
         <rdfs:label>multi-cell-component structure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007060"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.</owl:annotatedTarget>
+        <owl:annotatedTarget>A structure mainly consisting of cell components, rather than complete cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-1373-1705</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -10982,12 +10917,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001919"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuroblast of the larva.</obo:IAO_0000115>
@@ -12018,12 +11947,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100323"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Structure consisting of the embryonic/larval foregut, midgut and hindgut.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T09:58:25Z</dc:date>
@@ -12059,12 +11982,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100322"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Structure consisting of a simple epithelium surrounded by visceral muscles, nerves and tracheae. The adult gut is divided into the adult foregut, midgut and hindgut regions, based on developmental origin.</obo:IAO_0000115>
@@ -12186,7 +12103,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>VFB:FBbt_00007577</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007577</oboInOwl:id>
-        <rdfs:label>optic lobe intrinsic neuron</rdfs:label>
+        <rdfs:label>adult optic lobe intrinsic neuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
@@ -12276,12 +12193,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013688"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A bundle of Kenyon cell projections in the adult mushroom body that arises from the anterior end of the pedunculus (at the pedunculus divide) and projects medially (Ito et al., 2014).</obo:IAO_0000115>
@@ -12628,12 +12539,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The adult mushroom body lobe system consists of a dorsal branch composed of two intertwined lobes (alpha and alpha&apos;) and a medial branch consisting of three parallel lobes (beta, beta&apos; and gamma) (Aso et al., 2014). The lobes can be divided into layers, which form strata spanning the length of each lobe, and slices, which are full width subdivisions of the length of each lobe (Aso et al., 2014).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00013688</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -12748,12 +12653,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00013688"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Bundle of Kenyon cell projections in the adult mushroom body that arises from the anterior end of the pedunculus (at the pedunculus divide) and projects dorsally (Ito et al., 2014).</obo:IAO_0000115>
@@ -13818,12 +13717,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003559"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A neuron that is part of the adult nervous system. These can be born during the postembryonic phase of neurogenesis (Lacin and Truman, 2016) or they can develop from larval neurons during the pupal stage (Veverytsa and Allan, 2013).</obo:IAO_0000115>
@@ -16022,12 +15915,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001919"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Neuropil mass below the larval esophagus consisting of the gnathal ganglion and part of the tritocerebrum.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-26T11:25:02Z</dc:date>
@@ -16145,12 +16032,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001920"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Neuropil mass above the larval esophagus consisting of the protocerebral and deutocerebral neuromeres and part of the tritocerebrum.</obo:IAO_0000115>
@@ -16540,6 +16421,53 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>larval sensory column</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0237251</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005106"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007008"/>
+        <obo:IAO_0000115>Neuron that is in a transient state between birth and its first mature morphology or between its larval and adult morphologies.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-16T10:00:44Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00051423</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>immature neuron</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>differentiating neuron</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbt:00051423</oboInOwl:id>
+        <rdfs:label>developing neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051423"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuron that is in a transient state between birth and its first mature morphology or between its larval and adult morphologies.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0161044</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0247750</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00051424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051423"/>
+        <obo:IAO_0000115>Neuron that is in a transient, immature, state between birth and its first mature morphology.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-16T10:52:33Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00051424</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00051424</oboInOwl:id>
+        <rdfs:label>immature neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuron that is in a transient, immature, state between birth and its first mature morphology.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0156020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0247750</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17311,12 +17239,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001919"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuropil glial sheath of the larva.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-26T11:01:04Z</dc:date>
@@ -17353,12 +17275,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003623"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuropil glial sheath of the adult.</obo:IAO_0000115>
@@ -17582,12 +17498,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any neuromere of the adult.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
@@ -17905,6 +17815,115 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FlyBase:FBrf0238440</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0242628</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053522">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002203"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005131"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002203"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Immature neuron that will become a dopaminergic neuron, including neurons that are not yet producing dopamine (Hartenstein et al., 2017).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-30T14:01:29Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00053522</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053522</oboInOwl:id>
+        <rdfs:label>immature dopaminergic neuron</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00053522"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Immature neuron that will become a dopaminergic neuron, including neurons that are not yet producing dopamine (Hartenstein et al., 2017).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0234128</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053539">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002203"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00025991"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052344"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002203"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003702"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Immature neuron that develops from an optic neuroblast and will become an adult optic lobe neuron.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-14T12:37:17Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00053539</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053539</oboInOwl:id>
+        <rdfs:label>immature adult optic lobe neuron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00053540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00053540">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002203"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051424"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002203"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Immature neuron that will have its synapses restricted to the optic lobe in the adult.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-14T12:41:54Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00053540</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00053540</oboInOwl:id>
+        <rdfs:label>immature adult optic lobe intrinsic neuron</rdfs:label>
+    </owl:Class>
     
 
 
@@ -18643,6 +18662,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Neuron with its synapses restricted to the central brain.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260546</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18683,6 +18703,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Neuron with its synapses restricted to the primary visual centers of the adult, i.e. the optic lobes or ocellar ganglia.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260546</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -19472,12 +19493,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003559"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell that is part of the adult. Subtypes generally tend to tile, minimizing contact with their glial neighbors and maximizing contact with their neuronal compartment (Kremer et al., 2017). They also do not seem to recognize particular neurons or neuropils; sometimes one glial cell has partial coverage of multiple units and multiple glial cells may tile across the same unit (Kremer et al., 2017).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-19T01:31:16Z</dc:date>
@@ -20210,12 +20225,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110641"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The medial lobe of the larval mushroom body. It is associated with appetitive memory (Eschbach et al., 2020).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-01-03T02:51:41Z</dc:date>
@@ -20264,12 +20273,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110641"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The vertical lobe of the larval mushroom body (Pauls et al., 2010).</obo:IAO_0000115>
@@ -20486,12 +20489,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001920"/>
             </owl:Restriction>
@@ -20550,12 +20547,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00110636"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Neuropil mass above the esophagus in the adult brain. It is part of the cerebral ganglion.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-08T17:07:47Z</dc:date>
@@ -20604,12 +20595,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047887"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Neuropil mass below the esophagus in the adult brain. It encompasses the gnathal ganglion, the prow and the saddle.</obo:IAO_0000115>
@@ -20663,12 +20648,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00011929"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001727"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The larval mushroom body lobe system consists of a dorsal branch and a medial branch (Pauls et al., 2010). At third instar, both lobes comprise three types of Kenyon cells: embryonic-born gamma neurons, larval-born gamma neurons and larval born alpha&apos;/beta&apos; neurons (Pauls et al., 2010).</obo:IAO_0000115>
@@ -26952,8 +26931,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009000"/>
             </owl:Restriction>
         </rdf:type>
-        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50138</neo_custom:filtered_gene_count>
-        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">334547</neo_custom:total_gene_count>
+        <neo_custom:filtered_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3097</neo_custom:filtered_gene_count>
+        <neo_custom:total_gene_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11876</neo_custom:total_gene_count>
         <neo_property:nodeLabel>DataSet</neo_property:nodeLabel>
         <obo:IAO_0000115>Single-cell RNA-seq study of adult brain without alcohol exposure</obo:IAO_0000115>
         <dc:licence rdf:resource="http://virtualflybrain.org/reports/VFBlicense_CC_BY_4_0"/>

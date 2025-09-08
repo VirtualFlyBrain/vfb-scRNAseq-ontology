@@ -22,14 +22,14 @@ Alias: id
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Publication](Publication.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-| [Clustering](Clustering.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [Dataset](Dataset.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
+| [Clustering](Clustering.md) |  |  no  |
 | [Thing](Thing.md) |  |  no  |
+| [Dataset](Dataset.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 

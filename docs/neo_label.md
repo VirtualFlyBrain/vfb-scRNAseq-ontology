@@ -22,11 +22,11 @@ Alias: neo_label
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Publication](Publication.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Publication](Publication.md) |  |  no  |
+| [Assay](Assay.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
