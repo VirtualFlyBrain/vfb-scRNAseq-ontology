@@ -63,21 +63,21 @@ for d in [dataset_data, cluster_data, assay_data, sample_data, publication_data]
 
 # get numbers of genes in each cluster and dataset
 def get_gene_counts(input_dataframe, cutoff):
-    """Needs id as index and columns ['gene', 'expression_extent'] (at least).
+    """Needs columns ['id', 'gene', 'expression_extent'] (at least).
        Output has id as index and columns = ['total_gene_count', 'filtered_gene_count']"""
-    unfiltered_genes = input_dataframe.loc[:,['gene']]
-    filtered_genes = input_dataframe.loc[input_dataframe['expression_extent'] > cutoff,['gene']]
-    total_gene_count = unfiltered_genes.index.value_counts().to_frame(name='total_gene_count')
-    filtered_gene_count = filtered_genes.index.value_counts().to_frame(name='filtered_gene_count')
-    gene_counts = total_gene_count.join(filtered_gene_count, how='outer').compute()
-    return gene_counts
+
+    grouped = input_dataframe.groupby('id', observed=False)['gene'].nunique().to_frame('total_gene_count')
+    filtered_df = input_dataframe[input_dataframe['expression_extent'] > cutoff]
+    filtered_grouped = filtered_df.groupby('id', observed=False)['gene'].nunique().to_frame('filtered_gene_count')
+    
+    return grouped.join(filtered_grouped, how='outer').fillna(0).compute()
 
 # clusters
 if len(cluster_data.filtered_df) > 0:
-    cluster_ids = cluster_data.filtered_df['id'].drop_duplicates().to_list()
+    cluster_ids = tuple(cluster_data.filtered_df['id'].drop_duplicates().to_list())
     exp_data = expression_file_loader(cluster_ids, 0)
-
-    cluster_gene_counts = get_gene_counts(exp_data, expression_cutoff)
+    
+    cluster_gene_counts = get_gene_counts(exp_data.reset_index(), expression_cutoff)
     cluster_data.filtered_df = cluster_data.filtered_df.merge(cluster_gene_counts, how='left', right_index=True, left_on='id')
     
     # drop if no genes after filtering
@@ -88,10 +88,9 @@ if len(cluster_data.filtered_df) > 0:
     
     # datasets
     if len(dataset_data.filtered_df) > 0:
-        exp_data = exp_data.merge(cluster_data.filtered_df[['id', 'associated_dataset']], how='left', left_index=True, right_on='id')
-        exp_data = exp_data.set_index('associated_dataset')
-
-        dataset_gene_counts = get_gene_counts(exp_data, expression_cutoff)
+        exp_data = exp_data.merge(cluster_data.filtered_df[['id', 'associated_dataset']].set_index('id'), how='left', left_index=True, right_index=True)
+        ds_gene_count_exp_data = exp_data.reset_index(drop=True).rename(columns = {'associated_dataset':'id'})
+        dataset_gene_counts = get_gene_counts(ds_gene_count_exp_data, expression_cutoff)
         dataset_data.filtered_df = dataset_data.filtered_df.merge(dataset_gene_counts, how='left', right_index=True, left_on='id')
         
         # drop if no genes after filtering
