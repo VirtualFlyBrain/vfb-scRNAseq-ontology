@@ -22,10 +22,10 @@ Alias: title
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Cluster](Cluster.md) |  |  no  |
-| [Class](Class.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 
