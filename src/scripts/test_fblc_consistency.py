@@ -137,12 +137,74 @@ def get_previous_release_tag():
     return previous_tag, commit_hash
 
 
-def test_no_fblc_ids_lost(metadata_release_dir='metadata_release_files'):
+def check_dataset_file_completeness(metadata_release_dir, expression_data_dir):
     """
-    Main test function to verify no FBlc IDs have been lost.
+    Verify that each dataset ID has corresponding files in both directories.
 
     Args:
         metadata_release_dir: Path to metadata_release_files directory
+        expression_data_dir: Path to expression_data directory
+
+    Returns:
+        Tuple of (is_complete, missing_metadata, missing_expression, dataset_ids)
+    """
+    # Extract dataset IDs from metadata_release_files
+    metadata_files = list(Path(metadata_release_dir).glob('VFB_scRNAseq_FBlc*.owl'))
+    metadata_datasets = {f.stem.replace('VFB_scRNAseq_', '') for f in metadata_files}
+
+    # Extract dataset IDs from expression_data
+    expression_files = list(Path(expression_data_dir).glob('VFB_scRNAseq_exp_FBlc*.owl.gz'))
+    expression_datasets = {f.stem.replace('VFB_scRNAseq_exp_', '').replace('.owl', '')
+                          for f in expression_files}
+
+    # Find missing files
+    missing_metadata = expression_datasets - metadata_datasets
+    missing_expression = metadata_datasets - expression_datasets
+
+    is_complete = len(missing_metadata) == 0 and len(missing_expression) == 0
+
+    return is_complete, missing_metadata, missing_expression, metadata_datasets
+
+
+def extract_fblc_ids_from_expression_files(expression_data_dir):
+    """
+    Extract all FBlc IDs from within expression_data OWL files (including cluster IDs).
+
+    Args:
+        expression_data_dir: Path to expression_data directory
+
+    Returns:
+        Set of FBlc IDs found within expression files
+    """
+    import gzip
+
+    all_ids = set()
+    expression_files = list(Path(expression_data_dir).glob('VFB_scRNAseq_exp_FBlc*.owl.gz'))
+
+    if not expression_files:
+        return all_ids
+
+    print(f"   Scanning {len(expression_files)} expression files...")
+
+    for exp_file in expression_files:
+        try:
+            with gzip.open(exp_file, 'rt') as f:
+                content = f.read()
+                ids = re.findall(r'FBlc\d{7}', content)
+                all_ids.update(ids)
+        except Exception as e:
+            print(f"   WARNING: Could not read {exp_file.name}: {e}")
+
+    return all_ids
+
+
+def test_no_fblc_ids_lost(metadata_release_dir='metadata_release_files', expression_data_dir=None):
+    """
+    Main test function to verify no FBlc IDs have been lost and run additional validation checks.
+
+    Args:
+        metadata_release_dir: Path to metadata_release_files directory
+        expression_data_dir: Path to expression_data directory (optional)
 
     Returns:
         0 if test passes, 1 if test fails
@@ -151,6 +213,8 @@ def test_no_fblc_ids_lost(metadata_release_dir='metadata_release_files'):
     print("Testing FBlc ID consistency between releases")
     print("=" * 70)
     print()
+
+    has_errors = False
 
     # Get previous release tag
     print("Finding previous release tag...")
@@ -179,7 +243,7 @@ def test_no_fblc_ids_lost(metadata_release_dir='metadata_release_files'):
 
     # Report results
     print("=" * 70)
-    print("RESULTS")
+    print("RESULTS: ID Consistency Check")
     print("=" * 70)
     print(f"Previous release ({previous_tag}): {len(previous_ids)} FBlc IDs")
     print(f"Current files:                  {len(current_ids)} FBlc IDs")
@@ -198,13 +262,65 @@ def test_no_fblc_ids_lost(metadata_release_dir='metadata_release_files'):
         for fblc_id in sorted(lost_ids):
             print(f"  - {fblc_id}")
         print()
+        has_errors = True
+    else:
+        print("✓ No FBlc IDs lost")
+        print()
+
+    # Additional validation checks
+    if expression_data_dir and Path(expression_data_dir).exists():
         print("=" * 70)
-        print("TEST FAILED: FBlc IDs have been lost!")
+        print("ADDITIONAL VALIDATION CHECKS")
+        print("=" * 70)
+        print()
+
+        # Check 1: Dataset file completeness
+        print("1. Checking dataset file completeness...")
+        is_complete, missing_metadata, missing_expression, dataset_ids = check_dataset_file_completeness(
+            metadata_release_dir, expression_data_dir
+        )
+        if is_complete:
+            print(f"   ✓ All {len(dataset_ids)} datasets have both metadata and expression files")
+        else:
+            if missing_metadata:
+                print(f"   ERROR: {len(missing_metadata)} datasets missing metadata files:")
+                for dataset_id in sorted(missing_metadata):
+                    print(f"     - {dataset_id}")
+                has_errors = True
+            if missing_expression:
+                print(f"   ERROR: {len(missing_expression)} datasets missing expression files:")
+                for dataset_id in sorted(missing_expression):
+                    print(f"     - {dataset_id}")
+                has_errors = True
+        print()
+
+        # Check 2: Verify all FBlc IDs in expression files have metadata
+        print("2. Checking FBlc IDs within expression files...")
+        expression_ids = extract_fblc_ids_from_expression_files(expression_data_dir)
+        print(f"   Found {len(expression_ids)} unique FBlc IDs in expression files")
+
+        missing_metadata = expression_ids - current_ids
+
+        if len(missing_metadata) == 0:
+            print(f"   ✓ All FBlc IDs in expression files have metadata")
+        else:
+            print(f"   ERROR: {len(missing_metadata)} FBlc IDs in expression files but not in metadata:")
+            # Show first 20 to avoid overwhelming output
+            for dataset_id in sorted(missing_metadata)[:20]:
+                print(f"     - {dataset_id}")
+            if len(missing_metadata) > 20:
+                print(f"     ... and {len(missing_metadata) - 20} more")
+            has_errors = True
+        print()
+
+    # Final verdict
+    print("=" * 70)
+    if has_errors:
+        print("TEST FAILED: Errors detected!")
         print("=" * 70)
         return 1
     else:
-        print("=" * 70)
-        print("✓ TEST PASSED: No FBlc IDs lost")
+        print("✓ ALL TESTS PASSED")
         print("=" * 70)
         return 0
 
@@ -222,7 +338,8 @@ if __name__ == '__main__':
 
     repo_root = Path(result.stdout.strip())
     metadata_dir = repo_root / 'metadata_release_files'
+    expression_dir = repo_root / 'src' / 'ontology' / 'expression_data'
 
     # Run test
-    exit_code = test_no_fblc_ids_lost(str(metadata_dir))
+    exit_code = test_no_fblc_ids_lost(str(metadata_dir), str(expression_dir))
     sys.exit(exit_code)
