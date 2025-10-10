@@ -22,10 +22,10 @@ Alias: associated_dataset
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 

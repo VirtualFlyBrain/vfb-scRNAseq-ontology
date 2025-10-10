@@ -22,8 +22,8 @@ Alias: stage
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
 
 
 
