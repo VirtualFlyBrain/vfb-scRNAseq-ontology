@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/FBlc0006404_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-10-10/imports/FBlc0006404_import.owl>
-Annotation(owl:versionInfo "2025-10-10")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2025-12-12/imports/FBlc0006404_import.owl>
+Annotation(owl:versionInfo "2025-12-12")
 
 Declaration(Class(<http://flybase.org/reports/FBgn0000137>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003118>))
