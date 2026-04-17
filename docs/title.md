@@ -22,10 +22,10 @@ Alias: title
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Class](Class.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 
@@ -34,20 +34,32 @@ Alias: title
 
 
 
-
 ## Properties
 
-* Range: [String](String.md)
+### Type and Range
 
-* Recommended: True
+| Property | Value |
+| --- | --- |
+| Range | [String](String.md) |
+| Domain Of | [Class](Class.md) |
+| Slot URI | [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Recommended | Yes |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

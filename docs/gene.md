@@ -29,18 +29,31 @@ Alias: gene
 
 
 
-
 ## Properties
 
-* Range: [Thing](Thing.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Thing](Thing.md) |
+| Domain Of | [Cluster](Cluster.md) |
+| Slot URI | [RO:0002292](http://purl.obolibrary.org/obo/RO_0002292) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

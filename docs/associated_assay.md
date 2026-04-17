@@ -29,20 +29,39 @@ Alias: associated_assay
 
 
 
-
 ## Properties
 
-* Range: [Assay](Assay.md)
+### Type and Range
 
-* Multivalued: True
+| Property | Value |
+| --- | --- |
+| Range | [Assay](Assay.md) |
+| Domain Of | [Sample](Sample.md) |
+| Slot URI | [RO:0002352](http://purl.obolibrary.org/obo/RO_0002352) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Multivalued | Yes |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Owner | [Sample](Sample.md) |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

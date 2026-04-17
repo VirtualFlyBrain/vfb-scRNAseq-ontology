@@ -10,13 +10,12 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 
 
 
-
 ```mermaid
  classDiagram
     class Sample
-    click Sample href "../Sample"
+    click Sample href "../Sample/"
       Class <|-- Sample
-        click Class href "../Class"
+        click Class href "../Class/"
       
       Sample : associated_assay
         
@@ -25,7 +24,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
         
         Sample --> "*" Assay : associated_assay
-        click Assay href "../Assay"
+        click Assay href "../Assay/"
     
 
         
@@ -36,7 +35,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
         
         Sample --> "0..1" Dataset : associated_dataset
-        click Dataset href "../Dataset"
+        click Dataset href "../Dataset/"
     
 
         
@@ -53,7 +52,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
         
         Sample --> "*" Thing : sample_tissue
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -64,7 +63,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
         
         Sample --> "0..1" SexOptions : sex
-        click SexOptions href "../SexOptions"
+        click SexOptions href "../SexOptions/"
     
 
         
@@ -75,7 +74,7 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
         
         
         Sample --> "0..1" Thing : stage
-        click Thing href "../Thing"
+        click Thing href "../Thing/"
     
 
         
@@ -93,6 +92,12 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
     * [Class](Class.md)
         * **Sample**
 
+
+## Class Properties
+
+| Property | Value |
+| --- | --- |
+| Class URI | [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024) |
 
 
 ## Slots
@@ -124,9 +129,13 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 
 
 
+
+
+
+
+
+
 ## Identifier and Mapping Information
-
-
 
 
 
@@ -153,7 +162,6 @@ URI: [FBcv:0003024](http://purl.obolibrary.org/obo/FBcv_0003024)
 | ---  | ---  |
 | self | FBcv:0003024 |
 | native | http://github.org/vfb/vfb-scRNAseq-ontology/VFB_scRNAseq/Sample |
-
 
 
 

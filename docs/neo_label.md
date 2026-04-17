@@ -25,9 +25,8 @@ Alias: neo_label
 | [Sample](Sample.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
-
+| [Publication](Publication.md) |  |  no  |
 
 
 
@@ -36,15 +35,29 @@ Alias: neo_label
 
 ## Properties
 
-* Range: [String](String.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [String](String.md) |
+| Domain Of | [Dataset](Dataset.md), [Sample](Sample.md), [Assay](Assay.md), [Cluster](Cluster.md), [Publication](Publication.md) |
+| Slot URI | [neo_property:nodeLabel](http://n2o.neo/property/nodeLabel) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

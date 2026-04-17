@@ -22,10 +22,10 @@ Alias: name
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Class](Class.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
 
@@ -34,20 +34,32 @@ Alias: name
 
 
 
-
 ## Properties
 
-* Range: [String](String.md)
+### Type and Range
 
-* Recommended: True
+| Property | Value |
+| --- | --- |
+| Range | [String](String.md) |
+| Domain Of | [Class](Class.md) |
+| Slot URI | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Recommended | Yes |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

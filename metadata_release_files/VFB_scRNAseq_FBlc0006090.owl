@@ -20,6 +20,7 @@
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:fbbt="http://purl.obolibrary.org/obo/fbbt#"
      xmlns:fbcv="http://purl.obolibrary.org/obo/fbcv#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:linkml="https://w3id.org/linkml/"
@@ -218,12 +219,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
     
 
 
@@ -701,6 +696,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -771,44 +772,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
-        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
-        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">realized in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">this disease course realizes this disease</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</obo:IAO_0000115>
-        <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">realizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -894,11 +857,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111>has specified input</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified input of</obo:IAO_0000115>
+        <obo:IAO_0000115>The inverse property of is specified input of</obo:IAO_0000115>
         <obo:IAO_0000116>8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
@@ -913,11 +876,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111>is specified input of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is specified input of</rdfs:label>
@@ -930,10 +893,10 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111>has specified output</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified output of</obo:IAO_0000115>
+        <obo:IAO_0000115>The inverse property of is specified output of</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
@@ -947,10 +910,10 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111>is specified output of</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is specified output of</rdfs:label>
@@ -962,7 +925,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000111>achieves_planned_objective</obo:IAO_0000111>
         <obo:IAO_0000112>A cell sorting process achieves the objective specification &apos;material separation objective&apos;</obo:IAO_0000112>
@@ -980,7 +943,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111>objective_achieved_by</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
@@ -1051,11 +1014,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
@@ -1067,47 +1025,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">is concretized as</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">concretizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2442,48 +2359,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0010001 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0010001">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000058"/>
-        </owl:propertyChainAxiom>
-        <obo:IAO_0000112>Genetic information generically depend on molecules of DNA.</obo:IAO_0000112>
-        <obo:IAO_0000112>The novel *War and Peace* generically depends on this copy of the novel.</obo:IAO_0000112>
-        <obo:IAO_0000112>The pattern shared by chess boards generically depends on any chess board.</obo:IAO_0000112>
-        <obo:IAO_0000112>The score of a symphony g-depends on a copy of the score.</obo:IAO_0000112>
-        <obo:IAO_0000112>This pdf file generically depends on this server.</obo:IAO_0000112>
-        <obo:IAO_0000115>A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*.</obo:IAO_0000115>
-        <obo:IAO_0000119>[072-ISO]</obo:IAO_0000119>
-        <oboInOwl:hasExactSynonym>g-depends on</oboInOwl:hasExactSynonym>
-        <rdfs:label>generically depends on</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0010002 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0010002">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
-        </owl:propertyChainAxiom>
-        <obo:IAO_0000112>Molecules of DNA are carriers of genetic information.</obo:IAO_0000112>
-        <obo:IAO_0000112>This copy of *War and Peace* is carrier of the novel written by Tolstoy.</obo:IAO_0000112>
-        <obo:IAO_0000112>This hard drive is carrier of these data items.</obo:IAO_0000112>
-        <obo:IAO_0000115>*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*</obo:IAO_0000115>
-        <obo:IAO_0000119>[072-ISO]</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">is carrier of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0013001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0013001">
@@ -2944,19 +2819,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
@@ -3120,6 +2982,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/CL_0011110 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011110"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
     
 
 
@@ -10409,16 +10283,16 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001948"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Region of the adult brain cell body rind that overlies the lobula plate.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001948"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>rLOP</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001948"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Region of the adult brain cell body rind that overlies the lobula plate.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13119,6 +12993,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Some authors&apos; use of the term &apos;central body&apos; excludes the protocerebral bridge, some usage also excludes the noduli, some exclude the lateral triangles, and historically it has been used to refer to the fan-shaped body alone (Hanesch et al., 1989).</rdfs:comment>
         <rdfs:label>adult central complex</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003632"/>
@@ -13134,6 +13009,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>CX</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003632"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1002/cne.23705</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13366,6 +13248,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The identification of the most medial slice (slice 1) by Wolff et al. (2015) meant that the domain that was previously called slice 1 corresponds in fact to slice 2. Each of the two neighboring slices (2-3, 4-5, 6-7, 8-9) are associated more closely because small-field columnar neurons innervate the fan-shaped body via the protocerebral bridge, and these neurons are generated by the same neuroblasts, forming four groups on each side of the midline, from lateral to medial: segment pair W, X, Y and Z (Boyan and Williams et al., 2011; Ito and Awasaki, 2008).</rdfs:comment>
         <rdfs:label>protocerebral bridge</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003668"/>
@@ -13390,6 +13273,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>PCB</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003668"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1002/cne.23705</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13419,6 +13309,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:label>ellipsoid body</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003678"/>
@@ -13432,6 +13324,20 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>EB</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003678"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003678"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1002/cne.23705</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13463,6 +13369,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Previously thought to be 8 slices per hemisphere numbered from 1-8 medial to lateral - arranged in 4 closely associated pairs (Ito et al., 2014). Each of the two neighboring slices (1-2, 3-4, 5-6, 7-8) are associated more closely because they receive small-field columnar neurons generated by the same neuroblasts, forming four groups on each side of the midline, from lateral to medial: segment pair W, X, Y and Z (Boyan and Williams, 2011; Ito and Awasaki, 2008). Six to nine layers can be identified, depending on the staining that is used (Hanesch et al., 1989; Young and Armstrong, 2010; Kahsai and Winther, 2011, Lin et al., 2013, Wolff et al., 2015). Recent papers divide the FB into 9 layers (Wolff et al., 2015; Scheffer et al., 2020).</rdfs:comment>
         <rdfs:label>fan-shaped body</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003679"/>
@@ -13488,6 +13395,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>fb</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049409</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003679"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1002/cne.23705</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13521,6 +13435,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Ito et al. (2014) state that there are four subunits of one nodulus per hemisphere, but Wolff et al. (2015) and Wolff and Rubin (2018) class the noduli as three distinct units and count &apos;subunit IV&apos; as part of nodulus 3; here we follow the Wolff nomenclature.</rdfs:comment>
         <rdfs:label>nodulus</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003680"/>
@@ -13550,6 +13465,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>ventral tubercle</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049409</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0240744</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003680"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1002/cne.23705</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13584,6 +13506,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The LAL corresponds to part of the anterior superior part of the vmpr of Otsuna and Ito (2006) and to the ventral part of the inferior dorsofrontal protocerebrum (IDFP) of Chiang et al. (2011) (Ito et al., 2014).</rdfs:comment>
         <rdfs:label>adult lateral accessory lobe</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003681"/>
@@ -13619,6 +13542,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>vmpr</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0193607</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003681"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1002/cne.23705</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -13653,6 +13583,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The bulb corresponds to the medial part of the mimpr of Otsuna and Ito, (2006) and to the lateral triangle of Chiang et al. (2011) (Ito et al., 2014).</rdfs:comment>
         <rdfs:label>bulb</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003682"/>
@@ -13687,6 +13618,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>IST</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003682"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -13812,6 +13750,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00003684</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:label>adult mushroom body</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003684"/>
@@ -13827,6 +13766,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>MB</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003684"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14394,6 +14340,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The neurotransmitter was assessed by labelling cells with a vGlut[OK371]-dVP16AD-GAL4 driver (FBti0129742) (Gao et al., 2008) or by single cell RT-PCR with specific primers (Takemura et al., 2011). Cell connectivity in the lamina was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for L1 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: R1 (-/40), R2 (-/43), R3 (-/37), R4 (-/38), R5 (-/38), R6 (-/45), L2 (-/3), Lai (-/1), C3 (-/3) and Lawf (-/1) (Rivera-Alba et al., 2011). Connectivity in the medulla was extrapolated from serial EM of 7 columns from a single sample (Takemura et al., 2013). Electrical connectivity was shown by dye labelling (Joesch et al., 2010).</rdfs:comment>
         <rdfs:label>lamina monopolar neuron L1</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
@@ -14422,6 +14369,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>L1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003719"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14556,6 +14510,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Cell connectivity in the lamina was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for L2 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: R1 (1/46), R2 (1/45), R3 (-/39), R4 (-/41), R5 (-/39), R6 (-/47), L1 (3/-), L4 (10/7), L5 (1/-), Lai (-/1), C2 (-/3), C3 (-/5) and Lwf (-/7) (Rivera-Alba et al., 2011). Connectivity in the medulla was extrapolated from serial EM of 7 columns from a single sample (Takemura et al., 2013). Note that for many of the output synapses in M2, Tm1 and Tm2 share the same sites (Takemura et al., 2008; Takemura et al., 2011). Electrical connectivity was shown by dye labelling (Joesch et al., 2010). The neurotransmitter was assessed by single cell RT-PCR measurement of choline acetyltransferase (FBgn0000303) expression (Takemura et al., 2011).</rdfs:comment>
         <rdfs:label>lamina monopolar neuron L2</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
@@ -14582,6 +14537,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>L2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003720"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14644,6 +14606,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Cell connectivity in the lamina was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for L3 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: R1 (-/11), R2 (-/10), R3 (-/4), R4 (-/8), R5 (-/6), R6 (-/12), L4 (-/1), L5 (1/-), Lai (-/10) and Lawf (-/17) (Rivera-Alba et al., 2011). Connectivity in the medulla was extrapolated from serial EM of 3 columns from a single sample (Takemura et al., 2008) or from 7 columns (Takemura et al., 2013). The neurotransmitter was assessed by the intersection of the expression of the VGAT-GAL4 driver (FBtp0069181) and an antibody against GABA (Raghu et al., 2013).</rdfs:comment>
         <rdfs:label>lamina monopolar neuron L3</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
@@ -14671,6 +14634,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>L3</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003721"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14739,6 +14709,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Note, Fischbach and Dittrich (1989) have this as arborizing in M4, but we follow the more detailed analysis of Takemura and colleagues (2008) who place the terminal arbor in M5. This difference may have to do with the different ways the two papers define L4. Note also that L4x and L4y are simply a way of referring to L4 collaterals from an adjacent cartridge in descriptions of synaptic connectivity (see Meinertzhagen and O&apos;Neil, 1991) and are not separate neurons. Connectivity in the medulla was extrapolated from serial EM of 3 columns from a single sample (Takemura et al., 2008; Takemura et al., 2011). Takemura et al. (2011) and Davis et al. (2020) report the neurotransmitter to be acetylcholine as assessed by single cell RT-PCR measurement of choline acetyltransferase (FBgn0000303) expression and scRNAseq detection of both choline acetyltransferase and vesicular acetylcholine transporter (FBgn0270928). However, Raghu et al. (2013) report this neuron to be GABAergic as assessed by the intersection of the expression of the VGAT-GAL4 driver (FBtp0069181) and an antibody against GABA.</rdfs:comment>
         <rdfs:label>lamina monopolar neuron L4</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003722"/>
@@ -14775,6 +14746,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>monopolar laminar cell L4y</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0054529</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003722"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14879,6 +14857,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. Connectivity in the medulla was extrapolated from serial EM of 7 columns from a single sample (Takemura et al., 2013).</rdfs:comment>
         <rdfs:label>lamina monopolar neuron L5</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003725"/>
@@ -14904,6 +14883,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>L5</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003725"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -15224,6 +15210,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. The neurotransmitter was assessed with a split-GAL4 strategy using a Chat-DBD allele (FBal0198074) (Mauss et al., 2014) and single-cell transcript profiling (Shinomiya et al., 2014).</rdfs:comment>
         <rdfs:label>T4 neuron</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003731"/>
@@ -15248,6 +15235,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>T4</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003731"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -15292,6 +15286,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. The neurotransmitter was assessed with a split-GAL4 strategy using a Chat-DBD allele (FBal0198074) (Mauss et al., 2014) and single-cell transcript profiling (Shinomiya et al., 2014). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).</rdfs:comment>
         <rdfs:label>T5 neuron</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003736"/>
@@ -15315,6 +15310,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>T5</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003736"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -15909,6 +15911,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Nern et al. (2025) - FBrf0262545 say distal is M1-5 and M6-7 is central medulla.</rdfs:comment>
         <rdfs:label>medulla</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
@@ -15936,6 +15939,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>optic medulla</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212889</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003748"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16566,6 +16576,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre-synaptic terminals were assessed by labelling with a UAS-Synaptotagmin reporter (P{UAS-HA-syt} - FBtp0015803). The neurotransmitter was assessed by labelling cells with an anti-ChAT antibody (Hasegawa et al., 2011). The morphology of the terminals was judged from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. Connectivity and morphology in the medulla were assessed by electron microscopy reconstruction from 7 columns (Takemura et al., 2013).</rdfs:comment>
         <rdfs:label>medulla intrinsic neuron Mi1</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
@@ -16591,6 +16602,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Mi1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003776"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16697,6 +16715,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Raghu and Borst (2011) identified this as glutamatergic using a vGlut[CNSIII]-GAL4 driver (FBti0129148), but vGlut antibody staining performed by Takemura et al. (2017) was not strong compared to neighboring cells, whereas GAD1 staining was strong. Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. Connectivity in the medulla was assessed by electron microscopy reconstruction from 7 columns (Takemura et al., 2013). Kind et al. (2020) say that it is not contacted by R7/R8 in the DRA, but not clear whether Mi4 is present in the DRA.</rdfs:comment>
         <rdfs:label>medulla intrinsic neuron Mi4</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
@@ -16721,6 +16740,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Mi4</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003779"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16815,6 +16841,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre-synaptic terminals were assessed by labelling with a UAS-Synaptotagmin reporter (P{UAS-HA-syt} - FBtp0015803). The identification of dendrites and axons was done using a UAS-Dscam (P{UAS-Dscam.exon17.1.GFP} - FBtp0021447) or a UAS-tau (P{UAS-tau-lacZ.O} - FBtp0010033) reporter, respectively (Morante and Desplan, 2008). Connectivity in the medulla was extrapolated from serial EM from 7 columns (Takemura et al., 2013).</rdfs:comment>
         <rdfs:label>medulla intrinsic neuron Mi9</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
@@ -16839,6 +16866,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Mi9</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003784"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16974,6 +17008,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The neurotransmitter was assessed by co-labelling cells with a P{Cha-GAL4.7.4} driver (FBtp0014830) and an anti-ChAT antibody (Varija Raghu et al., 2011; Shinomiya et al., 2014). Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. Connectivity in the medulla was extrapolated from serial EM of 3 columns from a single sample (Takemura et al., 2008) or from 7 columns (Takemura et al., 2013). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014). Connectivity in the entire optic lobe was also assessed by EM (Shinomiya et al., 2019).</rdfs:comment>
         <rdfs:label>transmedullary neuron Tm1</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003789"/>
@@ -17000,6 +17035,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Tm1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003789"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17092,6 +17134,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The neurotransmitter has been assessed by co-labelling cells with a P{Cha-GAL4.7.4} driver (FBtp0014830) and an anti-ChAT antibody (Varija Raghu et al., 2011), by using a Cha-GAL4.DBD (FBtp002350) (Gao et al., 2008) and by neurotransmitter was assessed by single cell RT-PCR measurement of choline acetyltransferase (FBgn0000303) expression (Takemura et al., 2011). Connectivity in the medulla was extrapolated from serial EM of 3 columns from a single sample (Takemura et al., 2008) or from 7 columns (Takemura et al., 2013). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).</rdfs:comment>
         <rdfs:label>transmedullary neuron Tm2</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003790"/>
@@ -17119,6 +17162,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Tm2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003790"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17227,6 +17277,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. The neurotransmitter was assessed to be GABA by the intersection of the expression of the VGAT-GAL4 driver (FBtp0069181) and an antibody against GABA (Raghu et al., 2013). Connectivity in the medulla was assessed by electron microscopy reconstruction from 7 columns (Takemura et al., 2013). Neuron was assessed to be cholinergic based on anti-HA antibody detection of HA-tagged VAChT expression (Pankova &amp; Borst, 2017).</rdfs:comment>
         <rdfs:label>transmedullary neuron Tm3</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003791"/>
@@ -17263,6 +17314,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>transmedullary neuron Tm3a</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0213020</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003791"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17375,6 +17433,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The acetylcholine neurotransmitter was assessed by co-labelling cells with a Cha-GAL4.7.4 driver (FBtp0014830) and an anti-ChAT antibody (Varija Raghu et al., 2011), and by scRNAseq detection of choline acetyltransferase (FBgn0000303) and vesicular acetylcholine transporter (FBgn0270928) expression (Davis et al., 2020). The GABA neurotransmitter was assessed by the intersection of the expression of the VGAT-GAL4 driver (FBtp0069181) and an antibody against GABA (Raghu et al., 2013). Pre- versus postsynaptic innervation judged by scoring of terminal morphology from figures in Fischbach and Dittrich (1989) as assessed by FlyBrain Neuron DB. Connectivity in the medulla was extrapolated from serial EM from 7 columns (Takemura et al., 2013). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).</rdfs:comment>
         <rdfs:label>transmedullary neuron Tm4</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003792"/>
@@ -17400,6 +17459,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Tm4</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003792"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17537,6 +17603,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>Neurotransmitter was assessed using a cha-GAL4DBD driver (Gao et al., 2008), single-cell transcript profiling and immunohistochemistry (Shinomiya et al., 2014). Connectivity in the lobula was assessed by serial section electron microscopy of a single column (Shinomiya et al., 2014).</rdfs:comment>
         <rdfs:label>transmedullary neuron Tm9</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003797"/>
@@ -17562,6 +17629,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>Tm9</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003797"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17823,6 +17897,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:label>lobula</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003852"/>
@@ -17843,6 +17918,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Lob</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003852"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18132,6 +18214,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:label>lobula plate</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003885"/>
@@ -18152,6 +18235,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>LoP</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003885"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -19712,7 +19802,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0071066"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0050982"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0071063"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Compound chordotonal organ of antennal segment 2 involved in hearing (Gopfert and Robert, 2002), direction-sensitive wind detection (Yorozu et al., 2009) and gravitaxis (Kamikouchi et al., 2009). The actin-filament rich basal tips of the Johnston&apos;s organ scolopidia connect to the inner surface of antennal segment 2, and the apical tips connect to the hook of antennal segment 3 (Gopfert and Robert, 2002). Its sensory neurons (Johnston&apos;s organ neurons or JONs) are connected to the Johnston&apos;s organ nerve (Kamikouchi et al., 2006), and predominantly innervate the antennal mechanosensory and motor center (AMMC). There are 477 +/- 24 cell bodies, arranged in a bowl shape lying vertically with the &apos;top&apos; facing the lateral side, and forming a ring around the antennal nerve (Kamikouchi et al., 2006). JONs connecting to opposing sides of the hook are alternatively stimulated by stretching or compression according to the hook&apos;s oscillatory movement (Gopfert and Robert, 2002).</obo:IAO_0000115>
@@ -19948,6 +20048,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The name photoreceptor cell R1 is occasionally, mistakenly assumed to refer to any Rh1 (ninaE) expressing photoreceptor cell. This is incorrect. This term only refers to a type of adult eye photoreceptor cell. The name is based simply on the position of the rhabdomere within each ommatidium - see figure 4 in Wolff and Ready, 1993. Cell connectivity was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for R1 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: L1 (40/-), L2 (46/1), L3 (11/-), L4 (-/2), Lai (36/-), Lawf (1/1), epithelial glia (15/-), surface glia (1/-) and marginal glia (1/-) (Rivera-Alba et al., 2011).</rdfs:comment>
         <rdfs:label>photoreceptor cell R1</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004213"/>
@@ -19969,6 +20070,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>R1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004213"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -19996,6 +20104,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The name photoreceptor cell R2 is occasionally, mistakenly assumed to refer to any Rh2 expressing photoreceptor cell. This is incorrect. This term only refers to a type of adult eye photoreceptor cell. The name is based simply on the position of the cell and its rhabdomere within each ommatidium - see figure 4 in Wolff and Ready, 1993. Cell connectivity was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for R2 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: L1 (43/-), L2 (45/1), L3 (10/-), L4 (-/1), Lai (39/-), T1 (2/-), Lawf (-/3), epithelial glia (13/-) and surface glia (1/-) (Rivera-Alba et al., 2011).</rdfs:comment>
         <rdfs:label>photoreceptor cell R2</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004215"/>
@@ -20017,6 +20126,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>R2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004215"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20044,6 +20160,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The name photoreceptor cell R3 is occasionally, mistakenly assumed to refer to any Rh3 expressing photoreceptor cell. This is incorrect. This term only refers to a type of adult eye photoreceptor cell. The name is based simply on the position of the cell and its rhabdomere within each ommatidium - see figure 4 in Wolff and Ready, 1993. Cell connectivity was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for R3 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: L1 (37/-), L2 (39/-), L3 (4/-), L4 (-/3), Lai (39/-), T1 (2/-), C3 (2/1), Lawf (-/1) and epithelial glia (7/-) (Rivera-Alba et al., 2011).</rdfs:comment>
         <rdfs:label>photoreceptor cell R3</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004217"/>
@@ -20065,6 +20182,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>R3</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004217"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20092,6 +20216,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The name photoreceptor cell R4 is occasionally, mistakenly assumed to refer to any Rh4 expressing photoreceptor cell. This is incorrect. This term only refers to a type of adult eye photoreceptor cell. The name is based simply on the position of the cell and its rhabdomere within each ommatidium - see figure 4 in Wolff and Ready, 1993. Cell connectivity was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for R4 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: L1 (38/-), L2 (41/-), L3 (8/-), L4 (-/1), Lai (37/2), T1 (2/-) and epithelial glia (9/-) (Rivera-Alba et al., 2011).</rdfs:comment>
         <rdfs:label>photoreceptor cell R4</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004219"/>
@@ -20113,6 +20238,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>R4</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004219"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20140,6 +20272,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The name photoreceptor cell R5 is occasionally, mistakenly assumed to refer to any Rh5 expressing photoreceptor cell. This is incorrect. This term only refers to a type of adult eye photoreceptor cell. The name is based simply on the position of the cell and its rhabdomere within each ommatidium - see figure 4 in Wolff and Ready, 1993. Cell connectivity was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for R5 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: L1 (38/-), L2 (39/-), L3 (6/-), L4 (-/3), Lai (35/2), C2 (1/-), epithelial glia (10/-) and marginal glia (1/-) (Rivera-Alba et al., 2011).</rdfs:comment>
         <rdfs:label>photoreceptor cell R5</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004221"/>
@@ -20161,6 +20294,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>R5</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004221"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20188,6 +20328,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
         <rdfs:comment>The name photoreceptor cell R6 is occasionally, mistakenly assumed to refer to any Rh6 expressing photoreceptor cell. This is incorrect. This term only refers to a type of adult eye photoreceptor cell. The name is based simply on the position of the cell and its rhabdomere within each ommatidium - see figure 4 in Wolff and Ready, 1993. Cell connectivity was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for R6 (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: L1 (45/-), L2 (47/-), L3 (12/-), L4 (-/3), Lai (40/-), Lawf (-/1), epithelial glia (11/-) and marginal glia (2/-)(Rivera-Alba et al., 2011).</rdfs:comment>
         <rdfs:label>photoreceptor cell R6</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004223"/>
@@ -20209,6 +20350,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>R6</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0247762</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004223"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bae0/7069908/ef7abe34662d/359_2019_1375_Fig2_HTML.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1007/s00359-019-01375-9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27914,6 +28062,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <rdfs:comment>Otsuna and Ito (2006) suggest that the optic tubercle may be divided into three regions according to the density of arborizations. The medial-most (optu1) and lateral-most (optu3) contain dense arborizations of the Lcn10 neurons, whilst the area between these regions (optu2) is essentially devoid of the lobula columnar neurons.</rdfs:comment>
         <rdfs:label>anterior optic tubercle</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007059"/>
@@ -27941,6 +28090,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>OTU</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0211884</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007059"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -30996,45 +31152,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Stem cell that is a progenitor of somatic cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00007352 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007352">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050911"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004511"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007386"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051494"/>
-        <obo:IAO_0000115>Odorant receptor neuron (ORN) whose dendrite transduces signals from an antennal sensillum. The axons of these neurons fasciculate in the antennal nerve and innervate the antennal lobe.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T03:51:32Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00007352</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>antennal ORN</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00007352</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#hidden_assertion"/>
-        <rdfs:label>adult antennal olfactory receptor neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007352"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Odorant receptor neuron (ORN) whose dendrite transduces signals from an antennal sensillum. The axons of these neurons fasciculate in the antennal nerve and innervate the antennal lobe.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0051437</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -36232,6 +36349,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00040042</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <rdfs:label>posterior ventrolateral protocerebrum</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040042"/>
@@ -36246,6 +36364,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>PVLP</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040042"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -36314,6 +36439,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <rdfs:comment>The PLP corresponds to almost all of the plpr of Otsuna and Ito (2006) and to the caudal ventrolateral protocerebrum (CVLP) and lateral part of the superpeduncular protocerebrum (SPP) of Chiang et al. (2011) (Ito et al., 2014).</rdfs:comment>
         <rdfs:label>posterior lateral protocerebrum</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040044"/>
@@ -36354,6 +36480,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>plpr</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0193607</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040044"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -36917,6 +37050,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <rdfs:comment>The ventral complex corresponds to the caudal medial protocerebrum (CMP) and possibly includes part of the ventromedial protocerebrum (VMP) of Chiang et al. (2011) (Ito et al., 2014).</rdfs:comment>
         <rdfs:label>posterior slope</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040072"/>
@@ -36938,6 +37072,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>CMP</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00040072"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/acda/10213501/ccb19d89b056/iyad064f6.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1093/genetics/iyad064</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -37460,6 +37601,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#BrainName"/>
         <rdfs:comment>The name crepine is used in French cuisine to refer to a slice of meat wrapped around some delicacy. The posterior region of the crepine corresponds to the dorsal part of the inferior dorsofrontal protocerebrum (IDFP) of Chiang et al. (2011) (Ito et al., 2014).</rdfs:comment>
         <rdfs:label>adult crepine</rdfs:label>
+        <foaf:depiction>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00045037"/>
@@ -37506,6 +37648,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>anterior inferior protocerebrum</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00045037"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget>https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f073/4407839/e48065582b72/cne0523-0997-f1.jpg</owl:annotatedTarget>
+        <dc:licence rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <oboInOwl:hasDbXref>doi:10.1002/cne.23705</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -38369,7 +38518,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAmas2 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -38377,7 +38526,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult FLAa3 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -44444,7 +44593,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAmas2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -44452,7 +44601,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult FLAa3 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -46634,10 +46783,13 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>VFB:FBbt_00049911</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ALl1 Notch OFF hemilineage neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ALl1 hemilineage B neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ALl1 ventral hemilineage neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BAlc Notch OFF hemilineage neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BAlc hemilineage B neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BAlc ventral hemilineage neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00049911</oboInOwl:id>
+        <rdfs:comment>Ventral hemilineage = Notch OFF based on lineage composition shown in Schlegel et al. (2024) and assertion that PNs are Notch OFF Lin et al. (2012).</rdfs:comment>
         <rdfs:label>BAlc Notch OFF hemilineage neuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -46645,22 +46797,37 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any Notch OFF hemilineage neuron (FBbt:00049540) that develops from some neuroblast BAlc (FBbt:00067347).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0219980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049911"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ALl1 Notch OFF hemilineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049911"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ALl1 ventral hemilineage neuron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0219980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049911"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BAlc Notch OFF hemilineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049911"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>BAlc ventral hemilineage neuron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0219980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -46686,11 +46853,14 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T10:56:29Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00049912</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ALl1 Notch ON hemilineage neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ALl1 dorsal hemilineage neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ALl1 hemilineage A neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BAlc Notch ON hemilineage neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BAlc dorsal hemilineage neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BAlc hemilineage A neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00049912</oboInOwl:id>
+        <rdfs:comment>Dorsal hemilineage = Notch ON based on lineage composition shown in Schlegel et al. (2024) and assertion that PNs are Notch OFF Lin et al. (2012).</rdfs:comment>
         <rdfs:label>BAlc Notch ON hemilineage neuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -46698,22 +46868,37 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any Notch ON hemilineage neuron (FBbt:00049539) that develops from some neuroblast BAlc (FBbt:00067347).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0219980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049912"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ALl1 Notch ON hemilineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049912"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ALl1 dorsal hemilineage neuron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0219980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049912"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BAlc Notch ON hemilineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049912"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>BAlc dorsal hemilineage neuron</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0219980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -47198,7 +47383,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult ALl1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47206,7 +47391,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAlc lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47286,7 +47471,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult ALl1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47294,7 +47479,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAlc lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47348,7 +47533,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast ALlv1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47356,7 +47541,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BAlp4</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -47492,7 +47677,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult ALlv1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47500,7 +47685,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAlp4 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47559,7 +47744,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult ALlv1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47567,7 +47752,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAlp4 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -47675,7 +47860,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BLAv1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47683,7 +47868,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult VLPl&amp;d1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47743,7 +47928,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BLAv1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47751,7 +47936,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult VLPl&amp;d1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -47823,7 +48008,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult ALad1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47831,7 +48016,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAmv3 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47904,7 +48089,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult ALad1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47912,7 +48097,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAmv3 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47977,7 +48162,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>neuroblast DM2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -47986,7 +48171,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>neuroblast DPMpm1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -48190,7 +48375,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult DM2 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48199,7 +48384,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult DPMpm1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48260,7 +48445,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult DM2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48269,7 +48454,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult DPMpm1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -48478,7 +48663,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult CP2 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48487,7 +48672,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult DL1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48547,7 +48732,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult CP2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48556,7 +48741,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>adult DL1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -48651,7 +48836,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAmas1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48659,7 +48844,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult FLAa2 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48718,7 +48903,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BAmas1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48726,7 +48911,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult FLAa2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -48871,7 +49056,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BLAv2 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48879,7 +49064,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult VLPl2 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48946,7 +49131,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BLAv2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48954,7 +49139,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult VLPl2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -48998,7 +49183,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BLD5</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -49012,7 +49197,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast VPNp1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -49149,7 +49334,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BLD5 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -49157,7 +49342,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult VPNp1 lineage clone</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -49217,7 +49402,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult BLD5 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -49231,7 +49416,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>adult VPNp1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -51269,116 +51454,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FBbt_00051494 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051494">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051173"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013003"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007401"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Sensory neuron of the antenna that detects a stimulus via one or more receptors and projects to the antennal lobe (Schlegel et al., 2021). This includes antennal olfactory, thermosensory and hygrosensory neurons (Schlegel et al., 2021).</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T09:22:19Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00051494</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>ALRN</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00051494</oboInOwl:id>
-        <rdfs:label>adult antennal lobe receptor neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051494"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Sensory neuron of the antenna that detects a stimulus via one or more receptors and projects to the antennal lobe (Schlegel et al., 2021). This includes antennal olfactory, thermosensory and hygrosensory neurons (Schlegel et al., 2021).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0249560</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051494"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>ALRN</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0249560</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00051498 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051498">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051494"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000618"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051494"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000618"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Antennal lobe receptor neuron that projects to both (bilateral) antennal lobes. These neurons innervate the same glomerulus on each side and tend to have more connections (inputs and outputs) with local neurons on the contralateral side than on the ipsilateral side (Schlegel et al., 2021).</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T15:47:24Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00051498</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00051498</oboInOwl:id>
-        <rdfs:label>bilateral antennal lobe receptor neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051498"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Antennal lobe receptor neuron that projects to both (bilateral) antennal lobes. These neurons innervate the same glomerulus on each side and tend to have more connections (inputs and outputs) with local neurons on the contralateral side than on the ipsilateral side (Schlegel et al., 2021).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0249560</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00051499 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051499">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051494"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000634"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051494"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000634"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Antennal lobe receptor neuron that projects to only the ipsilateral antennal lobe.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T15:55:58Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00051499</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00051499</oboInOwl:id>
-        <rdfs:label>unilateral antennal lobe receptor neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051499"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Antennal lobe receptor neuron that projects to only the ipsilateral antennal lobe.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0249560</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FBbt_00051501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051501">
@@ -52688,7 +52763,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ALlv1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -52696,7 +52771,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BAlp4 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -52764,7 +52839,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>DM2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -52773,7 +52848,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>DPMpm1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0214495</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -54596,57 +54671,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FBbt_00052613 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052613">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050912"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013007"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001866"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052610"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058250"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00059275"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005098"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001866"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Gustatory receptor neuron that innervates any part of the larval pharynx (Winding et al., 2023).</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-22T11:58:13Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00052613</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>gustatory receptor neuron of the larval pharynx</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00052613</oboInOwl:id>
-        <rdfs:label>larval pharyngeal gustatory receptor neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052613"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Gustatory receptor neuron that innervates any part of the larval pharynx (Winding et al., 2023).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0255988</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FBbt_00052614 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052614">
@@ -54749,44 +54773,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052616"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any larval external sense organ sensory neuron (FBbt:00052615) that capable of part of some sensory perception of taste (GO:0050909).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0255988</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FBbt_00052618 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00052618">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00047947"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013008"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052613"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047947"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0013008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052613"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Larval gustatory projection neuron that receives input from a pharyngeal sense organ sensory neuron (Winding et al., 2023).</obo:IAO_0000115>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-22T12:40:20Z</dc:date>
-        <oboInOwl:hasDbXref>VFB:FBbt_00052618</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>FBbt:00052618</oboInOwl:id>
-        <rdfs:label>larval pharyngeal gustatory projection neuron</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00052618"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Larval gustatory projection neuron that receives input from a pharyngeal sense organ sensory neuron (Winding et al., 2023).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0255988</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -59649,7 +59635,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast ALad1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -59657,7 +59643,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BAmv3</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -59717,7 +59703,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast ALl1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -59725,7 +59711,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BAlc</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63677,7 +63663,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BAmas1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63685,7 +63671,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast FLAa2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -63728,7 +63714,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BAmas2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63736,7 +63722,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast FLAa3</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63783,7 +63769,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>neuroblast CP2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63792,7 +63778,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>neuroblast DL1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -63831,7 +63817,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BLAv1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63839,7 +63825,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast VLPl&amp;d1</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -63860,7 +63846,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00100613</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#TL_lineage_clone"/>
-        <rdfs:comment>The VLPl3 clone from Ito et al. (2013) is a subset of the VLPl2 clone (Schlegel et al., 2024 - FlyBase:FBrf0260535).</rdfs:comment>
+        <rdfs:comment>The VLPl3 clone from Ito et al. (2013) is a subset of the VLPl2 clone (Schlegel et al., 2024 - FlyBase:FBrf0260535). Hemilineage classes not created for this NB as three groups were identified in Schlegel et al. (2024) and it is unclear how hemilineages should be grouped.</rdfs:comment>
         <rdfs:label>neuroblast BLAv2</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -63879,7 +63865,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast BLAv2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63887,7 +63873,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neuroblast VLPl2</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63960,7 +63946,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ALad1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -63968,7 +63954,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BAmv3 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -64032,7 +64018,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BAmas1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64040,7 +64026,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>FLAa2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -64105,7 +64091,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BAmas2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64113,7 +64099,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>FLAa3 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64190,7 +64176,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>ALl1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64198,7 +64184,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BAlc lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64270,7 +64256,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>CP2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64279,7 +64265,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>DL1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -64344,7 +64330,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BLAv1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64352,7 +64338,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>VLPl&amp;d1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0223298</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -64417,7 +64403,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BLAv2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64425,7 +64411,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>VLPl2 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -64492,7 +64478,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>BLD5 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#HARTENSTEIN_BRAIN_LINEAGE"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -64500,7 +64486,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>VPNp1 lineage neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0246460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>doi:10.1101/2023.06.27.546055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0260535</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#ITO_LEE_BRAIN_LINEAGE"/>
     </owl:Axiom>
     
@@ -77228,6 +77214,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0050982 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050982"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0060096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060096"/>
@@ -77276,9 +77268,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0071066 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0071063 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071066"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071063"/>
     
 
 
@@ -77287,38 +77279,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
     
 
 
@@ -77331,37 +77291,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000118>fruit fly</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Drosophila melanogaster</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000111>planned process</obo:IAO_0000111>
-        <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-        <obo:IAO_0000116>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
-        <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
-objectives is a planned process.</obo:IAO_0000116>
-        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
-        <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
 
@@ -77412,7 +77341,7 @@ specimen can later be subject.</obo:IAO_0000116>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000684"/>
@@ -77420,7 +77349,7 @@ specimen can later be subject.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -77486,7 +77415,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
                                         <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:unionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
                                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
                                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000477"/>
                                                 </owl:unionOf>
@@ -77535,38 +77464,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>OBIB, OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">collection of specimens</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
-        <obo:IAO_0000116>10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
-        <obo:IAO_0000116>13-02-2009:
-OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
-This issue is outside the scope of OBI.</obo:IAO_0000116>
-        <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 

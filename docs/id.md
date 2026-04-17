@@ -22,15 +22,14 @@ Alias: id
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Class](Class.md) |  |  no  |
-| [Sample](Sample.md) |  |  no  |
-| [Cluster](Cluster.md) |  |  no  |
-| [Thing](Thing.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
+| [Sample](Sample.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
+| [Thing](Thing.md) |  |  no  |
+| [Cluster](Cluster.md) |  |  no  |
 | [Assay](Assay.md) |  |  no  |
-| [Publication](Publication.md) |  |  no  |
 | [Dataset](Dataset.md) |  |  no  |
-
+| [Publication](Publication.md) |  |  no  |
 
 
 
@@ -39,17 +38,36 @@ Alias: id
 
 ## Properties
 
-* Range: [Uriorcurie](Uriorcurie.md)
+### Type and Range
 
-* Required: True
+| Property | Value |
+| --- | --- |
+| Range | [Uriorcurie](Uriorcurie.md) |
+| Domain Of | [Thing](Thing.md) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+| Required | Yes |
+### Slot Characteristics
+
+| Property | Value |
+| --- | --- |
+| Identifier | Yes |
+
+
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 

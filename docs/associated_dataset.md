@@ -22,11 +22,10 @@ Alias: associated_dataset
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [Assay](Assay.md) |  |  no  |
 | [Sample](Sample.md) |  |  no  |
 | [Clustering](Clustering.md) |  |  no  |
 | [Cluster](Cluster.md) |  |  no  |
-| [Assay](Assay.md) |  |  no  |
-
 
 
 
@@ -35,15 +34,29 @@ Alias: associated_dataset
 
 ## Properties
 
-* Range: [Dataset](Dataset.md)
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Dataset](Dataset.md) |
+| Domain Of | [Sample](Sample.md), [Assay](Assay.md), [Clustering](Clustering.md), [Cluster](Cluster.md) |
+| Slot URI | [dc:source](http://purl.org/dc/terms/source) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
 
 
 
 
 
 ## Identifier and Mapping Information
-
-
 
 
 
