@@ -319,6 +319,13 @@ $(TMPDIR)/existing_FBgns.txt: unzip_exp_files
 	do cat $$FILE | grep --only-matching -E "FBgn[0-9]+" | sort | uniq > $$FILE.fbgns.tmp; done &&\
 	cat $(EXPDIR)/*.fbgns.tmp | sort | uniq > $@
 
+# split existing_FBgns.txt into 5000-line chunks (existing_FBgns_1.txt, _2.txt, ...)
+# for batched submission to the FlyBase ID validator
+.PHONY: split_FBgns
+split_FBgns: $(TMPDIR)/existing_FBgns.txt
+	rm -f $(TMPDIR)/existing_FBgns_*.txt &&\
+	split -l 5000 --numeric-suffixes=1 -a 1 --additional-suffix=.txt $< $(TMPDIR)/existing_FBgns_
+
 .PHONY: get_gene_id_map
 get_gene_id_map: install_postgresql setup_venv
 	# this won't work until https://flybase.github.io/docs/chado/functions#update_ids is fixed
@@ -326,8 +333,9 @@ get_gene_id_map: install_postgresql setup_venv
 	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
 	 > $(TMPDIR)/id_validation_table.tsv
 
-replace_gene_ids_in_files: $(TMPDIR)/existing_FBgns.txt install_dask
-	# need to get 'tmp/id_validation_table.txt' file from manual use of id validator
+replace_gene_ids_in_files: install_dask
+	# submit each tmp/existing_FBgns_N.txt chunk to the id validator and save the results as
+	# numbered tables 'tmp/id_validation_table_N.txt' (one per chunk) before running this
 	my-venv/bin/python3 $(SCRIPTSDIR)/update_FBgns_in_files.py &&\
 	for DS in $(RELEASE_DATASETS); \
 	do if [ -f $(EXPDIR)/processed_dataset_$$DS.owl ]; \

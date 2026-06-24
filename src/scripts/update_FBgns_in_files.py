@@ -6,7 +6,15 @@ from process_expression_data import expression_file_loader
 from filter_data import DataEntity
 
 # ids to modify - old id not in new ids col and id only once in old id col
-mapping = pd.read_csv('tmp/id_validation_table.txt', sep='\t', low_memory=False)
+# read the numbered validation tables (one per existing_FBgns_N.txt chunk) and combine
+validation_files = sorted(glob.glob('tmp/id_validation_table_*.txt'))
+if not validation_files:
+    raise FileNotFoundError(
+        "No 'tmp/id_validation_table_*.txt' files found - "
+        "submit each tmp/existing_FBgns_N.txt chunk to the id validator first.")
+mapping = pd.concat(
+    [pd.read_csv(f, sep='\t', low_memory=False) for f in validation_files],
+    ignore_index=True).drop_duplicates()
 changed_ids = mapping[~mapping['#submitted_item'].isin(mapping['validated_id'])]
 changed_ids = changed_ids.set_index('#submitted_item', verify_integrity=True)
 replacement_dict = changed_ids['validated_id'].to_dict()
