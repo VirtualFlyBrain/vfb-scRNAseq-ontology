@@ -3469,10 +3469,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The ventrally/medially located ectodermal region of the trunk from which neuroblasts delaminate to form the ventral nerve cord and gnathal ganglia. This region becomes distinct during stage 8 when its cells become enlarged compared to those in the adjacent dorsal ectoderm.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/3682</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>FBbt:00000113</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>P2 VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vNR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventral neurectoderm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ventral neurogenic region</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>neurectoderm</oboInOwl:hasRelatedSynonym>
@@ -3480,7 +3482,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00001061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>ventral neurectoderm</rdfs:label>
+        <rdfs:label>ventral neuroectoderm</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001061"/>
@@ -3640,6 +3642,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell with a nucleus amongst the neuronal cell bodies in the cell body rind. It is irregularly shaped, with processes that enclose the neuronal cell bodies.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/466</obo:IAO_0000233>
         <oboInOwl:hasDbXref>VFB:FBbt_00001297</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>CBG</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cell body-associated glial cell</oboInOwl:hasExactSynonym>
@@ -3819,6 +3822,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell that is part of the peripheral nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1274</obo:IAO_0000233>
         <oboInOwl:hasDbXref>VFB:FBbt_00001320</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>peripheral glial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -4078,6 +4082,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004208"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047552"/>
         <obo:IAO_0000115>Embryonic structure that will develop into a larval imaginal tissue, which will later form an adult structure (Cohen, 1993).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/320</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:6001648</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic imaginal precursor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -4558,6 +4563,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Imaginal tissue that is found in the larva and will develop into an adult structure during metamorphosis.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/320</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:6001760</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval imaginal precursor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>larval imaginal precursor</oboInOwl:hasExactSynonym>
@@ -4588,6 +4594,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A sac shaped epithelial structure in the larva that gives rise to part of the adult integumentary system. One side of the sac consists of peripodial epithelium, the other of columnar epithelium. A single anterior-posterior compartment boundary bisects both peripodial membrane and columnar epithelium. Cells do not cross this boundary during growth and development of the disc.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/320</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000939</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>imaginal disk</oboInOwl:hasRelatedSynonym>
@@ -5921,6 +5928,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Superficial layer of the brain, composed of glia and the cell bodies of neurons (soma).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/466</obo:IAO_0000233>
         <oboInOwl:hasDbXref>VFB:FBbt_00003625</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>adult brain cortex</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -6432,7 +6440,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>PED</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0224194</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV"/>
     </owl:Axiom>
     
 
@@ -6874,11 +6881,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016056"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050962"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0009583"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -6888,29 +6901,34 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0009583"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050962"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Sensory neuron that reacts to the presence of light, due to the presence of rhodopsin.</obo:IAO_0000115>
+        <obo:IAO_0000115>Sensory neuron that reacts to the presence of light.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CL:0000210</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00004211</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>photoreceptor cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>light sensory neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>photoreceptor cell</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>photoreceptor neuron</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>receptor cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00004211</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>photoreceptor neuron</rdfs:label>
+        <rdfs:label>light-sensitive neuron</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004211"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Sensory neuron that reacts to the presence of light, due to the presence of rhodopsin.</owl:annotatedTarget>
+        <owl:annotatedTarget>Sensory neuron that reacts to the presence of light.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0239342</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -7473,14 +7491,24 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005106"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050906"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0051606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000101"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007693"/>
-        <obo:IAO_0000115>Any neuron (FBbt:00005106) that is capable of some detection of stimulus involved in sensory perception (GO:0050906).</obo:IAO_0000115>
+        <obo:IAO_0000115>Any neuron that is capable of some detection of stimulus that is part of sensory perception.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>CL:0000101</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00005124</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -7493,7 +7521,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005124"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any neuron (FBbt:00005106) that is capable of some detection of stimulus involved in sensory perception (GO:0050906).</owl:annotatedTarget>
+        <owl:annotatedTarget>Any neuron that is capable of some detection of stimulus that is part of sensory perception.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -7825,7 +7853,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050906"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0051606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -7841,7 +7879,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050906"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0051606"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Multicellular anatomical structure with largely bona fide boundary that transduces some sensory stimulus to the nervous system.</obo:IAO_0000115>
@@ -7873,7 +7921,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00005155"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050962"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0009583"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -7888,7 +7946,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050962"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0009583"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A light sensitive sense organ.</obo:IAO_0000115>
@@ -8809,6 +8877,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Early primordium of the late extended germ band and dorsal closure embryo that will give rise to the adult eye. It develops from the visual primordium.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/50</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>adult eye primordium early</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00005515</oboInOwl:id>
@@ -8876,7 +8945,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neurectoderm.</obo:IAO_0000115>
+        <obo:IAO_0000115>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neuroectoderm.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:6005533</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>P2 iVenEp</oboInOwl:hasRelatedSynonym>
@@ -8889,7 +8958,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005533"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neurectoderm.</owl:annotatedTarget>
+        <owl:annotatedTarget>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neuroectoderm.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -9332,7 +9401,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050908"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0009583"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007601"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Visual organ of the larva that is anchored to the basal surface of the thin epithelium of the dorsal pouch, lateral to the musculature of the pharynx (Green et al., 1993; Hartenstein et al., 2019). It consists of a dense cluster of approximately 12 photoreceptor neurons and no support cells (Green et al., 1993; Hartenstein et al., 2019). It is connected to the brain via the Bolwig nerve (Green et al., 1993).</obo:IAO_0000115>
@@ -9674,6 +9753,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007003"/>
         <obo:IAO_0000115>Portion of tissue, that consists of one or more layers of cells with distinct apical-basal polarity, connected to each other by cell junctions.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000483</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007005</oboInOwl:id>
@@ -10113,6 +10193,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007055"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>impr</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0212889</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007055"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>smpr</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0193607</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Medial synaptic neuropil domain of the adult superior neuropils that lies above the area flanked by the mushroom lobes, pedunculus, and calyx. It is separated from the pedunculus by the superior clamp and insulated from the medial lobe by the crepine. The fan-shaped body protrudes deeply into this neuropil, separating it into anterior (ASMP) and posterior (PSMP) regions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:AJ</oboInOwl:hasDbXref>
@@ -10141,18 +10233,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>SDFP</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212704</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007055"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>impr</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0212889</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007055"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>smpr</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0193607</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10162,6 +10242,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
         <obo:IAO_0000115>A structure mainly consisting of cell components, rather than complete cells.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2008</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0005162</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007060</oboInOwl:id>
@@ -10757,7 +10838,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00007229"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050906"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0051606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -11610,6 +11701,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Structure consisting of a simple epithelium surrounded by visceral muscles, nerves and tracheae. The adult gut is divided into the adult foregut, midgut and hindgut regions, based on developmental origin.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T11:02:39Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -14025,6 +14117,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any glial cell of the embryo or larva that derives from the neurogenic region of the ectoderm. Their identity is established by the expression of the gene glial cells missing (gcm), which results in expression of reversed polarity (repo), often used as a marker for lateral glia (Jacobs, 2000). This includes perineurial and subperineurial glia of the central and peripheral nervous systems, cell body (cortex) glia, wrapping glia and some of the neuropil associated glia (Beckervordersandforth et al., 2008). There are around 25 of these per abdominal hemisegment in a stage 16 embryo (Beckervordersandforth et al., 2008).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/295</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-22T12:36:01Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00047861</oboInOwl:hasDbXref>
@@ -15820,6 +15913,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Synaptic neuropil subdomain of the adult subesophageal zone that houses the axon terminals of sensory neurons (Miyazaki and Ito, 2010; Kendroud et al., 2018). Larger domains can be defined based on the projection patterns of neurons entering the brain via particular roots of the maxillary-labial, pharyngeal and antennal nerves (Kendroud et al., 2018). Many smaller domains, usually subdomains of the larger regions, can also be defined based on neuron morphology and function (Miyazaki and Ito, 2010; Munch et al., 2022).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1201</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-02T12:39:01Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00051393</oboInOwl:hasDbXref>
@@ -15969,6 +16063,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00051493">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005125"/>
         <obo:IAO_0000115>Neuron of the central nervous system that has the majority of its inputs and outputs in close proximity within the same region of the neuropil. Some arbors may spread outside of the region, but without sufficient polarity to define the neuron as an input or output neuron.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1227</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-22T08:47:38Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00051493</oboInOwl:hasDbXref>
@@ -17823,14 +17918,24 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00047095"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050906"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0051606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005124"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047095"/>
-        <obo:IAO_0000115>Any adult neuron (FBbt:00047095) that is capable of some detection of stimulus involved in sensory perception (GO:0050906).</obo:IAO_0000115>
+        <obo:IAO_0000115>Any adult neuron that is capable of some detection of stimulus that is part of sensory perception.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-27T12:13:59Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058244</oboInOwl:hasDbXref>
@@ -17841,7 +17946,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058244"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any adult neuron (FBbt:00047095) that is capable of some detection of stimulus involved in sensory perception (GO:0050906).</owl:annotatedTarget>
+        <owl:annotatedTarget>Any adult neuron that is capable of some detection of stimulus that is part of sensory perception.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -17856,14 +17961,24 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00001446"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050906"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0051606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007600"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001446"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005124"/>
-        <obo:IAO_0000115>Any larval neuron (FBbt:00001446) that is capable of some detection of stimulus involved in sensory perception (GO:0050906).</obo:IAO_0000115>
+        <obo:IAO_0000115>Any larval neuron that is capable of some detection of stimulus that is part of sensory perception.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-27T12:17:06Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00058245</oboInOwl:hasDbXref>
@@ -17876,7 +17991,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058245"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any larval neuron (FBbt:00001446) that is capable of some detection of stimulus involved in sensory perception (GO:0050906).</owl:annotatedTarget>
+        <owl:annotatedTarget>Any larval neuron that is capable of some detection of stimulus that is part of sensory perception.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -17991,6 +18106,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Neuron with its synapses restricted to the central brain.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1641</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-13T16:35:14Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00059245</oboInOwl:hasDbXref>
@@ -18700,6 +18816,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <obo:IAO_0000115>Anatomical structure that has multiple cells as parts.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T02:25:04Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0010000</oboInOwl:hasDbXref>
@@ -18878,6 +18995,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell that is part of the adult central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/466</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-26T02:22:14Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00100499</oboInOwl:hasDbXref>
@@ -18917,6 +19035,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell of the adult that is associated with the cell body rind of the brain. They have multiple lamelliform processes that intercalate in between neurons and wrap neuronal cell bodies (Hartenstein, 2011). They also wrap neuronal processes as they travel across the cell body rind (Kremer et al., 2017).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/466</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-26T02:25:30Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00100501</oboInOwl:hasDbXref>
@@ -19004,6 +19123,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Mesh-like structure composed of glial cells found in the cell body rind (cortex) of the adult brain (Awasaki et al., 2008). It is composed of cell body glial cells that locally elaborate and enwrap neuronal cell bodies (Awasaki et al., 2008).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/466</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-26T03:22:32Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00100503</oboInOwl:hasDbXref>
@@ -19249,6 +19369,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Primordium of the late embryo that develops from the early primordium, and will give rise to the adult eye.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/50</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>adult eye primordium late</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00105515</oboInOwl:id>
@@ -20196,6 +20317,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The primordium of the adult protocerebral bridge in the larval brain, formed from the DPMm1 and DPMpm1/2 and CM4 lineages. Unlike in the adult, this exists as a bilateral pair of separate domains that do not join across the midline. These domains are tubular shaped regions containing both differentiated and undifferentiated synapses, in the posterior inferior protocerebrum (IPp or CPM). Each domain curls around the dorsal side from the posterior, growing during the larval period towards the midline. Fusion of the two halves, just posterior to the PLPC (DPLp1) commissure and fan-shaped body, only occurs 48h after pupariation.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/152</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-15T16:59:51Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111206</oboInOwl:hasDbXref>
@@ -20314,6 +20436,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Symmetrically-dividing stem cell with epithelial properties and a columnar morphology that is a precursor to an optic neuroblast (Egger et al., 2007). These cells increase in number by symmetric divisions during embryonic and larval development (Egger et al., 2007). A small number differentiate into optic neuroblasts during the embryonic stage, while the remainder enter G0 quiescence prior to larval hatching (Hakes et al., 2018). Divisions resume in the first instar (Hakes et al., 2018), followed by differentiation to neuroblasts mainly during the third instar stage (Yasugi et al., 2008).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/89</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0001-5948-3092"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T17:06:45Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00111738</oboInOwl:hasDbXref>
@@ -20464,6 +20587,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Primordium of the embryo that will give rise to the adult eye. It corresponds to the most anterior region that develops from the visual primordium.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/50</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>P1 Eye</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>adult eye primordium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -25501,6 +25625,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0007601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007601"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0007606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007606"/>
@@ -25519,15 +25649,15 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0014055 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0009583 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0014055"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009583"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0016056 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0014055 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016056"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0014055"/>
     
 
 
@@ -25549,27 +25679,15 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0050906 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050906"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0050908 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050908"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0050953 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050953"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0050962 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0051606 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050962"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051606"/>
     
 
 
@@ -25874,12 +25992,14 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref>AAO:0010825</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>AEO:0000003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILA:0000003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CARO:0000003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EHDAA2:0003003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EMAPA:0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FAO:0000001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBbt:00007001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:305751</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:67135</oboInOwl:hasDbXref>
@@ -25896,9 +26016,9 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <oboInOwl:hasDbXref>http://dbpedia.org/ontology/AnatomicalStructure</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>biological structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>connected biological structure</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level"/>
@@ -25960,7 +26080,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>

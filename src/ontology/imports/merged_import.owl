@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/VFB_scRNAseq/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2026-04-17/imports/merged_import.owl>
-Annotation(owl:versionInfo "2026-04-17")
+<http://purl.obolibrary.org/obo/VFB_scRNAseq/releases/2026-06-25/imports/merged_import.owl>
+Annotation(owl:versionInfo "2026-06-25")
 
 Declaration(Class(<http://flybase.org/reports/FBgn0000137>))
 Declaration(Class(<http://flybase.org/reports/FBgn0000158>))
@@ -31,6 +31,7 @@ Declaration(Class(<http://flybase.org/reports/FBgn0003250>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003499>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003507>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003651>))
+Declaration(Class(<http://flybase.org/reports/FBgn0003747>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003866>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003961>))
 Declaration(Class(<http://flybase.org/reports/FBgn0003975>))
@@ -96,6 +97,7 @@ Declaration(Class(<http://flybase.org/reports/FBgn0041625>))
 Declaration(Class(<http://flybase.org/reports/FBgn0043576>))
 Declaration(Class(<http://flybase.org/reports/FBgn0045479>))
 Declaration(Class(<http://flybase.org/reports/FBgn0051956>))
+Declaration(Class(<http://flybase.org/reports/FBgn0052255>))
 Declaration(Class(<http://flybase.org/reports/FBgn0085424>))
 Declaration(Class(<http://flybase.org/reports/FBgn0086347>))
 Declaration(Class(<http://flybase.org/reports/FBgn0087002>))
@@ -875,8 +877,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004114>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004135>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004146>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004147>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004155>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004158>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004159>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004161>))
@@ -1177,7 +1177,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005426>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005427>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005428>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005431>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005432>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005434>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005435>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005436>))
@@ -1208,7 +1207,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005520>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005523>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005526>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005528>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005531>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005533>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005534>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005535>))
@@ -1240,6 +1238,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005617>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005618>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005619>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005620>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005622>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005624>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005630>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005631>))
@@ -1896,6 +1895,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048142>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048152>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048160>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048209>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048210>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048234>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048235>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048239>))
@@ -2555,6 +2556,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053578>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053581>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053586>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053588>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00053637>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00057000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00057001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00057003>))
@@ -2602,6 +2604,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058145>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058146>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058147>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058153>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058156>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058157>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058158>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00058159>))
@@ -2852,6 +2855,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100099>))
@@ -3400,13 +3404,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBdv_0010007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBdv_0010008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBdv_0010009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBdv_0010010>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001580>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001582>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0002790>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007585>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007589>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007600>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007605>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007608>))
@@ -3415,9 +3418,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007628>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007630>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007635>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008343>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009583>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009593>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0014055>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016056>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019236>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019915>))
@@ -3432,19 +3435,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046541>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046717>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046879>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046903>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050906>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050907>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050908>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050909>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050910>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050911>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050912>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050913>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050916>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050953>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050954>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050962>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050973>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050974>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050957>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050982>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0051606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0060096>))
@@ -3459,7 +3455,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0061546>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097206>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0098509>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0098512>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0098513>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000112>))
@@ -3627,7 +3623,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002581> "is a
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002582> "If R <- P o Q is a defining property chain axiom, then (1) R -> P o Q holds and (2) Q is either reflexive or locally reflexive. A corollary of this is that P SubPropertyOf R.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002582> "is a defining property chain axiom where second argument is reflexive")
 
-# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (has cross-reference)
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Reference database or publication source.")
@@ -5175,9 +5171,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001060> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001056>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00001058>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00001061> (ventral neurectoderm)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00001061> (ventral neuroectoderm)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00001061> "ventral neurectoderm")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00001061> "ventral neuroectoderm")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001061> <http://purl.obolibrary.org/obo/FBbt_00001057>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001061> <http://purl.obolibrary.org/obo/FBbt_00007005>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005558>))
@@ -7174,16 +7170,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001871> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00001878> "embryonic/larval salivary gland")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001878> <http://purl.obolibrary.org/obo/FBbt_00005382>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001878> <http://purl.obolibrary.org/obo/FBbt_00025990>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001878> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001842>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001878> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00005620>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001880> (embryonic/larval salivary gland duct)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00001880> "embryonic/larval salivary gland duct")
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001880> <http://purl.obolibrary.org/obo/FBbt_00025993>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001880> <http://purl.obolibrary.org/obo/FBbt_00100314>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001880> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001878>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001880> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00005531>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001880> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00005622>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001881> (embryonic/larval salivary gland common duct)
 
@@ -10581,7 +10577,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004024> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004026> "VFB:FBbt_00004026")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004026> "labral sense organ neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004026> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004146>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004026> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004146>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004026> <http://purl.obolibrary.org/obo/FBbt_00005163>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004026> <http://purl.obolibrary.org/obo/FBbt_00052150>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004026> <http://purl.obolibrary.org/obo/FBbt_00058244>)
@@ -10797,26 +10793,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004146> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004146> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003130>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004146> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00007281>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00004147> (mechanosensory labral sensillum)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004147> "VFB:FBbt_00004147")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004147> "mechanosensory labral sensillum")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004147> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004146>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004147> <http://purl.obolibrary.org/obo/FBbt_00004135>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004147> <http://purl.obolibrary.org/obo/FBbt_00005156>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004147> <http://purl.obolibrary.org/obo/FBbt_00007241>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004146>))
-
-# Class: <http://purl.obolibrary.org/obo/FBbt_00004155> (mechano-chemo-sensory labral sensillum)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004155> "mechano-chemo-sensory labral sensillum")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004155> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003130>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004155> <http://purl.obolibrary.org/obo/FBbt_00004135>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004155> <http://purl.obolibrary.org/obo/FBbt_00005156>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004155> <http://purl.obolibrary.org/obo/FBbt_00005159>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004155> <http://purl.obolibrary.org/obo/FBbt_00007241>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003130>))
-
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004158> (maxillary palp sense organ)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004158> "VFB:FBbt_00004158")
@@ -10847,7 +10823,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004161> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004162> "VFB:FBbt_00004162")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004162> "labellar taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004162> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004531>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004162> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004531>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004162> <http://purl.obolibrary.org/obo/FBbt_00004115>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004162> <http://purl.obolibrary.org/obo/FBbt_00004161>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004162> <http://purl.obolibrary.org/obo/FBbt_00005178>)
@@ -10912,7 +10888,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004178> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004178> <http://purl.obolibrary.org/obo/FBbt_00007686>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004178> <http://purl.obolibrary.org/obo/FBbt_00052719>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004178> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002150> <http://purl.obolibrary.org/obo/FBbt_00100001>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004178> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050973>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004178> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050957>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004178> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0071063>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004179> (sacculus)
@@ -11016,16 +10992,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004209> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004209> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00045002>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004209> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013009> <http://purl.obolibrary.org/obo/FBbt_00049484>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00004211> (photoreceptor neuron)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00004211> (light-sensitive neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004211> "CL:0000210")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004211> "VFB:FBbt_00004211")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004211> "photoreceptor neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004211> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0016056>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050962>)))
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004211> "light-sensitive neuron")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004211> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004211> <http://purl.obolibrary.org/obo/FBbt_00005124>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004211> <http://purl.obolibrary.org/obo/FBbt_00047736>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0016056>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050962>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004213> (photoreceptor cell R1)
 
@@ -11169,7 +11144,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004252> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004253> "VFB:FBbt_00004253")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004253> "prothoracic leg taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004253> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004663>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004253> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004663>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004253> <http://purl.obolibrary.org/obo/FBbt_00004252>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004253> <http://purl.obolibrary.org/obo/FBbt_00007409>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004253> <http://purl.obolibrary.org/obo/FBbt_00048079>)
@@ -11225,7 +11200,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004362> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004363> "VFB:FBbt_00004363")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004363> "mesothoracic leg taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004363> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004685>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004363> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004685>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004363> <http://purl.obolibrary.org/obo/FBbt_00004298>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004363> <http://purl.obolibrary.org/obo/FBbt_00004362>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004363> <http://purl.obolibrary.org/obo/FBbt_00007409>)
@@ -11264,7 +11239,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004420> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00004421> "VFB:FBbt_00004421")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00004421> "metathoracic leg taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004421> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004707>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004421> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004707>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004421> <http://purl.obolibrary.org/obo/FBbt_00004408>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004421> <http://purl.obolibrary.org/obo/FBbt_00004420>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004421> <http://purl.obolibrary.org/obo/FBbt_00007409>)
@@ -11363,7 +11338,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004505> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004505> <http://purl.obolibrary.org/obo/FBbt_00007241>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004505> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004495>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004505> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00110844>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004505> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050908>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004505> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007601>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004508> (eye)
 
@@ -11378,7 +11353,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004508> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004508> <http://purl.obolibrary.org/obo/FBbt_00025993>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004508> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003007>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004508> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00001768>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004508> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050908>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004508> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007601>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004510> (ommatidium)
 
@@ -11390,7 +11365,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004510> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004510> <http://purl.obolibrary.org/obo/FBbt_00007241>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004510> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004200>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004510> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00001770>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004510> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050908>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004510> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007601>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004511> (antenna)
 
@@ -12432,7 +12407,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005123> ObjectSomeValuesFrom(<
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005124> "CL:0000101")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005124> "VFB:FBbt_00005124")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005124> "sensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005124> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005124> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005124> <http://purl.obolibrary.org/obo/CL_0000101>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005124> <http://purl.obolibrary.org/obo/FBbt_00007693>)
 
@@ -12578,69 +12553,69 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005153> ObjectSomeValuesFrom(<
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005155> "UBERON:0000020")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005155> "VFB:FBbt_00005155")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005155> "sense organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00100313> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00100313> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005155> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005155> <http://purl.obolibrary.org/obo/FBbt_00100313>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007692>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005156> (mechanosensory sensory organ)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005156> "VFB:FBbt_00005156")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005156> "mechanosensory sensory organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005156> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005156> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005156> <http://purl.obolibrary.org/obo/FBbt_00005155>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007687>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005157> (chemosensory sensory organ)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005157> "UBERON:0000005")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005157> "VFB:FBbt_00005157")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005157> "chemosensory sensory organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005157> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050907>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005157> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005157> <http://purl.obolibrary.org/obo/FBbt_00005155>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005157> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007689>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005157> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050907>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005157> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005158> (olfactory sensory organ)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005158> "UBERON:0002268")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005158> "VFB:FBbt_00005158")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005158> "olfactory sensory organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005158> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050911>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005158> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007608>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005158> <http://purl.obolibrary.org/obo/FBbt_00005157>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007688>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050911>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007608>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005159> (gustatory sensory organ)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005159> "UBERON:0003212")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005159> "VFB:FBbt_00005159")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005159> "gustatory sensory organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005159> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005159> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005159> <http://purl.obolibrary.org/obo/FBbt_00005157>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005159> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007690>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005159> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005159> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005161> (hygrosensitive sensory organ)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005161> "VFB:FBbt_00005161")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005161> "hygrosensitive sensory organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005161> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0098512>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005161> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0098513> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0098509>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005161> <http://purl.obolibrary.org/obo/FBbt_00005155>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00110660>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0098512>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0098513> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0098509>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005162> (photoreceptor)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005162> "UBERON:0000970")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005162> "VFB:FBbt_00005162")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005162> "photoreceptor")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050962>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005162> <http://purl.obolibrary.org/obo/FBbt_00005155>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00047735>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050962>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005163> (sensory organ cell)
 
@@ -12708,7 +12683,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005177> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005178> "VFB:FBbt_00005178")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005178> "taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005178> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005178> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005178> <http://purl.obolibrary.org/obo/FBbt_00005159>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005178> <http://purl.obolibrary.org/obo/FBbt_00005177>)
 
@@ -12716,7 +12691,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005178> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005181> "VFB:FBbt_00005181")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005181> "mechanosensory chaeta")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005181> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005181> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005181> <http://purl.obolibrary.org/obo/FBbt_00005156>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005181> <http://purl.obolibrary.org/obo/FBbt_00005177>)
 
@@ -13204,13 +13179,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005431> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005431> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00005423>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005431> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002203> <http://purl.obolibrary.org/obo/FBbt_00005606>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00005432> (salivary gland duct anlage)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005432> "salivary gland duct anlage")
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005432> <http://purl.obolibrary.org/obo/FBbt_00005426>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005432> <http://purl.obolibrary.org/obo/FBbt_00025993>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005432> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002203> <http://purl.obolibrary.org/obo/FBbt_00005531>))
-
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005434> (visual anlage)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005434> "visual anlage")
@@ -13502,17 +13470,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005528> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005528> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001055>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005528> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00111739>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00005531> (salivary gland duct primordium)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005531> "salivary gland duct primordium")
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005531> <http://purl.obolibrary.org/obo/FBbt_00004208>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005531> <http://purl.obolibrary.org/obo/FBbt_00005495>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005531> <http://purl.obolibrary.org/obo/FBbt_00025993>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005531> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005620>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005531> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00014201>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005531> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00005432>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005531> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002203> <http://purl.obolibrary.org/obo/FBbt_00001880>))
-
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005533> (ventral epidermis primordium)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005533> "UBERON:6005533")
@@ -13772,7 +13729,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005619> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005620> "presumptive embryonic salivary gland")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005620> <http://purl.obolibrary.org/obo/FBbt_00007276>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005620> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005606>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005620> <http://purl.obolibrary.org/obo/FBbt_00025990>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005620> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00000052>))
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00005622> (embryonic salivary gland duct)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005622> "embryonic salivary gland duct")
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005622> <http://purl.obolibrary.org/obo/FBbt_00100313>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005622> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005620>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005624> (embryonic/larval midgut primordium)
 
@@ -14310,7 +14274,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005805> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005805> <http://purl.obolibrary.org/obo/FBbt_00025991>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005805> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005333>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005805> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00005830>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005805> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050908>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005805> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007601>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005806> (antennal sense organ)
 
@@ -14433,7 +14397,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005910> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005919> "VFB:FBbt_00005919")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005919> "mechanosensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005919> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005919> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005919> <http://purl.obolibrary.org/obo/CL_0000199>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005919> <http://purl.obolibrary.org/obo/FBbt_00005124>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005919> <http://purl.obolibrary.org/obo/FBbt_00007698>)
@@ -14442,25 +14406,25 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005919> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005922> "VFB:FBbt_00005922")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005922> "chemosensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005922> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050907>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005922> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005922> <http://purl.obolibrary.org/obo/FBbt_00005124>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005922> <http://purl.obolibrary.org/obo/FBbt_00007696>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005922> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050907>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005922> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005923> (hygrosensory neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005923> "VFB:FBbt_00005923")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005923> "hygrosensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005923> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0098512>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005923> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0098513> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0098509>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005923> <http://purl.obolibrary.org/obo/FBbt_00005124>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005923> <http://purl.obolibrary.org/obo/FBbt_00110659>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005923> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0098512>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005923> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0098513> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0098509>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005926> (olfactory receptor neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005926> "VFB:FBbt_00005926")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005926> "olfactory receptor neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005926> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050911>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005926> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007608>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005926> <http://purl.obolibrary.org/obo/CL_0000207>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005926> <http://purl.obolibrary.org/obo/FBbt_00005922>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005926> <http://purl.obolibrary.org/obo/FBbt_00007697>)
@@ -14471,10 +14435,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005926> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00005927> "VFB:FBbt_00005927")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00005927> "gustatory receptor neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005927> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005927> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005927> <http://purl.obolibrary.org/obo/FBbt_00005922>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005927> <http://purl.obolibrary.org/obo/FBbt_00007695>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005927> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005927> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005968> (dorsal tritocerebral neuroblast)
 
@@ -15206,7 +15170,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007151> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00007152> "UBERON:0002536")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007152> "sensillum")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007152> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007152> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007152> <http://purl.obolibrary.org/obo/FBbt_00005155>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007152> <http://purl.obolibrary.org/obo/FBbt_00007229>)
 
@@ -15404,7 +15368,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007233> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007234> (compound sense organ)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007234> "compound sense organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007234> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007230> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007234> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007230> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007234> <http://purl.obolibrary.org/obo/FBbt_00005155>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007234> <http://purl.obolibrary.org/obo/FBbt_00007230>)
 
@@ -15654,7 +15618,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007313> ObjectSomeValuesFrom(<
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007316> "sensory cluster")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007316> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007316> <http://purl.obolibrary.org/obo/FBbt_00007277>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007316> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007316> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007316> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002473> <http://purl.obolibrary.org/obo/FBbt_00007152>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007317> (adult oenocyte band)
@@ -15938,7 +15902,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007407> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00007409> "VFB:FBbt_00007409")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007409> "leg taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007409> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004640>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007409> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004640>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007409> <http://purl.obolibrary.org/obo/FBbt_00004246>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007409> <http://purl.obolibrary.org/obo/FBbt_00005178>)
 
@@ -16302,10 +16266,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007683> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00007684> "VFB:FBbt_00007684")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007684> "auditory sensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007684> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050910>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007684> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007605>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007684> <http://purl.obolibrary.org/obo/FBbt_00005919>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007684> <http://purl.obolibrary.org/obo/FBbt_00110127>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007684> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050910>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007684> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007605>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007685> (auditory system)
 
@@ -16318,10 +16282,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007685> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00007686> "VFB:FBbt_00007686")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00007686> "auditory sense organ")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007686> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050910>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007686> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007605>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007686> <http://purl.obolibrary.org/obo/FBbt_00005156>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007686> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007685>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007686> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050910>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007686> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007605>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007687> (mechanosensory system)
 
@@ -16667,11 +16631,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013695> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013695> <http://purl.obolibrary.org/obo/FBbt_00049824>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00007677>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00013774> (distal medullary amacrine neuron Dm8a)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00013774> (distal medullary amacrine neuron Dm8)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00013774> "FlyBrain_NDB:10088")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00013774> "VFB:FBbt_00013774")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00013774> "distal medullary amacrine neuron Dm8a")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00013774> "distal medullary amacrine neuron Dm8")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> <http://purl.obolibrary.org/obo/FBbt_00003767>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> <http://purl.obolibrary.org/obo/FBbt_00058208>)
@@ -16681,7 +16645,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013002> <http://purl.obolibrary.org/obo/FBbt_00111269>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00111269>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013008> <http://purl.obolibrary.org/obo/FBbt_00004225>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013009> <http://purl.obolibrary.org/obo/FBbt_00110074>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00013774> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013009> <http://purl.obolibrary.org/obo/FBbt_00003793>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00013788> (wide field transmedullary neuron)
 
@@ -18054,7 +18018,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00047185> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00047188> "VFB:FBbt_00047188")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00047188> "dorsal organ sensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00047188> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00002655>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00047188> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00002655>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00047188> <http://purl.obolibrary.org/obo/FBbt_00052615>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00047188> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00002655>))
 
@@ -18973,7 +18937,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048079> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00048080> "VFB:FBbt_00048080")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00048080> "leg mechanosensory bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004640>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005177> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004640>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048080> <http://purl.obolibrary.org/obo/FBbt_00004246>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048080> <http://purl.obolibrary.org/obo/FBbt_00005181>)
 
@@ -19110,9 +19074,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048152> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00048160> "VFB:FBbt_00048160")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00048160> "bitter-sensitive labellar taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048160> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00004162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obolibrary.org/obo/GO_0001580>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048160> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00004162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050913>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048160> <http://purl.obolibrary.org/obo/FBbt_00004162>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048160> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002216> <http://purl.obolibrary.org/obo/GO_0001580>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048160> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050913>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00048209> (bitter-sensing neuron of the leg)
 
@@ -19122,6 +19086,22 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00048209> "b
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048209> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050913>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00007409>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048209> <http://purl.obolibrary.org/obo/FBbt_00047768>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048209> <http://purl.obolibrary.org/obo/FBbt_00049613>)
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00048210> (sugar-sensing neuron of the leg)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00048210> "VFB:FBbt_00048210")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00048210> "sugar-sensing neuron of the leg")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048210> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050916>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00007409>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048210> <http://purl.obolibrary.org/obo/FBbt_00047767>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048210> <http://purl.obolibrary.org/obo/FBbt_00100041>)
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00048233> (sugar-sensing neuron of bitter-sensitive labellar taste bristle)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00048233> "VFB:FBbt_00048233")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00048233> "sugar-sensing neuron of bitter-sensitive labellar taste bristle")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048233> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050916>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00048160>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048233> <http://purl.obolibrary.org/obo/FBbt_00058156>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048233> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00048160>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00048234> (fruitless-expressing lobula columnar neuron LC10a)
 
@@ -19182,7 +19162,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048270> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00048271> "VFB:FBbt_00048271")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00048271> "wing margin taste bristle")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048271> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00004326> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00048271> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00004326> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048271> <http://purl.obolibrary.org/obo/FBbt_00004326>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00048271> <http://purl.obolibrary.org/obo/FBbt_00005178>)
 
@@ -20378,7 +20358,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00049284> "a
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049284> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049284> <http://purl.obolibrary.org/obo/FBbt_00000124>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049284> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00007039>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049284> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050982>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049284> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049284> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0264953>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00049285> (adult lateral horn local neuron)
@@ -20771,17 +20751,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049612> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00049613> "VFB:FBbt_00049613")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00049613> "bitter-sensing neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00049613> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0001580>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00049613> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050913>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049613> <http://purl.obolibrary.org/obo/FBbt_00100044>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049613> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0001580>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049613> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050913>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00049614> (sugar-sensing neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00049614> "VFB:FBbt_00049614")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00049614> "sugar-sensing neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00049614> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0001582>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00049614> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050916>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049614> <http://purl.obolibrary.org/obo/FBbt_00005927>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049614> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0001582>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00049614> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050916>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00049627> (adult retrocerebral complex)
 
@@ -22091,7 +22071,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051418> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00051420> "VFB:FBbt_00051420")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00051420> "adult mechanosensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00051420> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00051420> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051420> <http://purl.obolibrary.org/obo/FBbt_00005919>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051420> <http://purl.obolibrary.org/obo/FBbt_00058244>)
 
@@ -22099,7 +22079,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051420> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00051421> "VFB:FBbt_00051421")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00051421> "larval mechanosensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00051421> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00051421> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050982> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051421> <http://purl.obolibrary.org/obo/FBbt_00005919>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00051421> <http://purl.obolibrary.org/obo/FBbt_00058245>)
 
@@ -23155,7 +23135,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052294> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052294> <http://purl.obolibrary.org/obo/FBbt_00058247>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052294> <http://purl.obolibrary.org/obo/FBbt_00059276>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052294> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004640>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052294> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052294> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0030844>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052294> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00007409>))
 
@@ -23165,9 +23144,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052295> "adult pheromone-sensing neuron of mesothoracic leg")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052295> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00058247> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004685>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052295> <http://purl.obolibrary.org/obo/FBbt_00001985>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052295> <http://purl.obolibrary.org/obo/FBbt_00052568>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052295> <http://purl.obolibrary.org/obo/FBbt_00058247>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052295> <http://purl.obolibrary.org/obo/FBbt_00059276>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052295> <http://purl.obolibrary.org/obo/FBbt_00052294>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052295> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004685>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052295> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004253>))
 
@@ -23177,9 +23154,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052296> "adult pheromone-sensing neuron of prothoracic leg")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052296> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00058247> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004663>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052296> <http://purl.obolibrary.org/obo/FBbt_00001984>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052296> <http://purl.obolibrary.org/obo/FBbt_00052568>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052296> <http://purl.obolibrary.org/obo/FBbt_00058247>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052296> <http://purl.obolibrary.org/obo/FBbt_00059276>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052296> <http://purl.obolibrary.org/obo/FBbt_00052294>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052296> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004663>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052296> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004363>))
 
@@ -23189,9 +23164,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052297> "adult pheromone-sensing neuron of metathoracic leg")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052297> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00058247> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004707>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052297> <http://purl.obolibrary.org/obo/FBbt_00001986>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052297> <http://purl.obolibrary.org/obo/FBbt_00052568>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052297> <http://purl.obolibrary.org/obo/FBbt_00058247>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052297> <http://purl.obolibrary.org/obo/FBbt_00059276>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052297> <http://purl.obolibrary.org/obo/FBbt_00052294>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052297> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004707>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052297> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004421>))
 
@@ -23202,7 +23175,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052298> "a
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052298> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004162>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052298> <http://purl.obolibrary.org/obo/FBbt_00048029>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052298> <http://purl.obolibrary.org/obo/FBbt_00058247>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052298> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052298> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0030844>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00052301> (adult pheromone-sensing CCAP neuron of leg)
@@ -23294,10 +23266,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052313> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052313> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00001938>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052313> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002203> <http://purl.obolibrary.org/obo/FBbt_00003771>))
 
-# Class: <http://purl.obolibrary.org/obo/FBbt_00052314> (immature distal medullary amacrine neuron Dm8a)
+# Class: <http://purl.obolibrary.org/obo/FBbt_00052314> (immature distal medullary amacrine neuron Dm8)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00052314> "VFB:FBbt_00052314")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052314> "immature distal medullary amacrine neuron Dm8a")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052314> "immature distal medullary amacrine neuron Dm8")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052314> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00051424> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002203> <http://purl.obolibrary.org/obo/FBbt_00013774>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052314> <http://purl.obolibrary.org/obo/FBbt_00049542>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052314> <http://purl.obolibrary.org/obo/FBbt_00052664>)
@@ -24374,7 +24346,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052608> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00052610> "VFB:FBbt_00052610")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00052610> "larval gut sensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052610> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00007512>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00052610> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00007512>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052610> <http://purl.obolibrary.org/obo/FBbt_00052151>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052610> <http://purl.obolibrary.org/obo/FBbt_00058245>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00052610> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00007512>))
@@ -25079,6 +25051,16 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00053588> ObjectIntersect
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053588> <http://purl.obolibrary.org/obo/FBbt_00004029>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053588> <http://purl.obolibrary.org/obo/FBbt_00051420>)
 
+# Class: <http://purl.obolibrary.org/obo/FBbt_00053637> (adult labral sensillum)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00053637> "VFB:FBbt_00053637")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00053637> "adult labral sensillum")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00053637> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004146>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053637> <http://purl.obolibrary.org/obo/FBbt_00004135>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053637> <http://purl.obolibrary.org/obo/FBbt_00007232>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053637> <http://purl.obolibrary.org/obo/FBbt_00007241>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00053637> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004146>))
+
 # Class: <http://purl.obolibrary.org/obo/FBbt_00057000> (early-mid elongation-stage spermatid)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00057000> "early-mid elongation-stage spermatid")
@@ -25347,7 +25329,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058021> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058026> "VFB:FBbt_00058026")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058026> "adult mechanosensory neuron of the hypocerebral ganglion")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058026> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004047>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050974>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058026> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005919> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/FBbt_00004047>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058026> <http://purl.obolibrary.org/obo/FBbt_00051420>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058026> <http://purl.obolibrary.org/obo/FBbt_00052150>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058026> <http://purl.obolibrary.org/obo/FBbt_00059274>)
@@ -25423,6 +25405,17 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058147> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058153> "dendritic arborizing neuron precursor cell")
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058153> <http://purl.obolibrary.org/obo/FBbt_00005210>)
+
+# Class: <http://purl.obolibrary.org/obo/FBbt_00058156> (sugar-sensing neuron of labellar taste bristle)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058156> "FlyBrain_NDB:10285")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058156> "VFB:FBbt_00058156")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058156> "sugar-sensing neuron of labellar taste bristle")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058156> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050916>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004162>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058156> <http://purl.obolibrary.org/obo/FBbt_00051978>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058156> <http://purl.obolibrary.org/obo/FBbt_00100041>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0003747>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0052255>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00058157> (labial disc epithelium proper)
 
@@ -25920,7 +25913,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058243> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058244> "VFB:FBbt_00058244")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058244> "adult sensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058244> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058244> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058244> <http://purl.obolibrary.org/obo/FBbt_00005124>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058244> <http://purl.obolibrary.org/obo/FBbt_00047095>)
 
@@ -25928,7 +25921,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058244> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058245> "VFB:FBbt_00058245")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058245> "embryonic/larval sensory neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058245> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050906>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058245> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0051606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058245> <http://purl.obolibrary.org/obo/FBbt_00001446>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058245> <http://purl.obolibrary.org/obo/FBbt_00005124>)
 
@@ -25936,15 +25929,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058245> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058246> "VFB:FBbt_00058246")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058246> "pheromone-sensing neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058246> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0043695>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058246> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058246> <http://purl.obolibrary.org/obo/FBbt_00005922>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058246> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0043695>))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058246> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00058247> (adult pheromone-sensing neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058247> "VFB:FBbt_00058247")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058247> "adult pheromone-sensing neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058247> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0043695>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058247> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058247> <http://purl.obolibrary.org/obo/FBbt_00058244>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058247> <http://purl.obolibrary.org/obo/FBbt_00058246>)
 
@@ -25952,7 +25945,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058247> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058248> "VFB:FBbt_00058248")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058248> "embryonic/larval pheromone-sensing neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058248> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0043695>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058248> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058248> <http://purl.obolibrary.org/obo/FBbt_00058245>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058248> <http://purl.obolibrary.org/obo/FBbt_00058246>)
 
@@ -25960,7 +25953,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058248> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058249> "VFB:FBbt_00058249")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058249> "adult gustatory receptor neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058249> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058249> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00047095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058249> <http://purl.obolibrary.org/obo/FBbt_00005927>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058249> <http://purl.obolibrary.org/obo/FBbt_00058244>)
 
@@ -25968,7 +25961,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058249> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00058250> "VFB:FBbt_00058250")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00058250> "embryonic/larval gustatory receptor neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058250> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058250> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00001446> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058250> <http://purl.obolibrary.org/obo/FBbt_00005927>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058250> <http://purl.obolibrary.org/obo/FBbt_00058245>)
 
@@ -27002,7 +26995,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0041623>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0041624>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00003979>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00048525>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0041625>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013006> <http://purl.obolibrary.org/obo/FBbt_00003964>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00007350>))
@@ -27052,7 +27044,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> <http://purl.obolibrary.org/obo/FBbt_00058247>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00003979>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00048524>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0036080>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013006> <http://purl.obolibrary.org/obo/FBbt_00003932>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00067030>))
@@ -27080,7 +27071,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> <http://purl.obolibrary.org/obo/FBbt_00058247>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00003979>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00048524>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0026385>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013006> <http://purl.obolibrary.org/obo/FBbt_00007363>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00067010>))
@@ -27097,7 +27087,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> <http://purl.obolibrar
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> <http://purl.obolibrary.org/obo/FBbt_00058247>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002101> <http://purl.obolibrary.org/obo/FBbt_00003979>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00048523>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0043695> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0038203>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013006> <http://purl.obolibrary.org/obo/FBbt_00007101>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00067010>))
@@ -27132,11 +27121,9 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00067064> "adult olfactory receptor neuron Gr21a/63a")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00067064> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00051494> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0041250>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> <http://purl.obolibrary.org/obo/FBbt_00005174>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> <http://purl.obolibrary.org/obo/FBbt_00005922>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> <http://purl.obolibrary.org/obo/FBbt_00051499>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> <http://purl.obolibrary.org/obo/FBbt_00100045>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00048526>))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0003031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0035468>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBgn0041250>))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013006> <http://purl.obolibrary.org/obo/FBbt_00003951>))
@@ -27430,6 +27417,16 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00100021> ObjectIntersect
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100021> <http://purl.obolibrary.org/obo/FBbt_00100000>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013003> <http://purl.obolibrary.org/obo/FBbt_00100019>))
 
+# Class: <http://purl.obolibrary.org/obo/FBbt_00100041> (sugar-sensing neuron of taste bristle)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00100041> "FlyBrain_NDB:10382")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00100041> "VFB:FBbt_00100041")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00100041> "sugar-sensing neuron of taste bristle")
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00100041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050916>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00005178>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100041> <http://purl.obolibrary.org/obo/FBbt_00049614>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100041> <http://purl.obolibrary.org/obo/FBbt_00052568>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00005178>))
+
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100044> (high salt/bitter-sensing neuron)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00100044> "VFB:FBbt_00100044")
@@ -27440,9 +27437,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100044> <http://purl.obolibrar
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00100045> "VFB:FBbt_00100045")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00100045> "carbon dioxide sensitive neuron")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00100045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0003031>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100045> <http://purl.obolibrary.org/obo/FBbt_00005106>)
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0003031>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00100045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0003031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100045> <http://purl.obolibrary.org/obo/FBbt_00005922>)
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0003031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>))))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100099> (adult antennal lobe tract)
 
@@ -27456,7 +27453,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100099> ObjectSomeValuesFrom(<
 # Class: <http://purl.obolibrary.org/obo/FBbt_00100131> (chemosensory sensillum of the female genitalia)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00100131> "chemosensory sensillum of the female genitalia")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00100131> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004827>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050907>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00100131> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00007152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004827>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007600>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100131> <http://purl.obolibrary.org/obo/FBbt_00004465>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100131> <http://purl.obolibrary.org/obo/FBbt_00005157>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004827>))
@@ -29240,7 +29237,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00110886> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FBbt_00110887> "VFB:FBbt_00110887")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FBbt_00110887> "gustatory receptor neuron of the labellum")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00110887> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0050912>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004531>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00110887> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbt_00005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0009593> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0050909>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0013007> <http://purl.obolibrary.org/obo/FBbt_00004531>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00110887> <http://purl.obolibrary.org/obo/FBbt_00004029>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00110887> <http://purl.obolibrary.org/obo/FBbt_00058249>)
 SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00110887> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00005098>))
@@ -32043,6 +32040,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "CARO:0000003")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "EHDAA2:0003003")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "EMAPA:0")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "FAO:0000001")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "FBbt:00007001")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "FMA:305751")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000061> "FMA:67135")

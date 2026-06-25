@@ -2281,6 +2281,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Structure that develops from an oocyte once it has been released from the ovary by ovulation (Qazi et al., 2003). Ovulation triggers egg activation, which alters envelope permeability and causes the resumption of meiosis and translation (Qazi et al., 2003). Fertilization of the egg begins embryogenesis (Loppin et al., 2015).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>ovum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00000034</oboInOwl:id>
@@ -2424,6 +2425,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cell that begins as a pole cell, becomes incorporated into the gonad and can develop into a germline stem cell (Campos-Ortega and Hartenstein, 1997; Dansereau and Lasko, 2008; Slaidina et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/696</obo:IAO_0000233>
         <oboInOwl:hasBroadSynonym>GC</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>CL:0000301</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>PGC</oboInOwl:hasExactSynonym>
@@ -3584,6 +3586,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any muscle cell (FBbt:00005074) that is part of some larval somatic muscle (FBbt:00058297).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1088</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/492</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>FBbt:00005650</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>embryonic/larval skeletal muscle cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>embryonic/larval somatic muscle cell</oboInOwl:hasExactSynonym>
@@ -3774,10 +3778,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The ventrally/medially located ectodermal region of the trunk from which neuroblasts delaminate to form the ventral nerve cord and gnathal ganglia. This region becomes distinct during stage 8 when its cells become enlarged compared to those in the adjacent dorsal ectoderm.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/3682</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>FBbt:00000113</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>P2 VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vNR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventral neurectoderm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ventral neurogenic region</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>neurectoderm</oboInOwl:hasRelatedSynonym>
@@ -3785,7 +3791,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00001061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>ventral neurectoderm</rdfs:label>
+        <rdfs:label>ventral neuroectoderm</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001061"/>
@@ -3945,6 +3951,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell that is part of the peripheral nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1274</obo:IAO_0000233>
         <oboInOwl:hasDbXref>VFB:FBbt_00001320</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>peripheral glial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -4089,6 +4096,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004208"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00047552"/>
         <obo:IAO_0000115>Embryonic structure that will develop into a larval imaginal tissue, which will later form an adult structure (Cohen, 1993).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/320</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:6001648</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic imaginal precursor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -4693,6 +4701,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Imaginal tissue that is found in the larva and will develop into an adult structure during metamorphosis.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/320</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:6001760</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>embryonic/larval imaginal precursor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>larval imaginal precursor</oboInOwl:hasExactSynonym>
@@ -4723,6 +4732,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A sac shaped epithelial structure in the larva that gives rise to part of the adult integumentary system. One side of the sac consists of peripodial epithelium, the other of columnar epithelium. A single anterior-posterior compartment boundary bisects both peripodial membrane and columnar epithelium. Cells do not cross this boundary during growth and development of the disc.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/320</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000939</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>imaginal disk</oboInOwl:hasRelatedSynonym>
@@ -4984,6 +4994,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00001878">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005382"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00025990"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5030,6 +5041,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Middle part of the embryonic/larval alimentary canal. The midgut runs from the proventriculus to its posterior end, where it meets the hindgut, immediately anterior to the insertion of the Malpighian tubules. In the larva, there are the 4 gastric caeca at the anterior end.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>FBbt:00005825</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>larval midgut</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>midintestine</oboInOwl:hasExactSynonym>
@@ -6111,6 +6123,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005070"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00058230"/>
         <obo:IAO_0000115>Muscle cell of a visceral muscle of the adult.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00003525</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
@@ -6597,6 +6610,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004857"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048491"/>
         <obo:IAO_0000115>Any reproductive system (FBbt:00004857) that overlaps some female organism (FBbt:00007011).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/583</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000474</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00004864</oboInOwl:id>
@@ -6719,6 +6733,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Female germline cell and stem cell from which all other female germline cells develop. Each of its divisions gives rise to one cystoblast and one female germline stem cell.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/696</obo:IAO_0000233>
         <oboInOwl:hasDbXref>CL:0000022</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>female GSC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>oogonial cell</oboInOwl:hasExactSynonym>
@@ -6819,6 +6834,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Female germline cell born during one of four rapid rounds of cell division following the birth of a cystoblast from a female germline stem cell until the point where one of the resulting 16 cells (the presumptive oocyte) enters meiosis. Cyst cells are interconnected by ring canals, resulting from incomplete cytokinesis during cell division. The oocyte develops from one of the two cyst cells that have connections to four other cyst cells, the other 15 cyst cells differentiate into nurse cells.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/696</obo:IAO_0000233>
         <oboInOwl:hasBroadSynonym>cyst cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>cystocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>germarial cystocyte</oboInOwl:hasExactSynonym>
@@ -6867,6 +6883,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Female germline cell that develops from one of the 16 cyst cells (the presumptive oocyte) produced by a cystoblast. It matures in an egg chamber of the ovariole and will be released from the ovary as an egg.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <oboInOwl:hasDbXref>CL:0000023</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00004886</oboInOwl:id>
@@ -6963,6 +6980,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004894">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007137"/>
         <obo:IAO_0000115>Female germline cyst that forms as the 16-cell cyst moves posteriorly through the germarium, becoming encapsulated in follicle cells (Spradling, 1993). Its formation is completed in germarium region 3, where it buds off from the germarium and progresses posteriorly along the ovariole (Spradling, 1993, Reichmann and Ephrussi, 2001).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0003199</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>follicle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>germarium derived egg chamber</oboInOwl:hasExactSynonym>
@@ -9500,6 +9518,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Primordium of the larval segmentally-repeated body wall musculature. It arises from the outer layer of the trunk mesoderm. During germ band shortening (stage 13), it segregates into loose segmental clusters. Within these clusters, muscle formation proceeds by fusion of fusion competent myoblasts to muscle founder cells. Formation of the embryonic/larval somatic musculature is complete by stage 17.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/492</obo:IAO_0000233>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>P1 SoMus</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SoMusP2</oboInOwl:hasRelatedSynonym>
@@ -9676,7 +9695,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neurectoderm.</obo:IAO_0000115>
+        <obo:IAO_0000115>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neuroectoderm.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:6005533</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>P2 iVenEp</oboInOwl:hasRelatedSynonym>
@@ -9689,7 +9708,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005533"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neurectoderm.</owl:annotatedTarget>
+        <owl:annotatedTarget>A(n) primordium that develops into some denticle field anlage and some anal pad primordium and some embryonic ventral epidermis and some imaginal disc primordium and some ventral apodeme anlage and some ventral trunk epidermis primordium. It develops from some ventral neuroectoderm.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -9965,14 +9984,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00005620">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007276"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00025990"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005606"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The sum of the primordia in the embryo that will contribute to the embryonic/larval salivary gland.</obo:IAO_0000115>
+        <obo:IAO_0000115>The sum of the primordia in the embryo that will contribute to the embryonic/larval salivary gland. It is ectodermal in origin.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>salivary gland primordia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>salivary gland primordium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>salivary gland placode</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBbt:00005620</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
@@ -9981,8 +10004,26 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005620"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The sum of the primordia in the embryo that will contribute to the embryonic/larval salivary gland.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-7073-9172</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The sum of the primordia in the embryo that will contribute to the embryonic/larval salivary gland. It is ectodermal in origin.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0159337</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005620"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>salivary gland primordia</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0159337</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005620"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>salivary gland primordium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0159337</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00005620"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>salivary gland placode</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0159337</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10244,6 +10285,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Imaginal cell, set aside during embryonic development, that will give rise to the adult hindgut. These cells are found in two rings of the hindgut; immediately posterior to the ureters of the Malpighian tubules, and at the anus. These two rings grow out and eventually unite.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/50</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>adult hindgut precursor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00005646</oboInOwl:id>
@@ -10317,6 +10359,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any muscle cell (FBbt:00005074) that is part of some embryonic somatic muscle (FBbt:00059033).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/492</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>embryonic skeletal muscle cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00005649</oboInOwl:id>
@@ -10623,6 +10666,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Bulb-shaped organ at the junction of the foregut and midgut that regulates the passage of food into the midgut. The proventriculus folds back on itself to produce three epithelial layers: internally the posterior region of the esophagus, an intermediate (recurrent) layer, derived from the ectodermal foregut and the midgut, and an external anterior projection of the endodermal midgut, which grows over the esophageal region. The inner two layers form the gastric valve (cardial valve) while the outer layer is defined as the wall of the proventriculus. The cuticle that lines the inner wall is thicker than other regions in the cardia, and it forms several longitudinal folds, causing the esophageal lumen to appear irregular in cross section. Between the intermediate and outer wall is the cardia lumen, which opens posteriorly into the lumen of the midgut. The anterior region secretes the peritrophic membrane into the cardia lumen. The epithelium is surrounded by a thin tunic of striated muscle fibers.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>cardia</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>cardiac valve</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>gastric valve</oboInOwl:hasNarrowSynonym>
@@ -11049,6 +11093,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Somatic cell that is part of the ovariole. This does not include the ovarian sheath.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/404</obo:IAO_0000233>
         <oboInOwl:hasBroadSynonym>somatic cell of ovary</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00006030</oboInOwl:id>
@@ -11144,6 +11189,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007003"/>
         <obo:IAO_0000115>Portion of tissue, that consists of one or more layers of cells with distinct apical-basal polarity, connected to each other by cell junctions.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000483</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007005</oboInOwl:id>
@@ -11924,6 +11970,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Structure consisting of a simple epithelium surrounded by visceral muscles, nerves and tracheae. The adult gut is divided into the adult foregut, midgut and hindgut regions, based on developmental origin.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T11:02:39Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -13042,6 +13089,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Gland of the female reproductive system. These specialized glands produce mucus-rich secretions that capacitate sperm to fertilize successfully, inhibit infection, and provide nutritional, maintenance, and storage factors.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/583</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T09:18:05Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -13233,6 +13281,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cyst composed of 16 cyst cells following the division of each cyst cell in an 8-cell cyst. The cells remain connected by cytoplasmic bridges following division.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-14T16:23:06Z</dc:date>
         <oboInOwl:hasExactSynonym>germarial 16-cell cluster</oboInOwl:hasExactSynonym>
@@ -14020,6 +14069,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Hemocyte of the adult organism. These cells all arise during embryonic and larval development and persist through metamorphosis and adult life (Holz et al., 2003; Sanchez Bosch et al., 2019).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1137</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-26T15:07:24Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -14061,6 +14111,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Plasmatocyte of the adult. These cells all originate during embryonic and larval development. They do not divide in the adult and their numbers decrease slowly throughout adult life (Honti et al., 2014).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1137</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-26T15:17:34Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -14088,6 +14139,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Phagocytic hemocyte. These cells represent about 90% of all hemocytes (Lanot et al., 2001). They are responsible for the engulfment of small particles, microbes and apoptotic tissues debris (Honti et al., 2014) and for the secretion of antimicrobial peptides and opsonins (Cattenoz et al., 2021). They also contribute to the production and secretion of proteins of the hemolymph, along with fat body cells (Cattenoz et al., 2021). They express Nimrod C1 (Kurucz et al., 2007).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1137</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1155</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-26T15:18:53Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -14165,6 +14218,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Melanizing hemocyte. It has roughly the same size as a plasmatocyte but is distinguishable by its crystal inclusions of phenoloxidases (encoded by PPO1 and PPO2) that are necessary for the synthesis of melanin as part of the antimicrobial immune reaction (Wood and Jacinto, 2007; Honti et al., 2014; Cattenoz et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1137</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-26T15:20:21Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -14594,6 +14648,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Somatic muscle of the late embryo (stage 17+) or larva that is part of the fully developed larval musculature.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1088</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-05T13:30:44Z</dc:date>
         <oboInOwl:hasExactSynonym>embryonic/larval skeletal muscle</oboInOwl:hasExactSynonym>
@@ -16186,6 +16241,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <obo:IAO_0000115>Anatomical structure that has multiple cells as parts.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T02:25:04Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0010000</oboInOwl:hasDbXref>
@@ -16393,6 +16449,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Glial cell that is part of the adult central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/466</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://www.researchgate.net/scientific-contributions/Simon-Reeve-2162827703"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-26T02:22:14Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00100499</oboInOwl:hasDbXref>
@@ -21940,7 +21997,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>

@@ -2116,6 +2116,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Structure that develops from an oocyte once it has been released from the ovary by ovulation (Qazi et al., 2003). Ovulation triggers egg activation, which alters envelope permeability and causes the resumption of meiosis and translation (Qazi et al., 2003). Fertilization of the egg begins embryogenesis (Loppin et al., 2015).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>ovum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00000034</oboInOwl:id>
@@ -2230,6 +2231,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cell that begins as a pole cell, becomes incorporated into the gonad and can develop into a germline stem cell (Campos-Ortega and Hartenstein, 1997; Dansereau and Lasko, 2008; Slaidina et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/696</obo:IAO_0000233>
         <oboInOwl:hasBroadSynonym>GC</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>CL:0000301</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>PGC</oboInOwl:hasExactSynonym>
@@ -2719,10 +2721,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The ventrally/medially located ectodermal region of the trunk from which neuroblasts delaminate to form the ventral nerve cord and gnathal ganglia. This region becomes distinct during stage 8 when its cells become enlarged compared to those in the adjacent dorsal ectoderm.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/3682</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>FBbt:00000113</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>P2 VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vNR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventral neurectoderm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ventral neurogenic region</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>neurectoderm</oboInOwl:hasRelatedSynonym>
@@ -2730,7 +2734,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00001061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>ventral neurectoderm</rdfs:label>
+        <rdfs:label>ventral neuroectoderm</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001061"/>
@@ -3870,6 +3874,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00004857"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00048491"/>
         <obo:IAO_0000115>Any reproductive system (FBbt:00004857) that overlaps some female organism (FBbt:00007011).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/583</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000474</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00004864</oboInOwl:id>
@@ -3992,6 +3997,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Female germline cell and stem cell from which all other female germline cells develop. Each of its divisions gives rise to one cystoblast and one female germline stem cell.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/696</obo:IAO_0000233>
         <oboInOwl:hasDbXref>CL:0000022</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>female GSC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>oogonial cell</oboInOwl:hasExactSynonym>
@@ -4092,6 +4098,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Female germline cell born during one of four rapid rounds of cell division following the birth of a cystoblast from a female germline stem cell until the point where one of the resulting 16 cells (the presumptive oocyte) enters meiosis. Cyst cells are interconnected by ring canals, resulting from incomplete cytokinesis during cell division. The oocyte develops from one of the two cyst cells that have connections to four other cyst cells, the other 15 cyst cells differentiate into nurse cells.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/696</obo:IAO_0000233>
         <oboInOwl:hasBroadSynonym>cyst cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>cystocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>germarial cystocyte</oboInOwl:hasExactSynonym>
@@ -4140,6 +4147,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Female germline cell that develops from one of the 16 cyst cells (the presumptive oocyte) produced by a cystoblast. It matures in an egg chamber of the ovariole and will be released from the ovary as an egg.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <oboInOwl:hasDbXref>CL:0000023</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00004886</oboInOwl:id>
@@ -4236,6 +4244,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00004894">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007137"/>
         <obo:IAO_0000115>Female germline cyst that forms as the 16-cell cyst moves posteriorly through the germarium, becoming encapsulated in follicle cells (Spradling, 1993). Its formation is completed in germarium region 3, where it buds off from the germarium and progresses posteriorly along the ovariole (Spradling, 1993, Reichmann and Ephrussi, 2001).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0003199</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>follicle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>germarium derived egg chamber</oboInOwl:hasExactSynonym>
@@ -5185,6 +5194,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Somatic cell that is part of the ovariole. This does not include the ovarian sheath.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/404</obo:IAO_0000233>
         <oboInOwl:hasBroadSynonym>somatic cell of ovary</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00006030</oboInOwl:id>
@@ -5279,6 +5289,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007003"/>
         <obo:IAO_0000115>Portion of tissue, that consists of one or more layers of cells with distinct apical-basal polarity, connected to each other by cell junctions.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000483</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007005</oboInOwl:id>
@@ -6189,6 +6200,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cyst composed of 16 cyst cells following the division of each cyst cell in an 8-cell cyst. The cells remain connected by cytoplasmic bridges following division.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/324</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-14T16:23:06Z</dc:date>
         <oboInOwl:hasExactSynonym>germarial 16-cell cluster</oboInOwl:hasExactSynonym>
@@ -6610,6 +6622,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Hemocyte of the adult organism. These cells all arise during embryonic and larval development and persist through metamorphosis and adult life (Holz et al., 2003; Sanchez Bosch et al., 2019).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/1137</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-6095-8718"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-26T15:07:24Z</dc:date>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
@@ -7173,6 +7186,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <obo:IAO_0000115>Anatomical structure that has multiple cells as parts.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T02:25:04Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0010000</oboInOwl:hasDbXref>
@@ -12497,7 +12511,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>

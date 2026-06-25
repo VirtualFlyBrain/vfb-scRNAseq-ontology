@@ -2662,10 +2662,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The ventrally/medially located ectodermal region of the trunk from which neuroblasts delaminate to form the ventral nerve cord and gnathal ganglia. This region becomes distinct during stage 8 when its cells become enlarged compared to those in the adjacent dorsal ectoderm.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/3682</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>FBbt:00000113</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>P2 VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>VenEc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vNR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventral neurectoderm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ventral neurogenic region</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>neurectoderm</oboInOwl:hasRelatedSynonym>
@@ -2673,7 +2675,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>FBbt:00001061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur"/>
-        <rdfs:label>ventral neurectoderm</rdfs:label>
+        <rdfs:label>ventral neuroectoderm</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001061"/>
@@ -4572,6 +4574,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Posterior region of the central nervous system containing the thoracic and abdominal neuromeres (Clark et al., 2018; Court et al., 2020). In the larva it is joined at its anterior end to the posterior gnathal ganglion (Eschbach and Zlatic, 2020). In the adult it is a separate entity, connected to the brain by the neck connective (Ito et al., 2014; Court et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/46</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000934</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VFB:FBbt_00005097</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ventral nervous system</oboInOwl:hasExactSynonym>
@@ -5386,6 +5389,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007003"/>
         <obo:IAO_0000115>Portion of tissue, that consists of one or more layers of cells with distinct apical-basal polarity, connected to each other by cell junctions.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0000483</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007005</oboInOwl:id>
@@ -5524,6 +5528,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/FBbt_00100313"/>
         <obo:IAO_0000115>A structure mainly consisting of cell components, rather than complete cells.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/2008</obo:IAO_0000233>
         <oboInOwl:hasDbXref>UBERON:0005162</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007060</oboInOwl:id>
@@ -11863,6 +11868,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00100313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007001"/>
         <obo:IAO_0000115>Anatomical structure that has multiple cells as parts.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues/24</obo:IAO_0000233>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-02T02:25:04Z</dc:date>
         <oboInOwl:hasDbXref>UBERON:0010000</oboInOwl:hasDbXref>
@@ -17336,7 +17342,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>
