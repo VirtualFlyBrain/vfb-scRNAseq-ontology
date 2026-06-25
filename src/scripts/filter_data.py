@@ -40,8 +40,19 @@ class DataEntity:
 
 if __name__ == '__main__':
 
+    import sys
     from cypher_query import query_neo4j, pdb
-    
+
+    ## query VFB first so a connection failure exits before any data processing
+    # get :Nervous_system FBbt IDs from VFB
+    query = "MATCH (c:Class:Nervous_system) WHERE c.short_form STARTS WITH \"FBbt\" RETURN DISTINCT c.short_form AS FBbt_ID"
+    FBbt_IDs = query_neo4j(query, url=pdb)
+    if FBbt_IDs is False:
+        sys.exit("ERROR: could not retrieve Nervous_system FBbt IDs from VFB (connection failed after retries). Aborting.")
+    if FBbt_IDs.empty:
+        sys.exit("ERROR: VFB query for Nervous_system FBbt IDs returned no results. Aborting.")
+    FBbt_IDs = list(FBbt_IDs['FBbt_ID'].apply(lambda x: x.replace('_', ':')))
+
     assay_data = DataEntity(datatype='Assay')
     sample_data = DataEntity(datatype='Sample')
     dataset_data = DataEntity(datatype='DataSet')
@@ -106,11 +117,7 @@ if __name__ == '__main__':
 
 
     ## filter for nervous system term-containing clusters
-    # get :Nervous_system FBbt IDs from VFB
-    query = "MATCH (c:Class:Nervous_system) WHERE c.short_form STARTS WITH \"FBbt\" RETURN DISTINCT c.short_form AS FBbt_ID"
-    FBbt_IDs = query_neo4j(query, url=pdb)
-    FBbt_IDs = list(FBbt_IDs['FBbt_ID'].apply(lambda x: x.replace('_', ':')))
-
+    # (FBbt_IDs were fetched from VFB at the top, before any data processing)
     # check which clusters are linked to :Nervous_system FBbt terms
     ns_cluster_data = cluster_data.dataframe[cluster_data.dataframe['cell_type'].isin(FBbt_IDs)]
     # find datasets that are associated with nervous system clusters
