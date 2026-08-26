@@ -166,6 +166,11 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
     
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353"/>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
 
@@ -608,7 +613,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007800">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007798"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007799"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007799"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 0 to 2-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs0002_seq_clustering</rdfs:label>
@@ -819,7 +824,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007810">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007808"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007809"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007809"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 1 to 3-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs0103_seq_clustering</rdfs:label>
@@ -1156,7 +1161,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007823">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007821"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007822"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007822"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 2 to 4-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs0204_seq_clustering</rdfs:label>
@@ -1409,7 +1414,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007833">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007831"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007832"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007832"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 3 to 7-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs0307_seq_clustering</rdfs:label>
@@ -2278,7 +2283,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007865">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007863"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007864"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007864"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 4 to 8-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs0408_seq_clustering</rdfs:label>
@@ -2885,7 +2890,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007893">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007891"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007892"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007892"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 6 to 10-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs0610_seq_clustering</rdfs:label>
@@ -3838,7 +3843,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007928">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007926"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007927"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007927"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 8 to 12-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs0812_seq_clustering</rdfs:label>
@@ -4819,7 +4824,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007964">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007962"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007963"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007963"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 10 to 14-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs1014_seq_clustering</rdfs:label>
@@ -5688,7 +5693,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0007996">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007994"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007995"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007995"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 12 to 16-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs1216_seq_clustering</rdfs:label>
@@ -6361,7 +6366,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0008021">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008019"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008020"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0008020"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 14 to 18-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs1418_seq_clustering</rdfs:label>
@@ -7118,7 +7123,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0008049">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008047"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008048"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0008048"/>
         <obo:IAO_0000115>Clustering analysis of dissociated cells from 16 to 20-hours old embryos</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_hrs1620_seq_clustering</rdfs:label>
@@ -7663,27 +7668,27 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0008069">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007798"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007799"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007799"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007808"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007809"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007809"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007821"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007822"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007822"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007831"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007832"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007832"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007863"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007864"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007864"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007891"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007892"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007892"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007926"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007927"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007927"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007962"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007963"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007963"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007994"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0007995"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0007995"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008019"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008020"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0008020"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008047"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0008048"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0008048"/>
         <obo:IAO_0000115>Consolidated clustering analysis of embryonic cells from all samples</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0007797"/>
         <rdfs:label>scRNAseq_2022_Calderon_FULL_seq_clustering</rdfs:label>

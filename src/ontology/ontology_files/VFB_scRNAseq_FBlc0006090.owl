@@ -166,6 +166,11 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
     
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353"/>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
 
@@ -1368,35 +1373,35 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006123">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006092"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006093"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006093"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006094"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006095"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006095"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006096"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006097"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006097"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006098"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006099"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006099"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006100"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006101"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006101"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006102"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006103"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006103"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006104"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006105"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006105"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006106"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006107"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006107"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006109"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006110"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006110"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006111"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006112"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006112"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006113"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006114"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006114"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006115"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006116"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006116"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006117"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006118"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006118"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006119"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006120"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006120"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006121"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006122"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006122"/>
         <obo:IAO_0000115>Aggregated clustering analysis of brain cells from aging DGRP-551 and w1118 flies</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0006090"/>
         <rdfs:label>scRNAseq_2018_Davie_FULL_seq_clustering</rdfs:label>

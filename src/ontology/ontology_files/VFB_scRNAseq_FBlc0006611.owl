@@ -166,6 +166,11 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
     
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353"/>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
 
@@ -854,7 +859,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006614">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006612"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006613"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006613"/>
         <obo:IAO_0000115>Clustering analysis of cells from 30-days old male heads</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0006611"/>
         <rdfs:label>scRNAseq_2023_AFCA_D30_MALE_HEAD_seq_clustering</rdfs:label>
@@ -2205,7 +2210,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006663">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006661"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006662"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006662"/>
         <obo:IAO_0000115>Clustering analysis of cells from 30-days old male bodies</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0006611"/>
         <rdfs:label>scRNAseq_2023_AFCA_D30_MALE_BODY_seq_clustering</rdfs:label>
@@ -3338,9 +3343,9 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0006704">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006612"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006613"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006613"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006661"/>
-        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0006662"/>
+        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0006662"/>
         <obo:IAO_0000115>Clustering analysis of adult cells from 30 days-old male flies</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0006611"/>
         <rdfs:label>scRNAseq_2023_AFCA_D30_MALE_FULL_seq_clustering</rdfs:label>
