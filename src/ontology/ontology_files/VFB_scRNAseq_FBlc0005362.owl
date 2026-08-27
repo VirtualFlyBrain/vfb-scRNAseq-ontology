@@ -166,11 +166,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
     
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353"/>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
 
@@ -409,7 +404,7 @@
     <owl:NamedIndividual rdf:about="http://flybase.org/reports/FBlc0005365">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FBcv_0009002"/>
         <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005363"/>
-        <obo:RO_0002353 rdf:resource="http://flybase.org/reports/FBlc0005364"/>
+        <obo:BFO_0000051 rdf:resource="http://flybase.org/reports/FBlc0005364"/>
         <obo:IAO_0000115>Clustering analysis of cells from first instar larval brain upon normal feeding condition</obo:IAO_0000115>
         <dc:source rdf:resource="http://flybase.org/reports/FBlc0005362"/>
         <rdfs:label>scRNAseq_2019_Avalos_FED_seq_clustering</rdfs:label>

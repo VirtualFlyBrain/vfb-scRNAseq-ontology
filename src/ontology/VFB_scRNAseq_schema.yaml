@@ -137,23 +137,10 @@ classes:
     annotations:
       owl.fstring: ClassAssertion( FBcv:0009002 {id} )
     attributes:
-      associated_sample_for_clustering:
+      associated_sample_or_assay_for_clustering:
         slot_uri: BFO:0000051
-        description: Sample (FBlc ID) that the Clustering uses. Mereological (has_part) is appropriate here - both Clustering and Sample are continuants.
-        range: Sample
-        annotations:
-          owl: ObjectPropertyAssertion
-      associated_assay_for_clustering:
-        slot_uri: RO:0002353
-        description: >-
-          Assay (FBlc ID) that produced the Clustering. Uses 'output of' rather than has_part/BFO:0000051:
-          Assay is an occurrent (process) and Clustering is a continuant (data item), and BFO disjoins
-          occurrent from anything part_of a continuant - asserting Clustering has_part Assay (i.e. Assay
-          part_of Clustering) makes the merged ontology inconsistent under ELK. See VFB2#457. 'output of'
-          (RO:0002353, inverse of 'has output' RO:0002234) is the correct non-mereological relation between
-          a continuant and the occurrent that generated it, and mirrors the has_input/input_of pattern
-          already used for Assay<->Sample above.
-        range: Assay
+        description: Sample or Assay (FBlc ID) that the Clustering uses.
+        range: Class
         annotations:
           owl: ObjectPropertyAssertion
     slots:
