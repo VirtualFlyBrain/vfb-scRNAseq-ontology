@@ -23113,7 +23113,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111207"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The largest synaptic neuropil domain of the adult central complex, located posterior to the ellipsoid body and anterior to the protocerebral bridge (Hanesch et al., 1989; Wolff et al., 2015). The fan-shaped body is composed of a rough 2-dimensional grid of layers and columns (Hanesch et al., 1998; Wolff et al., 2015; Hulse et al., 2021). Eight horizontal layers, numbered bottom to top, form a fan shape and can be divided into vertical columns (sometimes called staves, slices or segments) (Ito et al., 2014; Wolff et al., 2015). An additional, much narrower, 9th layer, which lacks a columnar organization, sits dorsal to layer 8 (Wolff et al., 2015). The number of columns varies for different neuronal types (Scheffer et al., 2020).</obo:IAO_0000115>
+        <obo:IAO_0000115>The largest synaptic neuropil domain of the adult central complex, located posterior to the ellipsoid body and anterior to the protocerebral bridge (Hanesch et al., 1989; Wolff et al., 2015). The fan-shaped body is composed of a rough 2-dimensional grid of layers and columns (Hanesch et al., 1989; Wolff et al., 2015; Hulse et al., 2021). Eight horizontal layers, numbered bottom to top, form a fan shape and can be divided into vertical columns (sometimes called staves, slices or segments) (Ito et al., 2014; Wolff et al., 2015). An additional, much narrower, 9th layer, which lacks a columnar organization, sits dorsal to layer 8 (Wolff et al., 2015). The number of columns varies for different neuronal types (Scheffer et al., 2020).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>VFB:FBbt_00003679</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>FB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>fan shaped body</oboInOwl:hasExactSynonym>
@@ -23129,7 +23129,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00003679"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The largest synaptic neuropil domain of the adult central complex, located posterior to the ellipsoid body and anterior to the protocerebral bridge (Hanesch et al., 1989; Wolff et al., 2015). The fan-shaped body is composed of a rough 2-dimensional grid of layers and columns (Hanesch et al., 1998; Wolff et al., 2015; Hulse et al., 2021). Eight horizontal layers, numbered bottom to top, form a fan shape and can be divided into vertical columns (sometimes called staves, slices or segments) (Ito et al., 2014; Wolff et al., 2015). An additional, much narrower, 9th layer, which lacks a columnar organization, sits dorsal to layer 8 (Wolff et al., 2015). The number of columns varies for different neuronal types (Scheffer et al., 2020).</owl:annotatedTarget>
+        <owl:annotatedTarget>The largest synaptic neuropil domain of the adult central complex, located posterior to the ellipsoid body and anterior to the protocerebral bridge (Hanesch et al., 1989; Wolff et al., 2015). The fan-shaped body is composed of a rough 2-dimensional grid of layers and columns (Hanesch et al., 1989; Wolff et al., 2015; Hulse et al., 2021). Eight horizontal layers, numbered bottom to top, form a fan shape and can be divided into vertical columns (sometimes called staves, slices or segments) (Ito et al., 2014; Wolff et al., 2015). An additional, much narrower, 9th layer, which lacks a columnar organization, sits dorsal to layer 8 (Wolff et al., 2015). The number of columns varies for different neuronal types (Scheffer et al., 2020).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0049409</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0212649</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0221742</oboInOwl:hasDbXref>
@@ -58779,9 +58779,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-22T13:32:01Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00007701</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>longitudinal subdivision of central nervous system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbt:00007701</oboInOwl:id>
-        <rdfs:label>longitudinal subdivision of central nervous system</rdfs:label>
+        <rdfs:label>longitudinal domain of central nervous system</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007701"/>
@@ -59192,9 +59193,83 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00007717 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007717">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001962"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001962"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval tritocerebrum intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018). It has a pyramidal shape with boundaries following the lateral curve of the CI fascicles.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-15T09:20:07Z</dc:date>
+        <oboInOwl:hasDbXref>VFB:FBbt_00007717</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:304</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:482</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CTR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval tritocerebrum</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00007717</oboInOwl:id>
+        <rdfs:label>central domain of larval tritocerebrum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007717"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval tritocerebrum intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018). It has a pyramidal shape with boundaries following the lateral curve of the CI fascicles.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DW</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007717"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CTR</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00007718 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007718">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001962"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -59295,6 +59370,21 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/FBbt_00007720 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00007720">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001962"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -60132,9 +60222,180 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mesothoracic neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:333</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:511</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T2cm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval mesothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval segment T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval centromedial thoracic ganglion T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015001</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval T2 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mesothoracic neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mesothoracic neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:351</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:529</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T2dl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval mesothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval segment T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsolateral thoracic ganglion T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015002</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval T2 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mesothoracic neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015003">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mesothoracic neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:366</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:544</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T2dm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval mesothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval segment T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsomedial thoracic ganglion T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015003</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval T2 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mesothoracic neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00015004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -60169,9 +60430,284 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015005">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mesothoracic neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:451</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:629</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T2vm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval ventromedial thoracic ganglion T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval mesothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval segment T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015005</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval T2 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mesothoracic neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015006">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mesothoracic neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:302</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:480</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T2c</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval mesothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval segment T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval central thoracic ganglion T2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015006</oboInOwl:id>
+        <rdfs:label>central domain of larval T2 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mesothoracic neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015008">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval metathoracic neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:334</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:512</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T3cm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval metathoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval segment T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval centromedial thoracic ganglion T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015008</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval T3 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval metathoracic neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015009">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval metathoracic neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:352</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:530</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T3dl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval metathoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval segment T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsolateral thoracic ganglion T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015009</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval T3 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015009"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval metathoracic neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval metathoracic neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:367</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:545</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T3dm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval metathoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval segment T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsomedial thoracic ganglion T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015010</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval T3 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval metathoracic neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00015011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015011">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -60206,9 +60742,284 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015012">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval metathoracic neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:452</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:630</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T3vm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval ventromedial thoracic ganglion T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval metathoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval segment T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015012</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval T3 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval metathoracic neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval metathoracic neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:303</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:481</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T3c</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval metathoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval segment T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval central thoracic ganglion T3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015013</oboInOwl:id>
+        <rdfs:label>central domain of larval T3 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval metathoracic neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015015">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval prothoracic neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:332</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:510</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T1cm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval prothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval segment T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval centromedial thoracic ganglion T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015015</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval T1 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval prothoracic neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015016">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval prothoracic neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:350</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:528</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T1dl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval prothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval segment T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsolateral thoracic ganglion T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015016</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval T1 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval prothoracic neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015017">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval prothoracic neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:365</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:543</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T1dm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval prothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval segment T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsomedial thoracic ganglion T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015017</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval T1 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015017"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval prothoracic neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbt_00015018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015018">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -60238,6 +61049,1622 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015018"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Neuropil region where the larval prothoracic neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015019">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval prothoracic neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015019</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:450</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:628</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T1vm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval ventromedial thoracic ganglion T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval prothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval segment T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015019</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval T1 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval prothoracic neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015020">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval prothoracic neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:301</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:479</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>T1c</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval prothoracic segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval segment T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval central thoracic ganglion T1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015020</oboInOwl:id>
+        <rdfs:label>central domain of larval T1 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015020"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval prothoracic neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015022">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval labial neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015022</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:329</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:507</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>LBcm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval labial segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015022</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval labial neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015022"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval labial neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015023">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval labial neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:347</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:525</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>LBdl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval labial segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015023</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval labial neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015023"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval labial neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015024">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval labial neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015024</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:362</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:540</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>LBdm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval labial segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015024</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval labial neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015024"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval labial neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015025">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval labial neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015025</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:431</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:609</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>LBvl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventrolateral neuropil of larval labial segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015025</oboInOwl:id>
+        <rdfs:label>ventrolateral domain of larval labial neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015025"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval labial neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015026">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval labial neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:447</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:625</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>LBvm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval labial segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015026</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval labial neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015026"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval labial neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015027">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001974"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval labial neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:298</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:476</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>LBc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval labial segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015027</oboInOwl:id>
+        <rdfs:label>central domain of larval labial neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015027"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval labial neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015029">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mandibular neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015029</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:508</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MDcm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval mandibular segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015029</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval mandibular neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mandibular neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015030">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mandibular neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015030</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:348</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:526</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MDdl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval mandibular segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015030</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval mandibular neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mandibular neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015031">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mandibular neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015031</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:363</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:541</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MDdm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval mandibular segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015031</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval mandibular neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mandibular neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015032">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mandibular neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015032</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:432</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:610</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MDvl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventrolateral neuropil of larval mandibular segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015032</oboInOwl:id>
+        <rdfs:label>ventrolateral domain of larval mandibular neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mandibular neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015033">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mandibular neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015033</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:448</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:626</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MDvm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval mandibular segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015033</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval mandibular neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mandibular neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015034">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval mandibular neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:299</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:477</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MDc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval mandibular segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015034</oboInOwl:id>
+        <rdfs:label>central domain of larval mandibular neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval mandibular neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015036">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval maxillary neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015036</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:331</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:509</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MXcm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval maxillary segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015036</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval maxillary neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015036"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval maxillary neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015037">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval maxillary neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015037</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:349</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:527</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MXdl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval maxillary segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015037</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval maxillary neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval maxillary neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015038">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval maxillary neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:364</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:542</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MXdm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval maxillary segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015038</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval maxillary neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval maxillary neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015039">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval maxillary neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015039</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:433</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:611</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MXvl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventrolateral neuropil of larval maxillary segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015039</oboInOwl:id>
+        <rdfs:label>ventrolateral domain of larval maxillary neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval maxillary neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015040">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval maxillary neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:449</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:627</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MXvm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval maxillary segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015040</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval maxillary neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval maxillary neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015041">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00001975"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval maxillary neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:300</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:478</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MXc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval maxillary segment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015041</oboInOwl:id>
+        <rdfs:label>central domain of larval maxillary neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval maxillary neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015078">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 6 neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015078</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:325</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:503</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A6cm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval abdominal segment 6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval segment A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval centromedial abdominal ganglion A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015078</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval A6 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 6 neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015079">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 6 neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015079</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:344</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:522</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A6dl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval abdominal segment 6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval segment A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsolateral abdominal ganglion A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015079</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval A6 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015079"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 6 neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015080">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007699"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 6 neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015080</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:358</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:536</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A6dm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval abdominal segment 6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval segment A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsomedial abdominal ganglion A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015080</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval A6 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015080"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 6 neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015081">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 6 neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015081</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:428</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:606</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A6vl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval ventrolateral abdominal ganglion A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventrolateral neuropil of larval abdominal segment 6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventrolateral neuropil of larval segment A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015081</oboInOwl:id>
+        <rdfs:label>ventrolateral domain of larval A6 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015081"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 6 neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015082">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 6 neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:443</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:621</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A6vm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval ventromedial abdominal ganglion A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval abdominal segment 6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval segment A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015082</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval A6 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 6 neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015083">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 6 neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:295</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:473</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A6c</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval abdominal segment 6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval segment A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval central abdominal ganglion A6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015083</oboInOwl:id>
+        <rdfs:label>central domain of larval A6 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015083"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 6 neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015092">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 8 neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:327</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:505</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A8cm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval abdominal segment 8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>centromedial neuropil of larval segment A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval centromedial abdominal ganglion A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015092</oboInOwl:id>
+        <rdfs:label>centromedial domain of larval A8 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015092"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 8 neuromere intersects with the centromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015093">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 8 neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:346</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:524</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A8dl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval abdominal segment 8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsolateral neuropil of larval segment A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsolateral abdominal ganglion A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015093</oboInOwl:id>
+        <rdfs:label>dorsolateral domain of larval A8 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015093"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 8 neuromere intersects with the dorsolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015094">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007708"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007699"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 8 neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015094</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:360</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:538</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A8dm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval abdominal segment 8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dorsomedial neuropil of larval segment A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval dorsomedial abdominal ganglion A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015094</oboInOwl:id>
+        <rdfs:label>dorsomedial domain of larval A8 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015094"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 8 neuromere intersects with the dorsomedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015095">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007705"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 8 neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015095</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:430</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:608</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A8vl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval ventrolateral abdominal ganglion A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventrolateral neuropil of larval abdominal segment 8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventrolateral neuropil of larval segment A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015095</oboInOwl:id>
+        <rdfs:label>ventrolateral domain of larval A8 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015095"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 8 neuromere intersects with the ventrolateral longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015096">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 8 neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:445</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:623</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A8vm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval ventromedial abdominal ganglion A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval abdominal segment 8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ventromedial neuropil of larval segment A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015096</oboInOwl:id>
+        <rdfs:label>ventromedial domain of larval A8 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015096"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 8 neuromere intersects with the ventromedial longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbt_00015097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_00015097">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007709"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00111040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Neuropil region where the larval abdominal 8 neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>VFB:FBbt_00015097</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:297</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>larvalbrain_neuropil:475</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A8c</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval abdominal segment 8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>central neuropil of larval segment A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>larval central abdominal ganglion A8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fly_anatomy.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbt:00015097</oboInOwl:id>
+        <rdfs:label>central domain of larval A8 neuromere</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00015097"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Neuropil region where the larval abdominal 8 neuromere intersects with the central longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -78569,6 +80996,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049609"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>udg</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0210316</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049609"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Glial cell that has not differentiated into a stable specialist fate. These cells may be migratory and/or phagocytic (Edwards and Meinertzhagen, 2010; Shklyar et al., 2014).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0210316</oboInOwl:hasDbXref>
@@ -78579,12 +81012,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>developing glial cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0225975</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00049609"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>udg</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0210316</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -83966,7 +86393,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00007702"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Region where a neuromere intersects with a longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
+        <obo:IAO_0000115>Region that is the full intersection of a single neuromere and a single longitudinal domain of the central nervous system (Hartenstein et al., 2018).</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-1373-1705"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-03T11:03:48Z</dc:date>
         <oboInOwl:hasDbXref>VFB:FBbt_00051071</oboInOwl:hasDbXref>
@@ -83978,7 +86405,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbt_00051071"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Region where a neuromere intersects with a longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
+        <owl:annotatedTarget>Region that is the full intersection of a single neuromere and a single longitudinal domain of the central nervous system (Hartenstein et al., 2018).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0237252</oboInOwl:hasDbXref>
     </owl:Axiom>
     
