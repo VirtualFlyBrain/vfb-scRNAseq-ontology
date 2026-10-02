@@ -1,5 +1,6 @@
 --Query for scRNA-seq expression values.
 --Max value of "spread" (aka extent) is 1.0 (i.e., all cells express the gene).
+--Run via scripts/get_expression_data.sh, which sets :cluster_ids to a batch of quoted cluster uniquenames.
 COPY (SELECT DISTINCT
 --    'Cluster' as type,
     'FlyBase:'||l.uniquename as id,
@@ -13,7 +14,8 @@ JOIN library_feature lf ON lf.library_id = l.library_id
 JOIN feature f ON f.feature_id = lf.feature_id
 JOIN library_featureprop expression_level ON (expression_level.library_feature_id = lf.library_feature_id AND expression_level.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'mean_expr'))
 JOIN library_featureprop expression_extent ON (expression_extent.library_feature_id = lf.library_feature_id AND expression_extent.type_id = (SELECT cvterm_id FROM cvterm WHERE name = 'spread'))
-WHERE l.is_obsolete is false
+WHERE l.uniquename IN (:cluster_ids)
+  AND l.is_obsolete is false
   AND f.is_obsolete is false
   AND f.uniquename ~ '^FBgn[0-9]{7}$'
 ) TO STDOUT WITH DELIMITER E'\t' CSV HEADER;

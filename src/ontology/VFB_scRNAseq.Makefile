@@ -30,6 +30,8 @@ $(EXPDIR) $(METADATADIR) $(RELEASEDIR) $(ONTOLOGYDIR):
 LINKML = my-venv/bin/linkml-data2owl -s VFB_scRNAseq_schema.yaml
 ROBOT_O = robot --catalog $(CATALOG_O)
 CATALOG_O = $(ONTOLOGYDIR)/catalog-v001.xml
+# ON_ERROR_STOP makes psql exit non-zero on SQL errors (otherwise a failed query gives a header-only tsv).
+FB_PSQL = psql -v ON_ERROR_STOP=1 -h chado.flybase.org -U flybase flybase
 
 .DEFAULT:
 	echo $@
@@ -73,18 +75,17 @@ install_xml_tools: setup_venv
 .PHONY: get_FB_data
 get_FB_data: install_postgresql install_dask | $(EXPDIR) $(TMPDIR)
 ifeq ($(UPDATE_FROM_FB),true)
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/dataset_query.sql \
+	$(FB_PSQL) -f ../sql/dataset_query.sql \
 	 > $(TMPDIR)/raw_dataset_data.tsv
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/sample_query.sql \
+	$(FB_PSQL) -f ../sql/sample_query.sql \
 	 > $(TMPDIR)/raw_sample_data.tsv
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/assay_query.sql \
+	$(FB_PSQL) -f ../sql/assay_query.sql \
 	 > $(TMPDIR)/raw_assay_data.tsv
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/clustering_query.sql \
+	$(FB_PSQL) -f ../sql/clustering_query.sql \
 	 > $(TMPDIR)/raw_clustering_data.tsv
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/cluster_query.sql \
+	$(FB_PSQL) -f ../sql/cluster_query.sql \
 	 > $(TMPDIR)/raw_cluster_data.tsv
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/expression_query.sql \
-	 > $(TMPDIR)/raw_expression_data.tsv
+	bash $(SCRIPTSDIR)/get_expression_data.sh $(TMPDIR)/raw_cluster_data.tsv $(TMPDIR)/raw_expression_data.tsv
 	 my-venv/bin/python3 $(SCRIPTSDIR)/convert_expression_data.py
 else
 	echo "Not updating FlyBase data."
@@ -330,7 +331,7 @@ split_FBgns: $(TMPDIR)/existing_FBgns.txt
 get_gene_id_map: install_postgresql setup_venv
 	# this won't work until https://flybase.github.io/docs/chado/functions#update_ids is fixed
 	my-venv/bin/python3 $(SCRIPTSDIR)/print_id_query.py &&\
-	psql -h chado.flybase.org -U flybase flybase -f ../sql/id_update_query.sql \
+	$(FB_PSQL) -f ../sql/id_update_query.sql \
 	 > $(TMPDIR)/id_validation_table.tsv
 
 replace_gene_ids_in_files: install_dask
