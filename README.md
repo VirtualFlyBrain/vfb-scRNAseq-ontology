@@ -1,5 +1,16 @@
 # VFB scRNAseq Ontology
 
+> [!WARNING]
+> **Deprecated, and archived as of 2026-11.** VFB's scRNAseq data now comes from
+> [VirtualFlyBrain/vfb-scRNAseq](https://github.com/VirtualFlyBrain/vfb-scRNAseq): 17 datasets curated
+> from GEO / ArrayExpress and the papers, with clusters mapped to FBbt and opaque `VFBseq_` ids. Its
+> files replaced this repo's 24 FlyBase/SCEA files (`VFB_scRNAseq_FBlc*`) on VFB's OWL server on
+> 2026-11-02. The new repo's schema
+> (`src/vfb_scrnaseq/schema/VFB_scRNAseq_schema.yaml`) is a revised version of the one here.
+> Nothing here is maintained or loaded into VFB. The files are kept, read-only, for reference and for
+> the builds that still download them by URL (`src/ontology/reports/FBgn_list.txt`,
+> `src/ontology/VFB_scRNAseq_schema.yaml`, `src/scripts/cypher_query.py`).
+
 The VFB scRNAseq ontology files contain scRNAseq data to be loaded into VFB.
 
 This information is taken from [FlyBase](https://flybase.org/), which sources it from the [EMBL-EBI Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc/home), which compiles scRNAseq data from multiple sources.
@@ -14,7 +25,8 @@ The -edit version, [src/ontology/VFB_scRNAseq-edit.ofn](src/ontology/VFB_scRNAse
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/VirtualFlyBrain/vfb-scRNAseq-ontology/issues) to report errors or specific concerns related to the ontology.
+Please report problems with VFB's scRNAseq data on the
+[vfb-scRNAseq issue tracker](https://github.com/VirtualFlyBrain/vfb-scRNAseq/issues).
 
 ## Acknowledgements
 
